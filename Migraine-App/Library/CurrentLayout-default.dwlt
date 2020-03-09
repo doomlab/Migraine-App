@@ -1,0 +1,3144 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &1
+MonoBehaviour:
+  m_ObjectHideFlags: 52
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 1
+  m_Script: {fileID: 12004, guid: 0000000000000000e000000000000000, type: 0}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_PixelRect:
+    serializedVersion: 2
+    x: 0
+    y: 43
+    width: 1920
+    height: 1007
+  m_ShowMode: 4
+  m_Title: 
+  m_RootView: {fileID: 6}
+  m_MinSize: {x: 950, y: 544}
+  m_MaxSize: {x: 10000, y: 10000}
+--- !u!114 &2
+MonoBehaviour:
+  m_ObjectHideFlags: 52
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 1
+  m_Script: {fileID: 12010, guid: 0000000000000000e000000000000000, type: 0}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Children:
+  - {fileID: 9}
+  - {fileID: 3}
+  m_Position:
+    serializedVersion: 2
+    x: 0
+    y: 30
+    width: 1920
+    height: 957
+  m_MinSize: {x: 508, y: 494}
+  m_MaxSize: {x: 14004, y: 14044}
+  vertical: 0
+  controlID: 97
+--- !u!114 &3
+MonoBehaviour:
+  m_ObjectHideFlags: 52
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 1
+  m_Script: {fileID: 12006, guid: 0000000000000000e000000000000000, type: 0}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Children: []
+  m_Position:
+    serializedVersion: 2
+    x: 1531
+    y: 0
+    width: 389
+    height: 957
+  m_MinSize: {x: 102, y: 122}
+  m_MaxSize: {x: 4002, y: 4022}
+  m_ActualView: {fileID: 12}
+  m_Panes:
+  - {fileID: 15}
+  - {fileID: 12}
+  m_Selected: 1
+  m_LastSelected: 0
+--- !u!114 &4
+MonoBehaviour:
+  m_ObjectHideFlags: 52
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 1
+  m_Script: {fileID: 12006, guid: 0000000000000000e000000000000000, type: 0}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Children: []
+  m_Position:
+    serializedVersion: 2
+    x: 0
+    y: 0
+    width: 379
+    height: 579
+  m_MinSize: {x: 202, y: 222}
+  m_MaxSize: {x: 4002, y: 4022}
+  m_ActualView: {fileID: 16}
+  m_Panes:
+  - {fileID: 16}
+  m_Selected: 0
+  m_LastSelected: 0
+--- !u!114 &5
+MonoBehaviour:
+  m_ObjectHideFlags: 52
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 1
+  m_Script: {fileID: 12006, guid: 0000000000000000e000000000000000, type: 0}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Children: []
+  m_Position:
+    serializedVersion: 2
+    x: 0
+    y: 579
+    width: 1531
+    height: 378
+  m_MinSize: {x: 232, y: 272}
+  m_MaxSize: {x: 10002, y: 10022}
+  m_ActualView: {fileID: 14}
+  m_Panes:
+  - {fileID: 14}
+  - {fileID: 19}
+  m_Selected: 0
+  m_LastSelected: 0
+--- !u!114 &6
+MonoBehaviour:
+  m_ObjectHideFlags: 52
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 1
+  m_Script: {fileID: 12008, guid: 0000000000000000e000000000000000, type: 0}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Children:
+  - {fileID: 7}
+  - {fileID: 2}
+  - {fileID: 8}
+  m_Position:
+    serializedVersion: 2
+    x: 0
+    y: 0
+    width: 1920
+    height: 1007
+  m_MinSize: {x: 950, y: 544}
+  m_MaxSize: {x: 10000, y: 10000}
+--- !u!114 &7
+MonoBehaviour:
+  m_ObjectHideFlags: 52
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 1
+  m_Script: {fileID: 12011, guid: 0000000000000000e000000000000000, type: 0}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Children: []
+  m_Position:
+    serializedVersion: 2
+    x: 0
+    y: 0
+    width: 1920
+    height: 30
+  m_MinSize: {x: 0, y: 0}
+  m_MaxSize: {x: 0, y: 0}
+  m_LastLoadedLayoutName: 
+--- !u!114 &8
+MonoBehaviour:
+  m_ObjectHideFlags: 52
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 1
+  m_Script: {fileID: 12042, guid: 0000000000000000e000000000000000, type: 0}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Children: []
+  m_Position:
+    serializedVersion: 2
+    x: 0
+    y: 987
+    width: 1920
+    height: 20
+  m_MinSize: {x: 0, y: 0}
+  m_MaxSize: {x: 0, y: 0}
+--- !u!114 &9
+MonoBehaviour:
+  m_ObjectHideFlags: 52
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 1
+  m_Script: {fileID: 12010, guid: 0000000000000000e000000000000000, type: 0}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Children:
+  - {fileID: 10}
+  - {fileID: 5}
+  m_Position:
+    serializedVersion: 2
+    x: 0
+    y: 0
+    width: 1531
+    height: 957
+  m_MinSize: {x: 406, y: 494}
+  m_MaxSize: {x: 10002, y: 14044}
+  vertical: 1
+  controlID: 34
+--- !u!114 &10
+MonoBehaviour:
+  m_ObjectHideFlags: 52
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 1
+  m_Script: {fileID: 12010, guid: 0000000000000000e000000000000000, type: 0}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Children:
+  - {fileID: 4}
+  - {fileID: 11}
+  m_Position:
+    serializedVersion: 2
+    x: 0
+    y: 0
+    width: 1531
+    height: 579
+  m_MinSize: {x: 406, y: 222}
+  m_MaxSize: {x: 8006, y: 4022}
+  vertical: 0
+  controlID: 35
+--- !u!114 &11
+MonoBehaviour:
+  m_ObjectHideFlags: 52
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 1
+  m_Script: {fileID: 12006, guid: 0000000000000000e000000000000000, type: 0}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Children: []
+  m_Position:
+    serializedVersion: 2
+    x: 379
+    y: 0
+    width: 1152
+    height: 579
+  m_MinSize: {x: 204, y: 222}
+  m_MaxSize: {x: 4004, y: 4022}
+  m_ActualView: {fileID: 17}
+  m_Panes:
+  - {fileID: 17}
+  - {fileID: 18}
+  - {fileID: 13}
+  m_Selected: 0
+  m_LastSelected: 1
+--- !u!114 &12
+MonoBehaviour:
+  m_ObjectHideFlags: 52
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 363648761, guid: 68c7e4565cde54155bb78d8e935f1ddb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_MinSize: {x: 100, y: 100}
+  m_MaxSize: {x: 4000, y: 4000}
+  m_TitleContent:
+    m_Text: GitHub
+    m_Image: {fileID: 0}
+    m_Tooltip: 
+  m_Pos:
+    serializedVersion: 2
+    x: 1531
+    y: 73
+    width: 387
+    height: 938
+  m_ViewDataDictionary: {fileID: 0}
+  progressMessageClearTime: -1
+  notificationClearTime: -1
+  timeSinceLastRotation: -1
+  currentBranchAndRemoteHasUpdate: 0
+  currentTrackingStatusHasUpdate: 0
+  currentStatusEntriesHasUpdate: 0
+  repositoryProgressHasUpdate: 0
+  appManagerProgressHasUpdate: 0
+  changeTab: 5
+  activeTab: 5
+  initProjectView:
+    hasCompletedInitialCheck: 0
+    isUserDataPresent: 0
+    lastCheckUserChangedEvent:
+      updatedTimeString: 0001-01-01T00:00:00.000+00:00
+      cacheType: 8
+  branchesView:
+    treeLocals:
+      IsRemote: 0
+      folders:
+        keys: []
+        values: []
+      checkedFileNodes:
+        keys: []
+        values: []
+      title: Local branches
+      pathSeparator: /
+      displayRootNode: 1
+      isSelectable: 1
+      isCheckable: 0
+      nodes: []
+      selectedNode:
+        path: 
+        label: 
+        level: 0
+        isFolder: 0
+        isContainer: 0
+        isCollapsed: 0
+        isHidden: 0
+        isActive: 0
+        treeIsCheckable: 0
+        checkState: 0
+    treeRemotes:
+      IsRemote: 1
+      folders:
+        keys: []
+        values: []
+      checkedFileNodes:
+        keys: []
+        values: []
+      title: Remote branches
+      pathSeparator: /
+      displayRootNode: 1
+      isSelectable: 1
+      isCheckable: 0
+      nodes: []
+      selectedNode:
+        path: 
+        label: 
+        level: 0
+        isFolder: 0
+        isContainer: 0
+        isCollapsed: 0
+        isHidden: 0
+        isActive: 0
+        treeIsCheckable: 0
+        checkState: 0
+    mode: 0
+    newBranchName: 
+    scroll: {x: 0, y: 0}
+    disableDelete: 0
+    disableCreate: 0
+    lastLocalAndRemoteBranchListChangedEvent:
+      updatedTimeString: 
+      cacheType: 0
+    lastCurrentBranchAndRemoteChange:
+      updatedTimeString: 
+      cacheType: 0
+    currentBranch:
+      name: 
+      tracking: 
+    currentRemote:
+      name: 
+      url: 
+      login: 
+      user: 
+      host: 
+      function: 0
+      token: 
+    localBranches: []
+    remoteBranches: []
+  changesView:
+    currentBranchHasUpdate: 0
+    currentStatusEntriesHasUpdate: 0
+    currentLocksHasUpdate: 0
+    commitBody: 
+    commitMessage: 
+    currentBranch: '[unknown]'
+    treeScroll: {x: 0, y: 0}
+    treeChanges:
+      assets:
+        keys: []
+        values: []
+      folders:
+        keys: []
+        values: []
+      checkedFileNodes:
+        keys: []
+        values: []
+      title: 
+      pathSeparator: /
+      displayRootNode: 0
+      isSelectable: 1
+      isCheckable: 1
+      isUsingGlobalSelection: 1
+      nodes: []
+      selectedNode:
+        path: 
+        label: 
+        level: 0
+        isFolder: 0
+        isContainer: 0
+        isCollapsed: 0
+        isHidden: 0
+        isActive: 0
+        treeIsCheckable: 0
+        checkState: 0
+        isLocked: 0
+        gitStatusEntry:
+          path: 
+          fullPath: 
+          projectPath: 
+          originalPath: 
+          indexStatus: 0
+          workTreeStatus: 0
+    gitStatusEntries: []
+    changedFilesText: No changed files
+    lastCurrentBranchChangedEvent:
+      updatedTimeString: 
+      cacheType: 0
+    lastStatusEntriesChangedEvent:
+      updatedTimeString: 
+      cacheType: 0
+    lastLocksChangedEvent:
+      updatedTimeString: 
+      cacheType: 0
+  historyView:
+    currentLogHasUpdate: 0
+    currentTrackingStatusHasUpdate: 0
+    logEntries:
+    - commitID: d196e82918436fb2963999de6a211b14762595e9
+      mergeA: 
+      mergeB: 
+      authorName: Phil Grim
+      authorEmail: phil@insufficient-light.com
+      commitEmail: phil@insufficient-light.com
+      commitName: Phil Grim
+      summary: Committing the project from Unity Github plugin to make sure it works.
+      description: 
+      timeString: 2020-03-09T15:24:20.000-04:00
+      commitTimeString: 2020-03-09T15:24:20.000-04:00
+      changes:
+      - path: Assets\Plugins.meta
+        fullPath: C:\Users\phil\workspace-InLt\Networked App\Assets\Plugins.meta
+        projectPath: Assets\Plugins.meta
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Assets\Plugins\GitHub.meta
+        fullPath: C:\Users\phil\workspace-InLt\Networked App\Assets\Plugins\GitHub.meta
+        projectPath: Assets\Plugins\GitHub.meta
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Assets\Plugins\GitHub\Editor.meta
+        fullPath: C:\Users\phil\workspace-InLt\Networked App\Assets\Plugins\GitHub\Editor.meta
+        projectPath: Assets\Plugins\GitHub\Editor.meta
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Assets\Plugins\GitHub\Editor\AsyncBridge.Net35.dll
+        fullPath: C:\Users\phil\workspace-InLt\Networked App\Assets\Plugins\GitHub\Editor\AsyncBridge.Net35.dll
+        projectPath: Assets\Plugins\GitHub\Editor\AsyncBridge.Net35.dll
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Assets\Plugins\GitHub\Editor\AsyncBridge.Net35.dll.meta
+        fullPath: C:\Users\phil\workspace-InLt\Networked App\Assets\Plugins\GitHub\Editor\AsyncBridge.Net35.dll.meta
+        projectPath: Assets\Plugins\GitHub\Editor\AsyncBridge.Net35.dll.meta
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Assets\Plugins\GitHub\Editor\ExtensionLoader.cs
+        fullPath: C:\Users\phil\workspace-InLt\Networked App\Assets\Plugins\GitHub\Editor\ExtensionLoader.cs
+        projectPath: Assets\Plugins\GitHub\Editor\ExtensionLoader.cs
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Assets\Plugins\GitHub\Editor\ExtensionLoader.cs.meta
+        fullPath: C:\Users\phil\workspace-InLt\Networked App\Assets\Plugins\GitHub\Editor\ExtensionLoader.cs.meta
+        projectPath: Assets\Plugins\GitHub\Editor\ExtensionLoader.cs.meta
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Assets\Plugins\GitHub\Editor\GitHub.Api.45.dll
+        fullPath: C:\Users\phil\workspace-InLt\Networked App\Assets\Plugins\GitHub\Editor\GitHub.Api.45.dll
+        projectPath: Assets\Plugins\GitHub\Editor\GitHub.Api.45.dll
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Assets\Plugins\GitHub\Editor\GitHub.Api.45.dll.meta
+        fullPath: C:\Users\phil\workspace-InLt\Networked App\Assets\Plugins\GitHub\Editor\GitHub.Api.45.dll.meta
+        projectPath: Assets\Plugins\GitHub\Editor\GitHub.Api.45.dll.meta
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Assets\Plugins\GitHub\Editor\GitHub.Api.dll
+        fullPath: C:\Users\phil\workspace-InLt\Networked App\Assets\Plugins\GitHub\Editor\GitHub.Api.dll
+        projectPath: Assets\Plugins\GitHub\Editor\GitHub.Api.dll
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Assets\Plugins\GitHub\Editor\GitHub.Api.dll.meta
+        fullPath: C:\Users\phil\workspace-InLt\Networked App\Assets\Plugins\GitHub\Editor\GitHub.Api.dll.meta
+        projectPath: Assets\Plugins\GitHub\Editor\GitHub.Api.dll.meta
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Assets\Plugins\GitHub\Editor\GitHub.Logging.dll
+        fullPath: C:\Users\phil\workspace-InLt\Networked App\Assets\Plugins\GitHub\Editor\GitHub.Logging.dll
+        projectPath: Assets\Plugins\GitHub\Editor\GitHub.Logging.dll
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Assets\Plugins\GitHub\Editor\GitHub.Logging.dll.meta
+        fullPath: C:\Users\phil\workspace-InLt\Networked App\Assets\Plugins\GitHub\Editor\GitHub.Logging.dll.meta
+        projectPath: Assets\Plugins\GitHub\Editor\GitHub.Logging.dll.meta
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Assets\Plugins\GitHub\Editor\GitHub.Unity.45.dll
+        fullPath: C:\Users\phil\workspace-InLt\Networked App\Assets\Plugins\GitHub\Editor\GitHub.Unity.45.dll
+        projectPath: Assets\Plugins\GitHub\Editor\GitHub.Unity.45.dll
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Assets\Plugins\GitHub\Editor\GitHub.Unity.45.dll.meta
+        fullPath: C:\Users\phil\workspace-InLt\Networked App\Assets\Plugins\GitHub\Editor\GitHub.Unity.45.dll.meta
+        projectPath: Assets\Plugins\GitHub\Editor\GitHub.Unity.45.dll.meta
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Assets\Plugins\GitHub\Editor\GitHub.Unity.dll
+        fullPath: C:\Users\phil\workspace-InLt\Networked App\Assets\Plugins\GitHub\Editor\GitHub.Unity.dll
+        projectPath: Assets\Plugins\GitHub\Editor\GitHub.Unity.dll
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Assets\Plugins\GitHub\Editor\GitHub.Unity.dll.meta
+        fullPath: C:\Users\phil\workspace-InLt\Networked App\Assets\Plugins\GitHub\Editor\GitHub.Unity.dll.meta
+        projectPath: Assets\Plugins\GitHub\Editor\GitHub.Unity.dll.meta
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Assets\Plugins\GitHub\Editor\GitHub.UnityShim.dll
+        fullPath: C:\Users\phil\workspace-InLt\Networked App\Assets\Plugins\GitHub\Editor\GitHub.UnityShim.dll
+        projectPath: Assets\Plugins\GitHub\Editor\GitHub.UnityShim.dll
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Assets\Plugins\GitHub\Editor\GitHub.UnityShim.dll.meta
+        fullPath: C:\Users\phil\workspace-InLt\Networked App\Assets\Plugins\GitHub\Editor\GitHub.UnityShim.dll.meta
+        projectPath: Assets\Plugins\GitHub\Editor\GitHub.UnityShim.dll.meta
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Assets\Plugins\GitHub\Editor\Mono.Posix.dll
+        fullPath: C:\Users\phil\workspace-InLt\Networked App\Assets\Plugins\GitHub\Editor\Mono.Posix.dll
+        projectPath: Assets\Plugins\GitHub\Editor\Mono.Posix.dll
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Assets\Plugins\GitHub\Editor\Mono.Posix.dll.meta
+        fullPath: C:\Users\phil\workspace-InLt\Networked App\Assets\Plugins\GitHub\Editor\Mono.Posix.dll.meta
+        projectPath: Assets\Plugins\GitHub\Editor\Mono.Posix.dll.meta
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Assets\Plugins\GitHub\Editor\QuickGuide.pdf
+        fullPath: C:\Users\phil\workspace-InLt\Networked App\Assets\Plugins\GitHub\Editor\QuickGuide.pdf
+        projectPath: Assets\Plugins\GitHub\Editor\QuickGuide.pdf
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Assets\Plugins\GitHub\Editor\QuickGuide.pdf.meta
+        fullPath: C:\Users\phil\workspace-InLt\Networked App\Assets\Plugins\GitHub\Editor\QuickGuide.pdf.meta
+        projectPath: Assets\Plugins\GitHub\Editor\QuickGuide.pdf.meta
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Assets\Plugins\GitHub\Editor\ReadOnlyCollectionsInterfaces.dll
+        fullPath: C:\Users\phil\workspace-InLt\Networked App\Assets\Plugins\GitHub\Editor\ReadOnlyCollectionsInterfaces.dll
+        projectPath: Assets\Plugins\GitHub\Editor\ReadOnlyCollectionsInterfaces.dll
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Assets\Plugins\GitHub\Editor\ReadOnlyCollectionsInterfaces.dll.meta
+        fullPath: C:\Users\phil\workspace-InLt\Networked App\Assets\Plugins\GitHub\Editor\ReadOnlyCollectionsInterfaces.dll.meta
+        projectPath: Assets\Plugins\GitHub\Editor\ReadOnlyCollectionsInterfaces.dll.meta
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Assets\Plugins\GitHub\Editor\System.Threading.dll
+        fullPath: C:\Users\phil\workspace-InLt\Networked App\Assets\Plugins\GitHub\Editor\System.Threading.dll
+        projectPath: Assets\Plugins\GitHub\Editor\System.Threading.dll
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Assets\Plugins\GitHub\Editor\System.Threading.dll.meta
+        fullPath: C:\Users\phil\workspace-InLt\Networked App\Assets\Plugins\GitHub\Editor\System.Threading.dll.meta
+        projectPath: Assets\Plugins\GitHub\Editor\System.Threading.dll.meta
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Assets\Plugins\GitHub\Editor\UnityAPIWrapper.cs
+        fullPath: C:\Users\phil\workspace-InLt\Networked App\Assets\Plugins\GitHub\Editor\UnityAPIWrapper.cs
+        projectPath: Assets\Plugins\GitHub\Editor\UnityAPIWrapper.cs
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Assets\Plugins\GitHub\Editor\UnityAPIWrapper.cs.meta
+        fullPath: C:\Users\phil\workspace-InLt\Networked App\Assets\Plugins\GitHub\Editor\UnityAPIWrapper.cs.meta
+        projectPath: Assets\Plugins\GitHub\Editor\UnityAPIWrapper.cs.meta
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Assets\Plugins\GitHub\Editor\big-logo@2x.png
+        fullPath: C:\Users\phil\workspace-InLt\Networked App\Assets\Plugins\GitHub\Editor\big-logo@2x.png
+        projectPath: Assets\Plugins\GitHub\Editor\big-logo@2x.png
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Assets\Plugins\GitHub\Editor\big-logo@2x.png.meta
+        fullPath: C:\Users\phil\workspace-InLt\Networked App\Assets\Plugins\GitHub\Editor\big-logo@2x.png.meta
+        projectPath: Assets\Plugins\GitHub\Editor\big-logo@2x.png.meta
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Assets\Plugins\GitHub\Editor\credits.txt
+        fullPath: C:\Users\phil\workspace-InLt\Networked App\Assets\Plugins\GitHub\Editor\credits.txt
+        projectPath: Assets\Plugins\GitHub\Editor\credits.txt
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Assets\Plugins\GitHub\Editor\credits.txt.meta
+        fullPath: C:\Users\phil\workspace-InLt\Networked App\Assets\Plugins\GitHub\Editor\credits.txt.meta
+        projectPath: Assets\Plugins\GitHub\Editor\credits.txt.meta
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Assets\Plugins\GitHub\Editor\eula.txt
+        fullPath: C:\Users\phil\workspace-InLt\Networked App\Assets\Plugins\GitHub\Editor\eula.txt
+        projectPath: Assets\Plugins\GitHub\Editor\eula.txt
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Assets\Plugins\GitHub\Editor\eula.txt.meta
+        fullPath: C:\Users\phil\workspace-InLt\Networked App\Assets\Plugins\GitHub\Editor\eula.txt.meta
+        projectPath: Assets\Plugins\GitHub\Editor\eula.txt.meta
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Assets\Plugins\GitHub\Editor\libsfw.bundle
+        fullPath: C:\Users\phil\workspace-InLt\Networked App\Assets\Plugins\GitHub\Editor\libsfw.bundle
+        projectPath: Assets\Plugins\GitHub\Editor\libsfw.bundle
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Assets\Plugins\GitHub\Editor\libsfw.bundle.meta
+        fullPath: C:\Users\phil\workspace-InLt\Networked App\Assets\Plugins\GitHub\Editor\libsfw.bundle.meta
+        projectPath: Assets\Plugins\GitHub\Editor\libsfw.bundle.meta
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Assets\Plugins\GitHub\Editor\libsfw.so
+        fullPath: C:\Users\phil\workspace-InLt\Networked App\Assets\Plugins\GitHub\Editor\libsfw.so
+        projectPath: Assets\Plugins\GitHub\Editor\libsfw.so
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Assets\Plugins\GitHub\Editor\libsfw.so.meta
+        fullPath: C:\Users\phil\workspace-InLt\Networked App\Assets\Plugins\GitHub\Editor\libsfw.so.meta
+        projectPath: Assets\Plugins\GitHub\Editor\libsfw.so.meta
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Assets\Plugins\GitHub\Editor\sfw.net.dll
+        fullPath: C:\Users\phil\workspace-InLt\Networked App\Assets\Plugins\GitHub\Editor\sfw.net.dll
+        projectPath: Assets\Plugins\GitHub\Editor\sfw.net.dll
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Assets\Plugins\GitHub\Editor\sfw.net.dll.meta
+        fullPath: C:\Users\phil\workspace-InLt\Networked App\Assets\Plugins\GitHub\Editor\sfw.net.dll.meta
+        projectPath: Assets\Plugins\GitHub\Editor\sfw.net.dll.meta
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Assets\Plugins\GitHub\Editor\x64.meta
+        fullPath: C:\Users\phil\workspace-InLt\Networked App\Assets\Plugins\GitHub\Editor\x64.meta
+        projectPath: Assets\Plugins\GitHub\Editor\x64.meta
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Assets\Plugins\GitHub\Editor\x64\pthreadVC2.dll
+        fullPath: C:\Users\phil\workspace-InLt\Networked App\Assets\Plugins\GitHub\Editor\x64\pthreadVC2.dll
+        projectPath: Assets\Plugins\GitHub\Editor\x64\pthreadVC2.dll
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Assets\Plugins\GitHub\Editor\x64\pthreadVC2.dll.meta
+        fullPath: C:\Users\phil\workspace-InLt\Networked App\Assets\Plugins\GitHub\Editor\x64\pthreadVC2.dll.meta
+        projectPath: Assets\Plugins\GitHub\Editor\x64\pthreadVC2.dll.meta
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Assets\Plugins\GitHub\Editor\x64\sfw_x64.dll
+        fullPath: C:\Users\phil\workspace-InLt\Networked App\Assets\Plugins\GitHub\Editor\x64\sfw_x64.dll
+        projectPath: Assets\Plugins\GitHub\Editor\x64\sfw_x64.dll
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Assets\Plugins\GitHub\Editor\x64\sfw_x64.dll.meta
+        fullPath: C:\Users\phil\workspace-InLt\Networked App\Assets\Plugins\GitHub\Editor\x64\sfw_x64.dll.meta
+        projectPath: Assets\Plugins\GitHub\Editor\x64\sfw_x64.dll.meta
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Assets\Plugins\GitHub\Editor\x86.meta
+        fullPath: C:\Users\phil\workspace-InLt\Networked App\Assets\Plugins\GitHub\Editor\x86.meta
+        projectPath: Assets\Plugins\GitHub\Editor\x86.meta
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Assets\Plugins\GitHub\Editor\x86\pthreadVC2.dll
+        fullPath: C:\Users\phil\workspace-InLt\Networked App\Assets\Plugins\GitHub\Editor\x86\pthreadVC2.dll
+        projectPath: Assets\Plugins\GitHub\Editor\x86\pthreadVC2.dll
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Assets\Plugins\GitHub\Editor\x86\pthreadVC2.dll.meta
+        fullPath: C:\Users\phil\workspace-InLt\Networked App\Assets\Plugins\GitHub\Editor\x86\pthreadVC2.dll.meta
+        projectPath: Assets\Plugins\GitHub\Editor\x86\pthreadVC2.dll.meta
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Assets\Plugins\GitHub\Editor\x86\sfw_x86.dll
+        fullPath: C:\Users\phil\workspace-InLt\Networked App\Assets\Plugins\GitHub\Editor\x86\sfw_x86.dll
+        projectPath: Assets\Plugins\GitHub\Editor\x86\sfw_x86.dll
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Assets\Plugins\GitHub\Editor\x86\sfw_x86.dll.meta
+        fullPath: C:\Users\phil\workspace-InLt\Networked App\Assets\Plugins\GitHub\Editor\x86\sfw_x86.dll.meta
+        projectPath: Assets\Plugins\GitHub\Editor\x86\sfw_x86.dll.meta
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Assets\Scenes.meta
+        fullPath: C:\Users\phil\workspace-InLt\Networked App\Assets\Scenes.meta
+        projectPath: Assets\Scenes.meta
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Assets\Scenes\SampleScene.unity
+        fullPath: C:\Users\phil\workspace-InLt\Networked App\Assets\Scenes\SampleScene.unity
+        projectPath: Assets\Scenes\SampleScene.unity
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Assets\Scenes\SampleScene.unity.meta
+        fullPath: C:\Users\phil\workspace-InLt\Networked App\Assets\Scenes\SampleScene.unity.meta
+        projectPath: Assets\Scenes\SampleScene.unity.meta
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Packages\manifest.json
+        fullPath: C:\Users\phil\workspace-InLt\Networked App\Packages\manifest.json
+        projectPath: Packages\manifest.json
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: ProjectSettings\AudioManager.asset
+        fullPath: C:\Users\phil\workspace-InLt\Networked App\ProjectSettings\AudioManager.asset
+        projectPath: ProjectSettings\AudioManager.asset
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: ProjectSettings\ClusterInputManager.asset
+        fullPath: C:\Users\phil\workspace-InLt\Networked App\ProjectSettings\ClusterInputManager.asset
+        projectPath: ProjectSettings\ClusterInputManager.asset
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: ProjectSettings\DynamicsManager.asset
+        fullPath: C:\Users\phil\workspace-InLt\Networked App\ProjectSettings\DynamicsManager.asset
+        projectPath: ProjectSettings\DynamicsManager.asset
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: ProjectSettings\EditorBuildSettings.asset
+        fullPath: C:\Users\phil\workspace-InLt\Networked App\ProjectSettings\EditorBuildSettings.asset
+        projectPath: ProjectSettings\EditorBuildSettings.asset
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: ProjectSettings\EditorSettings.asset
+        fullPath: C:\Users\phil\workspace-InLt\Networked App\ProjectSettings\EditorSettings.asset
+        projectPath: ProjectSettings\EditorSettings.asset
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: ProjectSettings\GraphicsSettings.asset
+        fullPath: C:\Users\phil\workspace-InLt\Networked App\ProjectSettings\GraphicsSettings.asset
+        projectPath: ProjectSettings\GraphicsSettings.asset
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: ProjectSettings\InputManager.asset
+        fullPath: C:\Users\phil\workspace-InLt\Networked App\ProjectSettings\InputManager.asset
+        projectPath: ProjectSettings\InputManager.asset
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: ProjectSettings\NavMeshAreas.asset
+        fullPath: C:\Users\phil\workspace-InLt\Networked App\ProjectSettings\NavMeshAreas.asset
+        projectPath: ProjectSettings\NavMeshAreas.asset
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: ProjectSettings\NetworkManager.asset
+        fullPath: C:\Users\phil\workspace-InLt\Networked App\ProjectSettings\NetworkManager.asset
+        projectPath: ProjectSettings\NetworkManager.asset
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: ProjectSettings\Physics2DSettings.asset
+        fullPath: C:\Users\phil\workspace-InLt\Networked App\ProjectSettings\Physics2DSettings.asset
+        projectPath: ProjectSettings\Physics2DSettings.asset
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: ProjectSettings\PresetManager.asset
+        fullPath: C:\Users\phil\workspace-InLt\Networked App\ProjectSettings\PresetManager.asset
+        projectPath: ProjectSettings\PresetManager.asset
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: ProjectSettings\ProjectSettings.asset
+        fullPath: C:\Users\phil\workspace-InLt\Networked App\ProjectSettings\ProjectSettings.asset
+        projectPath: ProjectSettings\ProjectSettings.asset
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: ProjectSettings\ProjectVersion.txt
+        fullPath: C:\Users\phil\workspace-InLt\Networked App\ProjectSettings\ProjectVersion.txt
+        projectPath: ProjectSettings\ProjectVersion.txt
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: ProjectSettings\QualitySettings.asset
+        fullPath: C:\Users\phil\workspace-InLt\Networked App\ProjectSettings\QualitySettings.asset
+        projectPath: ProjectSettings\QualitySettings.asset
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: ProjectSettings\TagManager.asset
+        fullPath: C:\Users\phil\workspace-InLt\Networked App\ProjectSettings\TagManager.asset
+        projectPath: ProjectSettings\TagManager.asset
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: ProjectSettings\TimeManager.asset
+        fullPath: C:\Users\phil\workspace-InLt\Networked App\ProjectSettings\TimeManager.asset
+        projectPath: ProjectSettings\TimeManager.asset
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: ProjectSettings\UnityConnectSettings.asset
+        fullPath: C:\Users\phil\workspace-InLt\Networked App\ProjectSettings\UnityConnectSettings.asset
+        projectPath: ProjectSettings\UnityConnectSettings.asset
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: ProjectSettings\VFXManager.asset
+        fullPath: C:\Users\phil\workspace-InLt\Networked App\ProjectSettings\VFXManager.asset
+        projectPath: ProjectSettings\VFXManager.asset
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: ProjectSettings\XRSettings.asset
+        fullPath: C:\Users\phil\workspace-InLt\Networked App\ProjectSettings\XRSettings.asset
+        projectPath: ProjectSettings\XRSettings.asset
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Server\.gitignore
+        fullPath: C:\Users\phil\workspace-InLt\Networked App\Server\.gitignore
+        projectPath: Server\.gitignore
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Server\README.md
+        fullPath: C:\Users\phil\workspace-InLt\Networked App\Server\README.md
+        projectPath: Server\README.md
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Server\derby.log
+        fullPath: C:\Users\phil\workspace-InLt\Networked App\Server\derby.log
+        projectPath: Server\derby.log
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Server\nua\db.lck
+        fullPath: C:\Users\phil\workspace-InLt\Networked App\Server\nua\db.lck
+        projectPath: Server\nua\db.lck
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Server\nua\log\log.ctrl
+        fullPath: C:\Users\phil\workspace-InLt\Networked App\Server\nua\log\log.ctrl
+        projectPath: Server\nua\log\log.ctrl
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Server\nua\log\log1.dat
+        fullPath: C:\Users\phil\workspace-InLt\Networked App\Server\nua\log\log1.dat
+        projectPath: Server\nua\log\log1.dat
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Server\nua\log\logmirror.ctrl
+        fullPath: C:\Users\phil\workspace-InLt\Networked App\Server\nua\log\logmirror.ctrl
+        projectPath: Server\nua\log\logmirror.ctrl
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Server\nua\seg0\c10.dat
+        fullPath: C:\Users\phil\workspace-InLt\Networked App\Server\nua\seg0\c10.dat
+        projectPath: Server\nua\seg0\c10.dat
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Server\nua\seg0\c101.dat
+        fullPath: C:\Users\phil\workspace-InLt\Networked App\Server\nua\seg0\c101.dat
+        projectPath: Server\nua\seg0\c101.dat
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Server\nua\seg0\c111.dat
+        fullPath: C:\Users\phil\workspace-InLt\Networked App\Server\nua\seg0\c111.dat
+        projectPath: Server\nua\seg0\c111.dat
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Server\nua\seg0\c121.dat
+        fullPath: C:\Users\phil\workspace-InLt\Networked App\Server\nua\seg0\c121.dat
+        projectPath: Server\nua\seg0\c121.dat
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Server\nua\seg0\c130.dat
+        fullPath: C:\Users\phil\workspace-InLt\Networked App\Server\nua\seg0\c130.dat
+        projectPath: Server\nua\seg0\c130.dat
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Server\nua\seg0\c141.dat
+        fullPath: C:\Users\phil\workspace-InLt\Networked App\Server\nua\seg0\c141.dat
+        projectPath: Server\nua\seg0\c141.dat
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Server\nua\seg0\c150.dat
+        fullPath: C:\Users\phil\workspace-InLt\Networked App\Server\nua\seg0\c150.dat
+        projectPath: Server\nua\seg0\c150.dat
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Server\nua\seg0\c161.dat
+        fullPath: C:\Users\phil\workspace-InLt\Networked App\Server\nua\seg0\c161.dat
+        projectPath: Server\nua\seg0\c161.dat
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Server\nua\seg0\c171.dat
+        fullPath: C:\Users\phil\workspace-InLt\Networked App\Server\nua\seg0\c171.dat
+        projectPath: Server\nua\seg0\c171.dat
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Server\nua\seg0\c180.dat
+        fullPath: C:\Users\phil\workspace-InLt\Networked App\Server\nua\seg0\c180.dat
+        projectPath: Server\nua\seg0\c180.dat
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Server\nua\seg0\c191.dat
+        fullPath: C:\Users\phil\workspace-InLt\Networked App\Server\nua\seg0\c191.dat
+        projectPath: Server\nua\seg0\c191.dat
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Server\nua\seg0\c1a1.dat
+        fullPath: C:\Users\phil\workspace-InLt\Networked App\Server\nua\seg0\c1a1.dat
+        projectPath: Server\nua\seg0\c1a1.dat
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Server\nua\seg0\c1b1.dat
+        fullPath: C:\Users\phil\workspace-InLt\Networked App\Server\nua\seg0\c1b1.dat
+        projectPath: Server\nua\seg0\c1b1.dat
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Server\nua\seg0\c1c0.dat
+        fullPath: C:\Users\phil\workspace-InLt\Networked App\Server\nua\seg0\c1c0.dat
+        projectPath: Server\nua\seg0\c1c0.dat
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Server\nua\seg0\c1d1.dat
+        fullPath: C:\Users\phil\workspace-InLt\Networked App\Server\nua\seg0\c1d1.dat
+        projectPath: Server\nua\seg0\c1d1.dat
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Server\nua\seg0\c1e0.dat
+        fullPath: C:\Users\phil\workspace-InLt\Networked App\Server\nua\seg0\c1e0.dat
+        projectPath: Server\nua\seg0\c1e0.dat
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Server\nua\seg0\c1f1.dat
+        fullPath: C:\Users\phil\workspace-InLt\Networked App\Server\nua\seg0\c1f1.dat
+        projectPath: Server\nua\seg0\c1f1.dat
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Server\nua\seg0\c20.dat
+        fullPath: C:\Users\phil\workspace-InLt\Networked App\Server\nua\seg0\c20.dat
+        projectPath: Server\nua\seg0\c20.dat
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Server\nua\seg0\c200.dat
+        fullPath: C:\Users\phil\workspace-InLt\Networked App\Server\nua\seg0\c200.dat
+        projectPath: Server\nua\seg0\c200.dat
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Server\nua\seg0\c211.dat
+        fullPath: C:\Users\phil\workspace-InLt\Networked App\Server\nua\seg0\c211.dat
+        projectPath: Server\nua\seg0\c211.dat
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Server\nua\seg0\c221.dat
+        fullPath: C:\Users\phil\workspace-InLt\Networked App\Server\nua\seg0\c221.dat
+        projectPath: Server\nua\seg0\c221.dat
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Server\nua\seg0\c230.dat
+        fullPath: C:\Users\phil\workspace-InLt\Networked App\Server\nua\seg0\c230.dat
+        projectPath: Server\nua\seg0\c230.dat
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Server\nua\seg0\c241.dat
+        fullPath: C:\Users\phil\workspace-InLt\Networked App\Server\nua\seg0\c241.dat
+        projectPath: Server\nua\seg0\c241.dat
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Server\nua\seg0\c251.dat
+        fullPath: C:\Users\phil\workspace-InLt\Networked App\Server\nua\seg0\c251.dat
+        projectPath: Server\nua\seg0\c251.dat
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Server\nua\seg0\c260.dat
+        fullPath: C:\Users\phil\workspace-InLt\Networked App\Server\nua\seg0\c260.dat
+        projectPath: Server\nua\seg0\c260.dat
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Server\nua\seg0\c271.dat
+        fullPath: C:\Users\phil\workspace-InLt\Networked App\Server\nua\seg0\c271.dat
+        projectPath: Server\nua\seg0\c271.dat
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Server\nua\seg0\c281.dat
+        fullPath: C:\Users\phil\workspace-InLt\Networked App\Server\nua\seg0\c281.dat
+        projectPath: Server\nua\seg0\c281.dat
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Server\nua\seg0\c290.dat
+        fullPath: C:\Users\phil\workspace-InLt\Networked App\Server\nua\seg0\c290.dat
+        projectPath: Server\nua\seg0\c290.dat
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Server\nua\seg0\c2a1.dat
+        fullPath: C:\Users\phil\workspace-InLt\Networked App\Server\nua\seg0\c2a1.dat
+        projectPath: Server\nua\seg0\c2a1.dat
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Server\nua\seg0\c2b1.dat
+        fullPath: C:\Users\phil\workspace-InLt\Networked App\Server\nua\seg0\c2b1.dat
+        projectPath: Server\nua\seg0\c2b1.dat
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Server\nua\seg0\c2c1.dat
+        fullPath: C:\Users\phil\workspace-InLt\Networked App\Server\nua\seg0\c2c1.dat
+        projectPath: Server\nua\seg0\c2c1.dat
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Server\nua\seg0\c2d0.dat
+        fullPath: C:\Users\phil\workspace-InLt\Networked App\Server\nua\seg0\c2d0.dat
+        projectPath: Server\nua\seg0\c2d0.dat
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Server\nua\seg0\c2e1.dat
+        fullPath: C:\Users\phil\workspace-InLt\Networked App\Server\nua\seg0\c2e1.dat
+        projectPath: Server\nua\seg0\c2e1.dat
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Server\nua\seg0\c2f0.dat
+        fullPath: C:\Users\phil\workspace-InLt\Networked App\Server\nua\seg0\c2f0.dat
+        projectPath: Server\nua\seg0\c2f0.dat
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Server\nua\seg0\c300.dat
+        fullPath: C:\Users\phil\workspace-InLt\Networked App\Server\nua\seg0\c300.dat
+        projectPath: Server\nua\seg0\c300.dat
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Server\nua\seg0\c31.dat
+        fullPath: C:\Users\phil\workspace-InLt\Networked App\Server\nua\seg0\c31.dat
+        projectPath: Server\nua\seg0\c31.dat
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Server\nua\seg0\c311.dat
+        fullPath: C:\Users\phil\workspace-InLt\Networked App\Server\nua\seg0\c311.dat
+        projectPath: Server\nua\seg0\c311.dat
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Server\nua\seg0\c321.dat
+        fullPath: C:\Users\phil\workspace-InLt\Networked App\Server\nua\seg0\c321.dat
+        projectPath: Server\nua\seg0\c321.dat
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Server\nua\seg0\c331.dat
+        fullPath: C:\Users\phil\workspace-InLt\Networked App\Server\nua\seg0\c331.dat
+        projectPath: Server\nua\seg0\c331.dat
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Server\nua\seg0\c340.dat
+        fullPath: C:\Users\phil\workspace-InLt\Networked App\Server\nua\seg0\c340.dat
+        projectPath: Server\nua\seg0\c340.dat
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Server\nua\seg0\c351.dat
+        fullPath: C:\Users\phil\workspace-InLt\Networked App\Server\nua\seg0\c351.dat
+        projectPath: Server\nua\seg0\c351.dat
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Server\nua\seg0\c361.dat
+        fullPath: C:\Users\phil\workspace-InLt\Networked App\Server\nua\seg0\c361.dat
+        projectPath: Server\nua\seg0\c361.dat
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Server\nua\seg0\c371.dat
+        fullPath: C:\Users\phil\workspace-InLt\Networked App\Server\nua\seg0\c371.dat
+        projectPath: Server\nua\seg0\c371.dat
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Server\nua\seg0\c380.dat
+        fullPath: C:\Users\phil\workspace-InLt\Networked App\Server\nua\seg0\c380.dat
+        projectPath: Server\nua\seg0\c380.dat
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Server\nua\seg0\c391.dat
+        fullPath: C:\Users\phil\workspace-InLt\Networked App\Server\nua\seg0\c391.dat
+        projectPath: Server\nua\seg0\c391.dat
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Server\nua\seg0\c3a1.dat
+        fullPath: C:\Users\phil\workspace-InLt\Networked App\Server\nua\seg0\c3a1.dat
+        projectPath: Server\nua\seg0\c3a1.dat
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Server\nua\seg0\c3b1.dat
+        fullPath: C:\Users\phil\workspace-InLt\Networked App\Server\nua\seg0\c3b1.dat
+        projectPath: Server\nua\seg0\c3b1.dat
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Server\nua\seg0\c3c0.dat
+        fullPath: C:\Users\phil\workspace-InLt\Networked App\Server\nua\seg0\c3c0.dat
+        projectPath: Server\nua\seg0\c3c0.dat
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Server\nua\seg0\c3d1.dat
+        fullPath: C:\Users\phil\workspace-InLt\Networked App\Server\nua\seg0\c3d1.dat
+        projectPath: Server\nua\seg0\c3d1.dat
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Server\nua\seg0\c3e1.dat
+        fullPath: C:\Users\phil\workspace-InLt\Networked App\Server\nua\seg0\c3e1.dat
+        projectPath: Server\nua\seg0\c3e1.dat
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Server\nua\seg0\c3f1.dat
+        fullPath: C:\Users\phil\workspace-InLt\Networked App\Server\nua\seg0\c3f1.dat
+        projectPath: Server\nua\seg0\c3f1.dat
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Server\nua\seg0\c400.dat
+        fullPath: C:\Users\phil\workspace-InLt\Networked App\Server\nua\seg0\c400.dat
+        projectPath: Server\nua\seg0\c400.dat
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Server\nua\seg0\c41.dat
+        fullPath: C:\Users\phil\workspace-InLt\Networked App\Server\nua\seg0\c41.dat
+        projectPath: Server\nua\seg0\c41.dat
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Server\nua\seg0\c411.dat
+        fullPath: C:\Users\phil\workspace-InLt\Networked App\Server\nua\seg0\c411.dat
+        projectPath: Server\nua\seg0\c411.dat
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Server\nua\seg0\c421.dat
+        fullPath: C:\Users\phil\workspace-InLt\Networked App\Server\nua\seg0\c421.dat
+        projectPath: Server\nua\seg0\c421.dat
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Server\nua\seg0\c430.dat
+        fullPath: C:\Users\phil\workspace-InLt\Networked App\Server\nua\seg0\c430.dat
+        projectPath: Server\nua\seg0\c430.dat
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Server\nua\seg0\c441.dat
+        fullPath: C:\Users\phil\workspace-InLt\Networked App\Server\nua\seg0\c441.dat
+        projectPath: Server\nua\seg0\c441.dat
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Server\nua\seg0\c451.dat
+        fullPath: C:\Users\phil\workspace-InLt\Networked App\Server\nua\seg0\c451.dat
+        projectPath: Server\nua\seg0\c451.dat
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Server\nua\seg0\c461.dat
+        fullPath: C:\Users\phil\workspace-InLt\Networked App\Server\nua\seg0\c461.dat
+        projectPath: Server\nua\seg0\c461.dat
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Server\nua\seg0\c470.dat
+        fullPath: C:\Users\phil\workspace-InLt\Networked App\Server\nua\seg0\c470.dat
+        projectPath: Server\nua\seg0\c470.dat
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Server\nua\seg0\c481.dat
+        fullPath: C:\Users\phil\workspace-InLt\Networked App\Server\nua\seg0\c481.dat
+        projectPath: Server\nua\seg0\c481.dat
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Server\nua\seg0\c490.dat
+        fullPath: C:\Users\phil\workspace-InLt\Networked App\Server\nua\seg0\c490.dat
+        projectPath: Server\nua\seg0\c490.dat
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Server\nua\seg0\c4a1.dat
+        fullPath: C:\Users\phil\workspace-InLt\Networked App\Server\nua\seg0\c4a1.dat
+        projectPath: Server\nua\seg0\c4a1.dat
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Server\nua\seg0\c51.dat
+        fullPath: C:\Users\phil\workspace-InLt\Networked App\Server\nua\seg0\c51.dat
+        projectPath: Server\nua\seg0\c51.dat
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Server\nua\seg0\c60.dat
+        fullPath: C:\Users\phil\workspace-InLt\Networked App\Server\nua\seg0\c60.dat
+        projectPath: Server\nua\seg0\c60.dat
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Server\nua\seg0\c71.dat
+        fullPath: C:\Users\phil\workspace-InLt\Networked App\Server\nua\seg0\c71.dat
+        projectPath: Server\nua\seg0\c71.dat
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Server\nua\seg0\c81.dat
+        fullPath: C:\Users\phil\workspace-InLt\Networked App\Server\nua\seg0\c81.dat
+        projectPath: Server\nua\seg0\c81.dat
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Server\nua\seg0\c90.dat
+        fullPath: C:\Users\phil\workspace-InLt\Networked App\Server\nua\seg0\c90.dat
+        projectPath: Server\nua\seg0\c90.dat
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Server\nua\seg0\ca1.dat
+        fullPath: C:\Users\phil\workspace-InLt\Networked App\Server\nua\seg0\ca1.dat
+        projectPath: Server\nua\seg0\ca1.dat
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Server\nua\seg0\cb1.dat
+        fullPath: C:\Users\phil\workspace-InLt\Networked App\Server\nua\seg0\cb1.dat
+        projectPath: Server\nua\seg0\cb1.dat
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Server\nua\seg0\cc0.dat
+        fullPath: C:\Users\phil\workspace-InLt\Networked App\Server\nua\seg0\cc0.dat
+        projectPath: Server\nua\seg0\cc0.dat
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Server\nua\seg0\cd1.dat
+        fullPath: C:\Users\phil\workspace-InLt\Networked App\Server\nua\seg0\cd1.dat
+        projectPath: Server\nua\seg0\cd1.dat
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Server\nua\seg0\ce1.dat
+        fullPath: C:\Users\phil\workspace-InLt\Networked App\Server\nua\seg0\ce1.dat
+        projectPath: Server\nua\seg0\ce1.dat
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Server\nua\seg0\cf0.dat
+        fullPath: C:\Users\phil\workspace-InLt\Networked App\Server\nua\seg0\cf0.dat
+        projectPath: Server\nua\seg0\cf0.dat
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Server\nua\service.properties
+        fullPath: C:\Users\phil\workspace-InLt\Networked App\Server\nua\service.properties
+        projectPath: Server\nua\service.properties
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Server\pom.xml
+        fullPath: C:\Users\phil\workspace-InLt\Networked App\Server\pom.xml
+        projectPath: Server\pom.xml
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Server\src\main\java\com\inlt\nua\EmbeddedDatabase.java
+        fullPath: C:\Users\phil\workspace-InLt\Networked App\Server\src\main\java\com\inlt\nua\EmbeddedDatabase.java
+        projectPath: Server\src\main\java\com\inlt\nua\EmbeddedDatabase.java
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Server\src\main\java\com\inlt\nua\LoginServlet.java
+        fullPath: C:\Users\phil\workspace-InLt\Networked App\Server\src\main\java\com\inlt\nua\LoginServlet.java
+        projectPath: Server\src\main\java\com\inlt\nua\LoginServlet.java
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Server\src\main\java\com\inlt\nua\NetworkedUnityAppServer.java
+        fullPath: C:\Users\phil\workspace-InLt\Networked App\Server\src\main\java\com\inlt\nua\NetworkedUnityAppServer.java
+        projectPath: Server\src\main\java\com\inlt\nua\NetworkedUnityAppServer.java
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Server\src\main\java\com\inlt\nua\data\HibernateUtils.java
+        fullPath: C:\Users\phil\workspace-InLt\Networked App\Server\src\main\java\com\inlt\nua\data\HibernateUtils.java
+        projectPath: Server\src\main\java\com\inlt\nua\data\HibernateUtils.java
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Server\src\main\java\com\inlt\nua\data\User.java
+        fullPath: C:\Users\phil\workspace-InLt\Networked App\Server\src\main\java\com\inlt\nua\data\User.java
+        projectPath: Server\src\main\java\com\inlt\nua\data\User.java
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Server\src\main\java\com\inlt\nua\data\UserSession.java
+        fullPath: C:\Users\phil\workspace-InLt\Networked App\Server\src\main\java\com\inlt\nua\data\UserSession.java
+        projectPath: Server\src\main\java\com\inlt\nua\data\UserSession.java
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Server\src\main\resources\hibernate.cfg.xml
+        fullPath: C:\Users\phil\workspace-InLt\Networked App\Server\src\main\resources\hibernate.cfg.xml
+        projectPath: Server\src\main\resources\hibernate.cfg.xml
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+    - commitID: 7aa19e2adcc67d29b18a4f8a29238d739431785e
+      mergeA: 
+      mergeB: 
+      authorName: Phil Grim
+      authorEmail: phil@insufficient-light.com
+      commitEmail: phil@insufficient-light.com
+      commitName: Phil Grim
+      summary: Initial commit
+      description: 
+      timeString: 2020-03-09T15:18:20.000-04:00
+      commitTimeString: 2020-03-09T15:18:20.000-04:00
+      changes:
+      - path: .gitattributes
+        fullPath: C:\Users\phil\workspace-InLt\Networked App\.gitattributes
+        projectPath: .gitattributes
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: .gitignore
+        fullPath: C:\Users\phil\workspace-InLt\Networked App\.gitignore
+        projectPath: .gitignore
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Assets\.gitignore
+        fullPath: C:\Users\phil\workspace-InLt\Networked App\Assets\.gitignore
+        projectPath: Assets\.gitignore
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+    statusAhead: 0
+    lastLogChangedEvent:
+      updatedTimeString: 2020-03-09T15:32:06.683-04:00
+      cacheType: 3
+    lastTrackingStatusChangedEvent:
+      updatedTimeString: 2020-03-09T15:31:47.121-04:00
+      cacheType: 5
+    historyControl:
+      scroll: {x: 0, y: 0}
+      entries:
+      - commitID: d196e82918436fb2963999de6a211b14762595e9
+        mergeA: 
+        mergeB: 
+        authorName: Phil Grim
+        authorEmail: phil@insufficient-light.com
+        commitEmail: phil@insufficient-light.com
+        commitName: Phil Grim
+        summary: Committing the project from Unity Github plugin to make sure it works.
+        description: 
+        timeString: 2020-03-09T15:24:20.000-04:00
+        commitTimeString: 2020-03-09T15:24:20.000-04:00
+        changes:
+        - path: Assets\Plugins.meta
+          fullPath: C:\Users\phil\workspace-InLt\Networked App\Assets\Plugins.meta
+          projectPath: Assets\Plugins.meta
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: Assets\Plugins\GitHub.meta
+          fullPath: C:\Users\phil\workspace-InLt\Networked App\Assets\Plugins\GitHub.meta
+          projectPath: Assets\Plugins\GitHub.meta
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: Assets\Plugins\GitHub\Editor.meta
+          fullPath: C:\Users\phil\workspace-InLt\Networked App\Assets\Plugins\GitHub\Editor.meta
+          projectPath: Assets\Plugins\GitHub\Editor.meta
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: Assets\Plugins\GitHub\Editor\AsyncBridge.Net35.dll
+          fullPath: C:\Users\phil\workspace-InLt\Networked App\Assets\Plugins\GitHub\Editor\AsyncBridge.Net35.dll
+          projectPath: Assets\Plugins\GitHub\Editor\AsyncBridge.Net35.dll
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: Assets\Plugins\GitHub\Editor\AsyncBridge.Net35.dll.meta
+          fullPath: C:\Users\phil\workspace-InLt\Networked App\Assets\Plugins\GitHub\Editor\AsyncBridge.Net35.dll.meta
+          projectPath: Assets\Plugins\GitHub\Editor\AsyncBridge.Net35.dll.meta
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: Assets\Plugins\GitHub\Editor\ExtensionLoader.cs
+          fullPath: C:\Users\phil\workspace-InLt\Networked App\Assets\Plugins\GitHub\Editor\ExtensionLoader.cs
+          projectPath: Assets\Plugins\GitHub\Editor\ExtensionLoader.cs
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: Assets\Plugins\GitHub\Editor\ExtensionLoader.cs.meta
+          fullPath: C:\Users\phil\workspace-InLt\Networked App\Assets\Plugins\GitHub\Editor\ExtensionLoader.cs.meta
+          projectPath: Assets\Plugins\GitHub\Editor\ExtensionLoader.cs.meta
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: Assets\Plugins\GitHub\Editor\GitHub.Api.45.dll
+          fullPath: C:\Users\phil\workspace-InLt\Networked App\Assets\Plugins\GitHub\Editor\GitHub.Api.45.dll
+          projectPath: Assets\Plugins\GitHub\Editor\GitHub.Api.45.dll
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: Assets\Plugins\GitHub\Editor\GitHub.Api.45.dll.meta
+          fullPath: C:\Users\phil\workspace-InLt\Networked App\Assets\Plugins\GitHub\Editor\GitHub.Api.45.dll.meta
+          projectPath: Assets\Plugins\GitHub\Editor\GitHub.Api.45.dll.meta
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: Assets\Plugins\GitHub\Editor\GitHub.Api.dll
+          fullPath: C:\Users\phil\workspace-InLt\Networked App\Assets\Plugins\GitHub\Editor\GitHub.Api.dll
+          projectPath: Assets\Plugins\GitHub\Editor\GitHub.Api.dll
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: Assets\Plugins\GitHub\Editor\GitHub.Api.dll.meta
+          fullPath: C:\Users\phil\workspace-InLt\Networked App\Assets\Plugins\GitHub\Editor\GitHub.Api.dll.meta
+          projectPath: Assets\Plugins\GitHub\Editor\GitHub.Api.dll.meta
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: Assets\Plugins\GitHub\Editor\GitHub.Logging.dll
+          fullPath: C:\Users\phil\workspace-InLt\Networked App\Assets\Plugins\GitHub\Editor\GitHub.Logging.dll
+          projectPath: Assets\Plugins\GitHub\Editor\GitHub.Logging.dll
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: Assets\Plugins\GitHub\Editor\GitHub.Logging.dll.meta
+          fullPath: C:\Users\phil\workspace-InLt\Networked App\Assets\Plugins\GitHub\Editor\GitHub.Logging.dll.meta
+          projectPath: Assets\Plugins\GitHub\Editor\GitHub.Logging.dll.meta
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: Assets\Plugins\GitHub\Editor\GitHub.Unity.45.dll
+          fullPath: C:\Users\phil\workspace-InLt\Networked App\Assets\Plugins\GitHub\Editor\GitHub.Unity.45.dll
+          projectPath: Assets\Plugins\GitHub\Editor\GitHub.Unity.45.dll
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: Assets\Plugins\GitHub\Editor\GitHub.Unity.45.dll.meta
+          fullPath: C:\Users\phil\workspace-InLt\Networked App\Assets\Plugins\GitHub\Editor\GitHub.Unity.45.dll.meta
+          projectPath: Assets\Plugins\GitHub\Editor\GitHub.Unity.45.dll.meta
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: Assets\Plugins\GitHub\Editor\GitHub.Unity.dll
+          fullPath: C:\Users\phil\workspace-InLt\Networked App\Assets\Plugins\GitHub\Editor\GitHub.Unity.dll
+          projectPath: Assets\Plugins\GitHub\Editor\GitHub.Unity.dll
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: Assets\Plugins\GitHub\Editor\GitHub.Unity.dll.meta
+          fullPath: C:\Users\phil\workspace-InLt\Networked App\Assets\Plugins\GitHub\Editor\GitHub.Unity.dll.meta
+          projectPath: Assets\Plugins\GitHub\Editor\GitHub.Unity.dll.meta
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: Assets\Plugins\GitHub\Editor\GitHub.UnityShim.dll
+          fullPath: C:\Users\phil\workspace-InLt\Networked App\Assets\Plugins\GitHub\Editor\GitHub.UnityShim.dll
+          projectPath: Assets\Plugins\GitHub\Editor\GitHub.UnityShim.dll
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: Assets\Plugins\GitHub\Editor\GitHub.UnityShim.dll.meta
+          fullPath: C:\Users\phil\workspace-InLt\Networked App\Assets\Plugins\GitHub\Editor\GitHub.UnityShim.dll.meta
+          projectPath: Assets\Plugins\GitHub\Editor\GitHub.UnityShim.dll.meta
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: Assets\Plugins\GitHub\Editor\Mono.Posix.dll
+          fullPath: C:\Users\phil\workspace-InLt\Networked App\Assets\Plugins\GitHub\Editor\Mono.Posix.dll
+          projectPath: Assets\Plugins\GitHub\Editor\Mono.Posix.dll
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: Assets\Plugins\GitHub\Editor\Mono.Posix.dll.meta
+          fullPath: C:\Users\phil\workspace-InLt\Networked App\Assets\Plugins\GitHub\Editor\Mono.Posix.dll.meta
+          projectPath: Assets\Plugins\GitHub\Editor\Mono.Posix.dll.meta
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: Assets\Plugins\GitHub\Editor\QuickGuide.pdf
+          fullPath: C:\Users\phil\workspace-InLt\Networked App\Assets\Plugins\GitHub\Editor\QuickGuide.pdf
+          projectPath: Assets\Plugins\GitHub\Editor\QuickGuide.pdf
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: Assets\Plugins\GitHub\Editor\QuickGuide.pdf.meta
+          fullPath: C:\Users\phil\workspace-InLt\Networked App\Assets\Plugins\GitHub\Editor\QuickGuide.pdf.meta
+          projectPath: Assets\Plugins\GitHub\Editor\QuickGuide.pdf.meta
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: Assets\Plugins\GitHub\Editor\ReadOnlyCollectionsInterfaces.dll
+          fullPath: C:\Users\phil\workspace-InLt\Networked App\Assets\Plugins\GitHub\Editor\ReadOnlyCollectionsInterfaces.dll
+          projectPath: Assets\Plugins\GitHub\Editor\ReadOnlyCollectionsInterfaces.dll
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: Assets\Plugins\GitHub\Editor\ReadOnlyCollectionsInterfaces.dll.meta
+          fullPath: C:\Users\phil\workspace-InLt\Networked App\Assets\Plugins\GitHub\Editor\ReadOnlyCollectionsInterfaces.dll.meta
+          projectPath: Assets\Plugins\GitHub\Editor\ReadOnlyCollectionsInterfaces.dll.meta
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: Assets\Plugins\GitHub\Editor\System.Threading.dll
+          fullPath: C:\Users\phil\workspace-InLt\Networked App\Assets\Plugins\GitHub\Editor\System.Threading.dll
+          projectPath: Assets\Plugins\GitHub\Editor\System.Threading.dll
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: Assets\Plugins\GitHub\Editor\System.Threading.dll.meta
+          fullPath: C:\Users\phil\workspace-InLt\Networked App\Assets\Plugins\GitHub\Editor\System.Threading.dll.meta
+          projectPath: Assets\Plugins\GitHub\Editor\System.Threading.dll.meta
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: Assets\Plugins\GitHub\Editor\UnityAPIWrapper.cs
+          fullPath: C:\Users\phil\workspace-InLt\Networked App\Assets\Plugins\GitHub\Editor\UnityAPIWrapper.cs
+          projectPath: Assets\Plugins\GitHub\Editor\UnityAPIWrapper.cs
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: Assets\Plugins\GitHub\Editor\UnityAPIWrapper.cs.meta
+          fullPath: C:\Users\phil\workspace-InLt\Networked App\Assets\Plugins\GitHub\Editor\UnityAPIWrapper.cs.meta
+          projectPath: Assets\Plugins\GitHub\Editor\UnityAPIWrapper.cs.meta
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: Assets\Plugins\GitHub\Editor\big-logo@2x.png
+          fullPath: C:\Users\phil\workspace-InLt\Networked App\Assets\Plugins\GitHub\Editor\big-logo@2x.png
+          projectPath: Assets\Plugins\GitHub\Editor\big-logo@2x.png
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: Assets\Plugins\GitHub\Editor\big-logo@2x.png.meta
+          fullPath: C:\Users\phil\workspace-InLt\Networked App\Assets\Plugins\GitHub\Editor\big-logo@2x.png.meta
+          projectPath: Assets\Plugins\GitHub\Editor\big-logo@2x.png.meta
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: Assets\Plugins\GitHub\Editor\credits.txt
+          fullPath: C:\Users\phil\workspace-InLt\Networked App\Assets\Plugins\GitHub\Editor\credits.txt
+          projectPath: Assets\Plugins\GitHub\Editor\credits.txt
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: Assets\Plugins\GitHub\Editor\credits.txt.meta
+          fullPath: C:\Users\phil\workspace-InLt\Networked App\Assets\Plugins\GitHub\Editor\credits.txt.meta
+          projectPath: Assets\Plugins\GitHub\Editor\credits.txt.meta
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: Assets\Plugins\GitHub\Editor\eula.txt
+          fullPath: C:\Users\phil\workspace-InLt\Networked App\Assets\Plugins\GitHub\Editor\eula.txt
+          projectPath: Assets\Plugins\GitHub\Editor\eula.txt
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: Assets\Plugins\GitHub\Editor\eula.txt.meta
+          fullPath: C:\Users\phil\workspace-InLt\Networked App\Assets\Plugins\GitHub\Editor\eula.txt.meta
+          projectPath: Assets\Plugins\GitHub\Editor\eula.txt.meta
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: Assets\Plugins\GitHub\Editor\libsfw.bundle
+          fullPath: C:\Users\phil\workspace-InLt\Networked App\Assets\Plugins\GitHub\Editor\libsfw.bundle
+          projectPath: Assets\Plugins\GitHub\Editor\libsfw.bundle
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: Assets\Plugins\GitHub\Editor\libsfw.bundle.meta
+          fullPath: C:\Users\phil\workspace-InLt\Networked App\Assets\Plugins\GitHub\Editor\libsfw.bundle.meta
+          projectPath: Assets\Plugins\GitHub\Editor\libsfw.bundle.meta
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: Assets\Plugins\GitHub\Editor\libsfw.so
+          fullPath: C:\Users\phil\workspace-InLt\Networked App\Assets\Plugins\GitHub\Editor\libsfw.so
+          projectPath: Assets\Plugins\GitHub\Editor\libsfw.so
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: Assets\Plugins\GitHub\Editor\libsfw.so.meta
+          fullPath: C:\Users\phil\workspace-InLt\Networked App\Assets\Plugins\GitHub\Editor\libsfw.so.meta
+          projectPath: Assets\Plugins\GitHub\Editor\libsfw.so.meta
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: Assets\Plugins\GitHub\Editor\sfw.net.dll
+          fullPath: C:\Users\phil\workspace-InLt\Networked App\Assets\Plugins\GitHub\Editor\sfw.net.dll
+          projectPath: Assets\Plugins\GitHub\Editor\sfw.net.dll
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: Assets\Plugins\GitHub\Editor\sfw.net.dll.meta
+          fullPath: C:\Users\phil\workspace-InLt\Networked App\Assets\Plugins\GitHub\Editor\sfw.net.dll.meta
+          projectPath: Assets\Plugins\GitHub\Editor\sfw.net.dll.meta
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: Assets\Plugins\GitHub\Editor\x64.meta
+          fullPath: C:\Users\phil\workspace-InLt\Networked App\Assets\Plugins\GitHub\Editor\x64.meta
+          projectPath: Assets\Plugins\GitHub\Editor\x64.meta
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: Assets\Plugins\GitHub\Editor\x64\pthreadVC2.dll
+          fullPath: C:\Users\phil\workspace-InLt\Networked App\Assets\Plugins\GitHub\Editor\x64\pthreadVC2.dll
+          projectPath: Assets\Plugins\GitHub\Editor\x64\pthreadVC2.dll
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: Assets\Plugins\GitHub\Editor\x64\pthreadVC2.dll.meta
+          fullPath: C:\Users\phil\workspace-InLt\Networked App\Assets\Plugins\GitHub\Editor\x64\pthreadVC2.dll.meta
+          projectPath: Assets\Plugins\GitHub\Editor\x64\pthreadVC2.dll.meta
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: Assets\Plugins\GitHub\Editor\x64\sfw_x64.dll
+          fullPath: C:\Users\phil\workspace-InLt\Networked App\Assets\Plugins\GitHub\Editor\x64\sfw_x64.dll
+          projectPath: Assets\Plugins\GitHub\Editor\x64\sfw_x64.dll
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: Assets\Plugins\GitHub\Editor\x64\sfw_x64.dll.meta
+          fullPath: C:\Users\phil\workspace-InLt\Networked App\Assets\Plugins\GitHub\Editor\x64\sfw_x64.dll.meta
+          projectPath: Assets\Plugins\GitHub\Editor\x64\sfw_x64.dll.meta
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: Assets\Plugins\GitHub\Editor\x86.meta
+          fullPath: C:\Users\phil\workspace-InLt\Networked App\Assets\Plugins\GitHub\Editor\x86.meta
+          projectPath: Assets\Plugins\GitHub\Editor\x86.meta
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: Assets\Plugins\GitHub\Editor\x86\pthreadVC2.dll
+          fullPath: C:\Users\phil\workspace-InLt\Networked App\Assets\Plugins\GitHub\Editor\x86\pthreadVC2.dll
+          projectPath: Assets\Plugins\GitHub\Editor\x86\pthreadVC2.dll
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: Assets\Plugins\GitHub\Editor\x86\pthreadVC2.dll.meta
+          fullPath: C:\Users\phil\workspace-InLt\Networked App\Assets\Plugins\GitHub\Editor\x86\pthreadVC2.dll.meta
+          projectPath: Assets\Plugins\GitHub\Editor\x86\pthreadVC2.dll.meta
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: Assets\Plugins\GitHub\Editor\x86\sfw_x86.dll
+          fullPath: C:\Users\phil\workspace-InLt\Networked App\Assets\Plugins\GitHub\Editor\x86\sfw_x86.dll
+          projectPath: Assets\Plugins\GitHub\Editor\x86\sfw_x86.dll
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: Assets\Plugins\GitHub\Editor\x86\sfw_x86.dll.meta
+          fullPath: C:\Users\phil\workspace-InLt\Networked App\Assets\Plugins\GitHub\Editor\x86\sfw_x86.dll.meta
+          projectPath: Assets\Plugins\GitHub\Editor\x86\sfw_x86.dll.meta
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: Assets\Scenes.meta
+          fullPath: C:\Users\phil\workspace-InLt\Networked App\Assets\Scenes.meta
+          projectPath: Assets\Scenes.meta
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: Assets\Scenes\SampleScene.unity
+          fullPath: C:\Users\phil\workspace-InLt\Networked App\Assets\Scenes\SampleScene.unity
+          projectPath: Assets\Scenes\SampleScene.unity
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: Assets\Scenes\SampleScene.unity.meta
+          fullPath: C:\Users\phil\workspace-InLt\Networked App\Assets\Scenes\SampleScene.unity.meta
+          projectPath: Assets\Scenes\SampleScene.unity.meta
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: Packages\manifest.json
+          fullPath: C:\Users\phil\workspace-InLt\Networked App\Packages\manifest.json
+          projectPath: Packages\manifest.json
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: ProjectSettings\AudioManager.asset
+          fullPath: C:\Users\phil\workspace-InLt\Networked App\ProjectSettings\AudioManager.asset
+          projectPath: ProjectSettings\AudioManager.asset
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: ProjectSettings\ClusterInputManager.asset
+          fullPath: C:\Users\phil\workspace-InLt\Networked App\ProjectSettings\ClusterInputManager.asset
+          projectPath: ProjectSettings\ClusterInputManager.asset
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: ProjectSettings\DynamicsManager.asset
+          fullPath: C:\Users\phil\workspace-InLt\Networked App\ProjectSettings\DynamicsManager.asset
+          projectPath: ProjectSettings\DynamicsManager.asset
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: ProjectSettings\EditorBuildSettings.asset
+          fullPath: C:\Users\phil\workspace-InLt\Networked App\ProjectSettings\EditorBuildSettings.asset
+          projectPath: ProjectSettings\EditorBuildSettings.asset
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: ProjectSettings\EditorSettings.asset
+          fullPath: C:\Users\phil\workspace-InLt\Networked App\ProjectSettings\EditorSettings.asset
+          projectPath: ProjectSettings\EditorSettings.asset
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: ProjectSettings\GraphicsSettings.asset
+          fullPath: C:\Users\phil\workspace-InLt\Networked App\ProjectSettings\GraphicsSettings.asset
+          projectPath: ProjectSettings\GraphicsSettings.asset
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: ProjectSettings\InputManager.asset
+          fullPath: C:\Users\phil\workspace-InLt\Networked App\ProjectSettings\InputManager.asset
+          projectPath: ProjectSettings\InputManager.asset
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: ProjectSettings\NavMeshAreas.asset
+          fullPath: C:\Users\phil\workspace-InLt\Networked App\ProjectSettings\NavMeshAreas.asset
+          projectPath: ProjectSettings\NavMeshAreas.asset
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: ProjectSettings\NetworkManager.asset
+          fullPath: C:\Users\phil\workspace-InLt\Networked App\ProjectSettings\NetworkManager.asset
+          projectPath: ProjectSettings\NetworkManager.asset
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: ProjectSettings\Physics2DSettings.asset
+          fullPath: C:\Users\phil\workspace-InLt\Networked App\ProjectSettings\Physics2DSettings.asset
+          projectPath: ProjectSettings\Physics2DSettings.asset
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: ProjectSettings\PresetManager.asset
+          fullPath: C:\Users\phil\workspace-InLt\Networked App\ProjectSettings\PresetManager.asset
+          projectPath: ProjectSettings\PresetManager.asset
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: ProjectSettings\ProjectSettings.asset
+          fullPath: C:\Users\phil\workspace-InLt\Networked App\ProjectSettings\ProjectSettings.asset
+          projectPath: ProjectSettings\ProjectSettings.asset
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: ProjectSettings\ProjectVersion.txt
+          fullPath: C:\Users\phil\workspace-InLt\Networked App\ProjectSettings\ProjectVersion.txt
+          projectPath: ProjectSettings\ProjectVersion.txt
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: ProjectSettings\QualitySettings.asset
+          fullPath: C:\Users\phil\workspace-InLt\Networked App\ProjectSettings\QualitySettings.asset
+          projectPath: ProjectSettings\QualitySettings.asset
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: ProjectSettings\TagManager.asset
+          fullPath: C:\Users\phil\workspace-InLt\Networked App\ProjectSettings\TagManager.asset
+          projectPath: ProjectSettings\TagManager.asset
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: ProjectSettings\TimeManager.asset
+          fullPath: C:\Users\phil\workspace-InLt\Networked App\ProjectSettings\TimeManager.asset
+          projectPath: ProjectSettings\TimeManager.asset
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: ProjectSettings\UnityConnectSettings.asset
+          fullPath: C:\Users\phil\workspace-InLt\Networked App\ProjectSettings\UnityConnectSettings.asset
+          projectPath: ProjectSettings\UnityConnectSettings.asset
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: ProjectSettings\VFXManager.asset
+          fullPath: C:\Users\phil\workspace-InLt\Networked App\ProjectSettings\VFXManager.asset
+          projectPath: ProjectSettings\VFXManager.asset
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: ProjectSettings\XRSettings.asset
+          fullPath: C:\Users\phil\workspace-InLt\Networked App\ProjectSettings\XRSettings.asset
+          projectPath: ProjectSettings\XRSettings.asset
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: Server\.gitignore
+          fullPath: C:\Users\phil\workspace-InLt\Networked App\Server\.gitignore
+          projectPath: Server\.gitignore
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: Server\README.md
+          fullPath: C:\Users\phil\workspace-InLt\Networked App\Server\README.md
+          projectPath: Server\README.md
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: Server\derby.log
+          fullPath: C:\Users\phil\workspace-InLt\Networked App\Server\derby.log
+          projectPath: Server\derby.log
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: Server\nua\db.lck
+          fullPath: C:\Users\phil\workspace-InLt\Networked App\Server\nua\db.lck
+          projectPath: Server\nua\db.lck
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: Server\nua\log\log.ctrl
+          fullPath: C:\Users\phil\workspace-InLt\Networked App\Server\nua\log\log.ctrl
+          projectPath: Server\nua\log\log.ctrl
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: Server\nua\log\log1.dat
+          fullPath: C:\Users\phil\workspace-InLt\Networked App\Server\nua\log\log1.dat
+          projectPath: Server\nua\log\log1.dat
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: Server\nua\log\logmirror.ctrl
+          fullPath: C:\Users\phil\workspace-InLt\Networked App\Server\nua\log\logmirror.ctrl
+          projectPath: Server\nua\log\logmirror.ctrl
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: Server\nua\seg0\c10.dat
+          fullPath: C:\Users\phil\workspace-InLt\Networked App\Server\nua\seg0\c10.dat
+          projectPath: Server\nua\seg0\c10.dat
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: Server\nua\seg0\c101.dat
+          fullPath: C:\Users\phil\workspace-InLt\Networked App\Server\nua\seg0\c101.dat
+          projectPath: Server\nua\seg0\c101.dat
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: Server\nua\seg0\c111.dat
+          fullPath: C:\Users\phil\workspace-InLt\Networked App\Server\nua\seg0\c111.dat
+          projectPath: Server\nua\seg0\c111.dat
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: Server\nua\seg0\c121.dat
+          fullPath: C:\Users\phil\workspace-InLt\Networked App\Server\nua\seg0\c121.dat
+          projectPath: Server\nua\seg0\c121.dat
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: Server\nua\seg0\c130.dat
+          fullPath: C:\Users\phil\workspace-InLt\Networked App\Server\nua\seg0\c130.dat
+          projectPath: Server\nua\seg0\c130.dat
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: Server\nua\seg0\c141.dat
+          fullPath: C:\Users\phil\workspace-InLt\Networked App\Server\nua\seg0\c141.dat
+          projectPath: Server\nua\seg0\c141.dat
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: Server\nua\seg0\c150.dat
+          fullPath: C:\Users\phil\workspace-InLt\Networked App\Server\nua\seg0\c150.dat
+          projectPath: Server\nua\seg0\c150.dat
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: Server\nua\seg0\c161.dat
+          fullPath: C:\Users\phil\workspace-InLt\Networked App\Server\nua\seg0\c161.dat
+          projectPath: Server\nua\seg0\c161.dat
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: Server\nua\seg0\c171.dat
+          fullPath: C:\Users\phil\workspace-InLt\Networked App\Server\nua\seg0\c171.dat
+          projectPath: Server\nua\seg0\c171.dat
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: Server\nua\seg0\c180.dat
+          fullPath: C:\Users\phil\workspace-InLt\Networked App\Server\nua\seg0\c180.dat
+          projectPath: Server\nua\seg0\c180.dat
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: Server\nua\seg0\c191.dat
+          fullPath: C:\Users\phil\workspace-InLt\Networked App\Server\nua\seg0\c191.dat
+          projectPath: Server\nua\seg0\c191.dat
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: Server\nua\seg0\c1a1.dat
+          fullPath: C:\Users\phil\workspace-InLt\Networked App\Server\nua\seg0\c1a1.dat
+          projectPath: Server\nua\seg0\c1a1.dat
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: Server\nua\seg0\c1b1.dat
+          fullPath: C:\Users\phil\workspace-InLt\Networked App\Server\nua\seg0\c1b1.dat
+          projectPath: Server\nua\seg0\c1b1.dat
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: Server\nua\seg0\c1c0.dat
+          fullPath: C:\Users\phil\workspace-InLt\Networked App\Server\nua\seg0\c1c0.dat
+          projectPath: Server\nua\seg0\c1c0.dat
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: Server\nua\seg0\c1d1.dat
+          fullPath: C:\Users\phil\workspace-InLt\Networked App\Server\nua\seg0\c1d1.dat
+          projectPath: Server\nua\seg0\c1d1.dat
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: Server\nua\seg0\c1e0.dat
+          fullPath: C:\Users\phil\workspace-InLt\Networked App\Server\nua\seg0\c1e0.dat
+          projectPath: Server\nua\seg0\c1e0.dat
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: Server\nua\seg0\c1f1.dat
+          fullPath: C:\Users\phil\workspace-InLt\Networked App\Server\nua\seg0\c1f1.dat
+          projectPath: Server\nua\seg0\c1f1.dat
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: Server\nua\seg0\c20.dat
+          fullPath: C:\Users\phil\workspace-InLt\Networked App\Server\nua\seg0\c20.dat
+          projectPath: Server\nua\seg0\c20.dat
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: Server\nua\seg0\c200.dat
+          fullPath: C:\Users\phil\workspace-InLt\Networked App\Server\nua\seg0\c200.dat
+          projectPath: Server\nua\seg0\c200.dat
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: Server\nua\seg0\c211.dat
+          fullPath: C:\Users\phil\workspace-InLt\Networked App\Server\nua\seg0\c211.dat
+          projectPath: Server\nua\seg0\c211.dat
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: Server\nua\seg0\c221.dat
+          fullPath: C:\Users\phil\workspace-InLt\Networked App\Server\nua\seg0\c221.dat
+          projectPath: Server\nua\seg0\c221.dat
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: Server\nua\seg0\c230.dat
+          fullPath: C:\Users\phil\workspace-InLt\Networked App\Server\nua\seg0\c230.dat
+          projectPath: Server\nua\seg0\c230.dat
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: Server\nua\seg0\c241.dat
+          fullPath: C:\Users\phil\workspace-InLt\Networked App\Server\nua\seg0\c241.dat
+          projectPath: Server\nua\seg0\c241.dat
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: Server\nua\seg0\c251.dat
+          fullPath: C:\Users\phil\workspace-InLt\Networked App\Server\nua\seg0\c251.dat
+          projectPath: Server\nua\seg0\c251.dat
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: Server\nua\seg0\c260.dat
+          fullPath: C:\Users\phil\workspace-InLt\Networked App\Server\nua\seg0\c260.dat
+          projectPath: Server\nua\seg0\c260.dat
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: Server\nua\seg0\c271.dat
+          fullPath: C:\Users\phil\workspace-InLt\Networked App\Server\nua\seg0\c271.dat
+          projectPath: Server\nua\seg0\c271.dat
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: Server\nua\seg0\c281.dat
+          fullPath: C:\Users\phil\workspace-InLt\Networked App\Server\nua\seg0\c281.dat
+          projectPath: Server\nua\seg0\c281.dat
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: Server\nua\seg0\c290.dat
+          fullPath: C:\Users\phil\workspace-InLt\Networked App\Server\nua\seg0\c290.dat
+          projectPath: Server\nua\seg0\c290.dat
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: Server\nua\seg0\c2a1.dat
+          fullPath: C:\Users\phil\workspace-InLt\Networked App\Server\nua\seg0\c2a1.dat
+          projectPath: Server\nua\seg0\c2a1.dat
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: Server\nua\seg0\c2b1.dat
+          fullPath: C:\Users\phil\workspace-InLt\Networked App\Server\nua\seg0\c2b1.dat
+          projectPath: Server\nua\seg0\c2b1.dat
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: Server\nua\seg0\c2c1.dat
+          fullPath: C:\Users\phil\workspace-InLt\Networked App\Server\nua\seg0\c2c1.dat
+          projectPath: Server\nua\seg0\c2c1.dat
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: Server\nua\seg0\c2d0.dat
+          fullPath: C:\Users\phil\workspace-InLt\Networked App\Server\nua\seg0\c2d0.dat
+          projectPath: Server\nua\seg0\c2d0.dat
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: Server\nua\seg0\c2e1.dat
+          fullPath: C:\Users\phil\workspace-InLt\Networked App\Server\nua\seg0\c2e1.dat
+          projectPath: Server\nua\seg0\c2e1.dat
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: Server\nua\seg0\c2f0.dat
+          fullPath: C:\Users\phil\workspace-InLt\Networked App\Server\nua\seg0\c2f0.dat
+          projectPath: Server\nua\seg0\c2f0.dat
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: Server\nua\seg0\c300.dat
+          fullPath: C:\Users\phil\workspace-InLt\Networked App\Server\nua\seg0\c300.dat
+          projectPath: Server\nua\seg0\c300.dat
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: Server\nua\seg0\c31.dat
+          fullPath: C:\Users\phil\workspace-InLt\Networked App\Server\nua\seg0\c31.dat
+          projectPath: Server\nua\seg0\c31.dat
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: Server\nua\seg0\c311.dat
+          fullPath: C:\Users\phil\workspace-InLt\Networked App\Server\nua\seg0\c311.dat
+          projectPath: Server\nua\seg0\c311.dat
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: Server\nua\seg0\c321.dat
+          fullPath: C:\Users\phil\workspace-InLt\Networked App\Server\nua\seg0\c321.dat
+          projectPath: Server\nua\seg0\c321.dat
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: Server\nua\seg0\c331.dat
+          fullPath: C:\Users\phil\workspace-InLt\Networked App\Server\nua\seg0\c331.dat
+          projectPath: Server\nua\seg0\c331.dat
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: Server\nua\seg0\c340.dat
+          fullPath: C:\Users\phil\workspace-InLt\Networked App\Server\nua\seg0\c340.dat
+          projectPath: Server\nua\seg0\c340.dat
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: Server\nua\seg0\c351.dat
+          fullPath: C:\Users\phil\workspace-InLt\Networked App\Server\nua\seg0\c351.dat
+          projectPath: Server\nua\seg0\c351.dat
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: Server\nua\seg0\c361.dat
+          fullPath: C:\Users\phil\workspace-InLt\Networked App\Server\nua\seg0\c361.dat
+          projectPath: Server\nua\seg0\c361.dat
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: Server\nua\seg0\c371.dat
+          fullPath: C:\Users\phil\workspace-InLt\Networked App\Server\nua\seg0\c371.dat
+          projectPath: Server\nua\seg0\c371.dat
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: Server\nua\seg0\c380.dat
+          fullPath: C:\Users\phil\workspace-InLt\Networked App\Server\nua\seg0\c380.dat
+          projectPath: Server\nua\seg0\c380.dat
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: Server\nua\seg0\c391.dat
+          fullPath: C:\Users\phil\workspace-InLt\Networked App\Server\nua\seg0\c391.dat
+          projectPath: Server\nua\seg0\c391.dat
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: Server\nua\seg0\c3a1.dat
+          fullPath: C:\Users\phil\workspace-InLt\Networked App\Server\nua\seg0\c3a1.dat
+          projectPath: Server\nua\seg0\c3a1.dat
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: Server\nua\seg0\c3b1.dat
+          fullPath: C:\Users\phil\workspace-InLt\Networked App\Server\nua\seg0\c3b1.dat
+          projectPath: Server\nua\seg0\c3b1.dat
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: Server\nua\seg0\c3c0.dat
+          fullPath: C:\Users\phil\workspace-InLt\Networked App\Server\nua\seg0\c3c0.dat
+          projectPath: Server\nua\seg0\c3c0.dat
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: Server\nua\seg0\c3d1.dat
+          fullPath: C:\Users\phil\workspace-InLt\Networked App\Server\nua\seg0\c3d1.dat
+          projectPath: Server\nua\seg0\c3d1.dat
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: Server\nua\seg0\c3e1.dat
+          fullPath: C:\Users\phil\workspace-InLt\Networked App\Server\nua\seg0\c3e1.dat
+          projectPath: Server\nua\seg0\c3e1.dat
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: Server\nua\seg0\c3f1.dat
+          fullPath: C:\Users\phil\workspace-InLt\Networked App\Server\nua\seg0\c3f1.dat
+          projectPath: Server\nua\seg0\c3f1.dat
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: Server\nua\seg0\c400.dat
+          fullPath: C:\Users\phil\workspace-InLt\Networked App\Server\nua\seg0\c400.dat
+          projectPath: Server\nua\seg0\c400.dat
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: Server\nua\seg0\c41.dat
+          fullPath: C:\Users\phil\workspace-InLt\Networked App\Server\nua\seg0\c41.dat
+          projectPath: Server\nua\seg0\c41.dat
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: Server\nua\seg0\c411.dat
+          fullPath: C:\Users\phil\workspace-InLt\Networked App\Server\nua\seg0\c411.dat
+          projectPath: Server\nua\seg0\c411.dat
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: Server\nua\seg0\c421.dat
+          fullPath: C:\Users\phil\workspace-InLt\Networked App\Server\nua\seg0\c421.dat
+          projectPath: Server\nua\seg0\c421.dat
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: Server\nua\seg0\c430.dat
+          fullPath: C:\Users\phil\workspace-InLt\Networked App\Server\nua\seg0\c430.dat
+          projectPath: Server\nua\seg0\c430.dat
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: Server\nua\seg0\c441.dat
+          fullPath: C:\Users\phil\workspace-InLt\Networked App\Server\nua\seg0\c441.dat
+          projectPath: Server\nua\seg0\c441.dat
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: Server\nua\seg0\c451.dat
+          fullPath: C:\Users\phil\workspace-InLt\Networked App\Server\nua\seg0\c451.dat
+          projectPath: Server\nua\seg0\c451.dat
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: Server\nua\seg0\c461.dat
+          fullPath: C:\Users\phil\workspace-InLt\Networked App\Server\nua\seg0\c461.dat
+          projectPath: Server\nua\seg0\c461.dat
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: Server\nua\seg0\c470.dat
+          fullPath: C:\Users\phil\workspace-InLt\Networked App\Server\nua\seg0\c470.dat
+          projectPath: Server\nua\seg0\c470.dat
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: Server\nua\seg0\c481.dat
+          fullPath: C:\Users\phil\workspace-InLt\Networked App\Server\nua\seg0\c481.dat
+          projectPath: Server\nua\seg0\c481.dat
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: Server\nua\seg0\c490.dat
+          fullPath: C:\Users\phil\workspace-InLt\Networked App\Server\nua\seg0\c490.dat
+          projectPath: Server\nua\seg0\c490.dat
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: Server\nua\seg0\c4a1.dat
+          fullPath: C:\Users\phil\workspace-InLt\Networked App\Server\nua\seg0\c4a1.dat
+          projectPath: Server\nua\seg0\c4a1.dat
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: Server\nua\seg0\c51.dat
+          fullPath: C:\Users\phil\workspace-InLt\Networked App\Server\nua\seg0\c51.dat
+          projectPath: Server\nua\seg0\c51.dat
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: Server\nua\seg0\c60.dat
+          fullPath: C:\Users\phil\workspace-InLt\Networked App\Server\nua\seg0\c60.dat
+          projectPath: Server\nua\seg0\c60.dat
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: Server\nua\seg0\c71.dat
+          fullPath: C:\Users\phil\workspace-InLt\Networked App\Server\nua\seg0\c71.dat
+          projectPath: Server\nua\seg0\c71.dat
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: Server\nua\seg0\c81.dat
+          fullPath: C:\Users\phil\workspace-InLt\Networked App\Server\nua\seg0\c81.dat
+          projectPath: Server\nua\seg0\c81.dat
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: Server\nua\seg0\c90.dat
+          fullPath: C:\Users\phil\workspace-InLt\Networked App\Server\nua\seg0\c90.dat
+          projectPath: Server\nua\seg0\c90.dat
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: Server\nua\seg0\ca1.dat
+          fullPath: C:\Users\phil\workspace-InLt\Networked App\Server\nua\seg0\ca1.dat
+          projectPath: Server\nua\seg0\ca1.dat
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: Server\nua\seg0\cb1.dat
+          fullPath: C:\Users\phil\workspace-InLt\Networked App\Server\nua\seg0\cb1.dat
+          projectPath: Server\nua\seg0\cb1.dat
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: Server\nua\seg0\cc0.dat
+          fullPath: C:\Users\phil\workspace-InLt\Networked App\Server\nua\seg0\cc0.dat
+          projectPath: Server\nua\seg0\cc0.dat
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: Server\nua\seg0\cd1.dat
+          fullPath: C:\Users\phil\workspace-InLt\Networked App\Server\nua\seg0\cd1.dat
+          projectPath: Server\nua\seg0\cd1.dat
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: Server\nua\seg0\ce1.dat
+          fullPath: C:\Users\phil\workspace-InLt\Networked App\Server\nua\seg0\ce1.dat
+          projectPath: Server\nua\seg0\ce1.dat
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: Server\nua\seg0\cf0.dat
+          fullPath: C:\Users\phil\workspace-InLt\Networked App\Server\nua\seg0\cf0.dat
+          projectPath: Server\nua\seg0\cf0.dat
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: Server\nua\service.properties
+          fullPath: C:\Users\phil\workspace-InLt\Networked App\Server\nua\service.properties
+          projectPath: Server\nua\service.properties
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: Server\pom.xml
+          fullPath: C:\Users\phil\workspace-InLt\Networked App\Server\pom.xml
+          projectPath: Server\pom.xml
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: Server\src\main\java\com\inlt\nua\EmbeddedDatabase.java
+          fullPath: C:\Users\phil\workspace-InLt\Networked App\Server\src\main\java\com\inlt\nua\EmbeddedDatabase.java
+          projectPath: Server\src\main\java\com\inlt\nua\EmbeddedDatabase.java
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: Server\src\main\java\com\inlt\nua\LoginServlet.java
+          fullPath: C:\Users\phil\workspace-InLt\Networked App\Server\src\main\java\com\inlt\nua\LoginServlet.java
+          projectPath: Server\src\main\java\com\inlt\nua\LoginServlet.java
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: Server\src\main\java\com\inlt\nua\NetworkedUnityAppServer.java
+          fullPath: C:\Users\phil\workspace-InLt\Networked App\Server\src\main\java\com\inlt\nua\NetworkedUnityAppServer.java
+          projectPath: Server\src\main\java\com\inlt\nua\NetworkedUnityAppServer.java
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: Server\src\main\java\com\inlt\nua\data\HibernateUtils.java
+          fullPath: C:\Users\phil\workspace-InLt\Networked App\Server\src\main\java\com\inlt\nua\data\HibernateUtils.java
+          projectPath: Server\src\main\java\com\inlt\nua\data\HibernateUtils.java
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: Server\src\main\java\com\inlt\nua\data\User.java
+          fullPath: C:\Users\phil\workspace-InLt\Networked App\Server\src\main\java\com\inlt\nua\data\User.java
+          projectPath: Server\src\main\java\com\inlt\nua\data\User.java
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: Server\src\main\java\com\inlt\nua\data\UserSession.java
+          fullPath: C:\Users\phil\workspace-InLt\Networked App\Server\src\main\java\com\inlt\nua\data\UserSession.java
+          projectPath: Server\src\main\java\com\inlt\nua\data\UserSession.java
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: Server\src\main\resources\hibernate.cfg.xml
+          fullPath: C:\Users\phil\workspace-InLt\Networked App\Server\src\main\resources\hibernate.cfg.xml
+          projectPath: Server\src\main\resources\hibernate.cfg.xml
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+      - commitID: 7aa19e2adcc67d29b18a4f8a29238d739431785e
+        mergeA: 
+        mergeB: 
+        authorName: Phil Grim
+        authorEmail: phil@insufficient-light.com
+        commitEmail: phil@insufficient-light.com
+        commitName: Phil Grim
+        summary: Initial commit
+        description: 
+        timeString: 2020-03-09T15:18:20.000-04:00
+        commitTimeString: 2020-03-09T15:18:20.000-04:00
+        changes:
+        - path: .gitattributes
+          fullPath: C:\Users\phil\workspace-InLt\Networked App\.gitattributes
+          projectPath: .gitattributes
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: .gitignore
+          fullPath: C:\Users\phil\workspace-InLt\Networked App\.gitignore
+          projectPath: .gitignore
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: Assets\.gitignore
+          fullPath: C:\Users\phil\workspace-InLt\Networked App\Assets\.gitignore
+          projectPath: Assets\.gitignore
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+      statusAhead: 0
+      selectedIndex: -1
+    selectedEntry:
+      commitID: 
+      mergeA: 
+      mergeB: 
+      authorName: 
+      authorEmail: 
+      commitEmail: 
+      commitName: 
+      summary: 
+      description: 
+      timeString: 0001-01-01T00:00:00.000+00:00
+      commitTimeString: 0001-01-01T00:00:00.000+00:00
+      changes: []
+    treeChanges:
+      assets:
+        keys: []
+        values: []
+      folders:
+        keys: []
+        values: []
+      checkedFileNodes:
+        keys: []
+        values: []
+      title: 
+      pathSeparator: /
+      displayRootNode: 0
+      isSelectable: 1
+      isCheckable: 0
+      isUsingGlobalSelection: 0
+      nodes: []
+      selectedNode:
+        path: 
+        label: 
+        level: 0
+        isFolder: 0
+        isContainer: 0
+        isCollapsed: 0
+        isHidden: 0
+        isActive: 0
+        treeIsCheckable: 0
+        checkState: 0
+        isLocked: 0
+        gitStatusEntry:
+          path: 
+          fullPath: 
+          projectPath: 
+          originalPath: 
+          indexStatus: 0
+          workTreeStatus: 0
+    detailsScroll: {x: 0, y: 0}
+  settingsView:
+    gitPathView:
+      gitPath: C:\Users\phil\AppData\Local\GitHubUnity\git\cmd\git.exe
+      gitLfsPath: C:\Users\phil\AppData\Local\GitHubUnity\git-lfs\git-lfs.exe
+      errorMessage: 
+      resetToBundled: 0
+      resetToSystem: 0
+      changingManually: 0
+    hasRemote: 1
+    lastCurrentRemoteChangedEvent:
+      updatedTimeString: 2020-03-09T15:31:46.764-04:00
+      cacheType: 1
+    metricsEnabled: 1
+    newRepositoryRemoteUrl: 
+    repositoryRemoteName: origin
+    repositoryRemoteUrl: https://github.com/doomlab/Migraine-App.git
+    scroll: {x: 0, y: 0}
+    userSettingsView:
+      gitName: Phil Grim
+      gitEmail: phil@insufficient-light.com
+      newGitName: Phil Grim
+      newGitEmail: phil@insufficient-light.com
+      needsSaving: 0
+      lastCheckUserChangedEvent:
+        updatedTimeString: 2020-03-09T15:32:07.145-04:00
+        cacheType: 8
+    webTimeout: 3000
+    gitTimeout: 5000
+  locksView:
+    currentRemoteHasUpdate: 0
+    currentStatusEntriesHasUpdate: 0
+    currentLocksHasUpdate: 0
+    keychainHasUpdate: 0
+    locksControl:
+      scroll: {x: 0, y: 0}
+      gitLockEntries: []
+      assets:
+        keys: []
+        values: []
+      gitStatusDictionary:
+        keys: []
+        values: []
+      selectedEntry:
+        gitLock:
+          id: 
+          path: 
+          owner:
+            name: 
+            email: 
+          lockedAtString: 
+        gitFileStatus: 0
+        lockedAt: 
+    lastCurrentRemoteChangedEvent:
+      updatedTimeString: 
+      cacheType: 0
+    lastLocksChangedEvent:
+      updatedTimeString: 
+      cacheType: 0
+    lastStatusEntriesChangedEvent:
+      updatedTimeString: 
+      cacheType: 0
+    lockedFiles: []
+    gitStatusEntries: []
+    currentUsername: 
+    unlockFileMenuContent:
+      m_Text: Release Lock
+      m_Image: {fileID: 0}
+      m_Tooltip: 
+    forceUnlockFileMenuContent:
+      m_Text: Release Lock (forced)
+      m_Image: {fileID: 0}
+      m_Tooltip: 
+  hasRemote: 1
+  currentRemoteName: origin
+  currentBranch: master
+  currentRemoteUrl: https://github.com/doomlab/Migraine-App.git
+  statusAhead: 0
+  statusBehind: 0
+  hasItemsToCommit: 0
+  isTrackingRemoteBranch: 0
+  currentBranchContent:
+    m_Text: master
+    m_Image: {fileID: 0}
+    m_Tooltip: Active branch
+  currentRemoteUrlContent:
+    m_Text: https://github.com/doomlab/Migraine-App.git
+    m_Image: {fileID: 0}
+    m_Tooltip: Url of the origin remote
+  lastCurrentBranchAndRemoteChangedEvent:
+    updatedTimeString: 2020-03-09T15:31:46.764-04:00
+    cacheType: 1
+  lastTrackingStatusChangedEvent:
+    updatedTimeString: 2020-03-09T15:31:47.121-04:00
+    cacheType: 5
+  lastStatusEntriesChangedEvent:
+    updatedTimeString: 
+    cacheType: 0
+  pullButtonContent:
+    m_Text: Pull
+    m_Image: {fileID: 0}
+    m_Tooltip: 
+  pushButtonContent:
+    m_Text: Push
+    m_Image: {fileID: 0}
+    m_Tooltip: 
+  refreshButtonContent:
+    m_Text: Refresh
+    m_Image: {fileID: 0}
+    m_Tooltip: 
+  fetchButtonContent:
+    m_Text: Fetch
+    m_Image: {fileID: 0}
+    m_Tooltip: 
+  repositoryProgressValue: 0
+  repositoryProgressMessage: 
+  appManagerProgressValue: 0
+  appManagerProgressMessage: 
+  connections: []
+  primaryConnectionUsername: philgrim2
+--- !u!114 &13
+MonoBehaviour:
+  m_ObjectHideFlags: 52
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 1
+  m_Script: {fileID: 12111, guid: 0000000000000000e000000000000000, type: 0}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_MinSize: {x: 400, y: 100}
+  m_MaxSize: {x: 2048, y: 2048}
+  m_TitleContent:
+    m_Text: Asset Store
+    m_Image: {fileID: 357073275683767465, guid: 0000000000000000d000000000000000,
+      type: 0}
+    m_Tooltip: 
+  m_Pos:
+    serializedVersion: 2
+    x: 468
+    y: 181
+    width: 973
+    height: 501
+  m_ViewDataDictionary: {fileID: 0}
+--- !u!114 &14
+MonoBehaviour:
+  m_ObjectHideFlags: 52
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 1
+  m_Script: {fileID: 12014, guid: 0000000000000000e000000000000000, type: 0}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_MinSize: {x: 230, y: 250}
+  m_MaxSize: {x: 10000, y: 10000}
+  m_TitleContent:
+    m_Text: Project
+    m_Image: {fileID: -7501376956915960154, guid: 0000000000000000d000000000000000,
+      type: 0}
+    m_Tooltip: 
+  m_Pos:
+    serializedVersion: 2
+    x: 0
+    y: 652
+    width: 1531
+    height: 359
+  m_ViewDataDictionary: {fileID: 0}
+  m_SearchFilter:
+    m_NameFilter: 
+    m_ClassNames: []
+    m_AssetLabels: []
+    m_AssetBundleNames: []
+    m_VersionControlStates: []
+    m_SoftLockControlStates: []
+    m_ReferencingInstanceIDs: 
+    m_SceneHandles: 
+    m_ShowAllHits: 0
+    m_SkipHidden: 0
+    m_SearchArea: 1
+    m_Folders:
+    - Assets
+  m_ViewMode: 1
+  m_StartGridSize: 64
+  m_LastFolders:
+  - Assets
+  m_LastFoldersGridSize: -1
+  m_LastProjectPath: C:\Users\phil\workspace-InLt\Networked App
+  m_LockTracker:
+    m_IsLocked: 0
+  m_FolderTreeState:
+    scrollPos: {x: 0, y: 0}
+    m_SelectedIDs: d62d0000
+    m_LastClickedID: 11734
+    m_ExpandedIDs: 00000000d62d000000ca9a3b
+    m_RenameOverlay:
+      m_UserAcceptedRename: 0
+      m_Name: 
+      m_OriginalName: 
+      m_EditFieldRect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 0
+        height: 0
+      m_UserData: 0
+      m_IsWaitingForDelay: 0
+      m_IsRenaming: 0
+      m_OriginalEventType: 11
+      m_IsRenamingFilename: 1
+      m_ClientGUIView: {fileID: 0}
+    m_SearchString: 
+    m_CreateAssetUtility:
+      m_EndAction: {fileID: 0}
+      m_InstanceID: 0
+      m_Path: 
+      m_Icon: {fileID: 0}
+      m_ResourceFile: 
+  m_AssetTreeState:
+    scrollPos: {x: 0, y: 0}
+    m_SelectedIDs: 
+    m_LastClickedID: 0
+    m_ExpandedIDs: 00000000d62d0000
+    m_RenameOverlay:
+      m_UserAcceptedRename: 0
+      m_Name: 
+      m_OriginalName: 
+      m_EditFieldRect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 0
+        height: 0
+      m_UserData: 0
+      m_IsWaitingForDelay: 0
+      m_IsRenaming: 0
+      m_OriginalEventType: 11
+      m_IsRenamingFilename: 1
+      m_ClientGUIView: {fileID: 0}
+    m_SearchString: 
+    m_CreateAssetUtility:
+      m_EndAction: {fileID: 0}
+      m_InstanceID: 0
+      m_Path: 
+      m_Icon: {fileID: 0}
+      m_ResourceFile: 
+  m_ListAreaState:
+    m_SelectedInstanceIDs: 
+    m_LastClickedInstanceID: 0
+    m_HadKeyboardFocusLastEvent: 0
+    m_ExpandedInstanceIDs: c6230000
+    m_RenameOverlay:
+      m_UserAcceptedRename: 0
+      m_Name: 
+      m_OriginalName: 
+      m_EditFieldRect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 0
+        height: 0
+      m_UserData: 0
+      m_IsWaitingForDelay: 0
+      m_IsRenaming: 0
+      m_OriginalEventType: 11
+      m_IsRenamingFilename: 1
+      m_ClientGUIView: {fileID: 0}
+    m_CreateAssetUtility:
+      m_EndAction: {fileID: 0}
+      m_InstanceID: 0
+      m_Path: 
+      m_Icon: {fileID: 0}
+      m_ResourceFile: 
+    m_NewAssetIndexInList: -1
+    m_ScrollPosition: {x: 0, y: 0}
+    m_GridSize: 64
+  m_SkipHiddenPackages: 0
+  m_DirectoriesAreaWidth: 115
+--- !u!114 &15
+MonoBehaviour:
+  m_ObjectHideFlags: 52
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 1
+  m_Script: {fileID: 12019, guid: 0000000000000000e000000000000000, type: 0}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_MinSize: {x: 275, y: 50}
+  m_MaxSize: {x: 4000, y: 4000}
+  m_TitleContent:
+    m_Text: Inspector
+    m_Image: {fileID: -6905738622615590433, guid: 0000000000000000d000000000000000,
+      type: 0}
+    m_Tooltip: 
+  m_Pos:
+    serializedVersion: 2
+    x: 1531
+    y: 73
+    width: 387
+    height: 938
+  m_ViewDataDictionary: {fileID: 0}
+  m_OpenAddComponentMenu: 0
+  m_ObjectsLockedBeforeSerialization: []
+  m_InstanceIDsLockedBeforeSerialization: 
+  m_LockTracker:
+    m_IsLocked: 0
+  m_PreviewResizer:
+    m_CachedPref: 160
+    m_ControlHash: -371814159
+    m_PrefName: Preview_InspectorPreview
+  m_PreviewWindow: {fileID: 0}
+  m_LastInspectedObjectInstanceID: -1
+  m_LastVerticalScrollValue: 0
+--- !u!114 &16
+MonoBehaviour:
+  m_ObjectHideFlags: 52
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 1
+  m_Script: {fileID: 12061, guid: 0000000000000000e000000000000000, type: 0}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_MinSize: {x: 200, y: 200}
+  m_MaxSize: {x: 4000, y: 4000}
+  m_TitleContent:
+    m_Text: Hierarchy
+    m_Image: {fileID: -590624980919486359, guid: 0000000000000000d000000000000000,
+      type: 0}
+    m_Tooltip: 
+  m_Pos:
+    serializedVersion: 2
+    x: 0
+    y: 73
+    width: 379
+    height: 560
+  m_ViewDataDictionary: {fileID: 0}
+  m_SceneHierarchy:
+    m_TreeViewState:
+      scrollPos: {x: 0, y: 0}
+      m_SelectedIDs: 
+      m_LastClickedID: 0
+      m_ExpandedIDs: 72fbffff
+      m_RenameOverlay:
+        m_UserAcceptedRename: 0
+        m_Name: 
+        m_OriginalName: 
+        m_EditFieldRect:
+          serializedVersion: 2
+          x: 0
+          y: 0
+          width: 0
+          height: 0
+        m_UserData: 0
+        m_IsWaitingForDelay: 0
+        m_IsRenaming: 0
+        m_OriginalEventType: 11
+        m_IsRenamingFilename: 0
+        m_ClientGUIView: {fileID: 0}
+      m_SearchString: 
+    m_ExpandedScenes: []
+    m_CurrenRootInstanceID: 0
+    m_LockTracker:
+      m_IsLocked: 0
+    m_CurrentSortingName: TransformSorting
+  m_WindowGUID: bcfe59e66de59124daa936975f2db427
+--- !u!114 &17
+MonoBehaviour:
+  m_ObjectHideFlags: 52
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 1
+  m_Script: {fileID: 12013, guid: 0000000000000000e000000000000000, type: 0}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_MinSize: {x: 200, y: 200}
+  m_MaxSize: {x: 4000, y: 4000}
+  m_TitleContent:
+    m_Text: Scene
+    m_Image: {fileID: 2318424515335265636, guid: 0000000000000000d000000000000000,
+      type: 0}
+    m_Tooltip: 
+  m_Pos:
+    serializedVersion: 2
+    x: 379
+    y: 73
+    width: 1150
+    height: 560
+  m_ViewDataDictionary: {fileID: 0}
+  m_ShowContextualTools: 0
+  m_WindowGUID: e4b156d6cc3c4ed4ebc42f605b2f95a4
+  m_Gizmos: 1
+  m_SceneIsLit: 1
+  m_SceneLighting: 1
+  m_2DMode: 1
+  m_isRotationLocked: 0
+  m_PlayAudio: 0
+  m_AudioPlay: 0
+  m_Position:
+    m_Target: {x: -0.1693909, y: 0.15894906, z: -0.65608996}
+    speed: 2
+    m_Value: {x: -0.1693909, y: 0.15894906, z: -0.65608996}
+  m_RenderMode: 0
+  m_CameraMode:
+    drawMode: 0
+    name: Shaded
+    section: Shading Mode
+  m_ValidateTrueMetals: 0
+  m_DoValidateTrueMetals: 0
+  m_SceneViewState:
+    showFog: 1
+    showMaterialUpdate: 0
+    showSkybox: 1
+    showFlares: 1
+    showImageEffects: 1
+    showParticleSystems: 1
+  grid:
+    xGrid:
+      m_Target: 0
+      speed: 2
+      m_Value: 0
+    yGrid:
+      m_Target: 0
+      speed: 2
+      m_Value: 0
+    zGrid:
+      m_Target: 1
+      speed: 2
+      m_Value: 1
+  m_Rotation:
+    m_Target: {x: 0, y: 0, z: 0, w: 1}
+    speed: 2
+    m_Value: {x: 0, y: 0, z: 0, w: 1}
+  m_Size:
+    m_Target: 11.296585
+    speed: 2
+    m_Value: 11.296585
+  m_Ortho:
+    m_Target: 1
+    speed: 2
+    m_Value: 1
+  m_CameraSettings:
+    m_Speed: 1
+    m_SpeedNormalized: 0.5
+    m_SpeedMin: 0.01
+    m_SpeedMax: 2
+    m_EasingEnabled: 1
+    m_EasingDuration: 0.4
+    m_AccelerationEnabled: 1
+    m_FieldOfView: 90
+    m_NearClip: 0.03
+    m_FarClip: 10000
+    m_DynamicClip: 1
+    m_OcclusionCulling: 0
+  m_ShowGlobalGrid: 1
+  m_LastSceneViewRotation: {x: -0.08717229, y: 0.89959055, z: -0.21045254, w: -0.3726226}
+  m_LastSceneViewOrtho: 0
+  m_ReplacementShader: {fileID: 0}
+  m_ReplacementString: 
+  m_SceneVisActive: 1
+  m_LastLockedObject: {fileID: 0}
+  m_ViewIsLockedToObject: 0
+--- !u!114 &18
+MonoBehaviour:
+  m_ObjectHideFlags: 52
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 1
+  m_Script: {fileID: 12015, guid: 0000000000000000e000000000000000, type: 0}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_MinSize: {x: 200, y: 200}
+  m_MaxSize: {x: 4000, y: 4000}
+  m_TitleContent:
+    m_Text: Game
+    m_Image: {fileID: -2087823869225018852, guid: 0000000000000000d000000000000000,
+      type: 0}
+    m_Tooltip: 
+  m_Pos:
+    serializedVersion: 2
+    x: 507
+    y: 94
+    width: 1532
+    height: 790
+  m_ViewDataDictionary: {fileID: 0}
+  m_VSyncEnabled: 0
+  m_MaximizeOnPlay: 0
+  m_Gizmos: 0
+  m_Stats: 0
+  m_SelectedSizes: 00000000000000000000000000000000000000000000000000000000000000000000000000000000
+  m_TargetDisplay: 0
+  m_ZoomArea:
+    m_HRangeLocked: 0
+    m_VRangeLocked: 0
+    hZoomLockedByDefault: 0
+    vZoomLockedByDefault: 0
+    m_HBaseRangeMin: -766
+    m_HBaseRangeMax: 766
+    m_VBaseRangeMin: -386.5
+    m_VBaseRangeMax: 386.5
+    m_HAllowExceedBaseRangeMin: 1
+    m_HAllowExceedBaseRangeMax: 1
+    m_VAllowExceedBaseRangeMin: 1
+    m_VAllowExceedBaseRangeMax: 1
+    m_ScaleWithWindow: 0
+    m_HSlider: 0
+    m_VSlider: 0
+    m_IgnoreScrollWheelUntilClicked: 0
+    m_EnableMouseInput: 1
+    m_EnableSliderZoomHorizontal: 0
+    m_EnableSliderZoomVertical: 0
+    m_UniformScale: 1
+    m_UpDirection: 1
+    m_DrawArea:
+      serializedVersion: 2
+      x: 0
+      y: 17
+      width: 1532
+      height: 773
+    m_Scale: {x: 1, y: 1}
+    m_Translation: {x: 766, y: 386.5}
+    m_MarginLeft: 0
+    m_MarginRight: 0
+    m_MarginTop: 0
+    m_MarginBottom: 0
+    m_LastShownAreaInsideMargins:
+      serializedVersion: 2
+      x: -766
+      y: -386.5
+      width: 1532
+      height: 773
+    m_MinimalGUI: 1
+  m_defaultScale: 1
+  m_TargetTexture: {fileID: 0}
+  m_CurrentColorSpace: 1
+  m_LastWindowPixelSize: {x: 1532, y: 790}
+  m_ClearInEditMode: 1
+  m_NoCameraWarning: 1
+  m_LowResolutionForAspectRatios: 01000000000000000000
+  m_XRRenderMode: 0
+--- !u!114 &19
+MonoBehaviour:
+  m_ObjectHideFlags: 52
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 1
+  m_Script: {fileID: 12003, guid: 0000000000000000e000000000000000, type: 0}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_MinSize: {x: 100, y: 100}
+  m_MaxSize: {x: 4000, y: 4000}
+  m_TitleContent:
+    m_Text: Console
+    m_Image: {fileID: 111653112392082826, guid: 0000000000000000d000000000000000,
+      type: 0}
+    m_Tooltip: 
+  m_Pos:
+    serializedVersion: 2
+    x: 8
+    y: 718
+    width: 1366
+    height: 308
+  m_ViewDataDictionary: {fileID: 0}
