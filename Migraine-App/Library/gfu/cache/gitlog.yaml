@@ -13,9 +13,69 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cacheType: 3
-  lastUpdatedAtString: 2020-03-09T17:40:09.076-04:00
+  lastUpdatedAtString: 2020-03-09T17:46:11.725-04:00
   initializedAtString: 2020-03-09T17:29:48.505-04:00
   log:
+  - commitID: f3b7af02704181dbb142ba84946c9c06a8a90cc9
+    mergeA: 
+    mergeB: 
+    authorName: Dr. Erin M. Buchanan
+    authorEmail: buchananlab@gmail.com
+    commitEmail: buchananlab@gmail.com
+    commitName: Dr. Erin M. Buchanan
+    summary: added a button
+    description: added a button
+    timeString: 2020-03-09T17:45:50.000-04:00
+    commitTimeString: 2020-03-09T17:45:50.000-04:00
+    changes:
+    - path: Migraine-App/Library/InspectorExpandedItems.asset
+      fullPath: /Users/buchanan/GitHub/Migraine-App/Migraine-App/Library/InspectorExpandedItems.asset
+      projectPath: Library/InspectorExpandedItems.asset
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Migraine-App/Library/SceneVisibilityState.asset
+      fullPath: /Users/buchanan/GitHub/Migraine-App/Migraine-App/Library/SceneVisibilityState.asset
+      projectPath: Library/SceneVisibilityState.asset
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Migraine-App/Library/StateCache/Hierarchy/bcfe59-mainStage.json
+      fullPath: /Users/buchanan/GitHub/Migraine-App/Migraine-App/Library/StateCache/Hierarchy/bcfe59-mainStage.json
+      projectPath: Library/StateCache/Hierarchy/bcfe59-mainStage.json
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Migraine-App/Library/StateCache/SceneView/e4b156-mainStage.json
+      fullPath: /Users/buchanan/GitHub/Migraine-App/Migraine-App/Library/StateCache/SceneView/e4b156-mainStage.json
+      projectPath: Library/StateCache/SceneView/e4b156-mainStage.json
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Migraine-App/Library/gfu/cache/gitlocks.yaml
+      fullPath: /Users/buchanan/GitHub/Migraine-App/Migraine-App/Library/gfu/cache/gitlocks.yaml
+      projectPath: Library/gfu/cache/gitlocks.yaml
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Migraine-App/Library/gfu/cache/gitlog.yaml
+      fullPath: /Users/buchanan/GitHub/Migraine-App/Migraine-App/Library/gfu/cache/gitlog.yaml
+      projectPath: Library/gfu/cache/gitlog.yaml
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Migraine-App/Library/gfu/cache/gitstatusentries.yaml
+      fullPath: /Users/buchanan/GitHub/Migraine-App/Migraine-App/Library/gfu/cache/gitstatusentries.yaml
+      projectPath: Library/gfu/cache/gitstatusentries.yaml
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Migraine-App/Library/gfu/cache/gittrackingstatus.yaml
+      fullPath: /Users/buchanan/GitHub/Migraine-App/Migraine-App/Library/gfu/cache/gittrackingstatus.yaml
+      projectPath: Library/gfu/cache/gittrackingstatus.yaml
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
   - commitID: fe82f4edf1cb826d21cdbe9e232c84eb1101f7fc
     mergeA: 
     mergeB: 
