@@ -13,39 +13,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cacheType: 6
-  lastUpdatedAtString: 2020-03-09T17:40:00.578-04:00
+  lastUpdatedAtString: 2020-03-09T17:44:19.112-04:00
   initializedAtString: 2020-03-09T16:42:06.161-04:00
   entries:
-  - path: Migraine-App/Assets/diary_page_1.unity
-    fullPath: /Users/buchanan/GitHub/Migraine-App/Migraine-App/Assets/diary_page_1.unity
-    projectPath: Assets/diary_page_1.unity
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: Migraine-App/Assets/diary_page_1.unity.meta
-    fullPath: /Users/buchanan/GitHub/Migraine-App/Migraine-App/Assets/diary_page_1.unity.meta
-    projectPath: Assets/diary_page_1.unity.meta
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: Migraine-App/Library/assetDatabase3
-    fullPath: /Users/buchanan/GitHub/Migraine-App/Migraine-App/Library/assetDatabase3
-    projectPath: Library/assetDatabase3
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 3
-  - path: Migraine-App/Library/CurrentLayout-default.dwlt
-    fullPath: /Users/buchanan/GitHub/Migraine-App/Migraine-App/Library/CurrentLayout-default.dwlt
-    projectPath: Library/CurrentLayout-default.dwlt
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 3
-  - path: Migraine-App/Library/gfu/cache/gitlocks.yaml
-    fullPath: /Users/buchanan/GitHub/Migraine-App/Migraine-App/Library/gfu/cache/gitlocks.yaml
-    projectPath: Library/gfu/cache/gitlocks.yaml
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 3
   - path: Migraine-App/Library/gfu/cache/gitlog.yaml
     fullPath: /Users/buchanan/GitHub/Migraine-App/Migraine-App/Library/gfu/cache/gitlog.yaml
     projectPath: Library/gfu/cache/gitlog.yaml
@@ -64,18 +34,6 @@ MonoBehaviour:
     originalPath: 
     indexStatus: 0
     workTreeStatus: 3
-  - path: Migraine-App/Library/gfu/cache/gituser.yaml
-    fullPath: /Users/buchanan/GitHub/Migraine-App/Migraine-App/Library/gfu/cache/gituser.yaml
-    projectPath: Library/gfu/cache/gituser.yaml
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 3
-  - path: Migraine-App/Library/gfu/cache/repoinfo.yaml
-    fullPath: /Users/buchanan/GitHub/Migraine-App/Migraine-App/Library/gfu/cache/repoinfo.yaml
-    projectPath: Library/gfu/cache/repoinfo.yaml
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 3
   - path: Migraine-App/Library/InspectorExpandedItems.asset
     fullPath: /Users/buchanan/GitHub/Migraine-App/Migraine-App/Library/InspectorExpandedItems.asset
     projectPath: Library/InspectorExpandedItems.asset
@@ -85,12 +43,6 @@ MonoBehaviour:
   - path: Migraine-App/Library/SceneVisibilityState.asset
     fullPath: /Users/buchanan/GitHub/Migraine-App/Migraine-App/Library/SceneVisibilityState.asset
     projectPath: Library/SceneVisibilityState.asset
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 3
-  - path: Migraine-App/Library/ShaderCache/EditorEncounteredVariants
-    fullPath: /Users/buchanan/GitHub/Migraine-App/Migraine-App/Library/ShaderCache/EditorEncounteredVariants
-    projectPath: Library/ShaderCache/EditorEncounteredVariants
     originalPath: 
     indexStatus: 0
     workTreeStatus: 3
