@@ -15,9 +15,9 @@ MonoBehaviour:
   m_PixelRect:
     serializedVersion: 2
     x: 0
-    y: 145
-    width: 1280
-    height: 755
+    y: 45
+    width: 1440
+    height: 855
   m_ShowMode: 4
   m_Title: 
   m_RootView: {fileID: 6}
@@ -42,12 +42,12 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 30
-    width: 1280
-    height: 705
+    width: 1440
+    height: 805
   m_MinSize: {x: 508, y: 494}
   m_MaxSize: {x: 14004, y: 14044}
   vertical: 0
-  controlID: 51
+  controlID: 114
 --- !u!114 &3
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -63,10 +63,10 @@ MonoBehaviour:
   m_Children: []
   m_Position:
     serializedVersion: 2
-    x: 1021
+    x: 1149
     y: 0
-    width: 259
-    height: 705
+    width: 291
+    height: 805
   m_MinSize: {x: 102, y: 122}
   m_MaxSize: {x: 4002, y: 4022}
   m_ActualView: {fileID: 12}
@@ -92,8 +92,8 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 0
-    width: 272
-    height: 426
+    width: 306
+    height: 486
   m_MinSize: {x: 202, y: 222}
   m_MaxSize: {x: 4002, y: 4022}
   m_ActualView: {fileID: 16}
@@ -117,9 +117,9 @@ MonoBehaviour:
   m_Position:
     serializedVersion: 2
     x: 0
-    y: 426
-    width: 1021
-    height: 279
+    y: 486
+    width: 1149
+    height: 319
   m_MinSize: {x: 232, y: 272}
   m_MaxSize: {x: 10002, y: 10022}
   m_ActualView: {fileID: 14}
@@ -148,8 +148,8 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 0
-    width: 1280
-    height: 755
+    width: 1440
+    height: 855
   m_MinSize: {x: 950, y: 300}
   m_MaxSize: {x: 10000, y: 10000}
 --- !u!114 &7
@@ -169,7 +169,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 0
-    width: 1280
+    width: 1440
     height: 30
   m_MinSize: {x: 0, y: 0}
   m_MaxSize: {x: 0, y: 0}
@@ -190,8 +190,8 @@ MonoBehaviour:
   m_Position:
     serializedVersion: 2
     x: 0
-    y: 735
-    width: 1280
+    y: 835
+    width: 1440
     height: 20
   m_MinSize: {x: 0, y: 0}
   m_MaxSize: {x: 0, y: 0}
@@ -214,12 +214,12 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 0
-    width: 1021
-    height: 705
+    width: 1149
+    height: 805
   m_MinSize: {x: 406, y: 494}
   m_MaxSize: {x: 10002, y: 14044}
   vertical: 1
-  controlID: 52
+  controlID: 14
 --- !u!114 &10
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -239,12 +239,12 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 0
-    width: 1021
-    height: 426
+    width: 1149
+    height: 486
   m_MinSize: {x: 406, y: 222}
   m_MaxSize: {x: 8006, y: 4022}
   vertical: 0
-  controlID: 53
+  controlID: 15
 --- !u!114 &11
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -260,10 +260,10 @@ MonoBehaviour:
   m_Children: []
   m_Position:
     serializedVersion: 2
-    x: 272
+    x: 306
     y: 0
-    width: 749
-    height: 426
+    width: 843
+    height: 486
   m_MinSize: {x: 204, y: 222}
   m_MaxSize: {x: 4004, y: 4022}
   m_ActualView: {fileID: 17}
@@ -293,18 +293,18 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: 1023
-    y: 20
-    width: 257
-    height: 683
+    x: 1149
+    y: 75
+    width: 289
+    height: 786
   m_ViewDataDictionary: {fileID: 0}
-  progressMessageClearTime: -1
+  progressMessageClearTime: 412.699776018
   notificationClearTime: -1
   timeSinceLastRotation: -1
   currentBranchAndRemoteHasUpdate: 0
   currentTrackingStatusHasUpdate: 0
   currentStatusEntriesHasUpdate: 0
-  repositoryProgressHasUpdate: 0
+  repositoryProgressHasUpdate: 1
   appManagerProgressHasUpdate: 0
   changeTab: 3
   activeTab: 3
@@ -350,18 +350,8 @@ MonoBehaviour:
         isActive: 0
         treeIsCheckable: 0
         checkState: 0
-      - path: master
-        label: master
-        level: 1
-        isFolder: 0
-        isContainer: 0
-        isCollapsed: 0
-        isHidden: 0
-        isActive: 0
-        treeIsCheckable: 0
-        checkState: 0
-      - path: dev-app
-        label: dev-app
+      - path: dev-app-march
+        label: dev-app-march
         level: 1
         isFolder: 0
         isContainer: 0
@@ -371,8 +361,8 @@ MonoBehaviour:
         treeIsCheckable: 0
         checkState: 0
       selectedNode:
-        path: dev-app
-        label: dev-app
+        path: dev-app-march
+        label: dev-app-march
         level: 1
         isFolder: 0
         isContainer: 0
@@ -437,28 +427,8 @@ MonoBehaviour:
         isActive: 0
         treeIsCheckable: 0
         checkState: 0
-      - path: origin/dev-app
-        label: dev-app
-        level: 2
-        isFolder: 0
-        isContainer: 0
-        isCollapsed: 0
-        isHidden: 0
-        isActive: 0
-        treeIsCheckable: 0
-        checkState: 0
       - path: origin/HEAD
         label: HEAD
-        level: 2
-        isFolder: 0
-        isContainer: 0
-        isCollapsed: 0
-        isHidden: 0
-        isActive: 0
-        treeIsCheckable: 0
-        checkState: 0
-      - path: origin/master
-        label: master
         level: 2
         isFolder: 0
         isContainer: 0
@@ -484,14 +454,14 @@ MonoBehaviour:
     disableDelete: 1
     disableCreate: 0
     lastLocalAndRemoteBranchListChangedEvent:
-      updatedTimeString: 2020-03-09T16:18:37.413-04:00
+      updatedTimeString: 2020-03-13T11:12:45.962-04:00
       cacheType: 2
     lastCurrentBranchAndRemoteChange:
-      updatedTimeString: 2020-03-09T16:18:37.410-04:00
+      updatedTimeString: 2020-03-13T11:12:24.075-04:00
       cacheType: 1
     currentBranch:
-      name: dev-app
-      tracking: origin/dev-app
+      name: dev-app-march
+      tracking: origin/dev-app-march
     currentRemote:
       name: origin
       url: https://github.com/doomlab/Migraine-App.git
@@ -501,16 +471,10 @@ MonoBehaviour:
       function: 0
       token: 
     localBranches:
-    - name: master
-      tracking: origin/master
-    - name: dev-app
-      tracking: origin/dev-app
+    - name: dev-app-march
+      tracking: origin/dev-app-march
     remoteBranches:
-    - name: origin/dev-app
-      tracking: '[None]'
     - name: origin/HEAD
-      tracking: '[None]'
-    - name: origin/master
       tracking: '[None]'
   changesView:
     currentBranchHasUpdate: 0
@@ -528,9 +492,8 @@ MonoBehaviour:
         keys:
         - Migraine-App
         - Migraine-App/Library
-        - Migraine-App/Library/PackageCache
-        - Migraine-App/Library/PackageCache/com.unity.test-framework@1.0.13
-        - Migraine-App/Library/PackageCache/com.unity.test-framework@1.0.13/Documentation~
+        - Migraine-App/Library/gfu
+        - Migraine-App/Library/gfu/cache
         values:
         - path: Migraine-App
           label: Migraine-App
@@ -568,8 +531,8 @@ MonoBehaviour:
             originalPath: 
             indexStatus: 0
             workTreeStatus: 0
-        - path: Migraine-App/Library/PackageCache
-          label: PackageCache
+        - path: Migraine-App/Library/gfu
+          label: gfu
           level: 2
           isFolder: 1
           isContainer: 0
@@ -586,27 +549,9 @@ MonoBehaviour:
             originalPath: 
             indexStatus: 0
             workTreeStatus: 0
-        - path: Migraine-App/Library/PackageCache/com.unity.test-framework@1.0.13
-          label: com.unity.test-framework@1.0.13
+        - path: Migraine-App/Library/gfu/cache
+          label: cache
           level: 3
-          isFolder: 1
-          isContainer: 0
-          isCollapsed: 0
-          isHidden: 0
-          isActive: 0
-          treeIsCheckable: 1
-          checkState: 0
-          isLocked: 0
-          gitStatusEntry:
-            path: 
-            fullPath: 
-            projectPath: 
-            originalPath: 
-            indexStatus: 0
-            workTreeStatus: 0
-        - path: Migraine-App/Library/PackageCache/com.unity.test-framework@1.0.13/Documentation~
-          label: Documentation~
-          level: 4
           isFolder: 1
           isContainer: 0
           isCollapsed: 0
@@ -686,26 +631,8 @@ MonoBehaviour:
           originalPath: 
           indexStatus: 0
           workTreeStatus: 0
-      - path: Migraine-App/Library/assetDatabase3
-        label: assetDatabase3
-        level: 2
-        isFolder: 0
-        isContainer: 0
-        isCollapsed: 0
-        isHidden: 0
-        isActive: 0
-        treeIsCheckable: 1
-        checkState: 0
-        isLocked: 0
-        gitStatusEntry:
-          path: Migraine-App/Library/assetDatabase3
-          fullPath: /Users/buchanan/GitHub/Migraine-App/Migraine-App/Library/assetDatabase3
-          projectPath: Library/assetDatabase3
-          originalPath: 
-          indexStatus: 0
-          workTreeStatus: 3
-      - path: Migraine-App/Library/PackageCache
-        label: PackageCache
+      - path: Migraine-App/Library/gfu
+        label: gfu
         level: 2
         isFolder: 1
         isContainer: 0
@@ -722,8 +649,8 @@ MonoBehaviour:
           originalPath: 
           indexStatus: 0
           workTreeStatus: 0
-      - path: Migraine-App/Library/PackageCache/com.unity.test-framework@1.0.13
-        label: com.unity.test-framework@1.0.13
+      - path: Migraine-App/Library/gfu/cache
+        label: cache
         level: 3
         isFolder: 1
         isContainer: 0
@@ -740,27 +667,9 @@ MonoBehaviour:
           originalPath: 
           indexStatus: 0
           workTreeStatus: 0
-      - path: Migraine-App/Library/PackageCache/com.unity.test-framework@1.0.13/Documentation~
-        label: Documentation~
+      - path: Migraine-App/Library/gfu/cache/gitlocks.yaml
+        label: gitlocks.yaml
         level: 4
-        isFolder: 1
-        isContainer: 0
-        isCollapsed: 0
-        isHidden: 0
-        isActive: 0
-        treeIsCheckable: 1
-        checkState: 0
-        isLocked: 0
-        gitStatusEntry:
-          path: 
-          fullPath: 
-          projectPath: 
-          originalPath: 
-          indexStatus: 0
-          workTreeStatus: 0
-      - path: Migraine-App/Library/PackageCache/com.unity.test-framework@1.0.13/Documentation~/UnityTestRunner-0.png
-        label: UnityTestRunner-0.png
-        level: 5
         isFolder: 0
         isContainer: 0
         isCollapsed: 0
@@ -770,15 +679,15 @@ MonoBehaviour:
         checkState: 0
         isLocked: 0
         gitStatusEntry:
-          path: Migraine-App/Library/PackageCache/com.unity.test-framework@1.0.13/Documentation~/UnityTestRunner-0.png
-          fullPath: /Users/buchanan/GitHub/Migraine-App/Migraine-App/Library/PackageCache/com.unity.test-framework@1.0.13/Documentation~/UnityTestRunner-0.png
-          projectPath: Library/PackageCache/com.unity.test-framework@1.0.13/Documentation~/UnityTestRunner-0.png
+          path: Migraine-App/Library/gfu/cache/gitlocks.yaml
+          fullPath: /Users/buchanan/GitHub/Migraine-App/Migraine-App/Library/gfu/cache/gitlocks.yaml
+          projectPath: Library/gfu/cache/gitlocks.yaml
           originalPath: 
           indexStatus: 0
-          workTreeStatus: 3
-      - path: Migraine-App/Library/PackageCache/com.unity.test-framework@1.0.13/Documentation~/UnityTestRunner-1.png
-        label: UnityTestRunner-1.png
-        level: 5
+          workTreeStatus: 5
+      - path: Migraine-App/Library/gfu/cache/gitlog.yaml
+        label: gitlog.yaml
+        level: 4
         isFolder: 0
         isContainer: 0
         isCollapsed: 0
@@ -788,15 +697,15 @@ MonoBehaviour:
         checkState: 0
         isLocked: 0
         gitStatusEntry:
-          path: Migraine-App/Library/PackageCache/com.unity.test-framework@1.0.13/Documentation~/UnityTestRunner-1.png
-          fullPath: /Users/buchanan/GitHub/Migraine-App/Migraine-App/Library/PackageCache/com.unity.test-framework@1.0.13/Documentation~/UnityTestRunner-1.png
-          projectPath: Library/PackageCache/com.unity.test-framework@1.0.13/Documentation~/UnityTestRunner-1.png
+          path: Migraine-App/Library/gfu/cache/gitlog.yaml
+          fullPath: /Users/buchanan/GitHub/Migraine-App/Migraine-App/Library/gfu/cache/gitlog.yaml
+          projectPath: Library/gfu/cache/gitlog.yaml
           originalPath: 
           indexStatus: 0
-          workTreeStatus: 3
-      - path: Migraine-App/Library/PackageCache/com.unity.test-framework@1.0.13/Documentation~/UnityTestRunner-2.png
-        label: UnityTestRunner-2.png
-        level: 5
+          workTreeStatus: 5
+      - path: Migraine-App/Library/gfu/cache/gitstatusentries.yaml
+        label: gitstatusentries.yaml
+        level: 4
         isFolder: 0
         isContainer: 0
         isCollapsed: 0
@@ -806,15 +715,15 @@ MonoBehaviour:
         checkState: 0
         isLocked: 0
         gitStatusEntry:
-          path: Migraine-App/Library/PackageCache/com.unity.test-framework@1.0.13/Documentation~/UnityTestRunner-2.png
-          fullPath: /Users/buchanan/GitHub/Migraine-App/Migraine-App/Library/PackageCache/com.unity.test-framework@1.0.13/Documentation~/UnityTestRunner-2.png
-          projectPath: Library/PackageCache/com.unity.test-framework@1.0.13/Documentation~/UnityTestRunner-2.png
+          path: Migraine-App/Library/gfu/cache/gitstatusentries.yaml
+          fullPath: /Users/buchanan/GitHub/Migraine-App/Migraine-App/Library/gfu/cache/gitstatusentries.yaml
+          projectPath: Library/gfu/cache/gitstatusentries.yaml
           originalPath: 
           indexStatus: 0
           workTreeStatus: 3
-      - path: Migraine-App/Library/PackageCache/com.unity.test-framework@1.0.13/Documentation~/UnityTestRunner-3.png
-        label: UnityTestRunner-3.png
-        level: 5
+      - path: Migraine-App/Library/gfu/cache/gittrackingstatus.yaml
+        label: gittrackingstatus.yaml
+        level: 4
         isFolder: 0
         isContainer: 0
         isCollapsed: 0
@@ -824,15 +733,15 @@ MonoBehaviour:
         checkState: 0
         isLocked: 0
         gitStatusEntry:
-          path: Migraine-App/Library/PackageCache/com.unity.test-framework@1.0.13/Documentation~/UnityTestRunner-3.png
-          fullPath: /Users/buchanan/GitHub/Migraine-App/Migraine-App/Library/PackageCache/com.unity.test-framework@1.0.13/Documentation~/UnityTestRunner-3.png
-          projectPath: Library/PackageCache/com.unity.test-framework@1.0.13/Documentation~/UnityTestRunner-3.png
+          path: Migraine-App/Library/gfu/cache/gittrackingstatus.yaml
+          fullPath: /Users/buchanan/GitHub/Migraine-App/Migraine-App/Library/gfu/cache/gittrackingstatus.yaml
+          projectPath: Library/gfu/cache/gittrackingstatus.yaml
           originalPath: 
           indexStatus: 0
           workTreeStatus: 3
-      - path: Migraine-App/Library/PackageCache/com.unity.test-framework@1.0.13/Documentation~/UnityTestRunner-4.png
-        label: UnityTestRunner-4.png
-        level: 5
+      - path: Migraine-App/Library/gfu/cache/gituser.yaml
+        label: gituser.yaml
+        level: 4
         isFolder: 0
         isContainer: 0
         isCollapsed: 0
@@ -842,15 +751,15 @@ MonoBehaviour:
         checkState: 0
         isLocked: 0
         gitStatusEntry:
-          path: Migraine-App/Library/PackageCache/com.unity.test-framework@1.0.13/Documentation~/UnityTestRunner-4.png
-          fullPath: /Users/buchanan/GitHub/Migraine-App/Migraine-App/Library/PackageCache/com.unity.test-framework@1.0.13/Documentation~/UnityTestRunner-4.png
-          projectPath: Library/PackageCache/com.unity.test-framework@1.0.13/Documentation~/UnityTestRunner-4.png
+          path: Migraine-App/Library/gfu/cache/gituser.yaml
+          fullPath: /Users/buchanan/GitHub/Migraine-App/Migraine-App/Library/gfu/cache/gituser.yaml
+          projectPath: Library/gfu/cache/gituser.yaml
           originalPath: 
           indexStatus: 0
-          workTreeStatus: 3
-      - path: Migraine-App/Library/SceneVisibilityState.asset
-        label: SceneVisibilityState.asset
-        level: 2
+          workTreeStatus: 5
+      - path: Migraine-App/Library/gfu/cache/repoinfo.yaml
+        label: repoinfo.yaml
+        level: 4
         isFolder: 0
         isContainer: 0
         isCollapsed: 0
@@ -860,22 +769,22 @@ MonoBehaviour:
         checkState: 0
         isLocked: 0
         gitStatusEntry:
-          path: Migraine-App/Library/SceneVisibilityState.asset
-          fullPath: /Users/buchanan/GitHub/Migraine-App/Migraine-App/Library/SceneVisibilityState.asset
-          projectPath: Library/SceneVisibilityState.asset
+          path: Migraine-App/Library/gfu/cache/repoinfo.yaml
+          fullPath: /Users/buchanan/GitHub/Migraine-App/Migraine-App/Library/gfu/cache/repoinfo.yaml
+          projectPath: Library/gfu/cache/repoinfo.yaml
           originalPath: 
           indexStatus: 0
-          workTreeStatus: 3
+          workTreeStatus: 5
       selectedNode:
-        path: Migraine-App
-        label: Migraine-App
+        path: 
+        label: 
         level: 0
-        isFolder: 1
+        isFolder: 0
         isContainer: 0
         isCollapsed: 0
         isHidden: 0
         isActive: 0
-        treeIsCheckable: 1
+        treeIsCheckable: 0
         checkState: 0
         isLocked: 0
         gitStatusEntry:
@@ -886,57 +795,51 @@ MonoBehaviour:
           indexStatus: 0
           workTreeStatus: 0
     gitStatusEntries:
-    - path: Migraine-App/Library/assetDatabase3
-      fullPath: /Users/buchanan/GitHub/Migraine-App/Migraine-App/Library/assetDatabase3
-      projectPath: Library/assetDatabase3
+    - path: Migraine-App/Library/gfu/cache/gitlocks.yaml
+      fullPath: /Users/buchanan/GitHub/Migraine-App/Migraine-App/Library/gfu/cache/gitlocks.yaml
+      projectPath: Library/gfu/cache/gitlocks.yaml
+      originalPath: 
+      indexStatus: 0
+      workTreeStatus: 5
+    - path: Migraine-App/Library/gfu/cache/gitlog.yaml
+      fullPath: /Users/buchanan/GitHub/Migraine-App/Migraine-App/Library/gfu/cache/gitlog.yaml
+      projectPath: Library/gfu/cache/gitlog.yaml
+      originalPath: 
+      indexStatus: 0
+      workTreeStatus: 5
+    - path: Migraine-App/Library/gfu/cache/gitstatusentries.yaml
+      fullPath: /Users/buchanan/GitHub/Migraine-App/Migraine-App/Library/gfu/cache/gitstatusentries.yaml
+      projectPath: Library/gfu/cache/gitstatusentries.yaml
       originalPath: 
       indexStatus: 0
       workTreeStatus: 3
-    - path: Migraine-App/Library/PackageCache/com.unity.test-framework@1.0.13/Documentation~/UnityTestRunner-0.png
-      fullPath: /Users/buchanan/GitHub/Migraine-App/Migraine-App/Library/PackageCache/com.unity.test-framework@1.0.13/Documentation~/UnityTestRunner-0.png
-      projectPath: Library/PackageCache/com.unity.test-framework@1.0.13/Documentation~/UnityTestRunner-0.png
+    - path: Migraine-App/Library/gfu/cache/gittrackingstatus.yaml
+      fullPath: /Users/buchanan/GitHub/Migraine-App/Migraine-App/Library/gfu/cache/gittrackingstatus.yaml
+      projectPath: Library/gfu/cache/gittrackingstatus.yaml
       originalPath: 
       indexStatus: 0
       workTreeStatus: 3
-    - path: Migraine-App/Library/PackageCache/com.unity.test-framework@1.0.13/Documentation~/UnityTestRunner-1.png
-      fullPath: /Users/buchanan/GitHub/Migraine-App/Migraine-App/Library/PackageCache/com.unity.test-framework@1.0.13/Documentation~/UnityTestRunner-1.png
-      projectPath: Library/PackageCache/com.unity.test-framework@1.0.13/Documentation~/UnityTestRunner-1.png
+    - path: Migraine-App/Library/gfu/cache/gituser.yaml
+      fullPath: /Users/buchanan/GitHub/Migraine-App/Migraine-App/Library/gfu/cache/gituser.yaml
+      projectPath: Library/gfu/cache/gituser.yaml
       originalPath: 
       indexStatus: 0
-      workTreeStatus: 3
-    - path: Migraine-App/Library/PackageCache/com.unity.test-framework@1.0.13/Documentation~/UnityTestRunner-2.png
-      fullPath: /Users/buchanan/GitHub/Migraine-App/Migraine-App/Library/PackageCache/com.unity.test-framework@1.0.13/Documentation~/UnityTestRunner-2.png
-      projectPath: Library/PackageCache/com.unity.test-framework@1.0.13/Documentation~/UnityTestRunner-2.png
+      workTreeStatus: 5
+    - path: Migraine-App/Library/gfu/cache/repoinfo.yaml
+      fullPath: /Users/buchanan/GitHub/Migraine-App/Migraine-App/Library/gfu/cache/repoinfo.yaml
+      projectPath: Library/gfu/cache/repoinfo.yaml
       originalPath: 
       indexStatus: 0
-      workTreeStatus: 3
-    - path: Migraine-App/Library/PackageCache/com.unity.test-framework@1.0.13/Documentation~/UnityTestRunner-3.png
-      fullPath: /Users/buchanan/GitHub/Migraine-App/Migraine-App/Library/PackageCache/com.unity.test-framework@1.0.13/Documentation~/UnityTestRunner-3.png
-      projectPath: Library/PackageCache/com.unity.test-framework@1.0.13/Documentation~/UnityTestRunner-3.png
-      originalPath: 
-      indexStatus: 0
-      workTreeStatus: 3
-    - path: Migraine-App/Library/PackageCache/com.unity.test-framework@1.0.13/Documentation~/UnityTestRunner-4.png
-      fullPath: /Users/buchanan/GitHub/Migraine-App/Migraine-App/Library/PackageCache/com.unity.test-framework@1.0.13/Documentation~/UnityTestRunner-4.png
-      projectPath: Library/PackageCache/com.unity.test-framework@1.0.13/Documentation~/UnityTestRunner-4.png
-      originalPath: 
-      indexStatus: 0
-      workTreeStatus: 3
-    - path: Migraine-App/Library/SceneVisibilityState.asset
-      fullPath: /Users/buchanan/GitHub/Migraine-App/Migraine-App/Library/SceneVisibilityState.asset
-      projectPath: Library/SceneVisibilityState.asset
-      originalPath: 
-      indexStatus: 0
-      workTreeStatus: 3
-    changedFilesText: 7 changed files
+      workTreeStatus: 5
+    changedFilesText: 6 changed files
     lastCurrentBranchChangedEvent:
-      updatedTimeString: 2020-03-13T11:01:54.982-04:00
+      updatedTimeString: 2020-03-13T11:14:49.593-04:00
       cacheType: 1
     lastStatusEntriesChangedEvent:
-      updatedTimeString: 2020-03-13T11:01:55.350-04:00
+      updatedTimeString: 2020-03-13T11:19:06.453-04:00
       cacheType: 6
     lastLocksChangedEvent:
-      updatedTimeString: 2020-03-13T11:01:55.502-04:00
+      updatedTimeString: 2020-03-13T11:12:24.487-04:00
       cacheType: 7
   historyView:
     currentLogHasUpdate: 0
@@ -52941,13 +52844,13 @@ MonoBehaviour:
     m_Image: {fileID: 0}
     m_Tooltip: Url of the origin remote
   lastCurrentBranchAndRemoteChangedEvent:
-    updatedTimeString: 2020-03-13T11:01:54.982-04:00
+    updatedTimeString: 2020-03-13T11:14:49.593-04:00
     cacheType: 1
   lastTrackingStatusChangedEvent:
-    updatedTimeString: 2020-03-13T11:01:55.378-04:00
+    updatedTimeString: 2020-03-13T11:19:06.479-04:00
     cacheType: 5
   lastStatusEntriesChangedEvent:
-    updatedTimeString: 2020-03-13T11:01:55.350-04:00
+    updatedTimeString: 2020-03-13T11:19:06.453-04:00
     cacheType: 6
   pullButtonContent:
     m_Text: Pull
@@ -52965,8 +52868,8 @@ MonoBehaviour:
     m_Text: Fetch
     m_Image: {fileID: 0}
     m_Tooltip: 
-  repositoryProgressValue: 0
-  repositoryProgressMessage: 
+  repositoryProgressValue: 0.5
+  repositoryProgressMessage: Querying status...
   appManagerProgressValue: 0.5
   appManagerProgressMessage: Setting up git...
   connections: []
@@ -53019,9 +52922,9 @@ MonoBehaviour:
   m_Pos:
     serializedVersion: 2
     x: 0
-    y: 446
-    width: 1019
-    height: 257
+    y: 561
+    width: 1149
+    height: 300
   m_ViewDataDictionary: {fileID: 0}
   m_SearchFilter:
     m_NameFilter: 
@@ -53047,9 +52950,9 @@ MonoBehaviour:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: 4c2e0000
-    m_LastClickedID: 11852
-    m_ExpandedIDs: 000000004c2e000000ca9a3b
+    m_SelectedIDs: d62d0000
+    m_LastClickedID: 11734
+    m_ExpandedIDs: 00000000d62d000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -53077,7 +52980,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 
+    m_ExpandedIDs: 00000000d62d0000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -53193,16 +53096,16 @@ MonoBehaviour:
   m_Pos:
     serializedVersion: 2
     x: 0
-    y: 175
-    width: 272
-    height: 407
+    y: 75
+    width: 306
+    height: 467
   m_ViewDataDictionary: {fileID: 0}
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
       m_SelectedIDs: 
       m_LastClickedID: 0
-      m_ExpandedIDs: 58fbffff
+      m_ExpandedIDs: 72fbffff
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -53247,10 +53150,10 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: 272
-    y: 175
-    width: 747
-    height: 407
+    x: 306
+    y: 75
+    width: 841
+    height: 467
   m_ViewDataDictionary: {fileID: 0}
   m_ShowContextualTools: 0
   m_WindowGUID: e4b156d6cc3c4ed4ebc42f605b2f95a4
