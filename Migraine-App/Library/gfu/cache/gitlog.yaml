@@ -13,9 +13,177 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cacheType: 3
-  lastUpdatedAtString: 2020-03-13T10:39:14.749-04:00
+  lastUpdatedAtString: 2020-03-13T10:42:57.620-04:00
   initializedAtString: 2020-03-13T10:37:50.686-04:00
   log:
+  - commitID: b3c8f6c27af29c54654fcb3b5cd711263a2e2f75
+    mergeA: 
+    mergeB: 
+    authorName: Dr. Erin M. Buchanan
+    authorEmail: buchananlab@gmail.com
+    commitEmail: buchananlab@gmail.com
+    commitName: Dr. Erin M. Buchanan
+    summary: changing to android
+    description: 
+    timeString: 2020-03-13T10:42:56.000-04:00
+    commitTimeString: 2020-03-13T10:42:56.000-04:00
+    changes:
+    - path: Migraine-App/Library/AssetImportState
+      fullPath: /Users/buchanan/GitHub/Migraine-App/Migraine-App/Library/AssetImportState
+      projectPath: Library/AssetImportState
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Migraine-App/Library/EditorUserBuildSettings.asset
+      fullPath: /Users/buchanan/GitHub/Migraine-App/Migraine-App/Library/EditorUserBuildSettings.asset
+      projectPath: Library/EditorUserBuildSettings.asset
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Migraine-App/Library/SceneVisibilityState.asset
+      fullPath: /Users/buchanan/GitHub/Migraine-App/Migraine-App/Library/SceneVisibilityState.asset
+      projectPath: Library/SceneVisibilityState.asset
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Migraine-App/Library/ScriptAssemblies/Assembly-CSharp-Editor-firstpass.dll
+      fullPath: /Users/buchanan/GitHub/Migraine-App/Migraine-App/Library/ScriptAssemblies/Assembly-CSharp-Editor-firstpass.dll
+      projectPath: Library/ScriptAssemblies/Assembly-CSharp-Editor-firstpass.dll
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Migraine-App/Library/ScriptAssemblies/Unity.2D.Sprite.Editor.dll
+      fullPath: /Users/buchanan/GitHub/Migraine-App/Migraine-App/Library/ScriptAssemblies/Unity.2D.Sprite.Editor.dll
+      projectPath: Library/ScriptAssemblies/Unity.2D.Sprite.Editor.dll
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Migraine-App/Library/ScriptAssemblies/Unity.2D.Tilemap.Editor.dll
+      fullPath: /Users/buchanan/GitHub/Migraine-App/Migraine-App/Library/ScriptAssemblies/Unity.2D.Tilemap.Editor.dll
+      projectPath: Library/ScriptAssemblies/Unity.2D.Tilemap.Editor.dll
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Migraine-App/Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll
+      fullPath: /Users/buchanan/GitHub/Migraine-App/Migraine-App/Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll
+      projectPath: Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Migraine-App/Library/ScriptAssemblies/Unity.Rider.Editor.dll
+      fullPath: /Users/buchanan/GitHub/Migraine-App/Migraine-App/Library/ScriptAssemblies/Unity.Rider.Editor.dll
+      projectPath: Library/ScriptAssemblies/Unity.Rider.Editor.dll
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Migraine-App/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll
+      fullPath: /Users/buchanan/GitHub/Migraine-App/Migraine-App/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll
+      projectPath: Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Migraine-App/Library/ScriptAssemblies/Unity.TextMeshPro.dll
+      fullPath: /Users/buchanan/GitHub/Migraine-App/Migraine-App/Library/ScriptAssemblies/Unity.TextMeshPro.dll
+      projectPath: Library/ScriptAssemblies/Unity.TextMeshPro.dll
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Migraine-App/Library/ScriptAssemblies/Unity.Timeline.Editor.dll
+      fullPath: /Users/buchanan/GitHub/Migraine-App/Migraine-App/Library/ScriptAssemblies/Unity.Timeline.Editor.dll
+      projectPath: Library/ScriptAssemblies/Unity.Timeline.Editor.dll
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Migraine-App/Library/ScriptAssemblies/Unity.Timeline.dll
+      fullPath: /Users/buchanan/GitHub/Migraine-App/Migraine-App/Library/ScriptAssemblies/Unity.Timeline.dll
+      projectPath: Library/ScriptAssemblies/Unity.Timeline.dll
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Migraine-App/Library/ScriptAssemblies/Unity.VSCode.Editor.dll
+      fullPath: /Users/buchanan/GitHub/Migraine-App/Migraine-App/Library/ScriptAssemblies/Unity.VSCode.Editor.dll
+      projectPath: Library/ScriptAssemblies/Unity.VSCode.Editor.dll
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Migraine-App/Library/ScriptAssemblies/UnityEditor.TestRunner.dll
+      fullPath: /Users/buchanan/GitHub/Migraine-App/Migraine-App/Library/ScriptAssemblies/UnityEditor.TestRunner.dll
+      projectPath: Library/ScriptAssemblies/UnityEditor.TestRunner.dll
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Migraine-App/Library/ScriptAssemblies/UnityEditor.UI.dll
+      fullPath: /Users/buchanan/GitHub/Migraine-App/Migraine-App/Library/ScriptAssemblies/UnityEditor.UI.dll
+      projectPath: Library/ScriptAssemblies/UnityEditor.UI.dll
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Migraine-App/Library/ScriptAssemblies/UnityEngine.TestRunner.dll
+      fullPath: /Users/buchanan/GitHub/Migraine-App/Migraine-App/Library/ScriptAssemblies/UnityEngine.TestRunner.dll
+      projectPath: Library/ScriptAssemblies/UnityEngine.TestRunner.dll
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Migraine-App/Library/ScriptAssemblies/UnityEngine.UI.dll
+      fullPath: /Users/buchanan/GitHub/Migraine-App/Migraine-App/Library/ScriptAssemblies/UnityEngine.UI.dll
+      projectPath: Library/ScriptAssemblies/UnityEngine.UI.dll
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Migraine-App/Library/StateCache/Hierarchy/bcfe59-mainStage.json
+      fullPath: /Users/buchanan/GitHub/Migraine-App/Migraine-App/Library/StateCache/Hierarchy/bcfe59-mainStage.json
+      projectPath: Library/StateCache/Hierarchy/bcfe59-mainStage.json
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Migraine-App/Library/assetDatabase3
+      fullPath: /Users/buchanan/GitHub/Migraine-App/Migraine-App/Library/assetDatabase3
+      projectPath: Library/assetDatabase3
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Migraine-App/Library/gfu/cache/gitlocks.yaml
+      fullPath: /Users/buchanan/GitHub/Migraine-App/Migraine-App/Library/gfu/cache/gitlocks.yaml
+      projectPath: Library/gfu/cache/gitlocks.yaml
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Migraine-App/Library/gfu/cache/gitlog.yaml
+      fullPath: /Users/buchanan/GitHub/Migraine-App/Migraine-App/Library/gfu/cache/gitlog.yaml
+      projectPath: Library/gfu/cache/gitlog.yaml
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Migraine-App/Library/gfu/cache/gitstatusentries.yaml
+      fullPath: /Users/buchanan/GitHub/Migraine-App/Migraine-App/Library/gfu/cache/gitstatusentries.yaml
+      projectPath: Library/gfu/cache/gitstatusentries.yaml
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Migraine-App/Library/gfu/cache/gittrackingstatus.yaml
+      fullPath: /Users/buchanan/GitHub/Migraine-App/Migraine-App/Library/gfu/cache/gittrackingstatus.yaml
+      projectPath: Library/gfu/cache/gittrackingstatus.yaml
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Migraine-App/Library/gfu/cache/repoinfo.yaml
+      fullPath: /Users/buchanan/GitHub/Migraine-App/Migraine-App/Library/gfu/cache/repoinfo.yaml
+      projectPath: Library/gfu/cache/repoinfo.yaml
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Migraine-App/Library/metadata/f8/f81094832d834c64d93b198cb16b6a3e
+      fullPath: /Users/buchanan/GitHub/Migraine-App/Migraine-App/Library/metadata/f8/f81094832d834c64d93b198cb16b6a3e
+      projectPath: Library/metadata/f8/f81094832d834c64d93b198cb16b6a3e
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Migraine-App/Library/metadata/f8/f81094832d834c64d93b198cb16b6a3e.info
+      fullPath: /Users/buchanan/GitHub/Migraine-App/Migraine-App/Library/metadata/f8/f81094832d834c64d93b198cb16b6a3e.info
+      projectPath: Library/metadata/f8/f81094832d834c64d93b198cb16b6a3e.info
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
   - commitID: d2a478343a519a103e3197cfa9f5faaa156c6bd1
     mergeA: 
     mergeB: 
