@@ -13,8 +13,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cacheType: 6
-  lastUpdatedAtString: 2020-03-09T18:06:24.469-04:00
-  initializedAtString: 2020-03-09T18:06:24.469-04:00
+  lastUpdatedAtString: 2020-03-13T10:24:02.778-04:00
+  initializedAtString: 2020-03-13T10:24:02.778-04:00
   entries:
   - path: Migraine-App/Library/CurrentLayout-default.dwlt
     fullPath: /Users/buchanan/GitHub/Migraine-App/Migraine-App/Library/CurrentLayout-default.dwlt
@@ -43,24 +43,6 @@ MonoBehaviour:
   - path: Migraine-App/Library/gfu/cache/gittrackingstatus.yaml
     fullPath: /Users/buchanan/GitHub/Migraine-App/Migraine-App/Library/gfu/cache/gittrackingstatus.yaml
     projectPath: Library/gfu/cache/gittrackingstatus.yaml
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 3
-  - path: Migraine-App/Library/gfu/cache/repoinfo.yaml
-    fullPath: /Users/buchanan/GitHub/Migraine-App/Migraine-App/Library/gfu/cache/repoinfo.yaml
-    projectPath: Library/gfu/cache/repoinfo.yaml
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 3
-  - path: Migraine-App/Library/SceneVisibilityState.asset
-    fullPath: /Users/buchanan/GitHub/Migraine-App/Migraine-App/Library/SceneVisibilityState.asset
-    projectPath: Library/SceneVisibilityState.asset
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 3
-  - path: Migraine-App/Library/StateCache/Hierarchy/bcfe59-mainStage.json
-    fullPath: /Users/buchanan/GitHub/Migraine-App/Migraine-App/Library/StateCache/Hierarchy/bcfe59-mainStage.json
-    projectPath: Library/StateCache/Hierarchy/bcfe59-mainStage.json
     originalPath: 
     indexStatus: 0
     workTreeStatus: 3
