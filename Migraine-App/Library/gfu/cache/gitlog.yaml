@@ -13,9 +13,416 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cacheType: 3
-  lastUpdatedAtString: 2020-03-13T10:42:57.620-04:00
-  initializedAtString: 2020-03-13T10:37:50.686-04:00
+  lastUpdatedAtString: 2020-03-13T11:14:49.895-04:00
+  initializedAtString: 2020-03-13T11:14:20.508-04:00
   log:
+  - commitID: fdd8b3a8adee0afd18594baee136e6925f4e2236
+    mergeA: 
+    mergeB: 
+    authorName: Dr. Erin M. Buchanan
+    authorEmail: buchananlab@gmail.com
+    commitEmail: buchananlab@gmail.com
+    commitName: Dr. Erin M. Buchanan
+    summary: adding dumb files
+    description: 
+    timeString: 2020-03-13T11:14:19.000-04:00
+    commitTimeString: 2020-03-13T11:14:19.000-04:00
+    changes:
+    - path: Migraine-App/Library/CurrentLayout-default.dwlt
+      fullPath: /Users/buchanan/GitHub/Migraine-App/Migraine-App/Library/CurrentLayout-default.dwlt
+      projectPath: Library/CurrentLayout-default.dwlt
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Migraine-App/Library/PackageCache/com.unity.test-framework@1.0.13/Documentation~/UnityTestRunner-0.png
+      fullPath: /Users/buchanan/GitHub/Migraine-App/Migraine-App/Library/PackageCache/com.unity.test-framework@1.0.13/Documentation~/UnityTestRunner-0.png
+      projectPath: Library/PackageCache/com.unity.test-framework@1.0.13/Documentation~/UnityTestRunner-0.png
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Migraine-App/Library/PackageCache/com.unity.test-framework@1.0.13/Documentation~/UnityTestRunner-1.png
+      fullPath: /Users/buchanan/GitHub/Migraine-App/Migraine-App/Library/PackageCache/com.unity.test-framework@1.0.13/Documentation~/UnityTestRunner-1.png
+      projectPath: Library/PackageCache/com.unity.test-framework@1.0.13/Documentation~/UnityTestRunner-1.png
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Migraine-App/Library/PackageCache/com.unity.test-framework@1.0.13/Documentation~/UnityTestRunner-2.png
+      fullPath: /Users/buchanan/GitHub/Migraine-App/Migraine-App/Library/PackageCache/com.unity.test-framework@1.0.13/Documentation~/UnityTestRunner-2.png
+      projectPath: Library/PackageCache/com.unity.test-framework@1.0.13/Documentation~/UnityTestRunner-2.png
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Migraine-App/Library/PackageCache/com.unity.test-framework@1.0.13/Documentation~/UnityTestRunner-3.png
+      fullPath: /Users/buchanan/GitHub/Migraine-App/Migraine-App/Library/PackageCache/com.unity.test-framework@1.0.13/Documentation~/UnityTestRunner-3.png
+      projectPath: Library/PackageCache/com.unity.test-framework@1.0.13/Documentation~/UnityTestRunner-3.png
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Migraine-App/Library/PackageCache/com.unity.test-framework@1.0.13/Documentation~/UnityTestRunner-4.png
+      fullPath: /Users/buchanan/GitHub/Migraine-App/Migraine-App/Library/PackageCache/com.unity.test-framework@1.0.13/Documentation~/UnityTestRunner-4.png
+      projectPath: Library/PackageCache/com.unity.test-framework@1.0.13/Documentation~/UnityTestRunner-4.png
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Migraine-App/Library/SceneVisibilityState.asset
+      fullPath: /Users/buchanan/GitHub/Migraine-App/Migraine-App/Library/SceneVisibilityState.asset
+      projectPath: Library/SceneVisibilityState.asset
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Migraine-App/Library/StateCache/Hierarchy/bcfe59-mainStage.json
+      fullPath: /Users/buchanan/GitHub/Migraine-App/Migraine-App/Library/StateCache/Hierarchy/bcfe59-mainStage.json
+      projectPath: Library/StateCache/Hierarchy/bcfe59-mainStage.json
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Migraine-App/Library/assetDatabase3
+      fullPath: /Users/buchanan/GitHub/Migraine-App/Migraine-App/Library/assetDatabase3
+      projectPath: Library/assetDatabase3
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Migraine-App/Library/gfu/cache/gitlocks.yaml
+      fullPath: /Users/buchanan/GitHub/Migraine-App/Migraine-App/Library/gfu/cache/gitlocks.yaml
+      projectPath: Library/gfu/cache/gitlocks.yaml
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Migraine-App/Library/gfu/cache/gitstatusentries.yaml
+      fullPath: /Users/buchanan/GitHub/Migraine-App/Migraine-App/Library/gfu/cache/gitstatusentries.yaml
+      projectPath: Library/gfu/cache/gitstatusentries.yaml
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Migraine-App/Library/gfu/cache/gittrackingstatus.yaml
+      fullPath: /Users/buchanan/GitHub/Migraine-App/Migraine-App/Library/gfu/cache/gittrackingstatus.yaml
+      projectPath: Library/gfu/cache/gittrackingstatus.yaml
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Migraine-App/Library/gfu/cache/repoinfo.yaml
+      fullPath: /Users/buchanan/GitHub/Migraine-App/Migraine-App/Library/gfu/cache/repoinfo.yaml
+      projectPath: Library/gfu/cache/repoinfo.yaml
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+  - commitID: 6fac8e4edb2e083bd3afd77d4124076c41e3db70
+    mergeA: 
+    mergeB: 
+    authorName: Dr. Erin M. Buchanan
+    authorEmail: buchananlab@gmail.com
+    commitEmail: buchananlab@gmail.com
+    commitName: Dr. Erin M. Buchanan
+    summary: just trying not to sync this stupid folder
+    description: 
+    timeString: 2020-03-13T10:58:37.000-04:00
+    commitTimeString: 2020-03-13T10:58:37.000-04:00
+    changes:
+    - path: Migraine-App/Library/PackageCache/com.unity.textmeshpro@2.0.1/Editor Resources/Gizmos/TMP
+        - Dropdown Icon.psd
+      fullPath: /Users/buchanan/GitHub/Migraine-App/Migraine-App/Library/PackageCache/com.unity.textmeshpro@2.0.1/Editor
+        Resources/Gizmos/TMP - Dropdown Icon.psd
+      projectPath: Library/PackageCache/com.unity.textmeshpro@2.0.1/Editor Resources/Gizmos/TMP
+        - Dropdown Icon.psd
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Migraine-App/Library/PackageCache/com.unity.textmeshpro@2.0.1/Editor Resources/Gizmos/TMP
+        - Font Asset Icon.psd
+      fullPath: /Users/buchanan/GitHub/Migraine-App/Migraine-App/Library/PackageCache/com.unity.textmeshpro@2.0.1/Editor
+        Resources/Gizmos/TMP - Font Asset Icon.psd
+      projectPath: Library/PackageCache/com.unity.textmeshpro@2.0.1/Editor Resources/Gizmos/TMP
+        - Font Asset Icon.psd
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Migraine-App/Library/PackageCache/com.unity.textmeshpro@2.0.1/Editor Resources/Gizmos/TMP
+        - Input Field Icon.psd
+      fullPath: /Users/buchanan/GitHub/Migraine-App/Migraine-App/Library/PackageCache/com.unity.textmeshpro@2.0.1/Editor
+        Resources/Gizmos/TMP - Input Field Icon.psd
+      projectPath: Library/PackageCache/com.unity.textmeshpro@2.0.1/Editor Resources/Gizmos/TMP
+        - Input Field Icon.psd
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Migraine-App/Library/PackageCache/com.unity.textmeshpro@2.0.1/Editor Resources/Gizmos/TMP
+        - Sprite Asset Icon.psd
+      fullPath: /Users/buchanan/GitHub/Migraine-App/Migraine-App/Library/PackageCache/com.unity.textmeshpro@2.0.1/Editor
+        Resources/Gizmos/TMP - Sprite Asset Icon.psd
+      projectPath: Library/PackageCache/com.unity.textmeshpro@2.0.1/Editor Resources/Gizmos/TMP
+        - Sprite Asset Icon.psd
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Migraine-App/Library/PackageCache/com.unity.textmeshpro@2.0.1/Editor Resources/Gizmos/TMP
+        - Text Component Icon.psd
+      fullPath: /Users/buchanan/GitHub/Migraine-App/Migraine-App/Library/PackageCache/com.unity.textmeshpro@2.0.1/Editor
+        Resources/Gizmos/TMP - Text Component Icon.psd
+      projectPath: Library/PackageCache/com.unity.textmeshpro@2.0.1/Editor Resources/Gizmos/TMP
+        - Text Component Icon.psd
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Migraine-App/Library/PackageCache/com.unity.textmeshpro@2.0.1/Editor Resources/Textures/SectionHeader_Dark.psd
+      fullPath: /Users/buchanan/GitHub/Migraine-App/Migraine-App/Library/PackageCache/com.unity.textmeshpro@2.0.1/Editor
+        Resources/Textures/SectionHeader_Dark.psd
+      projectPath: Library/PackageCache/com.unity.textmeshpro@2.0.1/Editor Resources/Textures/SectionHeader_Dark.psd
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Migraine-App/Library/PackageCache/com.unity.textmeshpro@2.0.1/Editor Resources/Textures/SectionHeader_Light.psd
+      fullPath: /Users/buchanan/GitHub/Migraine-App/Migraine-App/Library/PackageCache/com.unity.textmeshpro@2.0.1/Editor
+        Resources/Textures/SectionHeader_Light.psd
+      projectPath: Library/PackageCache/com.unity.textmeshpro@2.0.1/Editor Resources/Textures/SectionHeader_Light.psd
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Migraine-App/Library/PackageCache/com.unity.textmeshpro@2.0.1/Editor Resources/Textures/btn_AlignBaseLine.psd
+      fullPath: /Users/buchanan/GitHub/Migraine-App/Migraine-App/Library/PackageCache/com.unity.textmeshpro@2.0.1/Editor
+        Resources/Textures/btn_AlignBaseLine.psd
+      projectPath: Library/PackageCache/com.unity.textmeshpro@2.0.1/Editor Resources/Textures/btn_AlignBaseLine.psd
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Migraine-App/Library/PackageCache/com.unity.textmeshpro@2.0.1/Editor Resources/Textures/btn_AlignBaseLine_Light.psd
+      fullPath: /Users/buchanan/GitHub/Migraine-App/Migraine-App/Library/PackageCache/com.unity.textmeshpro@2.0.1/Editor
+        Resources/Textures/btn_AlignBaseLine_Light.psd
+      projectPath: Library/PackageCache/com.unity.textmeshpro@2.0.1/Editor Resources/Textures/btn_AlignBaseLine_Light.psd
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Migraine-App/Library/PackageCache/com.unity.textmeshpro@2.0.1/Editor Resources/Textures/btn_AlignBottom.psd
+      fullPath: /Users/buchanan/GitHub/Migraine-App/Migraine-App/Library/PackageCache/com.unity.textmeshpro@2.0.1/Editor
+        Resources/Textures/btn_AlignBottom.psd
+      projectPath: Library/PackageCache/com.unity.textmeshpro@2.0.1/Editor Resources/Textures/btn_AlignBottom.psd
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Migraine-App/Library/PackageCache/com.unity.textmeshpro@2.0.1/Editor Resources/Textures/btn_AlignBottom_Light.psd
+      fullPath: /Users/buchanan/GitHub/Migraine-App/Migraine-App/Library/PackageCache/com.unity.textmeshpro@2.0.1/Editor
+        Resources/Textures/btn_AlignBottom_Light.psd
+      projectPath: Library/PackageCache/com.unity.textmeshpro@2.0.1/Editor Resources/Textures/btn_AlignBottom_Light.psd
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Migraine-App/Library/PackageCache/com.unity.textmeshpro@2.0.1/Editor Resources/Textures/btn_AlignCapLine.psd
+      fullPath: /Users/buchanan/GitHub/Migraine-App/Migraine-App/Library/PackageCache/com.unity.textmeshpro@2.0.1/Editor
+        Resources/Textures/btn_AlignCapLine.psd
+      projectPath: Library/PackageCache/com.unity.textmeshpro@2.0.1/Editor Resources/Textures/btn_AlignCapLine.psd
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Migraine-App/Library/PackageCache/com.unity.textmeshpro@2.0.1/Editor Resources/Textures/btn_AlignCapLine_Light.psd
+      fullPath: /Users/buchanan/GitHub/Migraine-App/Migraine-App/Library/PackageCache/com.unity.textmeshpro@2.0.1/Editor
+        Resources/Textures/btn_AlignCapLine_Light.psd
+      projectPath: Library/PackageCache/com.unity.textmeshpro@2.0.1/Editor Resources/Textures/btn_AlignCapLine_Light.psd
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Migraine-App/Library/PackageCache/com.unity.textmeshpro@2.0.1/Editor Resources/Textures/btn_AlignCenter.psd
+      fullPath: /Users/buchanan/GitHub/Migraine-App/Migraine-App/Library/PackageCache/com.unity.textmeshpro@2.0.1/Editor
+        Resources/Textures/btn_AlignCenter.psd
+      projectPath: Library/PackageCache/com.unity.textmeshpro@2.0.1/Editor Resources/Textures/btn_AlignCenter.psd
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Migraine-App/Library/PackageCache/com.unity.textmeshpro@2.0.1/Editor Resources/Textures/btn_AlignCenterGeo.psd
+      fullPath: /Users/buchanan/GitHub/Migraine-App/Migraine-App/Library/PackageCache/com.unity.textmeshpro@2.0.1/Editor
+        Resources/Textures/btn_AlignCenterGeo.psd
+      projectPath: Library/PackageCache/com.unity.textmeshpro@2.0.1/Editor Resources/Textures/btn_AlignCenterGeo.psd
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Migraine-App/Library/PackageCache/com.unity.textmeshpro@2.0.1/Editor Resources/Textures/btn_AlignCenterGeo_Light.psd
+      fullPath: /Users/buchanan/GitHub/Migraine-App/Migraine-App/Library/PackageCache/com.unity.textmeshpro@2.0.1/Editor
+        Resources/Textures/btn_AlignCenterGeo_Light.psd
+      projectPath: Library/PackageCache/com.unity.textmeshpro@2.0.1/Editor Resources/Textures/btn_AlignCenterGeo_Light.psd
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Migraine-App/Library/PackageCache/com.unity.textmeshpro@2.0.1/Editor Resources/Textures/btn_AlignCenter_Light.psd
+      fullPath: /Users/buchanan/GitHub/Migraine-App/Migraine-App/Library/PackageCache/com.unity.textmeshpro@2.0.1/Editor
+        Resources/Textures/btn_AlignCenter_Light.psd
+      projectPath: Library/PackageCache/com.unity.textmeshpro@2.0.1/Editor Resources/Textures/btn_AlignCenter_Light.psd
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Migraine-App/Library/PackageCache/com.unity.textmeshpro@2.0.1/Editor Resources/Textures/btn_AlignFlush.psd
+      fullPath: /Users/buchanan/GitHub/Migraine-App/Migraine-App/Library/PackageCache/com.unity.textmeshpro@2.0.1/Editor
+        Resources/Textures/btn_AlignFlush.psd
+      projectPath: Library/PackageCache/com.unity.textmeshpro@2.0.1/Editor Resources/Textures/btn_AlignFlush.psd
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Migraine-App/Library/PackageCache/com.unity.textmeshpro@2.0.1/Editor Resources/Textures/btn_AlignFlush_Light.psd
+      fullPath: /Users/buchanan/GitHub/Migraine-App/Migraine-App/Library/PackageCache/com.unity.textmeshpro@2.0.1/Editor
+        Resources/Textures/btn_AlignFlush_Light.psd
+      projectPath: Library/PackageCache/com.unity.textmeshpro@2.0.1/Editor Resources/Textures/btn_AlignFlush_Light.psd
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Migraine-App/Library/PackageCache/com.unity.textmeshpro@2.0.1/Editor Resources/Textures/btn_AlignJustified.psd
+      fullPath: /Users/buchanan/GitHub/Migraine-App/Migraine-App/Library/PackageCache/com.unity.textmeshpro@2.0.1/Editor
+        Resources/Textures/btn_AlignJustified.psd
+      projectPath: Library/PackageCache/com.unity.textmeshpro@2.0.1/Editor Resources/Textures/btn_AlignJustified.psd
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Migraine-App/Library/PackageCache/com.unity.textmeshpro@2.0.1/Editor Resources/Textures/btn_AlignJustified_Light.psd
+      fullPath: /Users/buchanan/GitHub/Migraine-App/Migraine-App/Library/PackageCache/com.unity.textmeshpro@2.0.1/Editor
+        Resources/Textures/btn_AlignJustified_Light.psd
+      projectPath: Library/PackageCache/com.unity.textmeshpro@2.0.1/Editor Resources/Textures/btn_AlignJustified_Light.psd
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Migraine-App/Library/PackageCache/com.unity.textmeshpro@2.0.1/Editor Resources/Textures/btn_AlignLeft.psd
+      fullPath: /Users/buchanan/GitHub/Migraine-App/Migraine-App/Library/PackageCache/com.unity.textmeshpro@2.0.1/Editor
+        Resources/Textures/btn_AlignLeft.psd
+      projectPath: Library/PackageCache/com.unity.textmeshpro@2.0.1/Editor Resources/Textures/btn_AlignLeft.psd
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Migraine-App/Library/PackageCache/com.unity.textmeshpro@2.0.1/Editor Resources/Textures/btn_AlignLeft_Light.psd
+      fullPath: /Users/buchanan/GitHub/Migraine-App/Migraine-App/Library/PackageCache/com.unity.textmeshpro@2.0.1/Editor
+        Resources/Textures/btn_AlignLeft_Light.psd
+      projectPath: Library/PackageCache/com.unity.textmeshpro@2.0.1/Editor Resources/Textures/btn_AlignLeft_Light.psd
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Migraine-App/Library/PackageCache/com.unity.textmeshpro@2.0.1/Editor Resources/Textures/btn_AlignMidLine.psd
+      fullPath: /Users/buchanan/GitHub/Migraine-App/Migraine-App/Library/PackageCache/com.unity.textmeshpro@2.0.1/Editor
+        Resources/Textures/btn_AlignMidLine.psd
+      projectPath: Library/PackageCache/com.unity.textmeshpro@2.0.1/Editor Resources/Textures/btn_AlignMidLine.psd
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Migraine-App/Library/PackageCache/com.unity.textmeshpro@2.0.1/Editor Resources/Textures/btn_AlignMiddle.psd
+      fullPath: /Users/buchanan/GitHub/Migraine-App/Migraine-App/Library/PackageCache/com.unity.textmeshpro@2.0.1/Editor
+        Resources/Textures/btn_AlignMiddle.psd
+      projectPath: Library/PackageCache/com.unity.textmeshpro@2.0.1/Editor Resources/Textures/btn_AlignMiddle.psd
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Migraine-App/Library/PackageCache/com.unity.textmeshpro@2.0.1/Editor Resources/Textures/btn_AlignMiddle_Light.psd
+      fullPath: /Users/buchanan/GitHub/Migraine-App/Migraine-App/Library/PackageCache/com.unity.textmeshpro@2.0.1/Editor
+        Resources/Textures/btn_AlignMiddle_Light.psd
+      projectPath: Library/PackageCache/com.unity.textmeshpro@2.0.1/Editor Resources/Textures/btn_AlignMiddle_Light.psd
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Migraine-App/Library/PackageCache/com.unity.textmeshpro@2.0.1/Editor Resources/Textures/btn_AlignMidline_Light.psd
+      fullPath: /Users/buchanan/GitHub/Migraine-App/Migraine-App/Library/PackageCache/com.unity.textmeshpro@2.0.1/Editor
+        Resources/Textures/btn_AlignMidline_Light.psd
+      projectPath: Library/PackageCache/com.unity.textmeshpro@2.0.1/Editor Resources/Textures/btn_AlignMidline_Light.psd
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Migraine-App/Library/PackageCache/com.unity.textmeshpro@2.0.1/Editor Resources/Textures/btn_AlignRight.psd
+      fullPath: /Users/buchanan/GitHub/Migraine-App/Migraine-App/Library/PackageCache/com.unity.textmeshpro@2.0.1/Editor
+        Resources/Textures/btn_AlignRight.psd
+      projectPath: Library/PackageCache/com.unity.textmeshpro@2.0.1/Editor Resources/Textures/btn_AlignRight.psd
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Migraine-App/Library/PackageCache/com.unity.textmeshpro@2.0.1/Editor Resources/Textures/btn_AlignRight_Light.psd
+      fullPath: /Users/buchanan/GitHub/Migraine-App/Migraine-App/Library/PackageCache/com.unity.textmeshpro@2.0.1/Editor
+        Resources/Textures/btn_AlignRight_Light.psd
+      projectPath: Library/PackageCache/com.unity.textmeshpro@2.0.1/Editor Resources/Textures/btn_AlignRight_Light.psd
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Migraine-App/Library/PackageCache/com.unity.textmeshpro@2.0.1/Editor Resources/Textures/btn_AlignTop.psd
+      fullPath: /Users/buchanan/GitHub/Migraine-App/Migraine-App/Library/PackageCache/com.unity.textmeshpro@2.0.1/Editor
+        Resources/Textures/btn_AlignTop.psd
+      projectPath: Library/PackageCache/com.unity.textmeshpro@2.0.1/Editor Resources/Textures/btn_AlignTop.psd
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Migraine-App/Library/PackageCache/com.unity.textmeshpro@2.0.1/Editor Resources/Textures/btn_AlignTop_Light.psd
+      fullPath: /Users/buchanan/GitHub/Migraine-App/Migraine-App/Library/PackageCache/com.unity.textmeshpro@2.0.1/Editor
+        Resources/Textures/btn_AlignTop_Light.psd
+      projectPath: Library/PackageCache/com.unity.textmeshpro@2.0.1/Editor Resources/Textures/btn_AlignTop_Light.psd
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+  - commitID: 09aea9ee4d8986a1bba130848a7f75ef200eb567
+    mergeA: 
+    mergeB: 
+    authorName: The Doom Lab
+    authorEmail: buchananlab@gmail.com
+    commitEmail: noreply@github.com
+    commitName: GitHub
+    summary: Update .gitignore
+    description: 
+    timeString: 2020-03-13T10:50:41.000-04:00
+    commitTimeString: 2020-03-13T10:50:41.000-04:00
+    changes:
+    - path: Migraine-App/.gitignore
+      fullPath: /Users/buchanan/GitHub/Migraine-App/Migraine-App/.gitignore
+      projectPath: .gitignore
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+  - commitID: 851da81f4df40138f3f24d0c2bea6671c227d819
+    mergeA: 0477ace3bb2932c81ac0a225d185915d25d822fd
+    mergeB: da088f6d70ec3c0b6c47a9a5b03d978ccfefb513
+    authorName: Dr. Erin M. Buchanan
+    authorEmail: buchananlab@gmail.com
+    commitEmail: buchananlab@gmail.com
+    commitName: Dr. Erin M. Buchanan
+    summary: Merge branch 'master' of https://github.com/doomlab/Migraine-App
+    description: 
+    timeString: 2020-03-13T10:48:01.000-04:00
+    commitTimeString: 2020-03-13T10:48:01.000-04:00
+    changes: []
+  - commitID: da088f6d70ec3c0b6c47a9a5b03d978ccfefb513
+    mergeA: 
+    mergeB: 
+    authorName: The Doom Lab
+    authorEmail: buchananlab@gmail.com
+    commitEmail: noreply@github.com
+    commitName: GitHub
+    summary: Update .gitignore
+    description: 
+    timeString: 2020-03-13T10:47:06.000-04:00
+    commitTimeString: 2020-03-13T10:47:06.000-04:00
+    changes:
+    - path: Migraine-App/.gitignore
+      fullPath: /Users/buchanan/GitHub/Migraine-App/Migraine-App/.gitignore
+      projectPath: .gitignore
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+  - commitID: 0477ace3bb2932c81ac0a225d185915d25d822fd
+    mergeA: 
+    mergeB: 
+    authorName: Dr. Erin M. Buchanan
+    authorEmail: buchananlab@gmail.com
+    commitEmail: buchananlab@gmail.com
+    commitName: Dr. Erin M. Buchanan
+    summary: commit yaml
+    description: 
+    timeString: 2020-03-13T10:43:19.000-04:00
+    commitTimeString: 2020-03-13T10:43:19.000-04:00
+    changes:
+    - path: Migraine-App/Library/gfu/cache/gitlog.yaml
+      fullPath: /Users/buchanan/GitHub/Migraine-App/Migraine-App/Library/gfu/cache/gitlog.yaml
+      projectPath: Library/gfu/cache/gitlog.yaml
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Migraine-App/Library/gfu/cache/gitstatusentries.yaml
+      fullPath: /Users/buchanan/GitHub/Migraine-App/Migraine-App/Library/gfu/cache/gitstatusentries.yaml
+      projectPath: Library/gfu/cache/gitstatusentries.yaml
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Migraine-App/Library/gfu/cache/gittrackingstatus.yaml
+      fullPath: /Users/buchanan/GitHub/Migraine-App/Migraine-App/Library/gfu/cache/gittrackingstatus.yaml
+      projectPath: Library/gfu/cache/gittrackingstatus.yaml
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
   - commitID: b3c8f6c27af29c54654fcb3b5cd711263a2e2f75
     mergeA: 
     mergeB: 
