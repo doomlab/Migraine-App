@@ -13,8 +13,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cacheType: 1
-  lastUpdatedAtString: 2020-03-13T10:39:14.447-04:00
-  initializedAtString: 2020-03-13T10:37:32.769-04:00
+  lastUpdatedAtString: 2020-03-13T11:12:24.075-04:00
+  initializedAtString: 2020-03-13T11:12:24.075-04:00
   currentGitRemote:
     name: origin
     url: https://github.com/doomlab/Migraine-App.git
@@ -24,14 +24,14 @@ MonoBehaviour:
     function: 0
     token: 
   currentGitBranch:
-    name: master
-    tracking: origin/master
+    name: dev-app-march
+    tracking: origin/dev-app-march
   currentConfigBranch:
-    name: master
+    name: dev-app-march
     remote:
       name: origin
       url: https://github.com/doomlab/Migraine-App.git
-    trackingBranch: master
+    trackingBranch: dev-app-march
   currentConfigRemote:
     name: origin
     url: https://github.com/doomlab/Migraine-App.git
