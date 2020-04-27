@@ -248,7 +248,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 1. My migraine associated symptoms are negatively impacting my life.
+  m_text: My migraine associated symptoms are negatively impacting my life.
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -317,10 +317,10 @@ MonoBehaviour:
   m_margin: {x: 0.33497185, y: 0, z: 1.4238418, w: 0}
   m_textInfo:
     textComponent: {fileID: 34594377}
-    characterCount: 68
+    characterCount: 65
     spriteCount: 0
-    spaceCount: 9
-    wordCount: 10
+    spaceCount: 8
+    wordCount: 9
     linkCount: 0
     lineCount: 2
     pageCount: 1
@@ -2355,7 +2355,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 3. Neither
+  m_text: Choose One
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -3728,7 +3728,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 2. The number of my head pain days have decreased.
+  m_text: The number of my head pain days have decreased.
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -3797,10 +3797,10 @@ MonoBehaviour:
   m_margin: {x: 0.33497185, y: 0, z: 1.4238418, w: 0}
   m_textInfo:
     textComponent: {fileID: 811836002}
-    characterCount: 50
+    characterCount: 47
     spriteCount: 0
-    spaceCount: 9
-    wordCount: 10
+    spaceCount: 8
+    wordCount: 9
     linkCount: 0
     lineCount: 2
     pageCount: 1
@@ -4422,10 +4422,10 @@ RectTransform:
   m_Father: {fileID: 394446910}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0.000011444, y: 0.27045}
-  m_SizeDelta: {x: 360, y: 576.55}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &991012044
 MonoBehaviour:
@@ -6076,7 +6076,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: 86.80002}
-  m_SizeDelta: {x: 230, y: 30}
+  m_SizeDelta: {x: 300, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1399277878
 MonoBehaviour:
@@ -8050,7 +8050,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0.000019073, y: 156.8}
-  m_SizeDelta: {x: 230, y: 30}
+  m_SizeDelta: {x: 300, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1874961107
 MonoBehaviour:
@@ -8097,18 +8097,20 @@ MonoBehaviour:
   m_CaptionImage: {fileID: 0}
   m_ItemText: {fileID: 916522491}
   m_ItemImage: {fileID: 0}
-  m_Value: 2
+  m_Value: 0
   m_Options:
     m_Options:
-    - m_Text: 1. Strongly Agree
+    - m_Text: Choose One
       m_Image: {fileID: 0}
-    - m_Text: 2. Somewhat Agree
+    - m_Text: Strongly Agree
       m_Image: {fileID: 0}
-    - m_Text: 3. Neither
+    - m_Text: Somewhat Agree
       m_Image: {fileID: 0}
-    - m_Text: 4. Somewhat Disagree
+    - m_Text: Neither
       m_Image: {fileID: 0}
-    - m_Text: 5. Strongly Disagree
+    - m_Text: Somewhat Disagree
+      m_Image: {fileID: 0}
+    - m_Text: Strongly Disagree
       m_Image: {fileID: 0}
   m_OnValueChanged:
     m_PersistentCalls:
