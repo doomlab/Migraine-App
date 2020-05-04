@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC "-//Hibernate/Hibernate Configuration DTD//EN" 
+"http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+
+<hibernate-configuration>
+	<session-factory>
+		
+		<!-- Using Derby for dev/debug -->
+		<property name="hibernate.dialect">org.hibernate.dialect.DerbyTenSevenDialect</property>
+		<property name="hibernate.connection.driver_class">org.apache.derby.jdbc.EmbeddedDriver</property>
+		<property name="hibernate.connection.url">jdbc:derby:/opt/tomcat/latest/migrainedb;create=true</property>	
+		<property name="hibernate.connection.username">app</property>
+		<property name="hibernate.connection.password">ap</property>
+		
+		<!-- Using MySQL for test/production
+		<property name="hibernate.dialect">org.hibernate.dialect.MySQLDialect</property>
+		<property name="connection.driver_class">com.mysql.jdbc.Driver</property>
+		<property name="hibernate.connection.url">jdbc:mysql://localhost:3306/migraine</property>	
+		<property name="hibernate.connection.username">app</property>
+		<property name="hibernate.connection.password">ap</property>
+		<property name="connection.pool.size">1</property>
+		 -->
+
+		<property name="hibernate.show_sql">true</property>
+		<property name="hibernate.format_sql">true</property>
+		<property name="hibernate.hbm2ddl.auto">update</property>
+
+		<!-- Enable Hibernate's automatic session context management -->
+		<property name="current_session_context_class">thread</property>
+
+		<mapping class="com.clinvest.migraine.server.data.User"></mapping>
+		<mapping class="com.clinvest.migraine.server.data.UserSession"></mapping>
+	</session-factory>
+</hibernate-configuration>
