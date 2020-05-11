@@ -277,7 +277,7 @@ GameObject:
   - component: {fileID: 542163154}
   - component: {fileID: 542163153}
   m_Layer: 5
-  m_Name: Text (TMP) (2)
+  m_Name: Page_5/10
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1515,7 +1515,7 @@ GameObject:
   - component: {fileID: 1365326154}
   - component: {fileID: 1365326153}
   m_Layer: 5
-  m_Name: Text (TMP)
+  m_Name: Question_5
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1774,7 +1774,7 @@ GameObject:
   - component: {fileID: 1582609615}
   - component: {fileID: 1582609614}
   m_Layer: 5
-  m_Name: Button
+  m_Name: Submit_Button_5
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2047,7 +2047,7 @@ GameObject:
   - component: {fileID: 1917616908}
   - component: {fileID: 1917616907}
   m_Layer: 5
-  m_Name: Dropdown
+  m_Name: Selection_4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
