@@ -56,7 +56,12 @@
 			<version>3.1.0</version>
 			<scope>provided</scope>
 		</dependency>
-
+        <!-- https://mvnrepository.com/artifact/javax.mail/javax.mail-api -->
+		<dependency>
+			<groupId>javax.mail</groupId>
+			<artifactId>javax.mail-api</artifactId>
+			<version>1.6.0</version>
+		</dependency>
 		<!-- Some containers like Tomcat don't have jstl library -->
 		<dependency>
 			<groupId>javax.servlet</groupId>
