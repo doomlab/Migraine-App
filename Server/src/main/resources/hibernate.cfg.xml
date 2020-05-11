@@ -30,5 +30,7 @@
 
 		<mapping class="com.clinvest.migraine.server.data.User"></mapping>
 		<mapping class="com.clinvest.migraine.server.data.UserSession"></mapping>
+		<mapping class="com.clinvest.migraine.server.data.Role"></mapping>
+		<mapping class="com.clinvest.migraine.server.data.UserRole"></mapping>
 	</session-factory>
 </hibernate-configuration>
