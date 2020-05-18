@@ -26,7 +26,7 @@ public class AdminServlet extends HttpServlet
   }
 
   /*
-   * /admin/initdb
+   * /admin
    */
   @Override
   protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException
@@ -44,6 +44,8 @@ public class AdminServlet extends HttpServlet
     {
       response.setContentType("text/html");
       response.setStatus(HttpServletResponse.SC_INTERNAL_SERVER_ERROR);
+      response.getWriter().println("Error initializing migraine database.");
+      e.printStackTrace(response.getWriter());
       LOG.error("Error initializing migraine database.", e);
     }
   }
