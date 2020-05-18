@@ -95,7 +95,7 @@ public class Role
       Query<Role> query = session.createQuery("from Role where name = :name ");
       query.setParameter("name", name);
       List<Role> list = query.list();
-      if (null != list)
+      if (null != list && list.size() > 0)
       {
         role = list.get(0);
       }

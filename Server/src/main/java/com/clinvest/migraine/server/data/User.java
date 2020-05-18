@@ -129,16 +129,18 @@ public class User
     return user;
   }
 
+  @SuppressWarnings("unchecked")
   public static User getByEmail(String email)
   {
 
     User user = null;
     try (Session session = HibernateUtils.getSessionFactory().openSession())
     {
-      Query query = session.createQuery("from User where email = :email ");
+      Query<User> query = session.createQuery("from User where email = :email ");
       query.setParameter("email", email);
+
       List<User> list = query.list();
-      if (null != list)
+      if (null != list && list.size() > 0)
       {
         user = list.get(0);
       }
@@ -169,6 +171,17 @@ public class User
       session.save(user);
 
       session.getTransaction().commit();
+    }
+  }
+  
+  public static void update(User user) {
+    
+    try (Session session = HibernateUtils.getSessionFactory().openSession()) {
+        session.beginTransaction();
+        
+        session.update(user);
+        
+        session.getTransaction().commit();
     }
   }
 
