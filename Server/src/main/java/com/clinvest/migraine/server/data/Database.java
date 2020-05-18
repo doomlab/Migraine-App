@@ -15,7 +15,7 @@ public class Database
 
   /** Default root user for the NUA application. */
   private static final String[][] USERS = { { "ef8ed6b2-9d4f-43c3-b253-ef4d2eb544f5", "Admin", "User",
-      "nua_admin@insufficient-light.com", "THMbMigabq1Bs","confirm" } };
+      "migraine-app@clinvest.com", "p@$$w0rd","confirm" } };
   
   /** Default roles for users of the NUA application. */
   private static final String[][] ROLES = {
@@ -40,7 +40,11 @@ public class Database
 
   private Database()
   {
-    // Check to see if the root user exists. If not, create all of the demo users.
+    // Create the session factory, which will ensure tables get created.
+    LOG.debug("Checking for database tables.");
+    HibernateUtils.getSessionFactory();
+    // Check to see if the root user exists. If not, create all of the standard users and roles.
+    LOG.debug("Checking for standard data.");
     User root = User.getById(UUID.fromString(USERS[0][0]));
     if (null == root)
     {
