@@ -5,21 +5,21 @@
 <hibernate-configuration>
 	<session-factory>
 		
-		<!-- Using Derby for dev/debug -->
+		<!-- Using Derby for dev/debug
 		<property name="hibernate.dialect">org.hibernate.dialect.DerbyTenSevenDialect</property>
 		<property name="hibernate.connection.driver_class">org.apache.derby.jdbc.EmbeddedDriver</property>
 		<property name="hibernate.connection.url">jdbc:derby:/opt/tomcat/latest/migrainedb;create=true</property>	
 		<property name="hibernate.connection.username">app</property>
 		<property name="hibernate.connection.password">ap</property>
+		-->
 		
-		<!-- Using MySQL for test/production
-		<property name="hibernate.dialect">org.hibernate.dialect.MySQLDialect</property>
-		<property name="connection.driver_class">com.mysql.jdbc.Driver</property>
-		<property name="hibernate.connection.url">jdbc:mysql://localhost:3306/migraine</property>	
-		<property name="hibernate.connection.username">app</property>
-		<property name="hibernate.connection.password">ap</property>
+		<!-- Using MySQL for test/production -->
+		<property name="hibernate.dialect">org.hibernate.dialect.MySQL5InnoDBDialect</property>
+		<property name="connection.driver_class">com.mysql.cj.jdbc.Driver</property>
+		<property name="hibernate.connection.url">jdbc:mysql://localhost:3306/migraine_app</property>	
+		<property name="hibernate.connection.username">migraine</property>
+		<property name="hibernate.connection.password">Don't check in a password.</property>
 		<property name="connection.pool.size">1</property>
-		 -->
 
 		<property name="hibernate.show_sql">true</property>
 		<property name="hibernate.format_sql">true</property>
