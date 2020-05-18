@@ -54,6 +54,42 @@ public class RegistrationServlet extends HttpServlet
     LOG.debug("Registration servlet initialized.");
   }
 
+  protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException
+  {
+    String id = request.getParameter("id");
+    if (null == id)
+    {
+      LOG.debug("Invalid confirmation request: missing required data");
+      response.sendError(400, "Invalid confirmation request: missing required data");
+    }
+    else
+    {
+      User regUser = User.getById(UUID.fromString(id));
+      if (null == regUser)
+      {
+        LOG.debug("Invalid confirmation request: no matching record");
+        response.sendError(400, "Invalid confirmation request: no matching record");
+      }
+      else
+      {
+        regUser.setConfirmed(Timestamp.valueOf(LocalDateTime.now()));
+        User.update(regUser);
+        LOG.debug(String.format("User %s (%s) successfully confirmed registration.", regUser.getEmail(), regUser.getId().toString()));
+        response.setContentType("text/html");
+        response.setCharacterEncoding("UTF-8");
+
+        // create HTML response
+        PrintWriter responder = response.getWriter();
+        responder.append("<html><head><title>Migraine App User Confirmation</title></head>");
+        responder.append("<body><h3>You are successfully registered.  Please log in using the mobile app.</h3></body></html>");        
+      }
+    }
+    
+  }
+  
+  /**
+   * {"firstName":"John", "lastName":"Doe", "email":"john.doe@example.com", "password":"p@$$w0rd", "birthDate":0}
+   */
   @Override
   protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException
   {
@@ -133,21 +169,21 @@ public class RegistrationServlet extends HttpServlet
       // Send a confirmation email.
       // Setup mail session
       Properties properties = System.getProperties();
-      properties.setProperty("mail.smtp.host", props.getProperty("nua.mail.outbound"));
+      properties.setProperty("mail.smtp.host", props.getProperty("migraine.mail.outbound"));
       Session session = Session.getDefaultInstance(properties,
           new javax.mail.Authenticator() {
             protected PasswordAuthentication getPasswordAuthentication() {
-               return new PasswordAuthentication(props.getProperty("nua.mail.login"), 
-                                                 props.getProperty("nua.mail.password"));
+               return new PasswordAuthentication(props.getProperty("migraine.mail.login"), 
+                                                 props.getProperty("migraine.mail.password"));
             }
           }
       );
       try {
         MimeMessage message = new MimeMessage(session);
-        message.setFrom(new InternetAddress(props.getProperty("nua.mail.from")));
+        message.setFrom(new InternetAddress(props.getProperty("migraine.mail.from")));
         message.addRecipient(Message.RecipientType.TO, new InternetAddress(newUser.getEmail()));
         message.setSubject(confirmationEmailSubject);
-        message.setText(String.format(confirmationEmailBody, newUser.getFirstName(), props.get("nua.server.url"), newUser.getId().toString()));
+        message.setText(String.format(confirmationEmailBody, newUser.getFirstName(), props.get("migraine.server.url"), newUser.getId().toString()));
         // Send message
         Transport.send(message);
         LOG.debug("Sent confirmation message successfully.");
@@ -164,5 +200,5 @@ public class RegistrationServlet extends HttpServlet
   
   protected static final String confirmationEmailSubject = "Welcome to the Migraine App!";
   protected static final String confirmationEmailBody = "Dear %s,\n\nWelcome to the Migraine App! In order to confirm your registration, please click in the link below.\n\n" +
-    "http://%s/nua/register?id=%s\n\n";
+    "%s/migraine-server/register?id=%s\n\n";
 }
