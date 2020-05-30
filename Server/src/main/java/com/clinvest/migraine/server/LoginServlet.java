@@ -39,7 +39,6 @@ public class LoginServlet extends HttpServlet
     boolean success = true;
     String user = null;
     String pass = null;
-    String nonce = null;
     
     BufferedReader reader = request.getReader();
     String data = IOUtils.toString(reader);
@@ -58,7 +57,7 @@ public class LoginServlet extends HttpServlet
         pass = dataJsonObject.getString("password").trim();
       }
     }
-    if (null == user || null == pass || null == nonce) 
+    if (null == user || null == pass) 
     {
       LOG.debug("Invalid login request.");
       response.sendError(400, "Invalid request.");

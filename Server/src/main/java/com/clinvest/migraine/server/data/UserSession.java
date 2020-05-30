@@ -84,7 +84,7 @@ public class UserSession implements Serializable
       Query query = session.createQuery("from UserSession where user_id = :user ");
       query.setParameter("user", user);
       List<UserSession> list = query.list();
-      if (null != list)
+      if (null != list && list.size() > 0)
       {
         us = list.get(0);
       }

@@ -30,6 +30,12 @@
 			<artifactId>derby</artifactId>
 			<version>10.7.1.1</version>
 		</dependency>
+		<!-- https://mvnrepository.com/artifact/mysql/mysql-connector-java -->
+		<dependency>
+			<groupId>mysql</groupId>
+			<artifactId>mysql-connector-java</artifactId>
+			<version>8.0.20</version>
+		</dependency>
 		<dependency>
 			<groupId>org.hibernate</groupId>
 			<artifactId>hibernate-core</artifactId>
@@ -56,7 +62,12 @@
 			<version>3.1.0</version>
 			<scope>provided</scope>
 		</dependency>
-
+		<!-- https://mvnrepository.com/artifact/javax.mail/javax.mail-api -->
+		<dependency>
+			<groupId>com.sun.mail</groupId>
+			<artifactId>javax.mail</artifactId>
+			<version>1.6.0</version>
+		</dependency>
 		<!-- Some containers like Tomcat don't have jstl library -->
 		<dependency>
 			<groupId>javax.servlet</groupId>
