@@ -33,8 +33,7 @@
   <script src="static/js/dashboard.js"></script>
 
     <nav class="navbar navbar-dark sticky-top bg-dark flex-md-nowrap p-0 shadow">
-  <a class="navbar-brand col-md-3 col-lg-2 mr-0 px-3" href="#"><img class="mb-4" src="static/images/clinvest_plain_logo.png" alt="" width="144"
-			height="72"></a>
+  <a class="navbar-brand col-md-3 col-lg-2 mr-0 px-3" href="#"><img alt="Clinvest" src="static/images/clinvest_plain_logo.png" width="100" height="30"></a>
   <button class="navbar-toggler position-absolute d-md-none collapsed" type="button" data-toggle="collapse" data-target="#sidebarMenu" aria-controls="sidebarMenu" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
