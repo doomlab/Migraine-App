@@ -175,6 +175,9 @@ namespace clinvest.migraine.Controller
 
         private async Task<ResetResponse> RequestReset(ResetRequest request)
         {
+            ResetResponse info = null;
+            return info;
+
         }
     }
 

@@ -41,7 +41,7 @@ namespace clinvest.migraine.Model
     }
 
     [Serializable]
-    public class RegistrationResponse
+    public class ResetResponse
     {
         public bool success;
         public bool message;
