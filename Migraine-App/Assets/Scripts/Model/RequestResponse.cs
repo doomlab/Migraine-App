@@ -22,6 +22,7 @@ namespace clinvest.migraine.Model
         public string firstName;
         public string lastName;
         public long birthDate;
+        public string sex;
         public string email;
         public string password;
     }
@@ -33,4 +34,16 @@ namespace clinvest.migraine.Model
         public bool message;
     }
 
+    [Serializable]
+    public class ResetRequest
+    {
+        public string username;
+    }
+
+    [Serializable]
+    public class RegistrationResponse
+    {
+        public bool success;
+        public bool message;
+    }
 }
