@@ -17,6 +17,8 @@ namespace clinvest.migraine.Controller
     public class FAM_Controller : MonoBehaviour
     {
 
+        private static string serverURL;
+
         // Input Boxes 
         public TMP_Dropdown Question1;
         public TMP_Dropdown Question2;
@@ -67,7 +69,14 @@ namespace clinvest.migraine.Controller
         // Start is called before the first frame update
         void Start()
         {
-
+            if (PlayerPrefs.HasKey("server_url"))
+            {
+                serverURL = PlayerPrefs.GetString("server_url");
+            }
+            else
+            {
+                serverURL = "http://localhost:5309";
+            }
         }
 
         // Update is called once per frame
@@ -130,18 +139,78 @@ namespace clinvest.migraine.Controller
             {
                 ErrorPanel.SetActive(true);
             }
-            
+
         }
         public void SubmitPressed()
         {
             if ((Question23.value != 0) & (Question24.value != 0) & (Question25.value != 0) & (Question26.value != 0) & (Question27.value != 0))
             {
                 SceneManager.LoadScene("homescreen");
+
             }
             else
             {
                 ErrorPanel.SetActive(true);
             }
         }
+        public async void FAMSRequest()
+        {
+            //Request
+            FAMSRequest req = new FAMSRequest();
+            req.UserID = "1";
+            req.Q1 = Question1.value;
+            req.Q2 = Question2.value;
+            req.Q3 = Question3.value;
+            req.Q4 = Question4.value;
+            req.Q5 = Question5.value;
+            req.Q6 = Question6.value;
+            req.Q7 = Question7.value;
+            req.Q8 = Question8.value;
+            req.Q9 = Question9.value;
+            req.Q10 = Question10.value;
+            req.Q11 = Question11.value;
+            req.Q12 = Question12.value;
+            req.Q13 = Question13.value;
+            req.Q14 = Question14.value;
+            req.Q15 = Question15.value;
+            req.Q16 = Question16.value;
+            req.Q17 = Question17.value;
+            req.Q18 = Question18.value;
+            req.Q19 = Question19.value;
+            req.Q20 = Question20.value;
+            req.Q21 = Question21.value;
+            req.Q22 = Question22.value;
+            req.Q23 = Question23.value;
+            req.Q24 = Question24.value;
+            req.Q25 = Question25.value;
+            req.Q26 = Question26.value;
+            req.Q27 = Question27.value;
+
+        }
+
+        /**private async Task<FAMSResponse> RequestFAMS(FAMSRequest request)
+        {
+
+            string data = String.Format("data='{0}'", JsonUtility.ToJson(request));
+            byte[] bytes = Encoding.UTF8.GetBytes(data);
+
+            string FAMSpoint = String.Format("{0}/login", serverURL);
+
+            HttpWebRequest serverRequest = (HttpWebRequest)WebRequest.Create(FAMSEndpoint);
+            serverRequest.Method = "POST";
+            serverRequest.ContentType = "application/json";
+            serverRequest.ContentLength = bytes.Length;
+            Stream dataStream = serverRequest.GetRequestStream();
+            dataStream.Write(bytes, 0, bytes.Length);
+            dataStream.Close();
+
+            HttpWebResponse response = (HttpWebResponse)(await serverRequest.GetResponseAsync());
+            StreamReader reader = new StreamReader(response.GetResponseStream());
+            string jsonResponse = reader.ReadToEnd();
+            FAMSResponse info = JsonUtility.FromJson<FAMSResponse>(jsonResponse);
+            return info;
+
+
+        }**/
     }
 }
