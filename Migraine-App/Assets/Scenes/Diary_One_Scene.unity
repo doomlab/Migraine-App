@@ -133,7 +133,7 @@ GameObject:
   - component: {fileID: 24489491}
   - component: {fileID: 24489490}
   m_Layer: 5
-  m_Name: Submit_Button_10
+  m_Name: Submit
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2598,7 +2598,7 @@ GameObject:
   - component: {fileID: 220445954}
   - component: {fileID: 220445953}
   m_Layer: 5
-  m_Name: Submit_Button_9
+  m_Name: Next_9
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5096,7 +5096,7 @@ GameObject:
   - component: {fileID: 368711500}
   - component: {fileID: 368711499}
   m_Layer: 5
-  m_Name: Submit_Button_8
+  m_Name: Next_8
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -10318,7 +10318,7 @@ GameObject:
   - component: {fileID: 1056284428}
   - component: {fileID: 1056284427}
   m_Layer: 5
-  m_Name: Submit_Button_4
+  m_Name: Next_4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -10436,7 +10436,7 @@ GameObject:
   - component: {fileID: 1069397302}
   - component: {fileID: 1069397301}
   m_Layer: 5
-  m_Name: Submit_Button_2
+  m_Name: Next_2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -11369,7 +11369,7 @@ GameObject:
   - component: {fileID: 1166609041}
   - component: {fileID: 1166609040}
   m_Layer: 5
-  m_Name: Submit_Button_1
+  m_Name: Next_1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -12423,7 +12423,7 @@ GameObject:
   - component: {fileID: 1263464858}
   - component: {fileID: 1263464857}
   m_Layer: 5
-  m_Name: Submit_Button_5
+  m_Name: Next_5
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -14967,7 +14967,7 @@ GameObject:
   - component: {fileID: 1514426485}
   - component: {fileID: 1514426484}
   m_Layer: 5
-  m_Name: Submit_Button_7
+  m_Name: Next_7
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -19266,7 +19266,7 @@ GameObject:
   - component: {fileID: 1896748059}
   - component: {fileID: 1896748058}
   m_Layer: 5
-  m_Name: Submit_Button_6
+  m_Name: Next_6
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -19579,7 +19579,7 @@ GameObject:
   - component: {fileID: 1915230423}
   - component: {fileID: 1915230422}
   m_Layer: 5
-  m_Name: Submit_Button_3
+  m_Name: Next_3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
