@@ -13,79 +13,185 @@ using UnityEngine.ScreenManagement;
 
 namespace clinvest.migraine.Controller
     public class DiaryPage_Controller : MonoBehaviour
+{
+    //Input Boxes
+    public TMP_Dropdown Selection_1;
+    public TMP_Dropdown Selection_2;
+    public TMP_Dropdown Selection_3;
+    public TMP_Dropdown Selection_4;
+    public TMP_Dropdown Selection_5;
+    public TMP_Dropdown Selection_6;
+    public TMP_Dropdown Selection_7;
+    public TMP_Dropdown Selection_8;
+    public TMP_Dropdown Selection_9;
+    public TMP_Dropdown Selection_10;
+
+    //Button
+    public Button Next_1;
+    public Button Next_2;
+    public Button Next_3;
+    public Button Next_4;
+    public Button Next_5;
+    public Button Next_6;
+    public Button Next_7;
+    public Button Next_8;
+    public Button Next_9;
+    public Button Next_10;
+    public Button Submit_2;
+    public Button Submit_1;
+
+    //Error
+    public GameObject ErrorPanel;
+    public Button ErrorButton;
+
+    //Panels
+    public GameObject PanelOne;
+    public GameObject PanelTwo;
+    public GameObject PanelThree;
+    public GameObject PanelFour;
+    public GameObject PanelFive;
+    public GameObject PanelSix;
+    public GameObject PanelSeven;
+    public GameObject PanelEight;
+    public GameObject PanelNine;
+    public GameObject PanelTen;
+
+    // Start is called before the first frame update
+    void Start()
     {
-        //Input Boxes
-        public TMP_Dropdown Selection_1;
-        public TMP_Dropdown Selection_2;
-        public TMP_Dropdown Selection_3;
-        public TMP_Dropdown Selection_4;
-        public TMP_Dropdown Selection_5;
-        public TMP_Dropdown Selection_6;
-        public TMP_Dropdown Selection_7;
-        public TMP_Dropdown Selection_8;
-        public TMP_Dropdown Selection_9;
-        public TMP_Dropdown Selection_10;
-        public TMP_Dropdown Selection_11;
-        public TMP_Dropdown Selection_12;
-        public TMP_Dropdown Selection_13;
 
-        //Button
-        public Button Next_1;
-        public Button Next_2;
-        public Button Next_3;
-        public Button Next_4;
-        public Button Next_5;
-        public Button Next_6;
-        public Button Next_7;
-        public Button Next_8;
-        public Button Next_9;
-        public Button Submit;
+    }
 
-        //Error
-        public GameObject ErrorPanel;
-        public Button ErrorButton;
+    // Update is called once per frame
+    void Update()
+    {
 
-        //Panels
-        public GameObject PanelOne;
-        public GameObject PanelTwo;
-        public GameObject PanelThree;
-        public GameObject PanelFour;
-        public GameObject PanelFive;
-        public GameObject PanelSix;
-        public GameObject PanelSeven;
-        public GameObject PanelEight;
-        public GameObject PanelNine;
-        public GameObject PanelTen;
+    }
+    public void ErrorButtonPressed() => ErrorPanel.SetActive(false);
 
-        // Start is called before the first frame update
-        void Start()
+    public void Next_1Pressed()
+    {
+        if (Selection_1.value = 1)
         {
-        
+
         }
-
-        // Update is called once per frame
-        void Update()
+        if (Selection_1.value = 0)
         {
-        
+            ErrorPanel.SetActive(true);
         }
-        public void ErrorButtonPressed()
+        else
         {
-        ErrorPanel.SetActive(false);
-        }
-        public void Next_1Pressed()
-        {
-            if (Selection_1.value = 1)
-            {
-                
-            }
-            if (Selection_1.value = 0)
-            {
-
-            }
-            else
-            {
-                PanelOne.SetActive(false)
-                PanelTwo.SetActive(true)
-            }
+            PanelOne.SetActive(false);
+            PanelTwo.SetActive(true);
         }
     }
+    public void Next_2Pressed()
+    {
+        if (Selection_2.value != 0)
+        {
+            PanelTwo.SetActive(false);
+            PanelThree.SetActive(true);
+        }
+        else
+        {
+            ErrorPanel.SetActive(true);
+        }
+    }
+    public void Next_3Pressed()
+    {
+        PanelThree.SetActive(false);
+        PanelFour.SetActive(true);
+    }
+    public void Next_4Pressed()
+    {
+        if (Selection_3.value != 0)
+        {
+            PanelFour.SetActive(false);
+            PanelFive.SetActive(true);
+        }
+        else
+        {
+            ErrorPanel.SetActive(true);
+        }
+    }
+    public void Next_5Pressed()
+    {
+        if (Selection_4.value != 0)
+        {
+            PanelFive.SetActive(false);
+            PanelSix.SetActive(true);
+        }
+        else
+        {
+            ErrorPanel.SetActive(true);
+        }
+    }
+    public void Next_6Pressed()
+    {
+        if (Selection_5.value != 0)
+        {
+            PanelSix.SetActive(false);
+            PanelSeven.SetActive(true);
+        }
+        else
+        {
+            ErrorPanel.SetActive(true);
+        }
+    }
+    public void Next_7Pressed()
+    {
+        if (Selection_6.value != 0)
+        {
+            PanelSeven.SetActive(false);
+            PanelEight.SetActive(true);
+        }
+        else
+        {
+            ErrorPanel.SetActive(true);
+        }
+    }
+    public void Next_8Pressed()
+    {
+        if (Selection_7.value != 0)
+        {
+            PanelEight.SetActive(false);
+            PanelNine.SetActive(true);
+        }
+        else
+        {
+            ErrorPanel.SetActive(true);
+        }
+    }
+    public void Next_9Pressed()
+    {
+        if (Selection_8.value = 1)
+        {
+            PanelNine.SetActive(false);
+            PanelTen.SetActive(true);
+        }
+        if (Selection_8.value = 2)
+        {
+
+        }
+        else
+        {
+            ErrorPanel.SetActive(true);
+        }
+    }
+    public void Next_10Pressed()
+    {
+        if (selection_10.value = 1)
+        {
+            PanelTen.SetActive(false);
+            PanelNine.SetActive(true);
+        }
+        if (Selection_10.value = 2)
+        {
+
+        }
+        else
+        {
+            ErrorPanel.SetActive(true);
+        }
+    }
+}
