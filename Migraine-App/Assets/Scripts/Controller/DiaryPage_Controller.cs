@@ -28,18 +28,18 @@ namespace clinvest.migraine.Controller
         public TMP_Dropdown Selection_10;
 
         //Button
-        public button Next_1;
-        public button Next_2;
-        public button Next_3;
-        public button Next_4;
-        public button Next_5;
-        public button Next_6;
-        public button Next_7;
-        public button Next_8;
-        public button Next_9;
-        public button Next_10;
-        public button Submit_2;
-        public button Submit_1;
+        public Button Next_1;
+        public Button Next_2;
+        public Button Next_3;
+        public Button Next_4;
+        public Button Next_5;
+        public Button Next_6;
+        public Button Next_7;
+        public Button Next_8;
+        public Button Next_9;
+        public Button Next_10;
+        public Button Submit_2;
+        public Button Submit_1;
 
         //Error
         public GameObject ErrorPanel;
