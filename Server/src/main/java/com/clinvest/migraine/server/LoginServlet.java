@@ -21,15 +21,20 @@ import org.apache.logging.log4j.Logger;
 import com.clinvest.migraine.server.data.User;
 import com.clinvest.migraine.server.data.UserSession;
 import com.google.gson.Gson;
+import com.google.gson.GsonBuilder;
 
 @WebServlet("/login")
 public class LoginServlet extends HttpServlet
 {
   private static final long serialVersionUID = 1L;
   private static final Logger LOG = LogManager.getLogger("MIGRAINE");
-  
+
+  private Gson gson;
+
   @Override
-  public void init() {
+  public void init()
+  {
+    gson = new GsonBuilder().setLenient().create();
     LOG.debug("Login servlet initialized.");
   }
 
@@ -45,7 +50,7 @@ public class LoginServlet extends HttpServlet
     LOG.debug("login: " + data);
     if (null != data)
     {
-      LoginRequest lr = new Gson().fromJson(data, LoginRequest.class);
+      LoginRequest lr = gson.fromJson(data, LoginRequest.class);
 
       user = lr.getUsername();
       pass = lr.getPassword();
@@ -88,9 +93,12 @@ public class LoginServlet extends HttpServlet
         s.setUserId(userRecord.getId());
         s.setActive(Timestamp.valueOf(LocalDateTime.now()));
         UserSession.save(s);
+        
+        LoginResponse r = new LoginResponse();
+        r.setUserId(userRecord.getId().toString());
+        r.setAuthToken(s.getSessionId().toString());
 
-        writer.append("{ userId: \"").append(userRecord.getId().toString()).append("\",");
-        writer.append("authToken: \"").append(s.getSessionId().toString()).append("\"}");
+        writer.append(gson.toJson(r));
         LOG.debug(writer.toString());
         responder.append(writer.toString());
       }
@@ -101,27 +109,56 @@ public class LoginServlet extends HttpServlet
       }
     }
   }
-  
+
   static class LoginRequest
   {
     protected String username;
     protected String password;
+
     public String getUsername()
     {
       return username;
     }
+
     public void setUsername(String username)
     {
       this.username = username;
     }
+
     public String getPassword()
     {
       return password;
     }
+
     public void setPassword(String password)
     {
       this.password = password;
     }
   }
-  
+
+  static class LoginResponse
+  {
+    protected String userId;
+    protected String authToken;
+
+    public String getUserId()
+    {
+      return userId;
+    }
+
+    public void setUserId(String userId)
+    {
+      this.userId = userId;
+    }
+
+    public String getAuthToken()
+    {
+      return authToken;
+    }
+
+    public void setAuthToken(String authToken)
+    {
+      this.authToken = authToken;
+    }
+  }
 }
