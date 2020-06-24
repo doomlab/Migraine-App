@@ -8,4 +8,7 @@ EditorBuildSettings:
   - enabled: 0
     path: 
     guid: 00000000000000000000000000000000
+  - enabled: 1
+    path: Assets/Scenes/Log_One_Scene.unity
+    guid: 942a7055249114e5ab74a981be7405de
   m_configObjects: {}

@@ -3,12 +3,16 @@ using System.Collections;
 using System.Collections.Generic;
 using System.IO;
 using System.Net;
+using System.Net.Security;
+using System.Security.Cryptography.X509Certificates;
 using System.Text;
 using System.Threading.Tasks;
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 using clinvest.migraine.Model;
+using System.Diagnostics;
 
 namespace clinvest.migraine.Controller
 {
@@ -45,8 +49,16 @@ namespace clinvest.migraine.Controller
             }
             else
             {
-                serverURL = "http://localhost:5309";
+                serverURL = "https://app.clinvest.com/migraine-server";
             }
+
+            ServicePointManager.ServerCertificateValidationCallback = delegate (
+            System.Object obj, X509Certificate certificate, X509Chain chain,
+            SslPolicyErrors errors)
+            {
+                return (true);
+            };
+
             LoginPanel.SetActive(true);
             PasswordResetPanel.SetActive(false);
             RegistrationPanel.SetActive(false);
@@ -77,13 +89,17 @@ namespace clinvest.migraine.Controller
             req.username = LoginPanelUsername.text;
             req.password = LoginPanelPassword.text;
 
-            Debug.Log(req.username);
-            Debug.Log(req.password);
-            Debug.Log(JsonUtility.ToJson(req));
+            UnityEngine.Debug.Log(JsonUtility.ToJson(req));
 
             // Request the login from the server
-            // LoginResponse response = await RequestLogin(req);
+            LoginResponse response = await RequestLogin(req);
             // if successful, save the userID and authToken, move to next screen
+
+            ApplicationContext.UserName = req.username;
+            ApplicationContext.UserId = response.userId;
+            ApplicationContext.AuthToken = response.authToken;
+            LoginPanel.SetActive(true);
+            SceneManager.LoadScene("homescreen");
 
             // if not successful, indicate failure
         }
@@ -92,10 +108,11 @@ namespace clinvest.migraine.Controller
         private async Task<LoginResponse> RequestLogin(LoginRequest request)
         {
 
-            string data = String.Format("data='{0}'", JsonUtility.ToJson(request));
+            string data = JsonUtility.ToJson(request);
             byte[] bytes = Encoding.UTF8.GetBytes(data);
 
             string loginEndpoint = String.Format("{0}/login", serverURL);
+            UnityEngine.Debug.Log(loginEndpoint); 
 
             HttpWebRequest serverRequest = (HttpWebRequest)WebRequest.Create(loginEndpoint);
             serverRequest.Method = "POST";
@@ -108,6 +125,7 @@ namespace clinvest.migraine.Controller
             HttpWebResponse response = (HttpWebResponse)(await serverRequest.GetResponseAsync());
             StreamReader reader = new StreamReader(response.GetResponseStream());
             string jsonResponse = reader.ReadToEnd();
+            UnityEngine.Debug.Log(jsonResponse);
             LoginResponse info = JsonUtility.FromJson<LoginResponse>(jsonResponse);
             return info;
 
@@ -130,7 +148,7 @@ namespace clinvest.migraine.Controller
             DateTimeOffset dto = new DateTimeOffset(dt);
             req.birthDate = dto.ToUnixTimeMilliseconds();
 
-            Debug.Log(JsonUtility.ToJson(req));
+            UnityEngine.Debug.Log(JsonUtility.ToJson(req));
 
             // Request the registration from the server
 
@@ -140,7 +158,7 @@ namespace clinvest.migraine.Controller
         private async Task<RegistrationResponse> RequestRegistration(RegistrationRequest request)
         {
 
-            string data = String.Format("data='{0}'", JsonUtility.ToJson(request));
+            string data = JsonUtility.ToJson(request);
             byte[] bytes = Encoding.UTF8.GetBytes(data);
 
             string loginEndpoint = String.Format("{0}/register", serverURL);
