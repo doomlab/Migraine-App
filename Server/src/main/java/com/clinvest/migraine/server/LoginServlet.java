@@ -17,10 +17,10 @@ import javax.servlet.http.HttpServletResponse;
 import org.apache.commons.io.IOUtils;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
-import org.json.JSONObject;
 
 import com.clinvest.migraine.server.data.User;
 import com.clinvest.migraine.server.data.UserSession;
+import com.google.gson.Gson;
 
 @WebServlet("/login")
 public class LoginServlet extends HttpServlet
@@ -45,17 +45,10 @@ public class LoginServlet extends HttpServlet
     LOG.debug("login: " + data);
     if (null != data)
     {
-      JSONObject dataJsonObject = new JSONObject(data);
+      LoginRequest lr = new Gson().fromJson(data, LoginRequest.class);
 
-      if (dataJsonObject.has("username"))
-      {
-        user = dataJsonObject.getString("username").trim();
-      }
-
-      if (dataJsonObject.has("password"))
-      {
-        pass = dataJsonObject.getString("password").trim();
-      }
+      user = lr.getUsername();
+      pass = lr.getPassword();
     }
     if (null == user || null == pass) 
     {
@@ -108,4 +101,27 @@ public class LoginServlet extends HttpServlet
       }
     }
   }
+  
+  static class LoginRequest
+  {
+    protected String username;
+    protected String password;
+    public String getUsername()
+    {
+      return username;
+    }
+    public void setUsername(String username)
+    {
+      this.username = username;
+    }
+    public String getPassword()
+    {
+      return password;
+    }
+    public void setPassword(String password)
+    {
+      this.password = password;
+    }
+  }
+  
 }
