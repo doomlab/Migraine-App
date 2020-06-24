@@ -72,11 +72,11 @@ namespace clinvest.migraine.Controller
 
         public void Next_1Pressed()
         {
-            if (Selection_1.value = 1)
+            if (Selection_1.value == 1)
             {
 
             }
-            if (Selection_1.value = 0)
+            if (Selection_1.value == 0)
             {
                 ErrorPanel.SetActive(true);
             }
@@ -165,12 +165,12 @@ namespace clinvest.migraine.Controller
         }
         public void Next_9Pressed()
         {
-            if (Selection_8.value = 1)
+            if (Selection_8.value == 1)
             {
                 PanelNine.SetActive(false);
                 PanelTen.SetActive(true);
             }
-            if (Selection_8.value = 2)
+            if (Selection_8.value == 2)
             {
 
             }
@@ -181,12 +181,12 @@ namespace clinvest.migraine.Controller
         }
         public void Next_10Pressed()
         {
-            if (selection_10.value = 1)
+            if (Selection_10.value == 1)
             {
                 PanelTen.SetActive(false);
                 PanelNine.SetActive(true);
             }
-            if (Selection_10.value = 2)
+            if (Selection_10.value == 2)
             {
 
             }
