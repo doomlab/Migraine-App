@@ -1,0 +1,103 @@
+END USER LICENSE AGREEMENT
+
+Last updated 6/29/2020
+
+Clinvest Research Migraine App is licensed to You (End-User) by Clinvest Research, LLC, located at 4350 S. National Ave, Suite C100, Springfield, MO 65810 (hereinafter: Licensor), for use only under the terms of this License Agreement.
+
+By downloading the Application from the Apple AppStore or Andriod Play Store, and any update thereto (as permitted by this License Agreement), You indicate that You agree to be bound by all of the terms and conditions of this License Agreement, and that You accept this License Agreement.
+
+The parties of this License Agreement acknowledge that Apple or Google are not a Party to this License Agreement and is not bound by any provisions or obligations with regard to the Application, such as warranty, liability, maintenance and support thereof. Clinvest Research, LLC, not Apple or Google, is solely responsible for the licensed Application and the content thereof.
+
+This License Agreement may not provide for usage rules for the Application that are in conflict with the latest App Store Terms of Service. Clinvest Research, LLC acknowledges that it had the opportunity to review said terms and this License Agreement is not conflicting with them.
+
+All rights not expressly granted to You are reserved.
+
+<b>1. THE APPLICATION</b>
+
+Clinvest Research Migraine App (hereinafter: Application) is a piece of software created to allow patient to track their migraine and response to treatment - and customized for Apple and Andriod mobile devices. It is used to track migraine and headache days, along with treatment response.
+
+<b>2. SCOPE OF LICENSE</b>
+
+Your right to make use of our Service and any Material or other content appearing on it is subject to your compliance with these Terms. You may not modify, or use the Material or any other content on our Services for any purpose not permitted by these Terms. Such prohibited use violates these Terms and may be a violation of the Copyrights and/or Trademarks protected by law.
+
+You may access and display Material and all other content displayed on our Services for non-commercial, personal, entertainment use on any computer, tablet, smart watch, or mobile device you own or control. The Material and all other content on this Service may not otherwise be copied, reproduced, republished, uploaded, posted, transmitted, distributed, or used in any way unless specifically authorized by Clinvest Research, LLC. Also, decompiling, reverse engineering, disassembling, or otherwise reducing the code used in any software on this Service into a readable form in order to examine the construction of such software and/or to copy or create other products based (in whole or in part) on such software, is prohibited. You may not rent, lease, lend, sell, redistribute or sublicense the Material and/or the Services.
+
+<b>3. TECHNICAL REQUIREMENTS</b>
+
+Apple iOS
+Google Andriod
+
+<b>4. NO MAINTENANCE OR SUPPORT</b>
+
+4.1  Clinvest Research, LLC is not obligated, expressed or implied, to provide any maintenance, technical or other support for the Application.
+
+4.2  Clinvest Research, LLC and the End-User acknowledge that Apple or Google have no obligation whatsoever to furnish any maintenance and support services with respect to the licensed Application.
+
+<b>5. LIABILITY</b>
+
+You may only use our Service and its contents for lawful purposes and in accordance with applicable law and you are prohibited from storing, distributing, or transmitting any unlawful material through this Service, otherwise you may be exposed to criminal and/or civil liability. You agree that if a third-party claims that material you have contributed to our Service is unlawful, you will bear the burden of establishing that it is lawful. 
+
+Clinvest Research, LLC disclaims all liability, whether based in contract, tort (including negligence), strict liability, or otherwise, and does not accept any liability for any loss or damage (direct, indirect, punitive, actual, consequential, incidental, special, exemplary, or otherwise) resulting from any use of, or inability to use, the service or any other site, app or service, or the material, information, software, facilities, services, or other content on the service or any other site, app or service, regardless of the basis upon which liability is claimed and even if any member of Clinvest Research, LLC has been advised of the possibility of such loss or damage. Without limitation, you (and not any member of Clinvest Research, LLC) assume the entire cost of all necessary servicing, repair, or correction in the event of any such loss or damage arising therein. If applicable law does not allow all or any part of the above limitation of liability to apply to you, the limitations will apply to you only to the extent permitted by applicable law. 
+
+<b>6. WARRANTY</b>
+
+6.1  Licensor warrants that the Application is free of spyware, trojan horses, viruses, or any other malware at the time of Your download. Licensor warrants that the Application works as described in the user documentation.
+
+6.2  No warranty is provided for the Application that is not executable on the device, that has been unauthorizedly modified, handled inappropriately or culpably, combined or installed with inappropriate hardware or software, used with inappropriate accessories, regardless if by Yourself or by third parties, or if there are any other reasons outside of Clinvest Research, LLC's sphere of influence that affect the executability of the Application.
+
+6.3  You are required to inspect the Application immediately after installing it and notify Clinvest Research, LLC about issues discovered without delay by e-mail provided in Product Claims. The defect report will be taken into consideration and further investigated if it has been mailed within a period of 30 days after discovery.
+
+6.4  If we confirm that the Application is defective, Clinvest Research, LLC reserves a choice to remedy the situation either by means of solving the defect or substitute delivery.
+
+6.5  In the event of any failure of the Application to conform to any applicable warranty, You may notify the App-Store-Operator, and Your Application purchase price will be refunded to You. To the maximum extent permitted by applicable law, the App-Store-Operator will have no other warranty obligation whatsoever with respect to the App, and any other losses, claims, damages, liabilities, expenses and costs attributable to any negligence to adhere to any warranty.
+
+6.6  If the user is an entrepreneur, any claim based on faults expires after a statutory period of limitation amounting to twelve (12) months after the Application was made available to the user. The statutory periods of limitation given by law apply for users who are consumers.
+
+<b>7. PRODUCT CLAIMS</b>
+
+Clinvest Research, LLC and the End-User acknowledge that Clinvest Research, LLC, and not Apple or Google, is responsible for addressing any claims of the End-User or any third party relating to the licensed Application or the End-User’s possession and/or use of that licensed Application, including, but not limited to:
+
+(i) product liability claims;
+
+(ii) any claim that the licensed Application fails to conform to any applicable legal or regulatory requirement; and
+
+(iii) claims arising under consumer protection, privacy, or similar legislation, including in connection with Your Licensed Application’s use of the HealthKit and HomeKit.
+
+<b>8. LEGAL COMPLIANCE</b>
+
+You represent and warrant that You are not located in a country that is subject to a U.S. Government embargo, or that has been designated by the U.S. Government as a "terrorist supporting" country; and that You are not listed on any U.S. Government list of prohibited or restricted parties.
+
+<b>9. CONTACT INFORMATION</b>                  
+
+For general inquiries, complaints, questions or claims concerning the licensed Application, please contact:
+
+Clinvest Research, LLC
+4350 S. National Ave, Suite C100
+Springfield, MO 65810
+migraineapp@clinvest.com
+
+<b>10. TERMINATION</b>
+
+The license is valid until terminated by Clinvest Research, LLC or by You. Your rights under this license will terminate automatically and without notice from Clinvest Research, LLC if You fail to adhere to any term(s) of this license. Upon License termination, You shall stop all use of the Application, and destroy all copies, full or partial, of the Application.
+
+<b>11. THIRD-PARTY TERMS OF AGREEMENTS AND BENEFICIARY</b>
+
+Clinvest Research, LLC represents and warrants that Clinvest Research, LLC will comply with applicable third-party terms of agreement when using licensed Application.
+
+In Accordance with Section 9 of the "Instructions for Minimum Terms of Developer's End-User License Agreement," Apple and Apple's subsidiaries shall be third-party beneficiaries of this End User License Agreement and - upon Your acceptance of the terms and conditions of this license agreement, Apple will have the right (and will be deemed to have accepted the right) to enforce this End User License Agreement against You as a third-party beneficiary thereof.
+
+<b>12. INTELLECTUAL PROPERTY RIGHTS</b>
+
+Clinvest Research, LLC and the End-User acknowledge that, in the event of any third-party claim that the licensed Application or the End-User's possession and use of that licensed Application infringes on the third party's intellectual property rights, Clinvest Research, LLC, and not Apple or Google, will be solely responsible for the investigation, defense, settlement and discharge or any such intellectual property infringement claims.
+
+<b>13. APPLICABLE LAW</b>
+
+This license agreement is governed by the laws of Missouri, USA excluding its conflicts of law rules.
+
+<b>14. MISCELLANEOUS</b>
+
+14.1  If any of the terms of this agreement should be or become invalid, the validity of the remaining provisions shall not be affected. Invalid terms will be replaced by valid ones formulated in a way that will achieve the primary purpose.
+             
+14.2  Collateral agreements, changes and amendments are only valid if laid down in writing. The preceding clause can only be waived in writing.
+   
+These terms of use were created using Termly’s Terms and Conditions Generator.
