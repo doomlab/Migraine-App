@@ -7,12 +7,12 @@ using UnityEngine.UI;
 namespace clinvest.migraine.View
 {
 
-    public class YearDropdownView : MonoBehaviour
+    public class BirthYearDropdownView : MonoBehaviour
     {
         private const int MAX_YEAR = 2005;
         private const int MIN_YEAR = 1910;
 
-        public TMP_Dropdown YearDropdown;
+        public TMP_Dropdown BirthYearDropdown;
 
         // Start is called before the first frame update
         void Start()
@@ -24,7 +24,7 @@ namespace clinvest.migraine.View
                 year = year - 1;
                 opts.Add(year.ToString());
             }
-            YearDropdown.AddOptions(opts);
+            BirthYearDropdown.AddOptions(opts);
         }
 
         // Update is called once per frame
