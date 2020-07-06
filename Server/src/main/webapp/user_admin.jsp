@@ -18,10 +18,14 @@
     <main role="main" class="col-md-9 ml-sm-auto col-lg-10 px-md-4">
 
       <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
-        <h1 class="h2">Dashboard</h1>
+        <h1 class="h2">User Administration</h1>
 
-        <br>
-          Some common widgets here after we figure out what they are.
+        <br>A table of users so you can edit their accounts (locked versus unlocked).</br>
+        <br><%@include  file="edit_table.html" %></br>
+
+        <br>A table of users who are enrolled in a study with a marker that they have been paid or not</br>
+        <br>example found at https://editor.datatables.net/examples/inline-editing/simple.html</br>
+
       </div>
 
     </main>

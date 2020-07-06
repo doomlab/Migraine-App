@@ -18,10 +18,14 @@
     <main role="main" class="col-md-9 ml-sm-auto col-lg-10 px-md-4">
 
       <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
-        <h1 class="h2">Dashboard</h1>
+        <h1 class="h2">Data</h1>
 
-        <br>
-          Some common widgets here after we figure out what they are.
+        <br>Summary Report by Person</br>
+        <br>Download data summary for paying people - name email, number of entries for data, start and end dates for particular project</br>
+
+        <br>Raw Data Report</br>
+        <br>Download the Diary/FAMS/user information data - not user name but entered demographics</br>
+
       </div>
 
     </main>
