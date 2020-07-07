@@ -18,9 +18,9 @@ namespace clinvest.migraine.View
             List<string> opts = new List<string>();
             int year = MAX_YEAR;
             while (year > MIN_YEAR)
-            {
-                year = year - 1;
+            {      
                 opts.Add(year.ToString());
+                year = year - 1;
             }
             DiagnosisYearDropdown.AddOptions(opts);
         }
