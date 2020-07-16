@@ -96,6 +96,7 @@ LightmapSettings:
     m_PVRFilteringAtrousPositionSigmaAO: 1
     m_ExportTrainingData: 0
     m_TrainingDataDestination: TrainingData
+    m_LightProbeSampleCountMultiplier: 4
   m_LightingDataAsset: {fileID: 0}
   m_UseShadowmask: 1
 --- !u!196 &4
@@ -222,6 +223,7 @@ MonoBehaviour:
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
+  m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
@@ -295,6 +297,7 @@ MonoBehaviour:
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
+  m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
@@ -309,88 +312,89 @@ MonoBehaviour:
     acknowledge that Apple or Google are not a Party to this License Agreement and
     is not bound by any provisions or obligations with regard to the Application,
     such as warranty, liability, maintenance and support thereof. Clinvest Research,
-    LLC, not Apple or Google, is solely responsible for the licensed Application and
-    the content thereof.\n\nThis License Agreement may not provide for usage rules
-    for the Application that are in conflict with the latest App Store Terms of Service.
-    Clinvest Research, LLC acknowledges that it had the opportunity to review said
-    terms and this License Agreement is not conflicting with them.\n\nAll rights not
-    expressly granted to You are reserved.\n\n<b>1. THE APPLICATION</b>\n\nClinvest
+    LLC, not Apple or Google, is solely responsible for the licensed Application
+    and the content thereof.\n\nThis License Agreement may not provide for usage
+    rules for the Application that are in conflict with the latest App Store Terms
+    of Service. Clinvest Research, LLC acknowledges that it had the opportunity to
+    review said terms and this License Agreement is not conflicting with them.\n\nAll
+    rights not expressly granted to You are reserved.\n\n<b>1. THE APPLICATION</b>\n\nClinvest
     Research Migraine App (hereinafter: Application) is a piece of software created
     to allow patient to track their migraine and response to treatment - and customized
     for Apple and Andriod mobile devices. It is used to track migraine and headache
     days, along with treatment response.\n\n<b>2. SCOPE OF LICENSE</b>\n\nYour right
-    to make use of our Service and any Material or other content appearing on it is
-    subject to your compliance with these Terms. You may not modify, or use the Material
-    or any other content on our Services for any purpose not permitted by these Terms.
-    Such prohibited use violates these Terms and may be a violation of the Copyrights
-    and/or Trademarks protected by law.\n\nYou may access and display Material and
-    all other content displayed on our Services for non-commercial, personal, entertainment
-    use on any computer, tablet, smart watch, or mobile device you own or control.
-    The Material and all other content on this Service may not otherwise be copied,
-    reproduced, republished, uploaded, posted, transmitted, distributed, or used in
-    any way unless specifically authorized by Clinvest Research, LLC. Also, decompiling,
-    reverse engineering, disassembling, or otherwise reducing the code used in any
-    software on this Service into a readable form in order to examine the construction
-    of such software and/or to copy or create other products based (in whole or in
-    part) on such software, is prohibited. You may not rent, lease, lend, sell, redistribute
-    or sublicense the Material and/or the Services.\n\n<b>3. TECHNICAL REQUIREMENTS</b>\n\nApple
-    iOS\nGoogle Andriod\n\n<b>4. NO MAINTENANCE OR SUPPORT</b>\n\n4.1  Clinvest Research,
-    LLC is not obligated, expressed or implied, to provide any maintenance, technical
-    or other support for the Application.\n\n4.2  Clinvest Research, LLC and the End-User
-    acknowledge that Apple or Google have no obligation whatsoever to furnish any
-    maintenance and support services with respect to the licensed Application.\n\n<b>5.
-    LIABILITY</b>\n\nYou may only use our Service and its contents for lawful purposes
-    and in accordance with applicable law and you are prohibited from storing, distributing,
-    or transmitting any unlawful material through this Service, otherwise you may
-    be exposed to criminal and/or civil liability. You agree that if a third-party
-    claims that material you have contributed to our Service is unlawful, you will
-    bear the burden of establishing that it is lawful.\n\nClinvest Research, LLC disclaims
-    all liability, whether based in contract, tort (including negligence), strict
-    liability, or otherwise, and does not accept any liability for any loss or damage
-    (direct, indirect, punitive, actual, consequential, incidental, special, exemplary,
-    or otherwise) resulting from any use of, or inability to use, the service or any
-    other site, app or service, or the material, information, software, facilities,
-    services, or other content on the service or any other site, app or service, regardless
-    of the basis upon which liability is claimed and even if any member of Clinvest
-    Research, LLC has been advised of the possibility of such loss or damage. Without
-    limitation, you (and not any member of Clinvest Research, LLC) assume the entire
-    cost of all necessary servicing, repair, or correction in the event of any such
-    loss or damage arising therein. If applicable law does not allow all or any part
-    of the above limitation of liability to apply to you, the limitations will apply
-    to you only to the extent permitted by applicable law.\n\n<b>6. WARRANTY</b>\n\n6.1
-    \ Licensor warrants that the Application is free of spyware, trojan horses, viruses,
-    or any other malware at the time of Your download. Licensor warrants that the
-    Application works as described in the user documentation.\n\n6.2  No warranty
-    is provided for the Application that is not executable on the device, that has
-    been unauthorizedly modified, handled inappropriately or culpably, combined or
-    installed with inappropriate hardware or software, used with inappropriate accessories,
-    regardless if by Yourself or by third parties, or if there are any other reasons
-    outside of Clinvest Research, LLC's sphere of influence that affect the executability
-    of the Application.\n\n6.3  You are required to inspect the Application immediately
-    after installing it and notify Clinvest Research, LLC about issues discovered
-    without delay by e-mail provided in Product Claims. The defect report will be
-    taken into consideration and further investigated if it has been mailed within
-    a period of 30 days after discovery.\n\n6.4  If we confirm that the Application
-    is defective, Clinvest Research, LLC reserves a choice to remedy the situation
-    either by means of solving the defect or substitute delivery.\n\n6.5  In the event
-    of any failure of the Application to conform to any applicable warranty, You may
-    notify the App-Store-Operator, and Your Application purchase price will be refunded
-    to You. To the maximum extent permitted by applicable law, the App-Store-Operator
-    will have no other warranty obligation whatsoever with respect to the App, and
-    any other losses, claims, damages, liabilities, expenses and costs attributable
-    to any negligence to adhere to any warranty.\n\n6.6  If the user is an entrepreneur,
-    any claim based on faults expires after a statutory period of limitation amounting
-    to twelve (12) months after the Application was made available to the user. The
-    statutory periods of limitation given by law apply for users who are consumers.\n\n<b>7.
-    PRODUCT CLAIMS</b>\n\nClinvest Research, LLC and the End-User acknowledge that
-    Clinvest Research, LLC, and not Apple or Google, is responsible for addressing
-    any claims of the End-User or any third party relating to the licensed Application
-    or the End-User\u2019s possession and/or use of that licensed Application, including,
-    but not limited to:\n\n(i) product liability claims;\n\n(ii) any claim that the
-    licensed Application fails to conform to any applicable legal or regulatory requirement;
-    and\n\n(iii) claims arising under consumer protection, privacy, or similar legislation,
-    including in connection with Your Licensed Application\u2019s use of the HealthKit
-    and HomeKit.\n\n<b>8. LEGAL COMPLIANCE</b>\n\nYou represent and warrant that You
+    to make use of our Service and any Material or other content appearing on it
+    is subject to your compliance with these Terms. You may not modify, or use the
+    Material or any other content on our Services for any purpose not permitted by
+    these Terms. Such prohibited use violates these Terms and may be a violation
+    of the Copyrights and/or Trademarks protected by law.\n\nYou may access and display
+    Material and all other content displayed on our Services for non-commercial,
+    personal, entertainment use on any computer, tablet, smart watch, or mobile device
+    you own or control. The Material and all other content on this Service may not
+    otherwise be copied, reproduced, republished, uploaded, posted, transmitted,
+    distributed, or used in any way unless specifically authorized by Clinvest Research,
+    LLC. Also, decompiling, reverse engineering, disassembling, or otherwise reducing
+    the code used in any software on this Service into a readable form in order to
+    examine the construction of such software and/or to copy or create other products
+    based (in whole or in part) on such software, is prohibited. You may not rent,
+    lease, lend, sell, redistribute or sublicense the Material and/or the Services.\n\n<b>3.
+    TECHNICAL REQUIREMENTS</b>\n\nApple iOS\nGoogle Andriod\n\n<b>4. NO MAINTENANCE
+    OR SUPPORT</b>\n\n4.1  Clinvest Research, LLC is not obligated, expressed or
+    implied, to provide any maintenance, technical or other support for the Application.\n\n4.2 
+    Clinvest Research, LLC and the End-User acknowledge that Apple or Google have
+    no obligation whatsoever to furnish any maintenance and support services with
+    respect to the licensed Application.\n\n<b>5. LIABILITY</b>\n\nYou may only use
+    our Service and its contents for lawful purposes and in accordance with applicable
+    law and you are prohibited from storing, distributing, or transmitting any unlawful
+    material through this Service, otherwise you may be exposed to criminal and/or
+    civil liability. You agree that if a third-party claims that material you have
+    contributed to our Service is unlawful, you will bear the burden of establishing
+    that it is lawful.\n\nClinvest Research, LLC disclaims all liability, whether
+    based in contract, tort (including negligence), strict liability, or otherwise,
+    and does not accept any liability for any loss or damage (direct, indirect, punitive,
+    actual, consequential, incidental, special, exemplary, or otherwise) resulting
+    from any use of, or inability to use, the service or any other site, app or service,
+    or the material, information, software, facilities, services, or other content
+    on the service or any other site, app or service, regardless of the basis upon
+    which liability is claimed and even if any member of Clinvest Research, LLC has
+    been advised of the possibility of such loss or damage. Without limitation, you
+    (and not any member of Clinvest Research, LLC) assume the entire cost of all
+    necessary servicing, repair, or correction in the event of any such loss or damage
+    arising therein. If applicable law does not allow all or any part of the above
+    limitation of liability to apply to you, the limitations will apply to you only
+    to the extent permitted by applicable law.\n\n<b>6. WARRANTY</b>\n\n6.1  Licensor
+    warrants that the Application is free of spyware, trojan horses, viruses, or
+    any other malware at the time of Your download. Licensor warrants that the Application
+    works as described in the user documentation.\n\n6.2  No warranty is provided
+    for the Application that is not executable on the device, that has been unauthorizedly
+    modified, handled inappropriately or culpably, combined or installed with inappropriate
+    hardware or software, used with inappropriate accessories, regardless if by Yourself
+    or by third parties, or if there are any other reasons outside of Clinvest Research,
+    LLC's sphere of influence that affect the executability of the Application.\n\n6.3 
+    You are required to inspect the Application immediately after installing it and
+    notify Clinvest Research, LLC about issues discovered without delay by e-mail
+    provided in Product Claims. The defect report will be taken into consideration
+    and further investigated if it has been mailed within a period of 30 days after
+    discovery.\n\n6.4  If we confirm that the Application is defective, Clinvest
+    Research, LLC reserves a choice to remedy the situation either by means of solving
+    the defect or substitute delivery.\n\n6.5  In the event of any failure of the
+    Application to conform to any applicable warranty, You may notify the App-Store-Operator,
+    and Your Application purchase price will be refunded to You. To the maximum extent
+    permitted by applicable law, the App-Store-Operator will have no other warranty
+    obligation whatsoever with respect to the App, and any other losses, claims,
+    damages, liabilities, expenses and costs attributable to any negligence to adhere
+    to any warranty.\n\n6.6  If the user is an entrepreneur, any claim based on faults
+    expires after a statutory period of limitation amounting to twelve (12) months
+    after the Application was made available to the user. The statutory periods of
+    limitation given by law apply for users who are consumers.\n\n<b>7. PRODUCT CLAIMS</b>\n\nClinvest
+    Research, LLC and the End-User acknowledge that Clinvest Research, LLC, and not
+    Apple or Google, is responsible for addressing any claims of the End-User or
+    any third party relating to the licensed Application or the End-User\u2019s possession
+    and/or use of that licensed Application, including, but not limited to:\n\n(i)
+    product liability claims;\n\n(ii) any claim that the licensed Application fails
+    to conform to any applicable legal or regulatory requirement; and\n\n(iii) claims
+    arising under consumer protection, privacy, or similar legislation, including
+    in connection with Your Licensed Application\u2019s use of the HealthKit and
+    HomeKit.\n\n<b>8. LEGAL COMPLIANCE</b>\n\nYou represent and warrant that You
     are not located in a country that is subject to a U.S. Government embargo, or
     that has been designated by the U.S. Government as a \"terrorist supporting\"
     country; and that You are not listed on any U.S. Government list of prohibited
@@ -422,9 +426,9 @@ MonoBehaviour:
     agreement should be or become invalid, the validity of the remaining provisions
     shall not be affected. Invalid terms will be replaced by valid ones formulated
     in a way that will achieve the primary purpose.\n\n14.2  Collateral agreements,
-    changes and amendments are only valid if laid down in writing. The preceding clause
-    can only be waived in writing.\n\nThese terms of use were created using Termly\u2019s
-    Terms and Conditions Generator.\n"
+    changes and amendments are only valid if laid down in writing. The preceding
+    clause can only be waived in writing.\n\nThese terms of use were created using
+    Termly\u2019s Terms and Conditions Generator.\n"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -577,6 +581,7 @@ MonoBehaviour:
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
+  m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
@@ -650,6 +655,7 @@ MonoBehaviour:
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
+  m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
@@ -806,6 +812,7 @@ MonoBehaviour:
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
+  m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
@@ -929,6 +936,7 @@ MonoBehaviour:
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
+  m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
@@ -1052,6 +1060,7 @@ MonoBehaviour:
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
+  m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
@@ -1125,6 +1134,7 @@ MonoBehaviour:
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
+  m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
@@ -1334,6 +1344,7 @@ MonoBehaviour:
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
+  m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
@@ -1441,6 +1452,7 @@ MonoBehaviour:
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 0.392}
   m_RaycastTarget: 1
+  m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
@@ -1564,6 +1576,7 @@ MonoBehaviour:
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
+  m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
@@ -1736,6 +1749,7 @@ MonoBehaviour:
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
+  m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
@@ -2044,6 +2058,7 @@ MonoBehaviour:
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
+  m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
@@ -2203,6 +2218,7 @@ MonoBehaviour:
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
+  m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
@@ -2357,6 +2373,7 @@ MonoBehaviour:
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
+  m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
@@ -2430,6 +2447,7 @@ MonoBehaviour:
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
+  m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
@@ -2585,6 +2603,7 @@ MonoBehaviour:
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
+  m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
@@ -2740,6 +2759,7 @@ MonoBehaviour:
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
+  m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
@@ -2895,6 +2915,7 @@ MonoBehaviour:
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
+  m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
@@ -3086,6 +3107,7 @@ MonoBehaviour:
   m_Material: {fileID: 0}
   m_Color: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
   m_RaycastTarget: 1
+  m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
@@ -3159,6 +3181,7 @@ MonoBehaviour:
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
+  m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
@@ -3383,6 +3406,7 @@ MonoBehaviour:
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
+  m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
@@ -3456,6 +3480,7 @@ MonoBehaviour:
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
+  m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
@@ -3529,6 +3554,7 @@ MonoBehaviour:
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
+  m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
@@ -3602,6 +3628,7 @@ MonoBehaviour:
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
+  m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
@@ -3725,6 +3752,7 @@ MonoBehaviour:
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
+  m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
@@ -3798,6 +3826,7 @@ MonoBehaviour:
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
+  m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
@@ -3871,6 +3900,7 @@ MonoBehaviour:
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
+  m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
@@ -4026,6 +4056,7 @@ MonoBehaviour:
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
+  m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
@@ -4274,6 +4305,7 @@ MonoBehaviour:
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
+  m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
@@ -4349,6 +4381,7 @@ MonoBehaviour:
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
+  m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
@@ -4573,6 +4606,7 @@ MonoBehaviour:
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
+  m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
@@ -4697,6 +4731,7 @@ MonoBehaviour:
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
+  m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
@@ -4772,6 +4807,7 @@ MonoBehaviour:
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
+  m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
@@ -4859,6 +4895,7 @@ MonoBehaviour:
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
+  m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
@@ -5030,6 +5067,7 @@ MonoBehaviour:
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
+  m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
@@ -5139,6 +5177,7 @@ MonoBehaviour:
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
+  m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
@@ -5348,6 +5387,7 @@ MonoBehaviour:
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
+  m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
@@ -5421,6 +5461,7 @@ MonoBehaviour:
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
+  m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
@@ -5494,6 +5535,7 @@ MonoBehaviour:
   m_Material: {fileID: 0}
   m_Color: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
   m_RaycastTarget: 1
+  m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
@@ -5567,6 +5609,7 @@ MonoBehaviour:
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
+  m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
@@ -5862,6 +5905,7 @@ MonoBehaviour:
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
+  m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
@@ -6017,6 +6061,7 @@ MonoBehaviour:
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
+  m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
@@ -6172,6 +6217,7 @@ MonoBehaviour:
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
+  m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
@@ -6425,6 +6471,7 @@ MonoBehaviour:
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
+  m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
@@ -6498,6 +6545,7 @@ MonoBehaviour:
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
+  m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
@@ -6604,6 +6652,7 @@ MonoBehaviour:
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
+  m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
@@ -6677,6 +6726,7 @@ MonoBehaviour:
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
+  m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
@@ -6785,6 +6835,7 @@ MonoBehaviour:
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
+  m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
@@ -6873,6 +6924,7 @@ MonoBehaviour:
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
+  m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
@@ -6946,6 +6998,7 @@ MonoBehaviour:
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
+  m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
@@ -7101,6 +7154,7 @@ MonoBehaviour:
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
+  m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
@@ -7354,6 +7408,7 @@ MonoBehaviour:
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
+  m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
@@ -7525,6 +7580,7 @@ MonoBehaviour:
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
+  m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
@@ -7598,6 +7654,7 @@ MonoBehaviour:
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
+  m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
@@ -7721,6 +7778,7 @@ MonoBehaviour:
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
+  m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
@@ -7928,6 +7986,7 @@ MonoBehaviour:
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
+  m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
@@ -8048,6 +8107,7 @@ MonoBehaviour:
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 0.392}
   m_RaycastTarget: 1
+  m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
@@ -8122,6 +8182,7 @@ MonoBehaviour:
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
+  m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
@@ -8264,6 +8325,7 @@ MonoBehaviour:
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
+  m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
@@ -8337,6 +8399,7 @@ MonoBehaviour:
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
+  m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
@@ -8492,6 +8555,7 @@ MonoBehaviour:
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
+  m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
@@ -8647,6 +8711,7 @@ MonoBehaviour:
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
+  m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
@@ -8836,6 +8901,7 @@ MonoBehaviour:
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 0.392}
   m_RaycastTarget: 1
+  m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
@@ -8959,6 +9025,7 @@ MonoBehaviour:
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
+  m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
@@ -9033,19 +9100,20 @@ MonoBehaviour:
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
+  m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
   m_text: "<b>PRIVACY NOTICE</b>\n\nLast updated June 29, 2020\n\nThank you for choosing
     to be part of our community at Clinvest Research, LLC (\u201CCompany\u201D, \u201Cwe\u201D,
     \u201Cus\u201D, or \u201Cour\u201D). We are committed to protecting your personal
-    information and your right to privacy. If you have any questions or concerns about
-    this privacy notice, or our practices with regards to your personal information,
+    information and your right to privacy. If you have any questions or concerns
+    about this privacy notice, or our practices with regards to your personal information,
     please contact us at migraineapp@clinvest.com.\n\nWhen you use our mobile application,
-    as the case may be (the \"App\") and more generally, use any of our services (the
-    \"Services\", which include the App), we appreciate that you are trusting us with
-    your personal information. We take your privacy very seriously. In this privacy
-    notice, we seek to explain to you in the clearest way possible what information
+    as the case may be (the \"App\") and more generally, use any of our services
+    (the \"Services\", which include the App), we appreciate that you are trusting
+    us with your personal information. We take your privacy very seriously. In this
+    privacy notice, we seek to explain to you in the clearest way possible what information
     we collect, how we use it and what rights you have in relation to it. We hope
     you take some time to read through it carefully, as it is important. If there
     are any terms in this privacy notice that you do not agree with, please discontinue
@@ -9055,83 +9123,84 @@ MonoBehaviour:
     privacy notice carefully as it will help you understand what we do with the information
     that we collect.\n\n\n<b>TABLE OF CONTENTS</b>\n\n1. WHAT INFORMATION DO WE COLLECT?\n\n2.
     HOW DO WE USE YOUR INFORMATION?\n\n3. WILL YOUR INFORMATION BE SHARED WITH ANYONE?\n\n4.
-    DO WE USE COOKIES AND OTHER TRACKING TECHNOLOGIES?\n\n5. HOW LONG DO WE KEEP YOUR
-    INFORMATION?\n\n6. HOW DO WE KEEP YOUR INFORMATION SAFE?\n\n7. DO WE COLLECT INFORMATION
-    FROM MINORS?\n\n8. WHAT ARE YOUR PRIVACY RIGHTS?\n\n9. CONTROLS FOR DO-NOT-TRACK
-    FEATURES\n\n10. DO CALIFORNIA RESIDENTS HAVE SPECIFIC PRIVACY RIGHTS?\n\n11. DO
-    WE MAKE UPDATES TO THIS NOTICE?\n\n12. HOW CAN YOU CONTACT US ABOUT THIS NOTICE?\n\n\n<b>1.
+    DO WE USE COOKIES AND OTHER TRACKING TECHNOLOGIES?\n\n5. HOW LONG DO WE KEEP
+    YOUR INFORMATION?\n\n6. HOW DO WE KEEP YOUR INFORMATION SAFE?\n\n7. DO WE COLLECT
+    INFORMATION FROM MINORS?\n\n8. WHAT ARE YOUR PRIVACY RIGHTS?\n\n9. CONTROLS FOR
+    DO-NOT-TRACK FEATURES\n\n10. DO CALIFORNIA RESIDENTS HAVE SPECIFIC PRIVACY RIGHTS?\n\n11.
+    DO WE MAKE UPDATES TO THIS NOTICE?\n\n12. HOW CAN YOU CONTACT US ABOUT THIS NOTICE?\n\n\n<b>1.
     WHAT INFORMATION DO WE COLLECT?</b>\n\nPersonal information you disclose to us\n\nIn
     Short:  We collect information that you provide to us.\n\nWe collect personal
-    information that you voluntarily provide to us when you register on the App, express
-    an interest in obtaining information about us or our products and Services, when
-    you participate in activities on the App or otherwise when you contact us.\n\nThe
+    information that you voluntarily provide to us when you register on the App,
+    express an interest in obtaining information about us or our products and Services,
+    when you participate in activities on the App or otherwise when you contact us.\n\nThe
     personal information that we collect depends on the context of your interactions
     with us and the App, the choices you make and the products and features you use.
     The personal information we collect may include the following:\n\nPersonal Information
     Provided by You. We collect email addresses; names; usernames; passwords; contact
-    preferences; health information; and other similar information. All personal information
-    that you provide to us must be true, complete and accurate, and you must notify
-    us of any changes to such personal information.\n\nInformation automatically collected\n\nIn
-    Short:  Some information \u2014 such as your Internet Protocol (IP) address and/or
-    browser and device characteristics \u2014 is collected automatically when you
-    visit our App.\n\nWe automatically collect certain information when you visit,
-    use or navigate the App. This information does not reveal your specific identity
-    (like your name or contact information) but may include device and usage information,
-    such as your IP address, browser and device characteristics, operating system,
-    language preferences, referring URLs, device name, country, location, information
-    about who and when you use our App and other technical information. This information
-    is primarily needed to maintain the security and operation of our App, and for
-    our internal analytics and reporting purposes.\n\nLike many businesses, we also
-    collect information through cookies and similar technologies.  \n\nThe information
-    we collect includes:\n\n    Log and Usage Data. Log and usage data is service-related,
-    diagnostic usage and performance information our servers automatically collect
-    when you access or use our App and which we record in log files. Depending on
-    how you interact with us, this log data may include your IP address, device information,
-    browser type and settings and information about your activity in the App (such
-    as the date/time stamps associated with your usage, pages and files viewed, searches
-    and other actions you take such as which features you use), device event information
-    (such as system activity, error reports (sometimes called 'crash dumps') and hardware
-    settings).\n\n\nInformation collected through our App\n\nIn Short:  We collect
-    information regarding your mobile device, push notifications, when you use our
-    App.\n\nIf you use our App, we also collect the following information:\n\n    Mobile
-    Device Data. We automatically collect device information (such as your mobile
-    device ID, model and manufacturer), operating system, version information and
-    system configuration information, device and application identification numbers,
-    browser type and version, hardware model Internet service provider and/or mobile
-    carrier, and Internet Protocol (IP) address (or proxy server). If you are using
-    our App, we may also collect information about the phone network associated with
-    your mobile device, your mobile device's operating system or platform, the type
-    of mobile device you use, your mobile device's unique device ID and information
-    about the features of our App you accessed.\n\n    Push Notifications. We may
-    request to send you push notifications regarding your account or certain features
-    of the App. If you wish to opt-out from receiving these types of communications,
-    you may turn them off in your device's settings.\n\nThe information is primarily
-    needed to maintain the security and operation of our App, for troubleshooting
-    and for our internal analytics and reporting purposes.\n\n\n<b>2. HOW DO WE USE
-    YOUR INFORMATION?</b>\n\nIn Short:  We process your information for purposes based
-    on legitimate business interests, the fulfillment of our contract with you, compliance
-    with our legal obligations, and/or your consent.\n\nWe use personal information
-    collected via our App for a variety of business purposes described below. We process
-    your personal information for these purposes in reliance on our legitimate business
-    interests, in order to enter into or perform a contract with you, with your consent,
-    and/or for compliance with our legal obligations. We indicate the specific processing
-    grounds we rely on next to each purpose listed below.\n\nWe use the information
-    we collect or receive:\n\n    To facilitate account creation and logon process.
-    If you choose to link your account with us to a third-party account (such as your
-    Google or Facebook account), we use the information you allowed us to collect
-    from those third parties to facilitate account creation and logon process for
-    the performance of the contract.\n\n    To post testimonials. We post testimonials
-    on our App that may contain personal information. Prior to posting a testimonial,
-    we will obtain your consent to use your name and the consent of the testimonial.
-    If you wish to update, or delete your testimonial, please contact us at migraineapp@clinvest.com
-    and be sure to include your name, testimonial location, and contact information.\n\n
-    \   Request feedback. We may use your information to request feedback and to contact
-    you about your use of our App.\n\n    To enable user-to-user communications. We
-    may use your information in order to enable user-to-user communications with each
+    preferences; health information; and other similar information. All personal
+    information that you provide to us must be true, complete and accurate, and you
+    must notify us of any changes to such personal information.\n\nInformation automatically
+    collected\n\nIn Short:  Some information \u2014 such as your Internet Protocol
+    (IP) address and/or browser and device characteristics \u2014 is collected automatically
+    when you visit our App.\n\nWe automatically collect certain information when
+    you visit, use or navigate the App. This information does not reveal your specific
+    identity (like your name or contact information) but may include device and usage
+    information, such as your IP address, browser and device characteristics, operating
+    system, language preferences, referring URLs, device name, country, location,
+    information about who and when you use our App and other technical information.
+    This information is primarily needed to maintain the security and operation of
+    our App, and for our internal analytics and reporting purposes.\n\nLike many
+    businesses, we also collect information through cookies and similar technologies. 
+    \n\nThe information we collect includes:\n\n    Log and Usage Data. Log and usage
+    data is service-related, diagnostic usage and performance information our servers
+    automatically collect when you access or use our App and which we record in log
+    files. Depending on how you interact with us, this log data may include your
+    IP address, device information, browser type and settings and information about
+    your activity in the App (such as the date/time stamps associated with your usage,
+    pages and files viewed, searches and other actions you take such as which features
+    you use), device event information (such as system activity, error reports (sometimes
+    called 'crash dumps') and hardware settings).\n\n\nInformation collected through
+    our App\n\nIn Short:  We collect information regarding your mobile device, push
+    notifications, when you use our App.\n\nIf you use our App, we also collect the
+    following information:\n\n    Mobile Device Data. We automatically collect device
+    information (such as your mobile device ID, model and manufacturer), operating
+    system, version information and system configuration information, device and
+    application identification numbers, browser type and version, hardware model
+    Internet service provider and/or mobile carrier, and Internet Protocol (IP) address
+    (or proxy server). If you are using our App, we may also collect information
+    about the phone network associated with your mobile device, your mobile device's
+    operating system or platform, the type of mobile device you use, your mobile
+    device's unique device ID and information about the features of our App you accessed.\n\n   
+    Push Notifications. We may request to send you push notifications regarding your
+    account or certain features of the App. If you wish to opt-out from receiving
+    these types of communications, you may turn them off in your device's settings.\n\nThe
+    information is primarily needed to maintain the security and operation of our
+    App, for troubleshooting and for our internal analytics and reporting purposes.\n\n\n<b>2.
+    HOW DO WE USE YOUR INFORMATION?</b>\n\nIn Short:  We process your information
+    for purposes based on legitimate business interests, the fulfillment of our contract
+    with you, compliance with our legal obligations, and/or your consent.\n\nWe use
+    personal information collected via our App for a variety of business purposes
+    described below. We process your personal information for these purposes in reliance
+    on our legitimate business interests, in order to enter into or perform a contract
+    with you, with your consent, and/or for compliance with our legal obligations.
+    We indicate the specific processing grounds we rely on next to each purpose listed
+    below.\n\nWe use the information we collect or receive:\n\n    To facilitate
+    account creation and logon process. If you choose to link your account with us
+    to a third-party account (such as your Google or Facebook account), we use the
+    information you allowed us to collect from those third parties to facilitate
+    account creation and logon process for the performance of the contract.\n\n   
+    To post testimonials. We post testimonials on our App that may contain personal
+    information. Prior to posting a testimonial, we will obtain your consent to use
+    your name and the consent of the testimonial. If you wish to update, or delete
+    your testimonial, please contact us at migraineapp@clinvest.com and be sure to
+    include your name, testimonial location, and contact information.\n\n   Request
+    feedback. We may use your information to request feedback and to contact you
+    about your use of our App.\n\n    To enable user-to-user communications. We may
+    use your information in order to enable user-to-user communications with each
     user's consent.\n\n    To manage user accounts. We may use your information for
-    the purposes of managing our account and keeping it in working order.\n\n    To
-    send administrative information to you. We may use your personal information to
-    send you product, service and new feature information and/or information about
+    the purposes of managing our account and keeping it in working order.\n\n   
+    To send administrative information to you. We may use your personal information
+    to send you product, service and new feature information and/or information about
     changes to our terms, conditions, and policies.\n\n    To protect our Services.
     We may use your information as part of our efforts to keep our App safe and secure
     (for example, for fraud monitoring and prevention).\n\n    To enforce our terms,
@@ -9143,61 +9212,62 @@ MonoBehaviour:
     analysis, identifying usage trends, determining the effectiveness of our promotional
     campaigns and to evaluate and improve our App, products, marketing and your experience.
     We may use and store this information in aggregated and anonymized form so that
-    it is not associated with individual end users and does not include personal information.
-    We will not use identifiable personal information without your consent.\n\n    Health
-    Research\n\n\n<b>3. WILL YOUR INFORMATION BE SHARED WITH ANYONE?</b>\n\nIn Short:
-    \ We only share information with your consent, to comply with laws, to provide
-    you with services, to protect your rights, or to fulfill business obligations.\nWe
-    may process or share your data that we hold based on the following legal basis:\n\n
-    \   Consent: We may process your data if you have given us specific consent to
-    use your personal information in a specific purpose.\n\n    Legitimate Interests:
+    it is not associated with individual end users and does not include personal
+    information. We will not use identifiable personal information without your consent.\n\n   
+    Health Research\n\n\n<b>3. WILL YOUR INFORMATION BE SHARED WITH ANYONE?</b>\n\nIn
+    Short:  We only share information with your consent, to comply with laws, to
+    provide you with services, to protect your rights, or to fulfill business obligations.\nWe
+    may process or share your data that we hold based on the following legal basis:\n\n  
+    Consent: We may process your data if you have given us specific consent to use
+    your personal information in a specific purpose.\n\n    Legitimate Interests:
     We may process your data when it is reasonably necessary to achieve our legitimate
     business interests.\n\n    Performance of a Contract: Where we have entered into
-    a contract with you, we may process your personal information to fulfill the terms
-    of our contract.\n\n    Legal Obligations: We may disclose your information where
-    we are legally required to do so in order to comply with applicable law, governmental
-    requests, a judicial proceeding, court order, or legal process, such as in response
-    to a court order or a subpoena (including in response to public authorities to
-    meet national security or law enforcement requirements).\n\n    Vital Interests:
-    We may disclose your information where we believe it is necessary to investigate,
-    prevent, or take action regarding potential violations of our policies, suspected
-    fraud, situations involving potential threats to the safety of any person and
-    illegal activities, or as evidence in litigation in which we are involved.\n\nMore
-    specifically, we may need to process your data or share your personal information
-    in the following situations:\n\n    Business Transfers. We may share or transfer
-    your information in connection with, or during negotiations of, any merger, sale
-    of company assets, financing, or acquisition of all or a portion of our business
-    to another company.\n\n\n<b>4. DO WE USE COOKIES AND OTHER TRACKING TECHNOLOGIES?</b>\n\nIn
-    Short:  We may use cookies and other tracking technologies to collect and store
-    your information.\n\nWe may use cookies and similar tracking technologies (like
-    web beacons and pixels) to access or store information. Specific information about
-    how we use such technologies and how you can refuse certain cookies is set out
-    in our Cookie Notice.\n\n\n<b>5. HOW LONG DO WE KEEP YOUR INFORMATION?</b>\n\nIn
-    Short:  We keep your information for as long as necessary to fulfill the purposes
-    outlined in this privacy notice unless otherwise required by law.\n\nWe will only
-    keep your personal information for as long as it is necessary for the purposes
-    set out in this privacy notice, unless a longer retention period is required or
-    permitted by law (such as tax, accounting or other legal requirements). No purpose
-    in this notice will require us keeping your personal information for longer than
-    the period of time in which users have an account with us.\n\nWhen we have no
-    ongoing legitimate business need to process your personal information, we will
-    either delete or anonymize such information, or, if this is not possible (for
-    example, because your personal information has been stored in backup archives),
-    then we will securely store your personal information and isolate it from any
-    further processing until deletion is possible.\n\n<b>6. HOW DO WE KEEP YOUR INFORMATION
-    SAFE?</b>\n\nIn Short:  We aim to protect your personal information through a
-    system of organizational and technical security measures.\n\nWe have implemented
-    appropriate technical and organizational security measures designed to protect
-    the security of any personal information we process. However, despite our safeguards
-    and efforts to secure your information, no electronic transmission over the Internet
-    or information storage technology can be guaranteed to be 100% secure, so we cannot
-    promise or guarantee that hackers, cybercriminals, or other unauthorized third
-    parties will not be able to defeat our security, and improperly collect, access,
-    steal, or modify your information. Although we will do our best to protect your
-    personal information, transmission of personal information to and from our App
-    is at your own risk. You should only access the App within a secure environment.\n\n<b>7.
-    DO WE COLLECT INFORMATION FROM MINORS?</b>\n\nIn Short:  We do not knowingly collect
-    data from or market to children under 18 years of age.\n\nWe do not knowingly
+    a contract with you, we may process your personal information to fulfill the
+    terms of our contract.\n\n    Legal Obligations: We may disclose your information
+    where we are legally required to do so in order to comply with applicable law,
+    governmental requests, a judicial proceeding, court order, or legal process,
+    such as in response to a court order or a subpoena (including in response to
+    public authorities to meet national security or law enforcement requirements).\n\n   
+    Vital Interests: We may disclose your information where we believe it is necessary
+    to investigate, prevent, or take action regarding potential violations of our
+    policies, suspected fraud, situations involving potential threats to the safety
+    of any person and illegal activities, or as evidence in litigation in which we
+    are involved.\n\nMore specifically, we may need to process your data or share
+    your personal information in the following situations:\n\n    Business Transfers.
+    We may share or transfer your information in connection with, or during negotiations
+    of, any merger, sale of company assets, financing, or acquisition of all or a
+    portion of our business to another company.\n\n\n<b>4. DO WE USE COOKIES AND
+    OTHER TRACKING TECHNOLOGIES?</b>\n\nIn Short:  We may use cookies and other tracking
+    technologies to collect and store your information.\n\nWe may use cookies and
+    similar tracking technologies (like web beacons and pixels) to access or store
+    information. Specific information about how we use such technologies and how
+    you can refuse certain cookies is set out in our Cookie Notice.\n\n\n<b>5. HOW
+    LONG DO WE KEEP YOUR INFORMATION?</b>\n\nIn Short:  We keep your information
+    for as long as necessary to fulfill the purposes outlined in this privacy notice
+    unless otherwise required by law.\n\nWe will only keep your personal information
+    for as long as it is necessary for the purposes set out in this privacy notice,
+    unless a longer retention period is required or permitted by law (such as tax,
+    accounting or other legal requirements). No purpose in this notice will require
+    us keeping your personal information for longer than the period of time in which
+    users have an account with us.\n\nWhen we have no ongoing legitimate business
+    need to process your personal information, we will either delete or anonymize
+    such information, or, if this is not possible (for example, because your personal
+    information has been stored in backup archives), then we will securely store
+    your personal information and isolate it from any further processing until deletion
+    is possible.\n\n<b>6. HOW DO WE KEEP YOUR INFORMATION SAFE?</b>\n\nIn Short: 
+    We aim to protect your personal information through a system of organizational
+    and technical security measures.\n\nWe have implemented appropriate technical
+    and organizational security measures designed to protect the security of any
+    personal information we process. However, despite our safeguards and efforts
+    to secure your information, no electronic transmission over the Internet or information
+    storage technology can be guaranteed to be 100% secure, so we cannot promise
+    or guarantee that hackers, cybercriminals, or other unauthorized third parties
+    will not be able to defeat our security, and improperly collect, access, steal,
+    or modify your information. Although we will do our best to protect your personal
+    information, transmission of personal information to and from our App is at your
+    own risk. You should only access the App within a secure environment.\n\n<b>7.
+    DO WE COLLECT INFORMATION FROM MINORS?</b>\n\nIn Short:  We do not knowingly
+    collect data from or market to children under 18 years of age.\n\nWe do not knowingly
     solicit data from or market to children under 18 years of age. By using the App,
     you represent that you are at least 18 or that you are the parent or guardian
     of such a minor and consent to such minor dependent\u2019s use of the App. If
@@ -9210,26 +9280,27 @@ MonoBehaviour:
     and you believe we are unlawfully processing your personal information, you also
     have the right to complain to your local data protection supervisory authority.
     You can find their contact details here: http://ec.europa.eu/justice/data-protection/bodies/authorities/index_en.htm.\n\nIf
-    you are resident in Switzerland, the contact details for the data protection authorities
-    are available here: https://www.edoeb.admin.ch/edoeb/en/home.html.\n\nIf you have
-    questions or comments about your privacy rights, you may email us at migraineapp@clinvest.com.\n\nAccount
-    Information\n\nIf you would at any time like to review or change the information
-    in your account or terminate your account, you can:\n\n    \u25A0  Log in to your
-    account settings and update your user account.\n\nUpon your request to terminate
-    your account, we will deactivate or delete your account and information from our
-    active databases. However, we may retain some information in our files to prevent
-    fraud, troubleshoot problems, assist with any investigations, enforce our Terms
-    of Use and/or comply with applicable legal requirements.\n\nCookies and similar
-    technologies: Most Web browsers are set to accept cookies by default. If you prefer,
-    you can usually choose to set your browser to remove cookies and to reject cookies.
-    If you choose to remove cookies or reject cookies, this could affect certain features
-    or services of our App. To opt-out of interest-based advertising by advertisers
-    on our App visit http://www.aboutads.info/choices/.\n\nOpting out of email marketing:
-    You can unsubscribe from our marketing email list at any time by clicking on the
-    unsubscribe link in the emails that we send or by contacting us using the details
-    provided below. You will then be removed from the marketing email list \u2013
-    however, we may still communicate with you, for example to send you service-related
-    emails that are necessary for the administration and use of your account, to respond
+    you are resident in Switzerland, the contact details for the data protection
+    authorities are available here: https://www.edoeb.admin.ch/edoeb/en/home.html.\n\nIf
+    you have questions or comments about your privacy rights, you may email us at
+    migraineapp@clinvest.com.\n\nAccount Information\n\nIf you would at any time
+    like to review or change the information in your account or terminate your account,
+    you can:\n\n    \u25A0  Log in to your account settings and update your user
+    account.\n\nUpon your request to terminate your account, we will deactivate or
+    delete your account and information from our active databases. However, we may
+    retain some information in our files to prevent fraud, troubleshoot problems,
+    assist with any investigations, enforce our Terms of Use and/or comply with applicable
+    legal requirements.\n\nCookies and similar technologies: Most Web browsers are
+    set to accept cookies by default. If you prefer, you can usually choose to set
+    your browser to remove cookies and to reject cookies. If you choose to remove
+    cookies or reject cookies, this could affect certain features or services of
+    our App. To opt-out of interest-based advertising by advertisers on our App visit
+    http://www.aboutads.info/choices/.\n\nOpting out of email marketing: You can
+    unsubscribe from our marketing email list at any time by clicking on the unsubscribe
+    link in the emails that we send or by contacting us using the details provided
+    below. You will then be removed from the marketing email list \u2013 however,
+    we may still communicate with you, for example to send you service-related emails
+    that are necessary for the administration and use of your account, to respond
     to service requests, or for other non-marketing purposes. To otherwise opt-out,
     you may:\n\n    \u25A0  Access your account settings and update your preferences.\n\n<b>9.
     CONTROLS FOR DO-NOT-TRACK FEATURES</b>\n\nMost web browsers and some mobile operating
@@ -9258,25 +9329,25 @@ MonoBehaviour:
     the email address associated with your account and a statement that you reside
     in California. We will make sure the data is not publicly displayed on the App,
     but please be aware that the data may not be completely or comprehensively removed
-    from all our systems (e.g. backups, etc.).  \n\n<b>11. DO WE MAKE UPDATES TO THIS
-    NOTICE?</b>\n\nIn Short:  Yes, we will update this notice as necessary to stay
-    compliant with relevant laws.\n\nWe may update this privacy notice from time to
-    time. The updated version will be indicated by an updated \u201CRevised\u201D
+    from all our systems (e.g. backups, etc.).  \n\n<b>11. DO WE MAKE UPDATES TO
+    THIS NOTICE?</b>\n\nIn Short:  Yes, we will update this notice as necessary to
+    stay compliant with relevant laws.\n\nWe may update this privacy notice from
+    time to time. The updated version will be indicated by an updated \u201CRevised\u201D
     date and the updated version will be effective as soon as it is accessible. If
-    we make material changes to this privacy notice, we may notify you either by prominently
-    posting a notice of such changes or by directly sending you a notification. We
-    encourage you to review this privacy notice frequently to be informed of how we
-    are protecting your information.\n\n<b>12. HOW CAN YOU CONTACT US ABOUT THIS NOTICE?</b>\n\nIf
-    you have questions or comments about this notice, you may email us at migraineapp@clinvest.com
-    or by post to:\n        \n        Clinvest Research, LLC \n        4350 S. National
-    Ave\n        Suite C100\n        Springfield, MO 65810\n        United States\n\nHOW
-    CAN YOU REVIEW, UPDATE, OR DELETE THE DATA WE COLLECT FROM YOU?\n\nBased on the
-    applicable laws of your country, you may have the right to request access to the
-    personal information we collect from you, change that information, or delete it
-    in some circumstances. To request to review, update, or delete your personal information,
-    please visit: migraineapp@clinvest.com. We will respond to your request within
-    30 days.\n\nThis privacy policy was created using Termly\u2019s Privacy Policy
-    Generator.\n"
+    we make material changes to this privacy notice, we may notify you either by
+    prominently posting a notice of such changes or by directly sending you a notification.
+    We encourage you to review this privacy notice frequently to be informed of how
+    we are protecting your information.\n\n<b>12. HOW CAN YOU CONTACT US ABOUT THIS
+    NOTICE?</b>\n\nIf you have questions or comments about this notice, you may email
+    us at migraineapp@clinvest.com or by post to:\n        \n        Clinvest Research,
+    LLC \n        4350 S. National Ave\n        Suite C100\n        Springfield,
+    MO 65810\n        United States\n\nHOW CAN YOU REVIEW, UPDATE, OR DELETE THE
+    DATA WE COLLECT FROM YOU?\n\nBased on the applicable laws of your country, you
+    may have the right to request access to the personal information we collect from
+    you, change that information, or delete it in some circumstances. To request
+    to review, update, or delete your personal information, please visit: migraineapp@clinvest.com.
+    We will respond to your request within 30 days.\n\nThis privacy policy was created
+    using Termly\u2019s Privacy Policy Generator.\n"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -9428,37 +9499,39 @@ MonoBehaviour:
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
+  m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
   m_text: "<b>CONSENT FORM</b>\nAssessment of Migraine\n\nYou are invited to be in
-    a research study about how to assess your migraine patterns and symptoms. We ask
-    that you read this form and ask any questions you may have before agreeing to
-    be in the study.\n\nThis study is being conducted by Dr. Erin M. Buchanan, Professor
-    of Cognitive Analytics at Harrisburg University of Science and Technology. \n\n<b>Background
-    Information:</b>\n\nWe are interested in the assessment of your migraine patterns,
-    symptoms, and the effects on your normal day-to-day functioning. \n\n<b>Procedures:</b>\n\nThe
-    study includes completing a headache diary by entering information about your
-    headaches or migraines each day for a month. You will be prompted to enter your
-    information across the month. You will also take a migraine assessment tool at
-    the beginning and end of the study. The headache diary should take three to five
-    minutes to complete on days you enter headache information and less than one minute
-    if you did not have a headache to report. The assessment tool should also take
-    three to five minutes to complete. \n\n<b>Risks and Benefits of being in the Study:</b>\n\nOne
-    possible risk of the study is that you may feel uncomfortable reporting your migraine
-    symptoms. However, the confidentiality-guaranteeing procedures employed by the
-    researchers will minimize this risk. The research team will closely guard your
-    information. One benefit to providing this data is that the research team will
-    provide you feedback and information on your migraine patterns that you can share
-    with your health care provider to improve your treatment. \n\n<b>Compensation:</b>\n\nIf
-    you complete 80% of the headache diary, you will be entitled to a $10 Amazon gift
-    card for your time and effort. \n\n<b>Confidentiality:</b>\n\nMeasures are taken
-    to ensure that all information you provide will be anonymous. Only members of
-    the research team will have access to the original dataset, which will be stored
-    on a password-locked computer. Your name or other identifying information will
-    not be entered into the dataset and no references will be made in verbal or written
-    reports that could link you to the study. In any publication, information will
-    be provided in such a way that you cannot be identified. \n\n<b>Data Sharing:</b>\n\nDe-identified
+    a research study about how to assess your migraine patterns and symptoms. We
+    ask that you read this form and ask any questions you may have before agreeing
+    to be in the study.\n\nThis study is being conducted by Dr. Erin M. Buchanan,
+    Professor of Cognitive Analytics at Harrisburg University of Science and Technology.
+    \n\n<b>Background Information:</b>\n\nWe are interested in the assessment of
+    your migraine patterns, symptoms, and the effects on your normal day-to-day functioning.
+    \n\n<b>Procedures:</b>\n\nThe study includes completing a headache diary by entering
+    information about your headaches or migraines each day for a month. You will
+    be prompted to enter your information across the month. You will also take a
+    migraine assessment tool at the beginning and end of the study. The headache
+    diary should take three to five minutes to complete on days you enter headache
+    information and less than one minute if you did not have a headache to report.
+    The assessment tool should also take three to five minutes to complete. \n\n<b>Risks
+    and Benefits of being in the Study:</b>\n\nOne possible risk of the study is
+    that you may feel uncomfortable reporting your migraine symptoms. However, the
+    confidentiality-guaranteeing procedures employed by the researchers will minimize
+    this risk. The research team will closely guard your information. One benefit
+    to providing this data is that the research team will provide you feedback and
+    information on your migraine patterns that you can share with your health care
+    provider to improve your treatment. \n\n<b>Compensation:</b>\n\nIf you complete
+    80% of the headache diary, you will be entitled to a $10 Amazon gift card for
+    your time and effort. \n\n<b>Confidentiality:</b>\n\nMeasures are taken to ensure
+    that all information you provide will be anonymous. Only members of the research
+    team will have access to the original dataset, which will be stored on a password-locked
+    computer. Your name or other identifying information will not be entered into
+    the dataset and no references will be made in verbal or written reports that
+    could link you to the study. In any publication, information will be provided
+    in such a way that you cannot be identified. \n\n<b>Data Sharing:</b>\n\nDe-identified
     data from this study may be shared with the research community at large to advance
     science and health. We will remove or code any personal information that could
     identify you before files are shared with other researchers to ensure that, by
@@ -9468,24 +9541,25 @@ MonoBehaviour:
     data may be used by the research team or shared with other researchers, for both
     related and unrelated research purposes in the future. Your anonymous data may
     also be made available in online data repositories such as the Open Science Framework
-    (which are free data repositories that require registration to have access), which
-    allow other researchers and interested parties to access the data for further
-    analysis.\n\nYour data will be stored on the application until you decide to delete
-    your account. You may also decide to unenroll from the study and retain your data
-    on your account, but researchers would not use this data for any future analysis
-    or publication. \n\n<b>Voluntary Nature of the Study</b>\n\nParticipation in this
-    study is voluntary: Your decision whether or not to participate will not affect
-    your current or future relations with Harrisburg University of Science and Technology.
-    If you decide to participate, you are free to not answer any question or withdraw
-    at any time without affecting those relationships. \n\n<b>Contacts and Questions:</b>\n\nThe
-    researchers conducting this study are Dr. Erin M. Buchanan in partnership with
-    Clinvest Research, LLC. You may ask any questions you have now. If you have questions
-    later, you are encouraged to contact Dr. Erin M. Buchanan at ebuchanan@harrisburgu.edu.\n\n<b>Questions
-    or Concerns:</b>\n\nThis study has been reviewed by Harrisburg University of Science
-    and Technology\u2019s Institutional Review Board (IRB).  The IRB has determined
-    that this study fulfills the human research subject protections obligations required
-    by state and federal law and University policies.  \n\nA copy of this information
-    to keep for your records will be provided upon request."
+    (which are free data repositories that require registration to have access),
+    which allow other researchers and interested parties to access the data for further
+    analysis.\n\nYour data will be stored on the application until you decide to
+    delete your account. You may also decide to unenroll from the study and retain
+    your data on your account, but researchers would not use this data for any future
+    analysis or publication. \n\n<b>Voluntary Nature of the Study</b>\n\nParticipation
+    in this study is voluntary: Your decision whether or not to participate will
+    not affect your current or future relations with Harrisburg University of Science
+    and Technology. If you decide to participate, you are free to not answer any
+    question or withdraw at any time without affecting those relationships. \n\n<b>Contacts
+    and Questions:</b>\n\nThe researchers conducting this study are Dr. Erin M. Buchanan
+    in partnership with Clinvest Research, LLC. You may ask any questions you have
+    now. If you have questions later, you are encouraged to contact Dr. Erin M. Buchanan
+    at ebuchanan@harrisburgu.edu.\n\n<b>Questions or Concerns:</b>\n\nThis study
+    has been reviewed by Harrisburg University of Science and Technology\u2019s Institutional
+    Review Board (IRB).  The IRB has determined that this study fulfills the human
+    research subject protections obligations required by state and federal law and
+    University policies.  \n\nA copy of this information to keep for your records
+    will be provided upon request."
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -9637,6 +9711,7 @@ MonoBehaviour:
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
+  m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
@@ -9792,6 +9867,7 @@ MonoBehaviour:
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
+  m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
@@ -9865,6 +9941,7 @@ MonoBehaviour:
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
+  m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
@@ -9935,6 +10012,7 @@ MonoBehaviour:
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
+  m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
@@ -10008,6 +10086,7 @@ MonoBehaviour:
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
+  m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
@@ -10081,6 +10160,7 @@ MonoBehaviour:
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
+  m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
@@ -10237,6 +10317,7 @@ MonoBehaviour:
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
+  m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
@@ -10310,6 +10391,7 @@ MonoBehaviour:
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
+  m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
@@ -10383,6 +10465,7 @@ MonoBehaviour:
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
+  m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
@@ -10640,6 +10723,7 @@ MonoBehaviour:
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
+  m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
@@ -10916,6 +11000,7 @@ MonoBehaviour:
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
+  m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
@@ -11055,6 +11140,7 @@ MonoBehaviour:
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
+  m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
@@ -11210,6 +11296,7 @@ MonoBehaviour:
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
+  m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
@@ -11283,6 +11370,7 @@ MonoBehaviour:
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
+  m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
@@ -11438,11 +11526,12 @@ MonoBehaviour:
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
+  m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: If you mark "No", you can continue to use the app, but the researchers will
-    not use your data for future studies.
+  m_text: If you mark "No", you can continue to use the app, but the researchers
+    will not use your data for future studies.
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -11644,6 +11733,7 @@ MonoBehaviour:
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
+  m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
@@ -11717,6 +11807,7 @@ MonoBehaviour:
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
+  m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
@@ -11791,6 +11882,7 @@ MonoBehaviour:
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
+  m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
@@ -11909,6 +12001,7 @@ MonoBehaviour:
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
+  m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
@@ -12038,6 +12131,7 @@ MonoBehaviour:
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
+  m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
@@ -12111,6 +12205,7 @@ MonoBehaviour:
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
+  m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
@@ -12184,6 +12279,7 @@ MonoBehaviour:
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
+  m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
@@ -12339,6 +12435,7 @@ MonoBehaviour:
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
+  m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
@@ -12494,6 +12591,7 @@ MonoBehaviour:
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
+  m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
@@ -12699,6 +12797,7 @@ MonoBehaviour:
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
+  m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
@@ -12738,7 +12837,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1340874922
 RectTransform:
   m_ObjectHideFlags: 0
@@ -12966,6 +13065,7 @@ MonoBehaviour:
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
+  m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
@@ -13075,6 +13175,7 @@ MonoBehaviour:
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
+  m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
@@ -13148,6 +13249,7 @@ MonoBehaviour:
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
+  m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
@@ -13221,6 +13323,7 @@ MonoBehaviour:
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
+  m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
@@ -13330,6 +13433,7 @@ MonoBehaviour:
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
+  m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
@@ -13403,6 +13507,7 @@ MonoBehaviour:
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
+  m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
@@ -13476,6 +13581,7 @@ MonoBehaviour:
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
+  m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
@@ -13549,6 +13655,7 @@ MonoBehaviour:
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
+  m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
@@ -13624,6 +13731,7 @@ MonoBehaviour:
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
+  m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
@@ -13710,6 +13818,7 @@ MonoBehaviour:
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
+  m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
@@ -13881,6 +13990,7 @@ MonoBehaviour:
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
+  m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
@@ -13954,6 +14064,7 @@ MonoBehaviour:
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
+  m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
@@ -14027,6 +14138,7 @@ MonoBehaviour:
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
+  m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
@@ -14182,6 +14294,7 @@ MonoBehaviour:
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
+  m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
@@ -14352,6 +14465,7 @@ MonoBehaviour:
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
+  m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
@@ -14425,6 +14539,7 @@ MonoBehaviour:
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
+  m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
@@ -14580,6 +14695,7 @@ MonoBehaviour:
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
+  m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
@@ -14735,6 +14851,7 @@ MonoBehaviour:
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
+  m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
@@ -14808,6 +14925,7 @@ MonoBehaviour:
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
+  m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
@@ -14963,6 +15081,7 @@ MonoBehaviour:
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
+  m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
@@ -15118,6 +15237,7 @@ MonoBehaviour:
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
+  m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
@@ -15310,6 +15430,7 @@ MonoBehaviour:
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
+  m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
@@ -15433,6 +15554,7 @@ MonoBehaviour:
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
+  m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
@@ -15506,6 +15628,7 @@ MonoBehaviour:
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
+  m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
@@ -15579,6 +15702,7 @@ MonoBehaviour:
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
+  m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
@@ -15767,6 +15891,7 @@ MonoBehaviour:
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
+  m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
@@ -15840,6 +15965,7 @@ MonoBehaviour:
   m_Material: {fileID: 0}
   m_Color: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
   m_RaycastTarget: 1
+  m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
@@ -15913,6 +16039,7 @@ MonoBehaviour:
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
+  m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
@@ -15925,7 +16052,7 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 2133996082
+    rgba: 2150773298
   m_fontColor: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 0.5}
   m_enableVertexGradient: 0
   m_colorMode: 3
@@ -16068,6 +16195,7 @@ MonoBehaviour:
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
+  m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
@@ -16141,6 +16269,7 @@ MonoBehaviour:
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
+  m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
@@ -16346,6 +16475,7 @@ MonoBehaviour:
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
+  m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
@@ -16469,6 +16599,7 @@ MonoBehaviour:
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
+  m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
@@ -16613,6 +16744,7 @@ MonoBehaviour:
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
+  m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
@@ -16719,6 +16851,7 @@ MonoBehaviour:
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
+  m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
@@ -16878,6 +17011,7 @@ MonoBehaviour:
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
+  m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
@@ -16951,6 +17085,7 @@ MonoBehaviour:
   m_Material: {fileID: 0}
   m_Color: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
   m_RaycastTarget: 1
+  m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
@@ -16990,7 +17125,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1818480721
 RectTransform:
   m_ObjectHideFlags: 0
@@ -17137,6 +17272,7 @@ MonoBehaviour:
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
+  m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
@@ -17259,6 +17395,7 @@ MonoBehaviour:
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
+  m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
@@ -17334,6 +17471,7 @@ MonoBehaviour:
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
+  m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
@@ -17420,6 +17558,7 @@ MonoBehaviour:
   m_Material: {fileID: 0}
   m_Color: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
   m_RaycastTarget: 1
+  m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
@@ -17493,6 +17632,7 @@ MonoBehaviour:
   m_Material: {fileID: 0}
   m_Color: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
   m_RaycastTarget: 1
+  m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
@@ -17566,6 +17706,7 @@ MonoBehaviour:
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
+  m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
@@ -17721,6 +17862,7 @@ MonoBehaviour:
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
+  m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
@@ -17794,6 +17936,7 @@ MonoBehaviour:
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
+  m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
@@ -17949,6 +18092,7 @@ MonoBehaviour:
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
+  m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
@@ -18104,6 +18248,7 @@ MonoBehaviour:
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
+  m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
@@ -18336,6 +18481,7 @@ MonoBehaviour:
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
+  m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
@@ -18409,6 +18555,7 @@ MonoBehaviour:
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
+  m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
@@ -18675,6 +18822,7 @@ MonoBehaviour:
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
+  m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
@@ -18748,6 +18896,7 @@ MonoBehaviour:
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
+  m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
@@ -18932,6 +19081,7 @@ MonoBehaviour:
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
+  m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
@@ -19290,6 +19440,7 @@ MonoBehaviour:
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
+  m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
