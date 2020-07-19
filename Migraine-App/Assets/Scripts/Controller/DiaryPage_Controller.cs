@@ -38,8 +38,11 @@ namespace clinvest.migraine.Controller
         public Button Next_8;
         public Button Next_9;
         public Button Next_10;
-        public Button Submit_2;
-        public Button Submit_1;
+        public Button ReturnButton;
+
+        //Submit
+        public GameObject SubmitPanel;
+        public Button SubmitButton;
 
         //Error
         public GameObject ErrorPanel;
@@ -70,11 +73,15 @@ namespace clinvest.migraine.Controller
         }
         public void ErrorButtonPressed() => ErrorPanel.SetActive(false);
 
+        public void SubmitButtonPressed() => SceneManager.LoadScene("homescreen");
+
+        public void ReturnButtonPressed() => SubmitPanel.SetActive(false);
+
         public void Next_1Pressed()
         {
             if (Selection_1.value == 1)
             {
-
+                SubmitPanel.SetActive(true);
             }
             if (Selection_1.value == 0)
             {
@@ -172,7 +179,7 @@ namespace clinvest.migraine.Controller
             }
             if (Selection_8.value == 2)
             {
-
+                SubmitPanel.SetActive(true);
             }
             else
             {
@@ -181,18 +188,14 @@ namespace clinvest.migraine.Controller
         }
         public void Next_10Pressed()
         {
-            if (Selection_10.value == 1)
+            if ((Selection_10.value == 0)|(Selection_9.value == 0))
+            {
+                ErrorPanel.SetActive(true);
+            }
+            if (Selection_9.value == 2)
             {
                 PanelTen.SetActive(false);
                 PanelNine.SetActive(true);
-            }
-            if (Selection_10.value == 2)
-            {
-
-            }
-            else
-            {
-                ErrorPanel.SetActive(true);
             }
         }
     }
