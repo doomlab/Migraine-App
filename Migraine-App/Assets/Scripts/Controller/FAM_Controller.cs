@@ -53,6 +53,7 @@ namespace clinvest.migraine.Controller
         public Button Next2;
         public Button Next3;
         public Button Next4;
+        public Button Next5;
         public Button Submit;
 
         //Error 
@@ -65,6 +66,7 @@ namespace clinvest.migraine.Controller
         public GameObject PageThreePanel;
         public GameObject PageFourPanel;
         public GameObject PageFivePanel;
+        public GameObject PageSixPanel;
 
         // Start is called before the first frame update
         void Start()
@@ -92,7 +94,7 @@ namespace clinvest.migraine.Controller
 
         public void Next1Pressed()
         {
-            if ((Question1.value != 0) & (Question2.value != 0) & (Question3.value != 0) & (Question4.value != 0) & (Question5.value != 0) & (Question6.value != 0))
+            if ((Question1.value != 0) & (Question2.value != 0) & (Question3.value != 0) & (Question4.value != 0) & (Question5.value != 0))
             {
                 PageOnePanel.SetActive(false);
                 PageTwoPanel.SetActive(true);
@@ -104,7 +106,7 @@ namespace clinvest.migraine.Controller
         }
         public void Next2Pressed()
         {
-            if ((Question7.value != 0) & (Question8.value != 0) & (Question9.value != 0) & (Question10.value != 0) & (Question11.value != 0) & (Question12.value != 0))
+            if ((Question6.value != 0) & (Question7.value != 0) & (Question8.value != 0) & (Question9.value != 0) & (Question10.value != 0))
             {
                 PageTwoPanel.SetActive(false);
                 PageThreePanel.SetActive(true);
@@ -117,7 +119,7 @@ namespace clinvest.migraine.Controller
         }
         public void Next3Pressed()
         {
-            if ((Question13.value != 0) & (Question14.value != 0) & (Question15.value != 0) & (Question16.value != 0) & (Question17.value != 0))
+            if ((Question11.value != 0) & (Question12.value != 0) & (Question13.value != 0) & (Question14.value != 0))
             {
                 PageThreePanel.SetActive(false);
                 PageFourPanel.SetActive(true);
@@ -130,7 +132,7 @@ namespace clinvest.migraine.Controller
         }
         public void Next4Pressed()
         {
-            if ((Question18.value != 0) & (Question19.value != 0) & (Question20.value != 0) & (Question21.value != 0) & (Question22.value != 0))
+            if ((Question15.value != 0) & (Question16.value != 0) & (Question17.value != 0) & (Question18.value != 0))
             {
                 PageFourPanel.SetActive(false);
                 PageFivePanel.SetActive(true);
@@ -141,12 +143,24 @@ namespace clinvest.migraine.Controller
             }
 
         }
+        public void Next5Pressed()
+        {
+            if ((Question19.value != 0) & (Question20.value != 0) & (Question21.value != 0) & (Question22.value != 0) & (Question23.value != 0))
+            {
+                PageFivePanel.SetActive(false);
+                PageSixPanel.SetActive(true);
+            }
+            else
+            {
+                ErrorPanel.SetActive(true);
+            }
+
+        }
         public void SubmitPressed()
         {
-            if ((Question23.value != 0) & (Question24.value != 0) & (Question25.value != 0) & (Question26.value != 0) & (Question27.value != 0))
+            if ((Question24.value != 0) & (Question25.value != 0) & (Question26.value != 0) & (Question27.value != 0))
             {
-                SceneManager.LoadScene("homescreen");
-
+                //SceneManager.LoadScene("homescreen");
             }
             else
             {
