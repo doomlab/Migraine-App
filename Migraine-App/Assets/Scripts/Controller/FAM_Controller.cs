@@ -57,6 +57,7 @@ namespace clinvest.migraine.Controller
         public Button Next5;
         public Button Submit;
         public Button Skip;
+        public Button Question;
 
         //Error 
         public GameObject ErrorPanel;
@@ -132,9 +133,68 @@ namespace clinvest.migraine.Controller
         public void BeginPressed()
         {
             InstructionPanel.SetActive(false);
-            PageOnePanel.SetActive(true);
-            currentpanel += 1;
+            if (currentpanel == 0)
+            {
+                currentpanel += 1;
+                PageOnePanel.SetActive(true);
+            }
+            else if (currentpanel == 1)
+            {
+                PageOnePanel.SetActive(true);
+            }
+            else if (currentpanel == 2)
+            {
+                PageTwoPanel.SetActive(true);
+            }
+            else if (currentpanel == 3)
+            {
+                PageThreePanel.SetActive(true);
+            }
+            else if (currentpanel == 4)
+            {
+                PageFourPanel.SetActive(true);
+            }
+            else if (currentpanel == 5)
+            {
+                PageFivePanel.SetActive(true);
+
+            }
+            else if (currentpanel == 6)
+            {
+                PageSixPanel.SetActive(true);
+            }
         }
+        public void QuestionPressed()
+        {
+            InstructionPanel.SetActive(true);
+
+            if (currentpanel == 1)
+            {
+                PageOnePanel.SetActive(false);
+            }
+            else if (currentpanel == 2)
+            {
+                PageTwoPanel.SetActive(false);
+            }
+            else if (currentpanel == 3)
+            {
+                PageThreePanel.SetActive(false);
+            }
+            else if (currentpanel == 4)
+            {
+                PageFourPanel.SetActive(false);
+            }
+            else if (currentpanel == 5)
+            {
+                PageFivePanel.SetActive(false);
+
+            }
+            else if (currentpanel == 6)
+            {
+                PageSixPanel.SetActive(false);
+            }
+        }
+
         public void Next1Pressed()
         {
             if ((Question1.value != 0) & (Question2.value != 0) & (Question3.value != 0) & (Question4.value != 0) & (Question5.value != 0))
