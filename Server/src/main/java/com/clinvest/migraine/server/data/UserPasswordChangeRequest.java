@@ -15,8 +15,6 @@ import javax.persistence.ManyToOne;
 import javax.persistence.PrePersist;
 import javax.persistence.PreUpdate;
 import javax.persistence.Table;
-import javax.persistence.Temporal;
-import javax.persistence.TemporalType;
 
 import org.hibernate.Session;
 import org.hibernate.annotations.Type;
@@ -36,22 +34,18 @@ public class UserPasswordChangeRequest
   @JoinColumn(name="user_id", nullable=false)
   protected User user;
   
-  @Temporal(TemporalType.TIMESTAMP)
   @Column(name="requested")
   protected Timestamp requested;
   
-  @Temporal(TemporalType.TIMESTAMP)
   @Column(name="changed")
   protected Timestamp changed;
   
   @Column(name="source")
   protected String source;
   
-  @Temporal(TemporalType.TIMESTAMP)
   @Column(name = "created", updatable = false, nullable = false)
   protected Timestamp created;
-  @Temporal(TemporalType.TIMESTAMP)
-  @Column(name = "last_modified", updatable = false, nullable = false)
+  @Column(name = "last_modified")
   protected Timestamp modified;
 
   @PrePersist

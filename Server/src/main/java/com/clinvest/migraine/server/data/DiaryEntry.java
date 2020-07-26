@@ -15,8 +15,6 @@ import javax.persistence.OneToMany;
 import javax.persistence.PrePersist;
 import javax.persistence.PreUpdate;
 import javax.persistence.Table;
-import javax.persistence.Temporal;
-import javax.persistence.TemporalType;
 
 import org.hibernate.Session;
 import org.hibernate.annotations.Type;
@@ -36,7 +34,7 @@ public class DiaryEntry
   @ManyToOne
   @JoinColumn(name = "study_id", nullable = false)
   protected Study     study;
-  @Temporal(TemporalType.TIMESTAMP)
+
   @Column(name = "entry_timestamp")
   protected Timestamp entryTimestamp;
   @Column(name = "severity")
@@ -63,11 +61,9 @@ public class DiaryEntry
   @OneToMany(mappedBy="id")
   private Set<DiaryMedicationEntry> medications;
   
-  @Temporal(TemporalType.TIMESTAMP)
   @Column(name = "created", updatable = false, nullable = false)
   protected Timestamp created;
-  @Temporal(TemporalType.TIMESTAMP)
-  @Column(name = "last_modified", updatable = false, nullable = false)
+  @Column(name = "last_modified")
   protected Timestamp modified;
 
   @PrePersist

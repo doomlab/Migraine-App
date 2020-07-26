@@ -13,8 +13,6 @@ import javax.persistence.ManyToOne;
 import javax.persistence.PrePersist;
 import javax.persistence.PreUpdate;
 import javax.persistence.Table;
-import javax.persistence.Temporal;
-import javax.persistence.TemporalType;
 
 import org.hibernate.annotations.Type;
 
@@ -35,15 +33,14 @@ public class UserStudyPayment
   protected Study     study;
   @Column(name="pmnt_amt")
   protected Double paymentAmount;
-  @Temporal(TemporalType.TIMESTAMP)
+
   @Column(name = "pmnt_date")
   protected Timestamp paymentDate;
   
-  @Temporal(TemporalType.TIMESTAMP)
   @Column(name = "created", updatable = false, nullable = false)
   protected Timestamp created;
-  @Temporal(TemporalType.TIMESTAMP)
-  @Column(name = "last_modified", updatable = false, nullable = false)
+
+  @Column(name = "last_modified")
   protected Timestamp modified;
 
   @PrePersist

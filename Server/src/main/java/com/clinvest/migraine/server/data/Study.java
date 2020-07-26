@@ -12,8 +12,6 @@ import javax.persistence.Id;
 import javax.persistence.PrePersist;
 import javax.persistence.PreUpdate;
 import javax.persistence.Table;
-import javax.persistence.Temporal;
-import javax.persistence.TemporalType;
 
 import org.hibernate.Session;
 import org.hibernate.query.Query;
@@ -21,7 +19,7 @@ import org.hibernate.query.Query;
 @Entity
 @Table(name = "studies")
 public class Study
-{
+{ 
   @Id
   @GeneratedValue(strategy = GenerationType.IDENTITY)
   @Column(name="id")
@@ -38,11 +36,12 @@ public class Study
   protected String sponsor;
   @Column(name="investigator")
   protected String investigator;
-  @Temporal(TemporalType.TIMESTAMP)
+  @Column(name="contact")
+  protected String contact;
+
   @Column(name = "created", updatable = false, nullable = false)
   protected Timestamp created;
-  @Temporal(TemporalType.TIMESTAMP)
-  @Column(name = "last_modified", updatable = false, nullable = false)
+  @Column(name = "last_modified")
   protected Timestamp modified;
 
   @PrePersist
@@ -76,6 +75,16 @@ public class Study
   {
     this.investigator = investigator;
   }
+  public String getContact()
+  {
+    return contact;
+  }
+
+  public void setContact(String contact)
+  {
+    this.contact = contact;
+  }
+
   public Long getId()
   {
     return id;

@@ -9,13 +9,11 @@ import java.util.UUID;
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.Id;
+import javax.persistence.ManyToOne;
 import javax.persistence.OneToMany;
-import javax.persistence.OneToOne;
 import javax.persistence.PrePersist;
 import javax.persistence.PreUpdate;
 import javax.persistence.Table;
-import javax.persistence.Temporal;
-import javax.persistence.TemporalType;
 
 import org.hibernate.Session;
 import org.hibernate.annotations.Type;
@@ -33,24 +31,24 @@ public class User
   protected String    firstName;
   @Column(name = "last_name")
   protected String    lastName;
-  @Temporal(TemporalType.TIMESTAMP)
+
   @Column(name = "birth_date")
   protected Timestamp birthDate;
   @Column(name = "email")
   protected String    email;
   @Column(name = "password")
   protected String    password;
-  @Temporal(TemporalType.TIMESTAMP)
+
   @Column(name="start_date")
   protected Timestamp   start;
   @Column(name="diagnosed")
   protected Boolean   diagnosed;
   @Column(name="diagnosis")
   protected String diagnosis;
-  @Temporal(TemporalType.TIMESTAMP)
+
   @Column(name="diagnosis_date")
   protected Timestamp diagnosisDate;
-  @Temporal(TemporalType.TIMESTAMP)
+
   @Column(name = "confirmed")
   protected Timestamp confirmed;
   
@@ -60,7 +58,7 @@ public class User
   @OneToMany(mappedBy="id")
   private Set<UserRole> roles;
   
-  @OneToMany(mappedBy="id")
+  @OneToMany(mappedBy="sessionId")
   private Set<UserSession> sessions;
   
   @OneToMany(mappedBy="id")
@@ -69,7 +67,7 @@ public class User
   @OneToMany(mappedBy="id")
   private Set<UserPasswordChangeRequest> changeRequests;
   
-  @OneToOne(mappedBy="id")
+  @ManyToOne
   private Study study;
   
   @OneToMany(mappedBy="id")
@@ -81,11 +79,10 @@ public class User
   @OneToMany(mappedBy="id")
   private Set<FamsEntry> famsEntries;
   
-  @Temporal(TemporalType.TIMESTAMP)
+
   @Column(name = "created", updatable = false, nullable = false)
   protected Timestamp created;
-  @Temporal(TemporalType.TIMESTAMP)
-  @Column(name = "last_modified", updatable = false, nullable = false)
+  @Column(name = "last_modified")
   protected Timestamp modified;
 
   @PrePersist

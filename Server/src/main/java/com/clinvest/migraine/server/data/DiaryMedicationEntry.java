@@ -1,6 +1,7 @@
 package com.clinvest.migraine.server.data;
 
 import java.sql.Timestamp;
+import java.time.LocalDateTime;
 import java.util.List;
 
 import javax.persistence.Column;
@@ -10,6 +11,8 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.JoinColumn;
 import javax.persistence.ManyToOne;
+import javax.persistence.PrePersist;
+import javax.persistence.PreUpdate;
 import javax.persistence.Table;
 
 import org.hibernate.Session;
@@ -31,8 +34,25 @@ public class DiaryMedicationEntry
   protected String howOften;
   @Column(name="pain_decrease")
   protected Boolean painDecrease;
-  @Column(name = "created")
+  @Column(name = "created", updatable = false, nullable = false)
   protected Timestamp created;
+  @Column(name = "last_modified")
+  protected Timestamp modified;
+
+  @PrePersist
+  protected void onCreate()
+  {
+    if (created == null)
+    {
+      created = Timestamp.valueOf(LocalDateTime.now());
+    }
+  }
+  
+  @PreUpdate
+  protected void onUpdate()
+  {
+    modified = Timestamp.valueOf(LocalDateTime.now());
+  }
   
   public Long getId()
   {
@@ -69,6 +89,16 @@ public class DiaryMedicationEntry
     this.created = created;
   }
   
+  public Timestamp getModified()
+  {
+    return modified;
+  }
+
+  public void setModified(Timestamp modified)
+  {
+    this.modified = modified;
+  }
+
   public String getHowOften()
   {
     return howOften;

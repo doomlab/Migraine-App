@@ -1,6 +1,7 @@
 package com.clinvest.migraine.server.data;
 
 import java.sql.Timestamp;
+import java.time.LocalDateTime;
 import java.util.List;
 import java.util.UUID;
 
@@ -11,6 +12,8 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.JoinColumn;
 import javax.persistence.ManyToOne;
+import javax.persistence.PrePersist;
+import javax.persistence.PreUpdate;
 import javax.persistence.Table;
 
 import org.hibernate.Session;
@@ -40,6 +43,27 @@ public class UserLockout
   @Column(name="reason")
   protected String reason;
 
+  @Column(name = "created", updatable = false, nullable = false)
+  protected Timestamp created;
+  @Column(name = "last_modified")
+  protected Timestamp modified;
+
+  @PrePersist
+  protected void onCreate()
+  {
+    if (created == null)
+    {
+      created = Timestamp.valueOf(LocalDateTime.now());
+    }
+  }
+  
+  @PreUpdate
+  protected void onUpdate()
+  {
+    modified = Timestamp.valueOf(LocalDateTime.now());
+  }
+
+  
   public Long getId()
   {
     return id;
@@ -90,6 +114,26 @@ public class UserLockout
     this.reason = reason;
   }
   
+  public Timestamp getCreated()
+  {
+    return created;
+  }
+
+  public void setCreated(Timestamp created)
+  {
+    this.created = created;
+  }
+
+  public Timestamp getModified()
+  {
+    return modified;
+  }
+
+  public void setModified(Timestamp modified)
+  {
+    this.modified = modified;
+  }
+
   public static UserLockout getById(Long id)
   {
 

@@ -13,8 +13,6 @@ import javax.persistence.ManyToOne;
 import javax.persistence.PrePersist;
 import javax.persistence.PreUpdate;
 import javax.persistence.Table;
-import javax.persistence.Temporal;
-import javax.persistence.TemporalType;
 
 import org.hibernate.Session;
 import org.hibernate.annotations.Type;
@@ -90,11 +88,10 @@ public class FamsEntry
   protected Integer Q26;
   @Column(name = "Q27")
   protected Integer Q27;
-  @Temporal(TemporalType.TIMESTAMP)
+
   @Column(name = "created", updatable = false, nullable = false)
   protected Timestamp created;
-  @Temporal(TemporalType.TIMESTAMP)
-  @Column(name = "last_modified", updatable = false, nullable = false)
+  @Column(name = "last_modified")
   protected Timestamp modified;
 
   @PrePersist
