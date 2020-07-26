@@ -73,7 +73,7 @@ public class User
   private Study study;
   
   @OneToMany(mappedBy="id")
-  private Set<UserStudyPayments> payments;
+  private Set<UserStudyPayment> payments;
   
   @OneToMany(mappedBy="id")
   private Set<DiaryEntry> diaryEntries;
