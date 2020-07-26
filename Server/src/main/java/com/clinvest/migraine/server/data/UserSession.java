@@ -2,13 +2,20 @@ package com.clinvest.migraine.server.data;
 
 import java.io.Serializable;
 import java.sql.Timestamp;
+import java.time.LocalDateTime;
 import java.util.List;
 import java.util.UUID;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.Id;
+import javax.persistence.JoinColumn;
+import javax.persistence.ManyToOne;
+import javax.persistence.PrePersist;
+import javax.persistence.PreUpdate;
 import javax.persistence.Table;
+import javax.persistence.Temporal;
+import javax.persistence.TemporalType;
 
 import org.hibernate.Session;
 import org.hibernate.annotations.Type;
@@ -22,13 +29,42 @@ public class UserSession implements Serializable
   
   private static final long serialVersionUID = 1L;
   
+  @Id
+  @Column(name = "id", updatable = false, nullable = false)
+  @Type(type = "uuid-char")
   protected UUID sessionId;
-  protected UUID userId;
+  @ManyToOne
+  @Type(type = "uuid-char")
+  @JoinColumn(name="user_id", nullable=false)
+  protected User user;
+  @Temporal(TemporalType.TIMESTAMP)
+  @Column(name = "active")
   protected Timestamp active;
   
-  @Id
-  @Column(name = "id")
-  @Type(type = "uuid-char")
+  @Temporal(TemporalType.TIMESTAMP)
+  @Column(name = "created", updatable = false, nullable = false)
+  protected Timestamp created;
+  @Temporal(TemporalType.TIMESTAMP)
+  @Column(name = "last_modified", updatable = false, nullable = false)
+  protected Timestamp modified;
+
+  @PrePersist
+  protected void onCreate()
+  {
+    if (created == null)
+    {
+      created = Timestamp.valueOf(LocalDateTime.now());
+    }
+  }
+  
+  @PreUpdate
+  protected void onUpdate()
+  {
+    modified = Timestamp.valueOf(LocalDateTime.now());
+  }
+
+  
+  
   public UUID getSessionId()
   {
     return sessionId;
@@ -38,18 +74,17 @@ public class UserSession implements Serializable
     this.sessionId = sessionId;
   }
   
-  @Column(name = "user_id")
-  @Type(type = "uuid-char")
-  public UUID getUserId()
+  
+  public User getUser()
   {
-    return userId;
+    return user;
   }
-  public void setUserId(UUID userId)
+  public void setUser(User user)
   {
-    this.userId = userId;
+    this.user = user;
   }
   
-  @Column(name = "active")
+ 
   public Timestamp getActive()
   {
     return active;
@@ -59,11 +94,31 @@ public class UserSession implements Serializable
     this.active = active;
   }
   
+  public Timestamp getCreated()
+  {
+    return created;
+  }
+
+  public void setCreated(Timestamp created)
+  {
+    this.created = created;
+  }
+
+  public Timestamp getModified()
+  {
+    return modified;
+  }
+
+  public void setModified(Timestamp modified)
+  {
+    this.modified = modified;
+  }
+
   @Override
   public String toString() {
       
       return String.format("Session Id: %s, User Id: %s, Active: %d", 
-              sessionId.toString(), userId.toString(), active.getTime());
+              sessionId.toString(), user.getId().toString(), active.getTime());
   }  
 
   public static UserSession getById(UUID id) {

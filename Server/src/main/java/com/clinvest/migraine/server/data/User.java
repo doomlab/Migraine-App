@@ -1,13 +1,21 @@
 package com.clinvest.migraine.server.data;
 
 import java.sql.Timestamp;
+import java.time.LocalDateTime;
 import java.util.List;
+import java.util.Set;
 import java.util.UUID;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.Id;
+import javax.persistence.OneToMany;
+import javax.persistence.OneToOne;
+import javax.persistence.PrePersist;
+import javax.persistence.PreUpdate;
 import javax.persistence.Table;
+import javax.persistence.Temporal;
+import javax.persistence.TemporalType;
 
 import org.hibernate.Session;
 import org.hibernate.annotations.Type;
@@ -17,19 +25,84 @@ import org.hibernate.query.Query;
 @Table(name = "users")
 public class User
 {
-
-  protected UUID      id;
-  protected String    firstName;
-  protected String    lastName;
-  protected Timestamp birthDate;
-  protected String    email;
-  protected String    password;
-  protected Timestamp confirmed;
-  protected Timestamp created;
-
   @Id
   @Type(type = "uuid-char")
-  @Column(name = "id")
+  @Column(name = "id", updatable = false, nullable = false)
+  protected UUID      id;
+  @Column(name = "first_name")
+  protected String    firstName;
+  @Column(name = "last_name")
+  protected String    lastName;
+  @Temporal(TemporalType.TIMESTAMP)
+  @Column(name = "birth_date")
+  protected Timestamp birthDate;
+  @Column(name = "email")
+  protected String    email;
+  @Column(name = "password")
+  protected String    password;
+  @Temporal(TemporalType.TIMESTAMP)
+  @Column(name="start_date")
+  protected Timestamp   start;
+  @Column(name="diagnosed")
+  protected Boolean   diagnosed;
+  @Column(name="diagnosis")
+  protected String diagnosis;
+  @Temporal(TemporalType.TIMESTAMP)
+  @Column(name="diagnosis_date")
+  protected Timestamp diagnosisDate;
+  @Temporal(TemporalType.TIMESTAMP)
+  @Column(name = "confirmed")
+  protected Timestamp confirmed;
+  
+  @OneToMany(mappedBy="id")
+  private Set<UserConsent> consent;
+  
+  @OneToMany(mappedBy="id")
+  private Set<UserRole> roles;
+  
+  @OneToMany(mappedBy="id")
+  private Set<UserSession> sessions;
+  
+  @OneToMany(mappedBy="id")
+  private Set<UserLockout> lockout;
+  
+  @OneToMany(mappedBy="id")
+  private Set<UserPasswordChangeRequest> changeRequests;
+  
+  @OneToOne(mappedBy="id")
+  private Study study;
+  
+  @OneToMany(mappedBy="id")
+  private Set<UserStudyPayments> payments;
+  
+  @OneToMany(mappedBy="id")
+  private Set<DiaryEntry> diaryEntries;
+  
+  @OneToMany(mappedBy="id")
+  private Set<FamsEntry> famsEntries;
+  
+  @Temporal(TemporalType.TIMESTAMP)
+  @Column(name = "created", updatable = false, nullable = false)
+  protected Timestamp created;
+  @Temporal(TemporalType.TIMESTAMP)
+  @Column(name = "last_modified", updatable = false, nullable = false)
+  protected Timestamp modified;
+
+  @PrePersist
+  protected void onCreate()
+  {
+    if (created == null)
+    {
+      created = Timestamp.valueOf(LocalDateTime.now());
+    }
+  }
+  
+  @PreUpdate
+  protected void onUpdate()
+  {
+    modified = Timestamp.valueOf(LocalDateTime.now());
+  }
+
   public UUID getId()
   {
     return id;
@@ -40,7 +113,7 @@ public class User
     this.id = id;
   }
 
-  @Column(name = "first_name")
+
   public String getFirstName()
   {
     return firstName;
@@ -51,7 +124,7 @@ public class User
     this.firstName = firstName;
   }
 
-  @Column(name = "last_name")
+
   public String getLastName()
   {
     return lastName;
@@ -62,7 +135,7 @@ public class User
     this.lastName = lastName;
   }
 
-  @Column(name = "birth_date")
+
   public Timestamp getBirthDate()
   {
     return birthDate;
@@ -73,7 +146,7 @@ public class User
     this.birthDate = birthDate;
   }
 
-  @Column(name = "email")
+
   public String getEmail()
   {
     return email;
@@ -84,7 +157,6 @@ public class User
     this.email = email;
   }
 
-  @Column(name = "password")
   public String getPassword()
   {
     return password;
@@ -95,7 +167,46 @@ public class User
     this.password = password;
   }
 
-  @Column(name = "confirmed")
+  public Timestamp getStart()
+  {
+    return start;
+  }
+
+  public void setStart(Timestamp start)
+  {
+    this.start = start;
+  }
+
+  public Boolean getDiagnosed()
+  {
+    return diagnosed;
+  }
+
+  public void setDiagnosed(Boolean diagnosed)
+  {
+    this.diagnosed = diagnosed;
+  }
+
+  public String getDiagnosis()
+  {
+    return diagnosis;
+  }
+
+  public void setDiagnosis(String diagnosis)
+  {
+    this.diagnosis = diagnosis;
+  }
+
+  public Timestamp getDiagnosisDate()
+  {
+    return diagnosisDate;
+  }
+
+  public void setDiagnosisDate(Timestamp diagnosisDate)
+  {
+    this.diagnosisDate = diagnosisDate;
+  }
+
   public Timestamp getConfirmed()
   {
     return confirmed;
@@ -106,7 +217,6 @@ public class User
     this.confirmed = confirmed;
   }
 
-  @Column(name = "created")
   public Timestamp getCreated()
   {
     return created;
@@ -115,6 +225,16 @@ public class User
   public void setCreated(Timestamp created)
   {
     this.created = created;
+  }
+
+  public Timestamp getModified()
+  {
+    return modified;
+  }
+
+  public void setModified(Timestamp modified)
+  {
+    this.modified = modified;
   }
 
   public static User getById(UUID id)

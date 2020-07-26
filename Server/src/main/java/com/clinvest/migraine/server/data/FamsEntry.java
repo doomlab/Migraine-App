@@ -1,13 +1,20 @@
 package com.clinvest.migraine.server.data;
 
 import java.sql.Timestamp;
-import java.util.UUID;
+import java.time.LocalDateTime;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.JoinColumn;
+import javax.persistence.ManyToOne;
+import javax.persistence.PrePersist;
+import javax.persistence.PreUpdate;
 import javax.persistence.Table;
+import javax.persistence.Temporal;
+import javax.persistence.TemporalType;
 
 import org.hibernate.Session;
 import org.hibernate.annotations.Type;
@@ -18,42 +25,91 @@ import org.hibernate.annotations.Type;
 @Table(name = "fams")
 public class FamsEntry
 {
-  private Long id;
-  protected UUID userId;
-  protected Timestamp created;
-  protected Integer Q1;
-  protected Integer Q2;
-  protected Integer Q3;
-  protected Integer Q4;
-  protected Integer Q5;
-  protected Integer Q6;
-  protected Integer Q7;
-  protected Integer Q8;
-  protected Integer Q9;
-  protected Integer Q10;
-  protected Integer Q11;
-  protected Integer Q12;
-  protected Integer Q13;
-  protected Integer Q14;
-  protected Integer Q15;
-  protected Integer Q16;
-  protected Integer Q17;
-  protected Integer Q18;
-  protected Integer Q19;
-  protected Integer Q20;
-  protected Integer Q21;
-  protected Integer Q22;
-  protected Integer Q23;
-  protected Integer Q24;
-  protected Integer Q25;
-  protected Integer Q26;
-  protected Integer Q27;
-
   @Id
-  @GeneratedValue
-  public Long getId()
+  @GeneratedValue(strategy = GenerationType.IDENTITY)
+  @Column(name = "id", updatable = false, nullable = false)
+  private Long id;
+  @ManyToOne
+  @Type(type = "uuid-char")
+  @JoinColumn(name="user_id", nullable=false)
+  protected User user;
+  @ManyToOne
+  @JoinColumn(name = "study_id", nullable = false)
+  protected Study     study;
+  @Column(name = "Q1")
+  protected Integer Q1;
+  @Column(name = "Q2")
+  protected Integer Q2;
+  @Column(name = "Q3")
+  protected Integer Q3;
+  @Column(name = "Q4")
+  protected Integer Q4;
+  @Column(name = "Q5")
+  protected Integer Q5;
+  @Column(name = "Q6")
+  protected Integer Q6;
+  @Column(name = "Q7")
+  protected Integer Q7;
+  @Column(name = "Q8")
+  protected Integer Q8;
+  @Column(name = "Q9")
+  protected Integer Q9;
+  @Column(name = "Q10")
+  protected Integer Q10;
+  @Column(name = "Q11")
+  protected Integer Q11;
+  @Column(name = "Q12")
+  protected Integer Q12;
+  @Column(name = "Q13")
+  protected Integer Q13;
+  @Column(name = "Q14")
+  protected Integer Q14;
+  @Column(name = "Q15")
+  protected Integer Q15;
+  @Column(name = "Q16")
+  protected Integer Q16;
+  @Column(name = "Q17")
+  protected Integer Q17;
+  @Column(name = "Q18")
+  protected Integer Q18;
+  @Column(name = "Q19")
+  protected Integer Q19;
+  @Column(name = "Q20")
+  protected Integer Q20;
+  @Column(name = "Q21")
+  protected Integer Q21;
+  @Column(name = "Q22")
+  protected Integer Q22;
+  @Column(name = "Q23")
+  protected Integer Q23;
+  @Column(name = "Q24")
+  protected Integer Q24;
+  @Column(name = "Q25")
+  protected Integer Q25;
+  @Column(name = "Q26")
+  protected Integer Q26;
+  @Column(name = "Q27")
+  protected Integer Q27;
+  @Temporal(TemporalType.TIMESTAMP)
+  @Column(name = "created", updatable = false, nullable = false)
+  protected Timestamp created;
+  @Temporal(TemporalType.TIMESTAMP)
+  @Column(name = "last_modified", updatable = false, nullable = false)
+  protected Timestamp modified;
+
+  @PrePersist
+  protected void onCreate()
   {
-    return id;
+    if (created == null)
+    {
+      created = Timestamp.valueOf(LocalDateTime.now());
+    }
+  }
+  
+  @PreUpdate
+  protected void onUpdate()
+  {
+    modified = Timestamp.valueOf(LocalDateTime.now());
   }
 
   public void setId(Long id)
@@ -61,7 +117,6 @@ public class FamsEntry
     this.id = id;
   }
 
-  @Column(name = "Q1")
   public Integer getQ1()
   {
     return Q1;
@@ -72,7 +127,6 @@ public class FamsEntry
     Q1 = q1;
   }
 
-  @Column(name = "Q2")
   public Integer getQ2()
   {
     return Q2;
@@ -83,7 +137,6 @@ public class FamsEntry
     Q2 = q2;
   }
 
-  @Column(name = "Q3")
   public Integer getQ3()
   {
     return Q3;
@@ -94,7 +147,6 @@ public class FamsEntry
     Q3 = q3;
   }
 
-  @Column(name = "Q4")
   public Integer getQ4()
   {
     return Q4;
@@ -105,7 +157,6 @@ public class FamsEntry
     Q4 = q4;
   }
 
-  @Column(name = "Q5")
   public Integer getQ5()
   {
     return Q5;
@@ -116,7 +167,6 @@ public class FamsEntry
     Q5 = q5;
   }
 
-  @Column(name = "Q6")
   public Integer getQ6()
   {
     return Q6;
@@ -127,7 +177,6 @@ public class FamsEntry
     Q6 = q6;
   }
 
-  @Column(name = "Q7")
   public Integer getQ7()
   {
     return Q7;
@@ -138,7 +187,6 @@ public class FamsEntry
     Q7 = q7;
   }
 
-  @Column(name = "Q8")
   public Integer getQ8()
   {
     return Q8;
@@ -149,7 +197,6 @@ public class FamsEntry
     Q8 = q8;
   }
 
-  @Column(name = "Q9")
   public Integer getQ9()
   {
     return Q9;
@@ -160,7 +207,6 @@ public class FamsEntry
     Q9 = q9;
   }
 
-  @Column(name = "Q10")
   public Integer getQ10()
   {
     return Q10;
@@ -171,7 +217,6 @@ public class FamsEntry
     Q10 = q10;
   }
 
-  @Column(name = "Q11")
   public Integer getQ11()
   {
     return Q11;
@@ -182,7 +227,6 @@ public class FamsEntry
     Q11 = q11;
   }
 
-  @Column(name = "Q12")
   public Integer getQ12()
   {
     return Q12;
@@ -193,7 +237,6 @@ public class FamsEntry
     Q12 = q12;
   }
 
-  @Column(name = "Q13")
   public Integer getQ13()
   {
     return Q13;
@@ -204,7 +247,6 @@ public class FamsEntry
     Q13 = q13;
   }
 
-  @Column(name = "Q14")
   public Integer getQ14()
   {
     return Q14;
@@ -215,7 +257,6 @@ public class FamsEntry
     Q14 = q14;
   }
 
-  @Column(name = "Q15")
   public Integer getQ15()
   {
     return Q15;
@@ -226,7 +267,6 @@ public class FamsEntry
     Q15 = q15;
   }
 
-  @Column(name = "Q16")
   public Integer getQ16()
   {
     return Q16;
@@ -237,7 +277,6 @@ public class FamsEntry
     Q16 = q16;
   }
 
-  @Column(name = "Q17")
   public Integer getQ17()
   {
     return Q17;
@@ -248,7 +287,6 @@ public class FamsEntry
     Q17 = q17;
   }
 
-  @Column(name = "Q18")
   public Integer getQ18()
   {
     return Q18;
@@ -259,7 +297,6 @@ public class FamsEntry
     Q18 = q18;
   }
 
-  @Column(name = "Q19")
   public Integer getQ19()
   {
     return Q19;
@@ -270,7 +307,6 @@ public class FamsEntry
     Q19 = q19;
   }
 
-  @Column(name = "Q20")
   public Integer getQ20()
   {
     return Q20;
@@ -281,7 +317,6 @@ public class FamsEntry
     Q20 = q20;
   }
 
-  @Column(name = "Q21")
   public Integer getQ21()
   {
     return Q21;
@@ -292,7 +327,6 @@ public class FamsEntry
     Q21 = q21;
   }
 
-  @Column(name = "Q22")
   public Integer getQ22()
   {
     return Q22;
@@ -303,7 +337,6 @@ public class FamsEntry
     Q22 = q22;
   }
 
-  @Column(name = "Q23")
   public Integer getQ23()
   {
     return Q23;
@@ -314,7 +347,6 @@ public class FamsEntry
     Q23 = q23;
   }
 
-  @Column(name = "Q24")
   public Integer getQ24()
   {
     return Q24;
@@ -325,7 +357,6 @@ public class FamsEntry
     Q24 = q24;
   }
 
-  @Column(name = "Q25")
   public Integer getQ25()
   {
     return Q25;
@@ -336,7 +367,6 @@ public class FamsEntry
     Q25 = q25;
   }
 
-  @Column(name = "Q26")
   public Integer getQ26()
   {
     return Q26;
@@ -347,7 +377,6 @@ public class FamsEntry
     Q26 = q26;
   }
 
-  @Column(name = "Q27")
   public Integer getQ27()
   {
     return Q27;
@@ -358,16 +387,14 @@ public class FamsEntry
     Q27 = q27;
   }
 
-  @Type(type = "uuid-char")
-  @Column(name = "user_ID")
-  public UUID getUserId()
+  public User getUser()
   {
-    return userId;
+    return user;
   }
 
-  public void setUserId(UUID userId)
+  public void setUser(User user)
   {
-    this.userId = userId;
+    this.user = user;
   }
 
   public Timestamp getCreated()

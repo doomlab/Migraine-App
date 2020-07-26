@@ -1,14 +1,21 @@
 package com.clinvest.migraine.server.data;
 
 import java.sql.Timestamp;
+import java.time.LocalDateTime;
 import java.util.List;
-import java.util.UUID;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.JoinColumn;
+import javax.persistence.ManyToOne;
+import javax.persistence.PrePersist;
+import javax.persistence.PreUpdate;
 import javax.persistence.Table;
+import javax.persistence.Temporal;
+import javax.persistence.TemporalType;
 
 import org.hibernate.Session;
 import org.hibernate.annotations.Type;
@@ -17,15 +24,39 @@ import org.hibernate.annotations.Type;
 @Table(name = "user_roles")
 public class UserRole
 {
-  protected Long id;
-  protected UUID userId;
-  protected Long roleId;
-  protected Timestamp created;
-  
-  
   @Id
-  @GeneratedValue
-  @Column(name="id")
+  @GeneratedValue(strategy = GenerationType.IDENTITY)
+  @Column(name = "id", updatable = false, nullable = false)
+  protected Long id;
+  @ManyToOne
+  @Type(type = "uuid-char")
+  @JoinColumn(name="user_id", nullable=false)
+  protected User user;
+  @Column(name="role_id")
+  protected Long roleId;
+  @Temporal(TemporalType.TIMESTAMP)
+  @Column(name = "created", updatable = false, nullable = false)
+  protected Timestamp created;
+  @Temporal(TemporalType.TIMESTAMP)
+  @Column(name = "last_modified", updatable = false, nullable = false)
+  protected Timestamp modified;
+
+  @PrePersist
+  protected void onCreate()
+  {
+    if (created == null)
+    {
+      created = Timestamp.valueOf(LocalDateTime.now());
+    }
+  }
+  
+  @PreUpdate
+  protected void onUpdate()
+  {
+    modified = Timestamp.valueOf(LocalDateTime.now());
+  }
+
+  
   public Long getId()
   {
     return id;
@@ -36,16 +67,15 @@ public class UserRole
     this.id = id;
   }
 
-  @Type(type = "uuid-char")
-  @Column(name = "user_id")
-  public UUID getUserId()
+  
+  public User getUser()
   {
-    return userId;
+    return user;
   }
 
-  public void setUserId(UUID userId)
+  public void setUser(User user)
   {
-    this.userId = userId;
+    this.user = user;
   }
 
   public Long getRoleId()
@@ -53,13 +83,13 @@ public class UserRole
     return roleId;
   }
 
-  @Column(name="role_id")
+  
   public void setRoleId(Long roleId)
   {
     this.roleId = roleId;
   }
 
-  @Column(name = "created")
+  
   public Timestamp getCreated()
   {
     return created;
@@ -68,6 +98,16 @@ public class UserRole
   public void setCreated(Timestamp created)
   {
     this.created = created;
+  }
+
+  public Timestamp getModified()
+  {
+    return modified;
+  }
+
+  public void setModified(Timestamp modified)
+  {
+    this.modified = modified;
   }
 
   public static void save(UserRole role)
