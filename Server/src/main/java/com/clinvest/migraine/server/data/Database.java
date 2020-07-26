@@ -2,8 +2,12 @@ package com.clinvest.migraine.server.data;
 
 import java.sql.Timestamp;
 import java.time.LocalDateTime;
+import java.util.HashSet;
+import java.util.List;
+import java.util.Set;
 import java.util.UUID;
 
+import org.apache.commons.codec.digest.UnixCrypt;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
@@ -27,6 +31,12 @@ public class Database
   /** Assign the default root user the default admin role */
   private static final String[][] USER_ROLES = {
       {  "ef8ed6b2-9d4f-43c3-b253-ef4d2eb544f5", "admin" }
+  };
+  
+  private static final String[][] MEDICATIONS = {
+      {  "Tylenol", "acetaminophen" },
+      {  "Motrin",  "ibuprophen" },
+      {  "Aleve",   "naproxen sodium" }
   };
 
 
@@ -52,6 +62,7 @@ public class Database
       createRoles();
       createUserRoles();
     }
+    updateMedicationList();
   }
 
   private void createUsers()
@@ -65,7 +76,7 @@ public class Database
       u.setLastName(data[2]);
       u.setEmail(data[3]);
       u.setBirthDate(Timestamp.valueOf(LocalDateTime.now().minusDays(1)));
-      u.setPassword(data[4]);
+      u.setPassword(UnixCrypt.crypt(data[4], "MA"));
       u.setCreated(Timestamp.valueOf(LocalDateTime.now()));
       if ("confirm".equals(data[5]))
       {
@@ -98,7 +109,8 @@ public class Database
     {
       String[] data = USER_ROLES[i];
       UserRole ur = new UserRole();
-      ur.setUserId(UUID.fromString(data[0]));
+      User u = User.getById(UUID.fromString(data[0]));
+      ur.setUser(u);
       ur.setCreated(Timestamp.valueOf(LocalDateTime.now()));
       Role r = Role.getByName(data[1]);
       if (null != r)
@@ -113,6 +125,32 @@ public class Database
       }
     }
     LOG.debug("User roles created.");
+  }
+  
+  private void updateMedicationList()
+  {
+    List<Medication> meds = Medication.list();
+    Set<String> names = new HashSet<String>();
+    if (null != meds)
+    {
+      for (Medication m : meds)
+      {
+        names.add(m.getName());
+      }
+    }
+    for (int i = 0; i < MEDICATIONS.length; i++)
+    {
+      String[] data = MEDICATIONS[i];
+      if (!names.contains(data[0]))
+      {
+        Medication m = new Medication();
+        m.setName(data[0]);
+        m.setFormulary(data[1]);
+        m.setCreated(Timestamp.valueOf(LocalDateTime.now()));
+        Medication.save(m);
+      }
+    }
+    LOG.debug("Medication list updated.");
   }
 
 
