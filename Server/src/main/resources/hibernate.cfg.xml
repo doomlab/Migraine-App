@@ -32,5 +32,13 @@
 		<mapping class="com.clinvest.migraine.server.data.UserSession"></mapping>
 		<mapping class="com.clinvest.migraine.server.data.Role"></mapping>
 		<mapping class="com.clinvest.migraine.server.data.UserRole"></mapping>
+		<mapping class="com.clinvest.migraine.server.data.UserConsent"></mapping>
+		<mapping class="com.clinvest.migraine.server.data.UserLockout"></mapping>
+		<mapping class="com.clinvest.migraine.server.data.UserPasswordChangeRequest"></mapping>
+		<mapping class="com.clinvest.migraine.server.data.DiaryEntry"></mapping>
+		<mapping class="com.clinvest.migraine.server.data.FamsEntry"></mapping>
+		<mapping class="com.clinvest.migraine.server.data.Study"></mapping>
+		<mapping class="com.clinvest.migraine.server.data.Medication"></mapping>
+		<mapping class="com.clinvest.migraine.server.data.UserMedication"></mapping>
 	</session-factory>
 </hibernate-configuration>

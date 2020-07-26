@@ -20,7 +20,7 @@ import org.hibernate.annotations.Type;
 
 @Entity
 @Table(name = "user_study_pmnt")
-public class UserStudyPayments
+public class UserStudyPayment
 {
   @Id
   @GeneratedValue(strategy = GenerationType.IDENTITY)
