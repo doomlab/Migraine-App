@@ -39,6 +39,7 @@
 		<mapping class="com.clinvest.migraine.server.data.FamsEntry"></mapping>
 		<mapping class="com.clinvest.migraine.server.data.Study"></mapping>
 		<mapping class="com.clinvest.migraine.server.data.Medication"></mapping>
-		<mapping class="com.clinvest.migraine.server.data.UserMedication"></mapping>
+		<mapping class="com.clinvest.migraine.server.data.DiaryMedicationEntry"></mapping>
+		<mapping class="com.clinvest.migraine.server.data.UserStudyPayment"></mapping>
 	</session-factory>
 </hibernate-configuration>
