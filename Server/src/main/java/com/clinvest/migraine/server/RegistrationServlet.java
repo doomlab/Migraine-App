@@ -22,6 +22,7 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
+import org.apache.commons.codec.digest.UnixCrypt;
 import org.apache.commons.io.IOUtils;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
@@ -144,7 +145,7 @@ public class RegistrationServlet extends HttpServlet
       newUser.setLastName(lastName);
       newUser.setEmail(email);
       newUser.setBirthDate(birthDate);
-      newUser.setPassword(password);
+      newUser.setPassword(UnixCrypt.crypt(password, "MA"));
       newUser.setCreated(created);
       User.save(newUser);
 

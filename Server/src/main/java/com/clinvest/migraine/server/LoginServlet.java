@@ -14,6 +14,7 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
+import org.apache.commons.codec.digest.UnixCrypt;
 import org.apache.commons.io.IOUtils;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
@@ -72,7 +73,7 @@ public class LoginServlet extends HttpServlet
 
       if (success)
       {
-        if (null == pass || !pass.equals(userRecord.getPassword()))
+        if (null == pass || !UnixCrypt.crypt(pass, "MA").equals(userRecord.getPassword()))
         {
           LOG.debug("Incorrect password.");
           success = false;
@@ -90,7 +91,7 @@ public class LoginServlet extends HttpServlet
       {
         UserSession s = new UserSession();
         s.setSessionId(UUID.randomUUID());
-        s.setUserId(userRecord.getId());
+        s.setUser(userRecord);
         s.setActive(Timestamp.valueOf(LocalDateTime.now()));
         UserSession.save(s);
         
