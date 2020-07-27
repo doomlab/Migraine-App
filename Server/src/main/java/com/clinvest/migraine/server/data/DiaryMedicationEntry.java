@@ -33,7 +33,7 @@ public class DiaryMedicationEntry
   protected Medication medication;
   @Column(name="how_often")
   protected String howOften;
-  @Column(name="pain_decrease")
+  @Column(name="pain_decrease", nullable = false, columnDefinition = "TINYINT", length = 1)
   protected boolean painDecrease;
   @Column(name = "created", updatable = false, nullable = false)
   protected Timestamp created;

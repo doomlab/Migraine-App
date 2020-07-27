@@ -39,23 +39,23 @@ public class DiaryEntry
   protected Timestamp entryTimestamp;
   @Column(name = "severity")
   protected String    severity;
-  @Column(name = "new_headache")
+  @Column(name = "new_headache", nullable = false, columnDefinition = "TINYINT", length = 1)
   protected boolean   newHeadache;
   @Column(name = "hours")
   protected Double    hours;
-  @Column(name = "pain_directional")
+  @Column(name = "pain_directional", nullable = false, columnDefinition = "TINYINT", length = 1)
   protected boolean   painDirectional;
-  @Column(name = "pain_throbbing")
+  @Column(name = "pain_throbbing", nullable = false, columnDefinition = "TINYINT", length = 1)
   protected boolean   painThrobbing;
-  @Column(name = "pain_worse")
+  @Column(name = "pain_worse", nullable = false, columnDefinition = "TINYINT", length = 1)
   protected boolean   painWorse;
-  @Column(name = "nausea")
+  @Column(name = "nausea", nullable = false, columnDefinition = "TINYINT", length = 1)
   protected boolean   nausea;
-  @Column(name = "light_sound_sensitive")
+  @Column(name = "light_sound_sensitive", nullable = false, columnDefinition = "TINYINT", length = 1)
   protected boolean   lightSoundSensitive;
   @Column(name = "worst_symptom")
   protected String    worstSymptom;
-  @Column(name = "took_medication")
+  @Column(name = "took_medication", nullable = false, columnDefinition = "TINYINT", length = 1)
   protected boolean   tookMedication;
   
   @OneToMany(mappedBy="id")

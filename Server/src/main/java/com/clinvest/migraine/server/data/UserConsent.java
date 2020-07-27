@@ -34,7 +34,7 @@ public class UserConsent
   @JoinColumn(name="user_id", nullable=false)
   protected User user;
   
-  @Column(name="consent")
+  @Column(name="consent", nullable = false, columnDefinition = "TINYINT", length = 1)
   protected boolean consent;
   
   @Column(name="consentDate")

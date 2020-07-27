@@ -44,7 +44,7 @@ public class User
 
   @Column(name="start_date")
   protected Timestamp   start;
-  @Column(name="diagnosed")
+  @Column(name="diagnosed", nullable = false, columnDefinition = "TINYINT", length = 1)
   protected boolean   diagnosed;
   @Column(name="diagnosis")
   protected String diagnosis;
