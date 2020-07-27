@@ -30,8 +30,10 @@ public class UserRole
   @Type(type = "uuid-char")
   @JoinColumn(name="user_id", nullable=false)
   protected User user;
-  @Column(name="role_id")
-  protected Long roleId;
+  
+  @ManyToOne
+  @JoinColumn(name="role_id", nullable=false)
+  protected Role role;
 
   @Column(name = "created", updatable = false, nullable = false)
   protected Timestamp created;
@@ -75,15 +77,15 @@ public class UserRole
     this.user = user;
   }
 
-  public Long getRoleId()
+  public Role getRole()
   {
-    return roleId;
+    return role;
   }
 
   
-  public void setRoleId(Long roleId)
+  public void setRole(Role role)
   {
-    this.roleId = roleId;
+    this.role = role;
   }
 
   

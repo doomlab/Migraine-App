@@ -19,6 +19,8 @@ import org.hibernate.Session;
 import org.hibernate.annotations.Type;
 import org.hibernate.query.Query;
 
+
+
 @Entity
 @Table(name = "users")
 public class User
@@ -31,7 +33,8 @@ public class User
   protected String    firstName;
   @Column(name = "last_name")
   protected String    lastName;
-
+  @Column(name="sex")
+  protected String sex;
   @Column(name = "birth_date")
   protected Timestamp birthDate;
   @Column(name = "email")
@@ -42,7 +45,7 @@ public class User
   @Column(name="start_date")
   protected Timestamp   start;
   @Column(name="diagnosed")
-  protected Boolean   diagnosed;
+  protected boolean   diagnosed;
   @Column(name="diagnosis")
   protected String diagnosis;
 
@@ -133,6 +136,26 @@ public class User
   }
 
 
+  public String getSex()
+  {
+    return sex;
+  }
+
+  public void setSex(String sex)
+  {
+    this.sex = sex;
+  }
+
+  public Set<UserPasswordChangeRequest> getChangeRequests()
+  {
+    return changeRequests;
+  }
+
+  public void setChangeRequests(Set<UserPasswordChangeRequest> changeRequests)
+  {
+    this.changeRequests = changeRequests;
+  }
+
   public Timestamp getBirthDate()
   {
     return birthDate;
@@ -174,12 +197,12 @@ public class User
     this.start = start;
   }
 
-  public Boolean getDiagnosed()
+  public boolean getDiagnosed()
   {
     return diagnosed;
   }
 
-  public void setDiagnosed(Boolean diagnosed)
+  public void setDiagnosed(boolean diagnosed)
   {
     this.diagnosed = diagnosed;
   }
@@ -232,6 +255,86 @@ public class User
   public void setModified(Timestamp modified)
   {
     this.modified = modified;
+  }
+
+  public Set<UserConsent> getConsent()
+  {
+    return consent;
+  }
+
+  public void setConsent(Set<UserConsent> consent)
+  {
+    this.consent = consent;
+  }
+
+  public Set<UserRole> getRoles()
+  {
+    return roles;
+  }
+
+  public void setRoles(Set<UserRole> roles)
+  {
+    this.roles = roles;
+  }
+
+  public Set<UserSession> getSessions()
+  {
+    return sessions;
+  }
+
+  public void setSessions(Set<UserSession> sessions)
+  {
+    this.sessions = sessions;
+  }
+
+  public Set<UserLockout> getLockout()
+  {
+    return lockout;
+  }
+
+  public void setLockout(Set<UserLockout> lockout)
+  {
+    this.lockout = lockout;
+  }
+
+  public Study getStudy()
+  {
+    return study;
+  }
+
+  public void setStudy(Study study)
+  {
+    this.study = study;
+  }
+
+  public Set<UserStudyPayment> getPayments()
+  {
+    return payments;
+  }
+
+  public void setPayments(Set<UserStudyPayment> payments)
+  {
+    this.payments = payments;
+  }
+
+  public Set<DiaryEntry> getDiaryEntries()
+  {
+    return diaryEntries;
+  }
+
+  public void setDiaryEntries(Set<DiaryEntry> diaryEntries)
+  {
+    this.diaryEntries = diaryEntries;
+  }
+
+  public Set<FamsEntry> getFamsEntries()
+  {
+    return famsEntries;
+  }
+
+  public void setFamsEntries(Set<FamsEntry> famsEntries)
+  {
+    this.famsEntries = famsEntries;
   }
 
   public static User getById(UUID id)

@@ -109,6 +109,31 @@ public class FamsEntry
     modified = Timestamp.valueOf(LocalDateTime.now());
   }
 
+  public Study getStudy()
+  {
+    return study;
+  }
+
+  public void setStudy(Study study)
+  {
+    this.study = study;
+  }
+
+  public Timestamp getModified()
+  {
+    return modified;
+  }
+
+  public void setModified(Timestamp modified)
+  {
+    this.modified = modified;
+  }
+
+  public Long getId()
+  {
+    return id;
+  }
+
   public void setId(Long id)
   {
     this.id = id;

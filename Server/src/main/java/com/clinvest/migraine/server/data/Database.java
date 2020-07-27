@@ -134,7 +134,7 @@ public class Database
       Role r = Role.getByName(data[1]);
       if (null != r)
       {
-        ur.setRoleId(r.getId());
+        ur.setRole(r);
         
         UserRole.save(ur);
       }

@@ -40,23 +40,23 @@ public class DiaryEntry
   @Column(name = "severity")
   protected String    severity;
   @Column(name = "new_headache")
-  protected Boolean   newHeadache;
+  protected boolean   newHeadache;
   @Column(name = "hours")
   protected Double    hours;
   @Column(name = "pain_directional")
-  protected Boolean   painDirectional;
+  protected boolean   painDirectional;
   @Column(name = "pain_throbbing")
-  protected Boolean   painThrobbing;
+  protected boolean   painThrobbing;
   @Column(name = "pain_worse")
-  protected Boolean   painWorse;
+  protected boolean   painWorse;
   @Column(name = "nausea")
-  protected Boolean   nausea;
+  protected boolean   nausea;
   @Column(name = "light_sound_sensitive")
-  protected Boolean   lightSoundSensitive;
+  protected boolean   lightSoundSensitive;
   @Column(name = "worst_symptom")
   protected String    worstSymptom;
   @Column(name = "took_medication")
-  protected Boolean   tookMedication;
+  protected boolean   tookMedication;
   
   @OneToMany(mappedBy="id")
   private Set<DiaryMedicationEntry> medications;
@@ -141,12 +141,12 @@ public class DiaryEntry
     this.severity = severity;
   }
 
-  public Boolean getNewHeadache()
+  public boolean getNewHeadache()
   {
     return newHeadache;
   }
 
-  public void setNewHeadache(Boolean newHeadache)
+  public void setNewHeadache(boolean newHeadache)
   {
     this.newHeadache = newHeadache;
   }
@@ -161,52 +161,52 @@ public class DiaryEntry
     this.hours = hours;
   }
 
-  public Boolean getPainDirectional()
+  public boolean getPainDirectional()
   {
     return painDirectional;
   }
 
-  public void setPainDirectional(Boolean painDirectional)
+  public void setPainDirectional(boolean painDirectional)
   {
     this.painDirectional = painDirectional;
   }
 
-  public Boolean getPainThrobbing()
+  public boolean getPainThrobbing()
   {
     return painThrobbing;
   }
 
-  public void setPainThrobbing(Boolean painThrobbing)
+  public void setPainThrobbing(boolean painThrobbing)
   {
     this.painThrobbing = painThrobbing;
   }
 
-  public Boolean getPainWorse()
+  public boolean getPainWorse()
   {
     return painWorse;
   }
 
-  public void setPainWorse(Boolean painWorse)
+  public void setPainWorse(boolean painWorse)
   {
     this.painWorse = painWorse;
   }
 
-  public Boolean getNausea()
+  public boolean getNausea()
   {
     return nausea;
   }
 
-  public void setNausea(Boolean nausea)
+  public void setNausea(boolean nausea)
   {
     this.nausea = nausea;
   }
 
-  public Boolean getLightSoundSensitive()
+  public boolean getLightSoundSensitive()
   {
     return lightSoundSensitive;
   }
 
-  public void setLightSoundSensitive(Boolean lightSoundSensitive)
+  public void setLightSoundSensitive(boolean lightSoundSensitive)
   {
     this.lightSoundSensitive = lightSoundSensitive;
   }
@@ -221,12 +221,12 @@ public class DiaryEntry
     this.worstSymptom = worstSymptom;
   }
 
-  public Boolean getTookMedication()
+  public boolean getTookMedication()
   {
     return tookMedication;
   }
 
-  public void setTookMedication(Boolean tookMedication)
+  public void setTookMedication(boolean tookMedication)
   {
     this.tookMedication = tookMedication;
   }

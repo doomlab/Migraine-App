@@ -18,7 +18,7 @@ import javax.persistence.Table;
 import org.hibernate.Session;
 
 @Entity
-@Table(name = "user_meds")
+@Table(name = "diary_meds")
 public class DiaryMedicationEntry
 {
   @Id
@@ -28,12 +28,13 @@ public class DiaryMedicationEntry
   @ManyToOne
   @JoinColumn(name="entry_id", nullable=false)
   protected DiaryEntry entry;
-  @Column(name="medication_id")
-  protected Long medicationId;
+  @ManyToOne
+  @JoinColumn(name="medication_id")
+  protected Medication medication;
   @Column(name="how_often")
   protected String howOften;
   @Column(name="pain_decrease")
-  protected Boolean painDecrease;
+  protected boolean painDecrease;
   @Column(name = "created", updatable = false, nullable = false)
   protected Timestamp created;
   @Column(name = "last_modified")
@@ -74,9 +75,9 @@ public class DiaryMedicationEntry
     this.entry = entry;
   }
 
-  public Long getMedicationId()
+  public Medication getMedication()
   {
-    return medicationId;
+    return medication;
   }
 
   public Timestamp getCreated()
@@ -109,19 +110,19 @@ public class DiaryMedicationEntry
     this.howOften = howOften;
   }
 
-  public Boolean getPainDecrease()
+  public boolean getPainDecrease()
   {
     return painDecrease;
   }
 
-  public void setPainDecrease(Boolean painDecrease)
+  public void setPainDecrease(boolean painDecrease)
   {
     this.painDecrease = painDecrease;
   }
 
-  public void setMedicationId(Long medicationId)
+  public void setMedication(Medication medication)
   {
-    this.medicationId = medicationId;
+    this.medication = medication;
   }
 
   public static void save(DiaryMedicationEntry med)

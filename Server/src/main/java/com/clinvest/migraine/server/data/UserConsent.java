@@ -35,7 +35,7 @@ public class UserConsent
   protected User user;
   
   @Column(name="consent")
-  protected Boolean consent;
+  protected boolean consent;
   
   @Column(name="consentDate")
   protected Timestamp consentDate;
@@ -81,12 +81,12 @@ public class UserConsent
     this.user = user;
   }
 
-  public Boolean getConsent()
+  public boolean getConsent()
   {
     return consent;
   }
 
-  public void setConsent(Boolean consent)
+  public void setConsent(boolean consent)
   {
     this.consent = consent;
   }
