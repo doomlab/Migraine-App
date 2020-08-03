@@ -17,6 +17,10 @@ namespace clinvest.migraine.Controller
     {
         //Buttons
         public Button Sandwich;
+        public Button Diary;
+        public Button FAMS;
+        public Button Log;
+        public Button Settings;
 
         //Panels
         public GameObject NavPanel;
@@ -32,6 +36,22 @@ namespace clinvest.migraine.Controller
                 NavPanel.SetActive(false);
             }
 
+        }
+        public void DiaryButtonPressed()
+        {
+            SceneManager.LoadScene("Diary_One_Scene");
+        }
+        public void FAMSButtonPressed()
+        {
+            SceneManager.LoadScene("FAMS_One_Scene");
+        }
+        public void LogButtonPressed()
+        {
+            SceneManager.LoadScene("Log_One_Scene");
+        }
+        public void SettingsButtonPressed()
+        {
+            SceneManager.LoadScene("Settings_One_Scene");
         }
     }
     
