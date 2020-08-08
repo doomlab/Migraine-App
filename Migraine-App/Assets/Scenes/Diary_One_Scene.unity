@@ -7253,7 +7253,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &601784687
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7673,6 +7673,7 @@ GameObject:
   - component: {fileID: 688269647}
   - component: {fileID: 688269646}
   - component: {fileID: 688269645}
+  - component: {fileID: 688269648}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
@@ -7769,6 +7770,47 @@ Canvas:
   m_SortingLayerID: 0
   m_SortingOrder: 0
   m_TargetDisplay: 0
+--- !u!114 &688269648
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 688269643}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9e9f8597b3243b246913bcf23706304b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Selection_1: {fileID: 1014848364}
+  Selection_2: {fileID: 291204581}
+  Selection_3: {fileID: 0}
+  Selection_4: {fileID: 0}
+  Selection_5: {fileID: 0}
+  Selection_6: {fileID: 0}
+  Selection_7: {fileID: 0}
+  Selection_8: {fileID: 0}
+  Selection_9: {fileID: 0}
+  Selection_10: {fileID: 0}
+  Next_1: {fileID: 1166609040}
+  Next_2: {fileID: 1069397301}
+  Next_3: {fileID: 0}
+  Next_4: {fileID: 0}
+  Next_5: {fileID: 0}
+  Next_6: {fileID: 0}
+  Next_7: {fileID: 0}
+  ReturnButton: {fileID: 2083193643}
+  SubmitPanel: {fileID: 1742662225}
+  SubmitButton: {fileID: 1351064422}
+  ErrorPanel: {fileID: 1771964837}
+  ErrorButton: {fileID: 787158529}
+  PanelOne: {fileID: 1812624262}
+  PanelTwo: {fileID: 711818636}
+  PanelThree: {fileID: 0}
+  PanelFour: {fileID: 0}
+  PanelFive: {fileID: 0}
+  PanelSix: {fileID: 0}
+  PanelSeven: {fileID: 0}
 --- !u!1 &711818636
 GameObject:
   m_ObjectHideFlags: 0
@@ -18785,7 +18827,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &1812624263
 MonoBehaviour:
   m_ObjectHideFlags: 0
