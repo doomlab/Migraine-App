@@ -1,4 +1,5 @@
-﻿using System;
+﻿/**
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.IO;
@@ -35,9 +36,6 @@ namespace clinvest.migraine.Controller
         public Button Next_5;
         public Button Next_6;
         public Button Next_7;
-        public Button Next_8;
-        public Button Next_9;
-        public Button Next_10;
         public Button ReturnButton;
 
         //Submit
@@ -56,9 +54,6 @@ namespace clinvest.migraine.Controller
         public GameObject PanelFive;
         public GameObject PanelSix;
         public GameObject PanelSeven;
-        public GameObject PanelEight;
-        public GameObject PanelNine;
-        public GameObject PanelTen;
 
         // Start is called before the first frame update
         void Start()
@@ -79,18 +74,21 @@ namespace clinvest.migraine.Controller
 
         public void Next_1Pressed()
         {
-            if (Selection_1.value == 1)
+            if (Selection_1.value != 0)
             {
-                SubmitPanel.SetActive(true);
-            }
-            if (Selection_1.value == 0)
-            {
-                ErrorPanel.SetActive(true);
+                if (Selection_1.value == 1)
+                {
+                    SubmitPanel.SetActive(true);
+                }
+                else
+                {
+                    PanelOne.SetActive(false);
+                    PanelTwo.SetActive(true);
+                }
             }
             else
             {
-                PanelOne.SetActive(false);
-                PanelTwo.SetActive(true);
+                ErrorPanel.SetActive(true);
             }
         }
         public void Next_2Pressed()
@@ -112,41 +110,18 @@ namespace clinvest.migraine.Controller
         }
         public void Next_4Pressed()
         {
-            if (Selection_3.value != 0)
+            if ((Selection_3.value != 0) & (Selection_4.value != 0) & (Selection_5.value != 0)) ;
             {
                 PanelFour.SetActive(false);
                 PanelFive.SetActive(true);
+
             }
             else
             {
                 ErrorPanel.SetActive(true);
             }
-        }
+        } 
         public void Next_5Pressed()
-        {
-            if (Selection_4.value != 0)
-            {
-                PanelFive.SetActive(false);
-                PanelSix.SetActive(true);
-            }
-            else
-            {
-                ErrorPanel.SetActive(true);
-            }
-        }
-        public void Next_6Pressed()
-        {
-            if (Selection_5.value != 0)
-            {
-                PanelSix.SetActive(false);
-                PanelSeven.SetActive(true);
-            }
-            else
-            {
-                ErrorPanel.SetActive(true);
-            }
-        }
-        public void Next_7Pressed()
         {
             if (Selection_6.value != 0)
             {
@@ -200,3 +175,4 @@ namespace clinvest.migraine.Controller
         }
     }
 }
+**/
