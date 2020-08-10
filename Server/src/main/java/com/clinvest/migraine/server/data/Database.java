@@ -1,5 +1,9 @@
 package com.clinvest.migraine.server.data;
 
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStream;
+import java.io.InputStreamReader;
 import java.sql.Timestamp;
 import java.time.LocalDateTime;
 import java.util.HashSet;
@@ -35,12 +39,6 @@ public class Database
   /** Assign the default root user the default admin role */
   private static final String[][] USER_ROLES = {
       {  "ef8ed6b2-9d4f-43c3-b253-ef4d2eb544f5", "admin" }
-  };
-  
-  private static final String[][] MEDICATIONS = {
-      {  "Tylenol", "acetaminophen" },
-      {  "Motrin",  "ibuprophen" },
-      {  "Aleve",   "naproxen sodium" }
   };
 
   private static final String[] STUDIES = {
@@ -158,6 +156,8 @@ public class Database
     LOG.debug("Studies created.");
   }
   
+  private static final String MEDICATION_FILE = "migraine_meds.csv";
+  
   private void updateMedicationList()
   {
     List<Medication> meds = Medication.list();
@@ -169,19 +169,45 @@ public class Database
         names.add(m.getName());
       }
     }
-    for (int i = 0; i < MEDICATIONS.length; i++)
-    {
-      String[] data = MEDICATIONS[i];
-      if (!names.contains(data[0]))
+    try {
+      InputStream is = Database.class.getClassLoader().getResourceAsStream(MEDICATION_FILE);
+      BufferedReader reader;
+      reader = new BufferedReader(new InputStreamReader(is));
+      String line = reader.readLine(); // Skip first line
+      line = reader.readLine();
+      while (line != null) 
       {
-        Medication m = new Medication();
-        m.setName(data[0]);
-        m.setFormulary(data[1]);
-
-        Medication.save(m);
+        String[] sp = line.split(",");
+        if (sp.length == 2)
+        {
+          String cat = sp[0];
+          String desc = sp[1];
+          String form = null;
+          if (desc.contains("("))
+          {
+            String tmp = desc;
+            desc = desc.substring(0, desc.indexOf('(')).trim();
+            form = tmp.substring(tmp.indexOf('(') + 1, tmp.indexOf(')')).trim();
+          }
+          if (!names.contains(desc))
+          {
+            Medication m = new Medication();
+            m.setCategory(cat);
+            m.setName(desc);
+            m.setFormulary(form);
+            m.setModified(Timestamp.valueOf(LocalDateTime.now()));
+            Medication.save(m);
+          }
+        }
+        line = reader.readLine();
       }
+      reader.close();
+
+      LOG.debug("Medication list updated.");
+      
+    } catch (IOException e) {
+        LOG.debug("Error reading medication list.", e);
     }
-    LOG.debug("Medication list updated.");
   }
 
 
