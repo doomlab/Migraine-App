@@ -126,6 +126,30 @@ public class Medication
     return meds;
   }
   
+  @SuppressWarnings("unchecked")
+  public static List<Medication> listAcute()
+  {
+
+    List<Medication> meds = null;
+    try (Session session = HibernateUtils.getSessionFactory().openSession())
+    {
+      meds = session.createQuery("from Medication where category = 'acute'").list();
+    }
+    return meds;
+  }
+  
+  @SuppressWarnings("unchecked")
+  public static List<Medication> listPreventative()
+  {
+
+    List<Medication> meds = null;
+    try (Session session = HibernateUtils.getSessionFactory().openSession())
+    {
+      meds = session.createQuery("from Medication where category = 'preventative'").list();
+    }
+    return meds;
+  }
+  
   public static void save(Medication medication)
   {
 
