@@ -177,11 +177,11 @@ public class Database
       line = reader.readLine();
       while (line != null) 
       {
-        String[] sp = line.split(",");
-        if (sp.length == 2)
+        int sp = line.indexOf(',');
+        if (sp > 0)
         {
-          String cat = sp[0];
-          String desc = sp[1];
+          String cat = line.substring(0,sp);
+          String desc = line.substring(sp+1).replaceAll("\"", "").trim();
           String form = null;
           if (desc.contains("("))
           {
