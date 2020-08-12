@@ -77,6 +77,7 @@ namespace clinvest.migraine.Controller
             {
                 if (Selection_1.value == 1)
                 {
+                    PanelOne.SetActive(false);
                     SubmitPanel.SetActive(true);
                 }
                 else
@@ -107,9 +108,9 @@ namespace clinvest.migraine.Controller
             PanelThree.SetActive(false);
             PanelFour.SetActive(true);
         }
-        /**public void Next_4Pressed()
+        public void Next_4Pressed()
         {
-            if ((Selection_3.value != 0) & (Selection_4.value != 0) & (Selection_5.value != 0));
+            if ((Selection_3.value != 0) & (Selection_4.value != 0) & (Selection_5.value != 0))
             {
                 PanelFour.SetActive(false);
                 PanelFive.SetActive(true);
@@ -162,6 +163,6 @@ namespace clinvest.migraine.Controller
                 PanelSeven.SetActive(false);
                 PanelSeven.SetActive(true);
             }
-        }**/
+        }
     }
 }
