@@ -24,6 +24,9 @@ public class Medication
   @Column(name = "id", updatable = false, nullable = false)
   protected Long      id;
 
+  @Column(name="category")
+  protected String category;
+  
   @Column(name = "name")
   protected String    name;
 
@@ -59,6 +62,16 @@ public class Medication
   public void setId(Long id)
   {
     this.id = id;
+  }
+  
+  public String getCategory()
+  {
+    return category;
+  }
+
+  public void setCategory(String category)
+  {
+    this.category = category;
   }
 
   public String getName()
@@ -109,6 +122,30 @@ public class Medication
     try (Session session = HibernateUtils.getSessionFactory().openSession())
     {
       meds = session.createQuery("from Medication").list();
+    }
+    return meds;
+  }
+  
+  @SuppressWarnings("unchecked")
+  public static List<Medication> listAcute()
+  {
+
+    List<Medication> meds = null;
+    try (Session session = HibernateUtils.getSessionFactory().openSession())
+    {
+      meds = session.createQuery("from Medication where category = 'acute'").list();
+    }
+    return meds;
+  }
+  
+  @SuppressWarnings("unchecked")
+  public static List<Medication> listPreventative()
+  {
+
+    List<Medication> meds = null;
+    try (Session session = HibernateUtils.getSessionFactory().openSession())
+    {
+      meds = session.createQuery("from Medication where category = 'preventative'").list();
     }
     return meds;
   }

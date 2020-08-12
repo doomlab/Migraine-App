@@ -35,9 +35,6 @@ namespace clinvest.migraine.Controller
         public Button Next_5;
         public Button Next_6;
         public Button Next_7;
-        public Button Next_8;
-        public Button Next_9;
-        public Button Next_10;
         public Button ReturnButton;
 
         //Submit
@@ -56,9 +53,6 @@ namespace clinvest.migraine.Controller
         public GameObject PanelFive;
         public GameObject PanelSix;
         public GameObject PanelSeven;
-        public GameObject PanelEight;
-        public GameObject PanelNine;
-        public GameObject PanelTen;
 
         // Start is called before the first frame update
         void Start()
@@ -79,18 +73,21 @@ namespace clinvest.migraine.Controller
 
         public void Next_1Pressed()
         {
-            if (Selection_1.value == 1)
+            if (Selection_1.value != 0)
             {
-                SubmitPanel.SetActive(true);
-            }
-            if (Selection_1.value == 0)
-            {
-                ErrorPanel.SetActive(true);
+                if (Selection_1.value == 1)
+                {
+                    SubmitPanel.SetActive(true);
+                }
+                else
+                {
+                    PanelOne.SetActive(false);
+                    PanelTwo.SetActive(true);
+                }
             }
             else
             {
-                PanelOne.SetActive(false);
-                PanelTwo.SetActive(true);
+                ErrorPanel.SetActive(true);
             }
         }
         public void Next_2Pressed()
@@ -110,9 +107,9 @@ namespace clinvest.migraine.Controller
             PanelThree.SetActive(false);
             PanelFour.SetActive(true);
         }
-        public void Next_4Pressed()
+        /**public void Next_4Pressed()
         {
-            if (Selection_3.value != 0)
+            if ((Selection_3.value != 0) & (Selection_4.value != 0) & (Selection_5.value != 0));
             {
                 PanelFour.SetActive(false);
                 PanelFive.SetActive(true);
@@ -121,10 +118,10 @@ namespace clinvest.migraine.Controller
             {
                 ErrorPanel.SetActive(true);
             }
-        }
+        } 
         public void Next_5Pressed()
         {
-            if (Selection_4.value != 0)
+            if ((Selection_6.value != 0) & (Selection_7.value != 0))
             {
                 PanelFive.SetActive(false);
                 PanelSix.SetActive(true);
@@ -136,46 +133,10 @@ namespace clinvest.migraine.Controller
         }
         public void Next_6Pressed()
         {
-            if (Selection_5.value != 0)
+            if (Selection_8.value == 1)
             {
                 PanelSix.SetActive(false);
                 PanelSeven.SetActive(true);
-            }
-            else
-            {
-                ErrorPanel.SetActive(true);
-            }
-        }
-        public void Next_7Pressed()
-        {
-            if (Selection_6.value != 0)
-            {
-                PanelSeven.SetActive(false);
-                PanelEight.SetActive(true);
-            }
-            else
-            {
-                ErrorPanel.SetActive(true);
-            }
-        }
-        public void Next_8Pressed()
-        {
-            if (Selection_7.value != 0)
-            {
-                PanelEight.SetActive(false);
-                PanelNine.SetActive(true);
-            }
-            else
-            {
-                ErrorPanel.SetActive(true);
-            }
-        }
-        public void Next_9Pressed()
-        {
-            if (Selection_8.value == 1)
-            {
-                PanelNine.SetActive(false);
-                PanelTen.SetActive(true);
             }
             if (Selection_8.value == 2)
             {
@@ -186,17 +147,21 @@ namespace clinvest.migraine.Controller
                 ErrorPanel.SetActive(true);
             }
         }
-        public void Next_10Pressed()
+        public void Next_7Pressed()
         {
-            if ((Selection_10.value == 0)|(Selection_9.value == 0))
+            if ((Selection_10.value == 0) || (Selection_9.value == 0))
             {
                 ErrorPanel.SetActive(true);
             }
-            if (Selection_9.value == 2)
+            else if (Selection_9.value == 2)
             {
-                PanelTen.SetActive(false);
-                PanelNine.SetActive(true);
+                SubmitPanel.SetActive(true);
             }
-        }
+            else if (Selection_9.value == 1)
+            {
+                PanelSeven.SetActive(false);
+                PanelSeven.SetActive(true);
+            }
+        }**/
     }
 }
