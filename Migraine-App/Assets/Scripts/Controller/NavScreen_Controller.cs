@@ -21,9 +21,12 @@ namespace clinvest.migraine.Controller
         public Button FAMS;
         public Button Log;
         public Button Settings;
+        public Button Education;
+
 
         //Panels
         public GameObject NavPanel;
+        public GameObject SetPanel;
 
         public void SandwichButtonPressed()
         {
@@ -51,7 +54,7 @@ namespace clinvest.migraine.Controller
         }
         public void SettingsButtonPressed()
         {
-            SceneManager.LoadScene("Settings_One_Scene");
+            SetPanel.SetActive(true);
         }
     }
     
