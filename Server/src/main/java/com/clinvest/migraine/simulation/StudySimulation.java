@@ -84,7 +84,7 @@ public class StudySimulation
   {
     Date simTime = new Date(studyStart.getTime());
     Map<UUID, DiaryEntry> lastEntryMap = new HashMap<>();
-    List<Medication> meds = Medication.list();
+    List<Medication> meds = Medication.listAcute();
     
     // Do a random FAMS entry for each user at the beginning (in the first 10 days)
     System.out.println("Initial FAMS entries.");
