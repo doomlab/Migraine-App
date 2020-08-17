@@ -254,9 +254,8 @@ namespace clinvest.migraine.Controller
                 PanelSeven.SetActive(true);
                 currentpanel += 1;
             }
-            if (Selection_8.value == 2)
+            else if (Selection_8.value == 2)
             {
-
                 PanelSix.SetActive(false); 
                 SubmitPanel.SetActive(true);
             }
