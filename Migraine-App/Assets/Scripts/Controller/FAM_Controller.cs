@@ -71,6 +71,8 @@ namespace clinvest.migraine.Controller
         public GameObject PageFourPanel;
         public GameObject PageFivePanel;
         public GameObject PageSixPanel;
+        public GameObject FAMS;
+        public GameObject Home_Screen;
 
         public int currentpanel = 0;
 
@@ -97,7 +99,8 @@ namespace clinvest.migraine.Controller
             ErrorPanel.SetActive(false);
             if (currentpanel == 6)
             {
-                SceneManager.LoadScene("homescreen");
+                FAMS.SetActive(false);
+                Home_Screen.SetActive(true);
             }
             else if (currentpanel == 1)
             {
@@ -269,7 +272,8 @@ namespace clinvest.migraine.Controller
         {
             if ((Question24.value != 0) & (Question25.value != 0) & (Question26.value != 0) & (Question27.value != 0))
             {
-                SceneManager.LoadScene("homescreen");
+                FAMS.SetActive(false);
+                Home_Screen.SetActive(true);
             }
             else
             {
