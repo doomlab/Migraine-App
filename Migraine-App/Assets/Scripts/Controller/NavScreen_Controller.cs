@@ -35,6 +35,10 @@ namespace clinvest.migraine.Controller
         public GameObject Login;
         public GameObject TOS;
         public GameObject CurrentPanel;
+        public GameObject Menstral;
+        public GameObject Migrane;
+        public GameObject Pomdrone;
+        public GameObject Acute;
 
         void Start()
         {
@@ -52,7 +56,6 @@ namespace clinvest.migraine.Controller
                 NavPanel.SetActive(false);
                 SandwichButton.gameObject.SetActive(true);
             }
-
         }
         public void DiaryButtonPressed()
         {
@@ -90,7 +93,7 @@ namespace clinvest.migraine.Controller
         public void SettingsButtonPressed()
         {
             NavPanel.SetActive(false);
-            SandwichButton.gameObject.SetActive(true);
+            //SandwichButton.gameObject.SetActive(true);
             if (CurrentPanel != SetPanel)
             {
                 SetPanel.SetActive(true);
@@ -112,13 +115,49 @@ namespace clinvest.migraine.Controller
         public void EduButtonPressed()
         {
             NavPanel.SetActive(false);
-            SandwichButton.gameObject.SetActive(true);
+            //SandwichButton.gameObject.SetActive(true);
             if (CurrentPanel != Education)
             {
                 Education.SetActive(true);
                 CurrentPanel.SetActive(false);
                 CurrentPanel = Education;
             }
+        }
+        public void Edu_BackButtonPressed()
+        {
+            NavPanel.SetActive(true);
+        }
+        public void Edu_MenstralPressed()
+        {
+            Menstral.SetActive(true);
+        }
+        public void Edu_Menstral_BackPressed()
+        {
+            Menstral.SetActive(false);
+        }
+        public void Edu_MigranePressed()
+        {
+            Migrane.SetActive(true);
+        }
+        public void Edu_Migrane_BackPressed()
+        {
+            Migrane.SetActive(false);
+        }
+        public void Edu_PomdronePressed()
+        {
+            Pomdrone.SetActive(true);
+        }
+        public void Edu_Pomdrone_BackPressed()
+        {
+            Pomdrone.SetActive(false);
+        }
+        public void Edu_AcutePressed()
+        {
+            Acute.SetActive(true);
+        }
+        public void Edu_Acute_BackPressed()
+        {
+            Acute.SetActive(false);
         }
     }
     
