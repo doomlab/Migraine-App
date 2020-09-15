@@ -55,6 +55,7 @@ namespace clinvest.migraine.Controller
             {
                 NavPanel.SetActive(false);
                 SandwichButton.gameObject.SetActive(true);
+                CurrentPanel.SetActive(true);
             }
         }
         public void DiaryButtonPressed()
@@ -98,7 +99,6 @@ namespace clinvest.migraine.Controller
             {
                 SetPanel.SetActive(true);
                 CurrentPanel.SetActive(false);
-                CurrentPanel = SetPanel;
             }
         }
         public void RecordsButtonPressed()
@@ -112,6 +112,17 @@ namespace clinvest.migraine.Controller
                 CurrentPanel = Records;
             }
         }
+        public void UserSettinsButtonPressed()
+        {
+            NavPanel.SetActive(false);
+            SandwichButton.gameObject.SetActive(true);
+            if (CurrentPanel != Records)
+            {
+                User_Setting.SetActive(true);
+                CurrentPanel.SetActive(false);
+                CurrentPanel = User_Setting;
+            }
+        }
         public void EduButtonPressed()
         {
             NavPanel.SetActive(false);
@@ -120,7 +131,7 @@ namespace clinvest.migraine.Controller
             {
                 Education.SetActive(true);
                 CurrentPanel.SetActive(false);
-                CurrentPanel = Education;
+                //CurrentPanel = Education;
             }
         }
         public void Edu_BackButtonPressed()
@@ -159,6 +170,17 @@ namespace clinvest.migraine.Controller
         {
             Acute.SetActive(false);
         }
+        public void Settings_BackPressed()
+        {
+            NavPanel.SetActive(true);
+            SetPanel.SetActive(false);
+        }
+        public void Settings_Sub_BackPressed()
+        {
+            CurrentPanel.SetActive(false);
+            SetPanel.SetActive(true);
+        }
+
     }
     
 }
