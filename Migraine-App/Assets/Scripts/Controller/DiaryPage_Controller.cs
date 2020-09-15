@@ -26,6 +26,7 @@ namespace clinvest.migraine.Controller
         public TMP_Dropdown Selection_8;
         public TMP_Dropdown Selection_9;
         public TMP_Dropdown Selection_10;
+        public TMP_Dropdown Selection_11;
 
         //Button
         public Button Next_1;
@@ -54,8 +55,10 @@ namespace clinvest.migraine.Controller
         public GameObject PanelFive;
         public GameObject PanelSix;
         public GameObject PanelSeven;
+        public GameObject Diary_to_HomeScreen;
 
         public int currentpanel = 0;
+        public int Counter = 0;
 
         // Start is called before the first frame update
         void Start()
@@ -101,7 +104,11 @@ namespace clinvest.migraine.Controller
             }
         }
 
-        public void SubmitButtonPressed() => SceneManager.LoadScene("homescreen");
+        public void SubmitButtonPressed()
+            {
+                SubmitPanel.SetActive(false);
+                Diary_to_HomeScreen.SetActive(true);
+            }
 
         public void ReturnButtonPressed()
         {
@@ -141,7 +148,7 @@ namespace clinvest.migraine.Controller
             ErrorPanel.SetActive(false);
             if (currentpanel == 7)
             {
-                SceneManager.LoadScene("homescreen");
+                Diary_to_HomeScreen.SetActive(true);
             }
             else if (currentpanel == 1)
             {
@@ -267,20 +274,25 @@ namespace clinvest.migraine.Controller
         }
         public void Next_7Pressed()
         {
-            if ((Selection_10.value == 0) || (Selection_9.value == 0))
+            if ((Selection_9.value == 0) || (Selection_11.value == 0))
             {
                 PanelSeven.SetActive(false);
                 ErrorPanel.SetActive(true);
             }
-            else if (Selection_9.value == 2)
+            else if (Selection_11.value == 2)
             {
                 PanelSeven.SetActive(false);
                 SubmitPanel.SetActive(true);
             }
-            else if (Selection_9.value == 1)
+            else if (Selection_11.value == 1)
             {
-                PanelSeven.SetActive(false);
-                PanelSeven.SetActive(true);
+                List<string> Medications = new List<string>();
+                int Med_Type = (Selection_10.value);
+                Medications.Add(Med_Type.ToString());
+                
+                Selection_9.value = 0;
+                Selection_10.value = 0;
+                Selection_11.value = 0;
             }
         }
     }
