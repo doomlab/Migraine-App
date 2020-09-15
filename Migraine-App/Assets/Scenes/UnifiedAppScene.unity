@@ -44805,7 +44805,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 0.0010375977}
+  m_AnchoredPosition: {x: 0, y: 0.0010986328}
   m_SizeDelta: {x: 360, y: 640.68}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &902204547
@@ -44879,7 +44879,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -22.99997, y: -0.000030517578}
+  m_AnchoredPosition: {x: -23, y: 0}
   m_SizeDelta: {x: 314, y: 640}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &902899178
@@ -55976,8 +55976,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 141.5, y: -1482.19}
-  m_SizeDelta: {x: 267, y: 2964.38}
+  m_AnchoredPosition: {x: 141.5, y: -1472.99}
+  m_SizeDelta: {x: 267, y: 2945.98}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1094841816
 MonoBehaviour:
@@ -56005,29 +56005,29 @@ MonoBehaviour:
     Professor of Cognitive Analytics at Harrisburg University of Science and Technology.
     \n\n<b>Background Information:</b>\n\nWe are interested in the assessment of
     your migraine patterns, symptoms, and the effects on your normal day-to-day functioning.
-    \n\n<b>Procedures:</b>\n\nThe study includes completing a headache diary by entering
-    information about your headaches or migraines each day for a month. You will
-    be prompted to enter your information across the month. You will also take a
-    migraine assessment tool at the beginning and end of the study. The headache
-    diary should take three to five minutes to complete on days you enter headache
-    information and less than one minute if you did not have a headache to report.
-    The assessment tool should also take three to five minutes to complete. \n\n<b>Risks
-    and Benefits of being in the Study:</b>\n\nOne possible risk of the study is
-    that you may feel uncomfortable reporting your migraine symptoms. However, the
-    confidentiality-guaranteeing procedures employed by the researchers will minimize
-    this risk. The research team will closely guard your information. One benefit
-    to providing this data is that the research team will provide you feedback and
-    information on your migraine patterns that you can share with your health care
-    provider to improve your treatment. \n\n<b>Compensation:</b>\n\nIf you complete
-    80% of the headache diary, you will be entitled to a $10 Amazon gift card for
-    your time and effort. \n\n<b>Confidentiality:</b>\n\nMeasures are taken to ensure
-    that all information you provide will be anonymous. Only members of the research
-    team will have access to the original dataset, which will be stored on a password-locked
-    computer. Your name or other identifying information will not be entered into
-    the dataset and no references will be made in verbal or written reports that
-    could link you to the study. In any publication, information will be provided
-    in such a way that you cannot be identified. \n\n<b>Data Sharing:</b>\n\nDe-identified
-    data from this study may be shared with the research community at large to advance
+    \n\n<b>Procedures:</b>\nThe study includes completing a headache diary by entering
+    information about your headaches or migraines each day. You will be sent notifications
+    to help you remember to enter your headaches. The headache diary should take
+    three to five minutes to complete on days you enter headache information and
+    less than one minute if you did not have a headache to report. Each month you
+    will be sent a notification to complete a migraine assessment, which takes about
+    five minutes to complete. \n\n<b>Risks and Benefits of being in the Study:</b>\n\nOne
+    possible risk of the study is that you may feel uncomfortable reporting your
+    migraine symptoms. However, the confidentiality-guaranteeing procedures employed
+    by the researchers will minimize this risk. The research team will closely guard
+    your information. One benefit to providing this data is that the research team
+    will provide you feedback and information on your migraine patterns that you
+    can share with your health care provider to improve your treatment. \n\n<b>Compensation:</b>\n\nYou
+    will not receive direct compensation for the this ongoing study; however, your
+    data will be used to improve our feedback to you as part of the free app tracker.
+    \n\n<b>Confidentiality:</b>\n\nMeasures are taken to ensure that all information
+    you provide will be anonymous. Only members of the research team will have access
+    to the original dataset, which will be stored on a password-locked computer.
+    Your name or other identifying information will not be entered into the dataset
+    and no references will be made in verbal or written reports that could link you
+    to the study. In any publication, information will be provided in such a way
+    that you cannot be identified. \n\n<b>Data Sharing:</b>\n\nDe-identified data
+    from this study may be shared with the research community at large to advance
     science and health. We will remove or code any personal information that could
     identify you before files are shared with other researchers to ensure that, by
     current scientific standards and known methods, no one will be able to identify
@@ -56038,23 +56038,23 @@ MonoBehaviour:
     also be made available in online data repositories such as the Open Science Framework
     (which are free data repositories that require registration to have access),
     which allow other researchers and interested parties to access the data for further
-    analysis.\n\nYour data will be stored on the application until you decide to
-    delete your account. You may also decide to unenroll from the study and retain
-    your data on your account, but researchers would not use this data for any future
-    analysis or publication. \n\n<b>Voluntary Nature of the Study</b>\n\nParticipation
-    in this study is voluntary: Your decision whether or not to participate will
-    not affect your current or future relations with Harrisburg University of Science
-    and Technology. If you decide to participate, you are free to not answer any
-    question or withdraw at any time without affecting those relationships. \n\n<b>Contacts
-    and Questions:</b>\n\nThe researchers conducting this study are Dr. Erin M. Buchanan
-    in partnership with Clinvest Research, LLC. You may ask any questions you have
-    now. If you have questions later, you are encouraged to contact Dr. Erin M. Buchanan
-    at ebuchanan@harrisburgu.edu.\n\n<b>Questions or Concerns:</b>\n\nThis study
-    has been reviewed by Harrisburg University of Science and Technology\u2019s Institutional
-    Review Board (IRB).  The IRB has determined that this study fulfills the human
-    research subject protections obligations required by state and federal law and
-    University policies.  \n\nA copy of this information to keep for your records
-    will be provided upon request."
+    analysis.\n\nYour data will be stored in your application account on our server
+    until you decide to delete your account. You may also decide to unenroll from
+    the study and retain your data on your account, but researchers would not use
+    this data for any future analysis or publication. \n\n<b>Voluntary Nature of
+    the Study</b>\n\nParticipation in this study is voluntary: Your decision whether
+    or not to participate will not affect your current or future relations with Harrisburg
+    University of Science and Technology. If you decide to participate, you are free
+    to not answer any question or withdraw at any time without affecting those relationships.
+    \n\n<b>Contacts and Questions:</b>\n\nThe researchers conducting this study are
+    Dr. Erin M. Buchanan in partnership with Clinvest Research, LLC. You may ask
+    any questions you have now. If you have questions later, you are encouraged to
+    contact Dr. Erin M. Buchanan at ebuchanan@harrisburgu.edu.\n\n<b>Questions or
+    Concerns:</b>\n\nThis study has been reviewed by Harrisburg University of Science
+    and Technology\u2019s Institutional Review Board (IRB).  The IRB has determined
+    that this study fulfills the human research subject protections obligations required
+    by state and federal law and University policies.  \n\nA copy of this information
+    to keep for your records will be provided upon request."
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -56123,12 +56123,12 @@ MonoBehaviour:
   m_margin: {x: 0.079550035, y: 2.7532, z: -1.0466268, w: -1390.3684}
   m_textInfo:
     textComponent: {fileID: 1094841816}
-    characterCount: 4418
+    characterCount: 4454
     spriteCount: 0
-    spaceCount: 741
-    wordCount: 709
+    spaceCount: 742
+    wordCount: 711
     linkCount: 0
-    lineCount: 161
+    lineCount: 160
     pageCount: 1
     materialCount: 1
   m_isUsingLegacyAnimationComponent: 0
@@ -58830,7 +58830,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: -0.00045776367}
+  m_AnchoredPosition: {x: 0, y: -0.00048828125}
   m_SizeDelta: {x: 360, y: 640.53}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1162057015
@@ -73748,7 +73748,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 6.399994, y: -230}
+  m_AnchoredPosition: {x: 6.4000244, y: -230}
   m_SizeDelta: {x: 300, y: 60}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1451815324
@@ -81525,7 +81525,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 0.38235474}
+  m_AnchoredPosition: {x: 0, y: 0.38232422}
   m_SizeDelta: {x: 360, y: 640.53}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1631559412
@@ -84291,8 +84291,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 500.22812}
-  m_SizeDelta: {x: 0, y: 2964.38}
+  m_AnchoredPosition: {x: 0, y: 0.000061035156}
+  m_SizeDelta: {x: 0, y: 2945.98}
   m_Pivot: {x: 0, y: 1}
 --- !u!114 &1694263192
 MonoBehaviour:
@@ -92934,7 +92934,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 0.0020446777}
+  m_AnchoredPosition: {x: 0, y: 0.0020751953}
   m_SizeDelta: {x: 360, y: 640.54}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1888895078
@@ -93930,7 +93930,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 0.13250732}
+  m_AnchoredPosition: {x: 0, y: 0.13244629}
   m_SizeDelta: {x: -0.5, y: 0.16498}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1917152319
@@ -96057,7 +96057,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 0.0010375977}
+  m_AnchoredPosition: {x: 0, y: 0.0010986328}
   m_SizeDelta: {x: -44, y: -493.6}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1956656749
@@ -96408,8 +96408,8 @@ RectTransform:
   m_Father: {fileID: 2065396862}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0.70205307}
-  m_AnchorMax: {x: 1, y: 0.83125377}
+  m_AnchorMin: {x: 0, y: 0.8699923}
+  m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 20, y: 20}
   m_Pivot: {x: 0.5, y: 0.5}
@@ -104509,8 +104509,8 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1959552475}
   m_HandleRect: {fileID: 1959552474}
   m_Direction: 2
-  m_Value: 0.8062167
-  m_Size: 0.12920071
+  m_Value: 1
+  m_Size: 0.13000768
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:
