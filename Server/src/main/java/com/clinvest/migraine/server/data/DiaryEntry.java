@@ -21,52 +21,51 @@ import org.hibernate.annotations.Type;
 
 @Entity
 @Table(name = "diary")
-public class DiaryEntry
-{
+public class DiaryEntry {
   @Id
   @GeneratedValue(strategy = GenerationType.IDENTITY)
   @Column(name = "id", updatable = false, nullable = false)
-  private Long        id;
+  private Long                        id;
   @ManyToOne
   @Type(type = "uuid-char")
   @JoinColumn(name = "user_id", nullable = false)
-  protected User      user;
+  protected User                      user;
   @ManyToOne
   @JoinColumn(name = "study_id", nullable = false)
-  protected Study     study;
+  protected Study                     study;
 
   @Column(name = "entry_timestamp")
-  protected Timestamp entryTimestamp;
+  protected Timestamp                 entryTimestamp;
   @Column(name = "severity")
-  protected String    severity;
+  protected String                    severity;
   @Column(name = "new_headache", nullable = false, columnDefinition = "TINYINT", length = 1)
-  protected boolean   newHeadache;
+  protected boolean                   newHeadache;
   @Column(name = "hours")
-  protected Double    hours;
+  protected Double                    hours;
   @Column(name = "pain_directional", nullable = false, columnDefinition = "TINYINT", length = 1)
-  protected boolean   painDirectional;
+  protected boolean                   painDirectional;
   @Column(name = "pain_throbbing", nullable = false, columnDefinition = "TINYINT", length = 1)
-  protected boolean   painThrobbing;
+  protected boolean                   painThrobbing;
   @Column(name = "pain_worse", nullable = false, columnDefinition = "TINYINT", length = 1)
-  protected boolean   painWorse;
+  protected boolean                   painWorse;
   @Column(name = "nausea", nullable = false, columnDefinition = "TINYINT", length = 1)
-  protected boolean   nausea;
+  protected boolean                   nausea;
   @Column(name = "light_sensitive", nullable = false, columnDefinition = "TINYINT", length = 1)
-  protected boolean   lightSensitive;
+  protected boolean                   lightSensitive;
   @Column(name = "sound_sensitive", nullable = false, columnDefinition = "TINYINT", length = 1)
-  protected boolean   soundSensitive;
+  protected boolean                   soundSensitive;
   @Column(name = "worst_symptom")
-  protected String    worstSymptom;
+  protected String                    worstSymptom;
   @Column(name = "took_medication", nullable = false, columnDefinition = "TINYINT", length = 1)
-  protected boolean   tookMedication;
-  
-  @OneToMany(mappedBy="id")
-  private Set<DiaryMedicationEntry> medications;
-  
+  protected boolean                   tookMedication;
+
+  @OneToMany(mappedBy = "id")
+  protected Set<DiaryMedicationEntry> medications;
+
   @Column(name = "created", updatable = false, nullable = false)
-  protected Timestamp created;
+  protected Timestamp                 created;
   @Column(name = "last_modified")
-  protected Timestamp modified;
+  protected Timestamp                 modified;
 
   @PrePersist
   protected void onCreate()
@@ -76,7 +75,7 @@ public class DiaryEntry
       created = Timestamp.valueOf(LocalDateTime.now());
     }
   }
-  
+
   @PreUpdate
   protected void onUpdate()
   {
@@ -212,7 +211,7 @@ public class DiaryEntry
   {
     this.lightSensitive = lightSensitive;
   }
-  
+
   public boolean getSoundSensitive()
   {
     return soundSensitive;
@@ -241,6 +240,26 @@ public class DiaryEntry
   public void setTookMedication(boolean tookMedication)
   {
     this.tookMedication = tookMedication;
+  }
+
+  public Set<DiaryMedicationEntry> getMedications()
+  {
+    return medications;
+  }
+
+  public void setMedications(Set<DiaryMedicationEntry> medications)
+  {
+    this.medications = medications;
+  }
+
+  public Timestamp getModified()
+  {
+    return modified;
+  }
+
+  public void setModified(Timestamp modified)
+  {
+    this.modified = modified;
   }
 
   public static void save(DiaryEntry diary)
