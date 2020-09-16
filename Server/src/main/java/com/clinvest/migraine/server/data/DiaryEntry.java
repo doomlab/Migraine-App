@@ -51,8 +51,10 @@ public class DiaryEntry
   protected boolean   painWorse;
   @Column(name = "nausea", nullable = false, columnDefinition = "TINYINT", length = 1)
   protected boolean   nausea;
-  @Column(name = "light_sound_sensitive", nullable = false, columnDefinition = "TINYINT", length = 1)
-  protected boolean   lightSoundSensitive;
+  @Column(name = "light_sensitive", nullable = false, columnDefinition = "TINYINT", length = 1)
+  protected boolean   lightSensitive;
+  @Column(name = "sound_sensitive", nullable = false, columnDefinition = "TINYINT", length = 1)
+  protected boolean   soundSensitive;
   @Column(name = "worst_symptom")
   protected String    worstSymptom;
   @Column(name = "took_medication", nullable = false, columnDefinition = "TINYINT", length = 1)
@@ -201,14 +203,24 @@ public class DiaryEntry
     this.nausea = nausea;
   }
 
-  public boolean getLightSoundSensitive()
+  public boolean getLightSensitive()
   {
-    return lightSoundSensitive;
+    return lightSensitive;
   }
 
-  public void setLightSoundSensitive(boolean lightSoundSensitive)
+  public void setLightSensitive(boolean lightSensitive)
   {
-    this.lightSoundSensitive = lightSoundSensitive;
+    this.lightSensitive = lightSensitive;
+  }
+  
+  public boolean getSoundSensitive()
+  {
+    return soundSensitive;
+  }
+
+  public void setSoundSensitive(boolean soundSensitive)
+  {
+    this.soundSensitive = soundSensitive;
   }
 
   public String getWorstSymptom()

@@ -141,7 +141,8 @@ public class StudySimulation
             d.setPainThrobbing(random.nextBoolean());
             d.setPainWorse(random.nextBoolean());
             d.setNausea(random.nextBoolean());
-            d.setLightSoundSensitive(random.nextBoolean());
+            d.setLightSensitive(random.nextBoolean());
+            d.setSoundSensitive(random.nextBoolean());
             d.setWorstSymptom(worstSymptom(d));
             d.setTookMedication(random.nextBoolean());
           }
@@ -203,9 +204,12 @@ public class StudySimulation
     symptoms.add("Irritability");
     symptoms.add("Teeth itching");
     symptoms.add("Insomnia");
-    if (d.getLightSoundSensitive())
+    if (d.getLightSensitive())
     {
       symptoms.add("Light sensitivity");
+    }
+    if (d.getSoundSensitive())
+    {
       symptoms.add("Sound sensitivity");
     }
     if (d.getNausea())
