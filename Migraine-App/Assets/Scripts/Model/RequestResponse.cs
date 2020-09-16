@@ -108,7 +108,7 @@ namespace clinvest.migraine.Model
         public bool lightSensitive;
         public bool soundSensitive;
         public string worstSymptom;
-        public boolean tookMedication;
+        public bool tookMedication;
         public List<DiaryMedication> medications;
     }
     [Serializable]
