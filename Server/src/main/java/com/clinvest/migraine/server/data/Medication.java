@@ -138,6 +138,16 @@ public class Medication
     return meds;
   }
   
+  public static Medication getById(long id)
+  {
+    Medication med;
+    try (Session session = HibernateUtils.getSessionFactory().openSession())
+    {
+      med = session.get(Medication.class, id);
+    }
+    return med;
+  }
+  
   @SuppressWarnings("unchecked")
   public static List<Medication> listPreventative()
   {
