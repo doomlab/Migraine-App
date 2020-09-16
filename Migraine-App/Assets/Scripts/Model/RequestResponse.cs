@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 
 namespace clinvest.migraine.Model
 {
@@ -81,6 +82,37 @@ namespace clinvest.migraine.Model
     }
     [Serializable]
     public class FAMSResponse
+    {
+        public bool success;
+        public bool message;
+    }
+
+    [Serializable]
+    public class DiaryMedication
+    {
+        long medicationId;
+        String howOften;
+        bool painDecrease;
+    }
+
+    [Serializable]
+    public class DiarySaveRequest
+    {
+        public string severity;
+        public bool newHeadache;
+        public double hours;
+        public bool painDirectional;
+        public bool painThrobbing;
+        public bool painWorse;
+        public bool nausea;
+        public bool lightSensitive;
+        public bool soundSensitive;
+        public string worstSymptom;
+        public boolean tookMedication;
+        public List<DiaryMedication> medications;
+    }
+    [Serializable]
+    public class DiarySaveResponse
     {
         public bool success;
         public bool message;
