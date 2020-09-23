@@ -6549,7 +6549,7 @@ GameObject:
   - component: {fileID: 127740404}
   - component: {fileID: 127740403}
   m_Layer: 0
-  m_Name: Button
+  m_Name: Back_Button
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -6572,7 +6572,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0.0000038146973, y: -49}
+  m_AnchoredPosition: {x: 0, y: -49}
   m_SizeDelta: {x: 87.7, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &127740403
@@ -6619,7 +6619,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 607005618}
-        m_MethodName: ErrorButtonPressed
+        m_MethodName: 
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -29951,7 +29951,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &607005617
 RectTransform:
   m_ObjectHideFlags: 0
@@ -30002,6 +30002,7 @@ MonoBehaviour:
   Selection_5: {fileID: 1073470646}
   Selection_6: {fileID: 837792637}
   Selection_7: {fileID: 1781825114}
+  Selection_72: {fileID: 1309736060}
   Selection_8: {fileID: 2146860333}
   Selection_9: {fileID: 133646871}
   Selection_10: {fileID: 1595313939}
@@ -30011,9 +30012,13 @@ MonoBehaviour:
   Next_3: {fileID: 1164892710}
   Next_4: {fileID: 1429315357}
   Next_5: {fileID: 193038730}
+  Next_52: {fileID: 2077730173}
   Next_6: {fileID: 285342545}
   Next_7: {fileID: 886236228}
   ReturnButton: {fileID: 963379775}
+  Confirm_Panel: {fileID: 1390184721}
+  BackButton: {fileID: 127740403}
+  Continuation: {fileID: 1179179098}
   SubmitPanel: {fileID: 228342693}
   SubmitButton: {fileID: 522264067}
   ErrorPanel: {fileID: 1907275230}
@@ -30024,6 +30029,7 @@ MonoBehaviour:
   PanelThree: {fileID: 1488850358}
   PanelFour: {fileID: 640660651}
   PanelFive: {fileID: 1530256396}
+  Panel_FiveVTwo: {fileID: 1681486495}
   PanelSix: {fileID: 604305300}
   PanelSeven: {fileID: 561892508}
   Diary_to_HomeScreen: {fileID: 1861732838}
@@ -45825,7 +45831,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 13}
+  m_AnchoredPosition: {x: 0, y: 22}
   m_SizeDelta: {x: 300, y: 80}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &898774388
@@ -61598,7 +61604,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 607005618}
-        m_MethodName: SkipButtonPressed
+        m_MethodName: 
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -68656,7 +68662,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 81}
+  m_AnchoredPosition: {x: 0, y: 90}
   m_SizeDelta: {x: 300, y: 36}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1333636680
@@ -71999,10 +72005,10 @@ RectTransform:
   m_Father: {fileID: 607005617}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: -44.5, y: -882.137}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 0.13256836}
+  m_SizeDelta: {x: 300, y: 420}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1390184723
 MonoBehaviour:
@@ -95015,7 +95021,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1861732839
 RectTransform:
   m_ObjectHideFlags: 0

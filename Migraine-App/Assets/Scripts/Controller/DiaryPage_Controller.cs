@@ -23,6 +23,7 @@ namespace clinvest.migraine.Controller
         public TMP_Dropdown Selection_5;
         public TMP_Dropdown Selection_6;
         public TMP_Dropdown Selection_7;
+        public TMP_Dropdown Selection_72;
         public TMP_Dropdown Selection_8;
         public TMP_Dropdown Selection_9;
         public TMP_Dropdown Selection_10;
@@ -34,9 +35,15 @@ namespace clinvest.migraine.Controller
         public Button Next_3;
         public Button Next_4;
         public Button Next_5;
+        public Button Next_52;
         public Button Next_6;
         public Button Next_7;
         public Button ReturnButton;
+
+        //Confirmation Page
+        public GameObject Confirm_Panel;
+        public Button BackButton;
+        public Button Continuation;
 
         //Submit
         public GameObject SubmitPanel;
@@ -48,11 +55,13 @@ namespace clinvest.migraine.Controller
         public Button SkipButton;
 
         //Panels
+        
         public GameObject PanelOne;
         public GameObject PanelTwo;
         public GameObject PanelThree;
         public GameObject PanelFour;
         public GameObject PanelFive;
+        public GameObject Panel_FiveVTwo;
         public GameObject PanelSix;
         public GameObject PanelSeven;
         public GameObject Diary_to_HomeScreen;
@@ -182,7 +191,16 @@ namespace clinvest.migraine.Controller
             }
             currentpanel += 1;
         }
-
+        public void ContinuationPressed()
+        {
+            Confirm_Panel.SetActive(false);
+            PanelOne.SetActive(true);
+        }
+        public void BackButtonPressed()
+        {
+            Confirm_Panel.SetActive(false);
+            Diary_to_HomeScreen.SetActive(true);
+        }
         public void Next_1Pressed()
         {
             if (Selection_1.value != 0)
@@ -241,10 +259,10 @@ namespace clinvest.migraine.Controller
         } 
         public void Next_5Pressed()
         {
-            if ((Selection_6.value != 0) & (Selection_7.value != 0))
+            if ((Selection_6.value != 0) & (Selection_7.value != 0) & (Selection_72.value != 0))
             {
                 PanelFive.SetActive(false);
-                PanelSix.SetActive(true);
+                Panel_FiveVTwo.SetActive(true);
                 currentpanel += 1;
             }
             else
@@ -252,6 +270,12 @@ namespace clinvest.migraine.Controller
                 PanelFive.SetActive(false);
                 ErrorPanel.SetActive(true);
             }
+        }
+        public void Next_52Pressed()
+        {
+            Panel_FiveVTwo.SetActive(false);
+            PanelSix.SetActive(true);
+            currentpanel += 1;
         }
         public void Next_6Pressed()
         {
@@ -274,7 +298,7 @@ namespace clinvest.migraine.Controller
         }
         public void Next_7Pressed()
         {
-            if ((Selection_9.value == 0) || (Selection_11.value == 0))
+            if ((Selection_9.value == 0) || (Selection_11.value == 0) || (Selection_10.value == 0))
             {
                 PanelSeven.SetActive(false);
                 ErrorPanel.SetActive(true);
