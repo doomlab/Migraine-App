@@ -23,11 +23,11 @@ namespace clinvest.migraine.Controller
         public TMP_Dropdown Selection_5;
         public TMP_Dropdown Selection_6;
         public TMP_Dropdown Selection_7;
-        public TMP_Dropdown Selection_72;
         public TMP_Dropdown Selection_8;
         public TMP_Dropdown Selection_9;
         public TMP_Dropdown Selection_10;
         public TMP_Dropdown Selection_11;
+        public TMP_Dropdown Selection_12;
 
         //Button
         public Button Next_1;
@@ -35,9 +35,9 @@ namespace clinvest.migraine.Controller
         public Button Next_3;
         public Button Next_4;
         public Button Next_5;
-        public Button Next_52;
         public Button Next_6;
         public Button Next_7;
+        public Button Next_8;
         public Button ReturnButton;
 
         //Confirmation Page
@@ -61,9 +61,9 @@ namespace clinvest.migraine.Controller
         public GameObject PanelThree;
         public GameObject PanelFour;
         public GameObject PanelFive;
-        public GameObject Panel_FiveVTwo;
         public GameObject PanelSix;
         public GameObject PanelSeven;
+        public GameObject PanelEight;
         public GameObject Diary_to_HomeScreen;
 
         public int currentpanel = 0;
@@ -111,6 +111,10 @@ namespace clinvest.migraine.Controller
             {
                 PanelSeven.SetActive(true);
             }
+            if (currentpanel == 8)
+            {
+                PanelEight.SetActive(true);
+            }
         }
 
         public void SubmitButtonPressed()
@@ -150,6 +154,10 @@ namespace clinvest.migraine.Controller
             {
                 PanelSeven.SetActive(true);
             }
+            if (currentpanel == 8)
+            {
+                PanelEight.SetActive(true);
+            }
         }
             
         public void SkipButtonPressed()
@@ -188,6 +196,11 @@ namespace clinvest.migraine.Controller
             {
                 PanelSix.SetActive(false);
                 PanelSeven.SetActive(true);
+            }
+            else if (currentpanel == 7)
+            {
+                PanelSeven.SetActive(false);
+                PanelEight.SetActive(true);
             }
             currentpanel += 1;
         }
@@ -259,10 +272,10 @@ namespace clinvest.migraine.Controller
         } 
         public void Next_5Pressed()
         {
-            if ((Selection_6.value != 0) & (Selection_7.value != 0) & (Selection_72.value != 0))
+            if ((Selection_6.value != 0) & (Selection_7.value != 0) & (Selection_8.value != 0))
             {
                 PanelFive.SetActive(false);
-                Panel_FiveVTwo.SetActive(true);
+                PanelSix.SetActive(true);
                 currentpanel += 1;
             }
             else
@@ -270,53 +283,53 @@ namespace clinvest.migraine.Controller
                 PanelFive.SetActive(false);
                 ErrorPanel.SetActive(true);
             }
-        }
-        public void Next_52Pressed()
-        {
-            Panel_FiveVTwo.SetActive(false);
-            PanelSix.SetActive(true);
-            currentpanel += 1;
         }
         public void Next_6Pressed()
         {
-            if (Selection_8.value == 1)
+            PanelSix.SetActive(false);
+            PanelSeven.SetActive(true);
+            currentpanel += 1;
+        }
+        public void Next_7Pressed()
+        {
+            if (Selection_9.value == 1)
             {
-                PanelSix.SetActive(false);
-                PanelSeven.SetActive(true);
+                PanelSeven.SetActive(false);
+                PanelEight.SetActive(true);
                 currentpanel += 1;
             }
-            else if (Selection_8.value == 2)
+            else if (Selection_9.value == 2)
             {
-                PanelSix.SetActive(false); 
+                PanelSeven.SetActive(false); 
                 SubmitPanel.SetActive(true);
             }
             else
             {
-                PanelSix.SetActive(false);
+                PanelSeven.SetActive(false);
                 ErrorPanel.SetActive(true);
             }
         }
-        public void Next_7Pressed()
+        public void Next_8Pressed()
         {
-            if ((Selection_9.value == 0) || (Selection_11.value == 0) || (Selection_10.value == 0))
+            if ((Selection_10.value == 0) || (Selection_11.value == 0) || (Selection_12.value == 0))
             {
-                PanelSeven.SetActive(false);
+                PanelEight.SetActive(false);
                 ErrorPanel.SetActive(true);
             }
-            else if (Selection_11.value == 2)
+            else if (Selection_12.value == 2)
             {
-                PanelSeven.SetActive(false);
+                PanelEight.SetActive(false);
                 SubmitPanel.SetActive(true);
             }
-            else if (Selection_11.value == 1)
+            else if (Selection_12.value == 1)
             {
                 List<string> Medications = new List<string>();
-                int Med_Type = (Selection_10.value);
+                int Med_Type = (Selection_11.value);
                 Medications.Add(Med_Type.ToString());
                 
-                Selection_9.value = 0;
                 Selection_10.value = 0;
                 Selection_11.value = 0;
+                Selection_12.value = 0;
             }
         }
     }

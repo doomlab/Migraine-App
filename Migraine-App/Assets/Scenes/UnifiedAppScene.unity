@@ -3359,7 +3359,7 @@ GameObject:
   - component: {fileID: 51003530}
   - component: {fileID: 51003529}
   m_Layer: 0
-  m_Name: Question_11
+  m_Name: Question_12
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -6619,7 +6619,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 607005618}
-        m_MethodName: 
+        m_MethodName: BackButtonPressed
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -6959,7 +6959,7 @@ GameObject:
   - component: {fileID: 133646873}
   - component: {fileID: 133646871}
   m_Layer: 0
-  m_Name: Selection_9
+  m_Name: Selection_10
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -13295,7 +13295,7 @@ GameObject:
   - component: {fileID: 285342546}
   - component: {fileID: 285342545}
   m_Layer: 0
-  m_Name: Next_6
+  m_Name: Next_7
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -27296,7 +27296,7 @@ GameObject:
   - component: {fileID: 561892510}
   - component: {fileID: 561892509}
   m_Layer: 0
-  m_Name: Seventh_Diary_Page
+  m_Name: Eighth_Diary_Page
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -27354,12 +27354,12 @@ RectTransform:
   - {fileID: 51003528}
   - {fileID: 133646872}
   - {fileID: 1935794343}
+  - {fileID: 1595313936}
   - {fileID: 1597539006}
   - {fileID: 858621376}
   - {fileID: 581508719}
   - {fileID: 886236231}
   - {fileID: 1136798229}
-  - {fileID: 1595313936}
   m_Father: {fileID: 607005617}
   m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -28598,7 +28598,7 @@ RectTransform:
   m_Children:
   - {fileID: 607685793}
   m_Father: {fileID: 561892511}
-  m_RootOrder: 6
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -29865,7 +29865,7 @@ GameObject:
   - component: {fileID: 604305302}
   - component: {fileID: 604305301}
   m_Layer: 0
-  m_Name: Sixth_Diary_Page
+  m_Name: Seventh_Diary_Page
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -30002,19 +30002,19 @@ MonoBehaviour:
   Selection_5: {fileID: 1073470646}
   Selection_6: {fileID: 837792637}
   Selection_7: {fileID: 1781825114}
-  Selection_72: {fileID: 1309736060}
-  Selection_8: {fileID: 2146860333}
-  Selection_9: {fileID: 133646871}
-  Selection_10: {fileID: 1595313939}
-  Selection_11: {fileID: 858621375}
+  Selection_8: {fileID: 1309736060}
+  Selection_9: {fileID: 2146860333}
+  Selection_10: {fileID: 133646871}
+  Selection_11: {fileID: 1595313939}
+  Selection_12: {fileID: 858621375}
   Next_1: {fileID: 2103141502}
   Next_2: {fileID: 503290822}
   Next_3: {fileID: 1164892710}
   Next_4: {fileID: 1429315357}
   Next_5: {fileID: 193038730}
-  Next_52: {fileID: 2077730173}
-  Next_6: {fileID: 285342545}
-  Next_7: {fileID: 886236228}
+  Next_6: {fileID: 2077730173}
+  Next_7: {fileID: 285342545}
+  Next_8: {fileID: 886236228}
   ReturnButton: {fileID: 963379775}
   Confirm_Panel: {fileID: 1390184721}
   BackButton: {fileID: 127740403}
@@ -30029,9 +30029,9 @@ MonoBehaviour:
   PanelThree: {fileID: 1488850358}
   PanelFour: {fileID: 640660651}
   PanelFive: {fileID: 1530256396}
-  Panel_FiveVTwo: {fileID: 1681486495}
-  PanelSix: {fileID: 604305300}
-  PanelSeven: {fileID: 561892508}
+  PanelSix: {fileID: 1681486495}
+  PanelSeven: {fileID: 604305300}
+  PanelEight: {fileID: 561892508}
   Diary_to_HomeScreen: {fileID: 1861732838}
   currentpanel: 1
   Counter: 0
@@ -38423,7 +38423,7 @@ GameObject:
   - component: {fileID: 772659950}
   - component: {fileID: 772659949}
   m_Layer: 0
-  m_Name: Question_10
+  m_Name: Question_11
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -43169,7 +43169,7 @@ GameObject:
   - component: {fileID: 858621377}
   - component: {fileID: 858621375}
   m_Layer: 0
-  m_Name: Selection_11
+  m_Name: Selection_12
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -43247,7 +43247,7 @@ RectTransform:
   - {fileID: 1341896139}
   - {fileID: 1430855782}
   m_Father: {fileID: 561892511}
-  m_RootOrder: 5
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -45113,7 +45113,7 @@ GameObject:
   - component: {fileID: 886236229}
   - component: {fileID: 886236228}
   m_Layer: 0
-  m_Name: Next_7
+  m_Name: Next_8
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -45223,7 +45223,7 @@ RectTransform:
   m_Children:
   - {fileID: 926922808}
   m_Father: {fileID: 561892511}
-  m_RootOrder: 7
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -58876,7 +58876,7 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 561892511}
-  m_RootOrder: 8
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -61604,7 +61604,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 607005618}
-        m_MethodName: 
+        m_MethodName: ContinuationPressed
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -68358,7 +68358,7 @@ GameObject:
   - component: {fileID: 1309736061}
   - component: {fileID: 1309736060}
   m_Layer: 0
-  m_Name: Selection_72
+  m_Name: Selection_8
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -68640,7 +68640,7 @@ GameObject:
   - component: {fileID: 1333636681}
   - component: {fileID: 1333636680}
   m_Layer: 0
-  m_Name: Question_9
+  m_Name: Question_10
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -71987,7 +71987,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1390184722
 RectTransform:
   m_ObjectHideFlags: 0
@@ -72946,7 +72946,7 @@ GameObject:
   - component: {fileID: 1397187829}
   - component: {fileID: 1397187828}
   m_Layer: 0
-  m_Name: Question_82
+  m_Name: Question_9
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -79699,7 +79699,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &1530256397
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -82807,7 +82807,7 @@ GameObject:
   - component: {fileID: 1595313937}
   - component: {fileID: 1595313939}
   m_Layer: 0
-  m_Name: Selection_10
+  m_Name: Selection_11
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -82828,7 +82828,7 @@ RectTransform:
   - {fileID: 393687709}
   - {fileID: 908767623}
   m_Father: {fileID: 561892511}
-  m_RootOrder: 9
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -82937,7 +82937,7 @@ GameObject:
   - component: {fileID: 1597539008}
   - component: {fileID: 1597539007}
   m_Layer: 0
-  m_Name: Question_13
+  m_Name: Question_14
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -82955,7 +82955,7 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 561892511}
-  m_RootOrder: 4
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -86515,7 +86515,7 @@ GameObject:
   - component: {fileID: 1681486498}
   - component: {fileID: 1681486497}
   m_Layer: 0
-  m_Name: Fifth2_Diary_Page
+  m_Name: Sixth_Diary_Page
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -97709,7 +97709,7 @@ GameObject:
   - component: {fileID: 1935794345}
   - component: {fileID: 1935794344}
   m_Layer: 0
-  m_Name: Question_12
+  m_Name: Question_13
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -105236,7 +105236,7 @@ GameObject:
   - component: {fileID: 2077730174}
   - component: {fileID: 2077730173}
   m_Layer: 0
-  m_Name: Next_52
+  m_Name: Next_6
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -105306,7 +105306,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 607005618}
-        m_MethodName: Next_3Pressed
+        m_MethodName: Next_6Pressed
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -108432,7 +108432,7 @@ GameObject:
   - component: {fileID: 2146860335}
   - component: {fileID: 2146860333}
   m_Layer: 0
-  m_Name: Selection_8
+  m_Name: Selection_9
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
