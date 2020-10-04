@@ -19,19 +19,18 @@ import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
 
 @WebServlet("/list/*")
-public class ListServlet extends HttpServlet
-{
-  private static final long serialVersionUID = 1L;
-  private static final Logger LOG = LogManager.getLogger("MIGRAINE");
-  private Gson gson;
+public class ListServlet extends HttpServlet {
+  private static final long   serialVersionUID = 1L;
+  private static final Logger LOG              = LogManager.getLogger("MIGRAINE");
+  private Gson                gson;
 
   @Override
   public void init()
   {
     LOG.debug("List servlet initialized.");
-    gson = new GsonBuilder().setLenient().create(); 
+    gson = new GsonBuilder().setLenient().create();
   }
-  
+
   @Override
   protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException
   {
@@ -46,45 +45,54 @@ public class ListServlet extends HttpServlet
         response.setCharacterEncoding("UTF-8");
 
         // create HTML response
-        PrintWriter  responder = response.getWriter();
-        StringWriter writer    = new StringWriter();
+        PrintWriter      responder = response.getWriter();
+        StringWriter     writer    = new StringWriter();
 
-        List<Medication> meds = null;
-        
-        writer.append("[");
-        
+        List<Medication> meds      = null;
+
         if ("acute".equalsIgnoreCase(parts[parts.length - 1]))
         {
           meds = Medication.listAcute();
-        }
-        else if ("preventative".equalsIgnoreCase(parts[parts.length - 1]))
+        } else if ("preventative".equalsIgnoreCase(parts[parts.length - 1]))
         {
           meds = Medication.listPreventative();
-        }
-        else
+        } else
         {
           LOG.debug("Invalid request.");
           response.sendError(400, "Invalid request.");
         }
-        
+
         if (null != meds)
         {
-          for (Medication m : meds)
-          {
-            writer.append(gson.toJson(m));
-          }
+          MedicationListResponse resp = new MedicationListResponse();
+          resp.setMeds(meds);
+          writer.append(gson.toJson(resp));
         }
-                
-        writer.append("]");
+
         LOG.debug(writer.toString());
         responder.append(writer.toString());
       }
-    }
-    else
+    } else
     {
       LOG.debug("Invalid request.");
       response.sendError(400, "Invalid request.");
     }
+
+  }
   
+  public static class MedicationListResponse
+  {
+    protected List<Medication> meds;
+
+    public List<Medication> getMeds()
+    {
+      return meds;
+    }
+
+    public void setMeds(List<Medication> meds)
+    {
+      this.meds = meds;
+    }
+    
   }
 }
