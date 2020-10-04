@@ -10,7 +10,6 @@ using System.Threading.Tasks;
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
-using UnityEngine.SceneManagement;
 using clinvest.migraine.Model;
 using System.Diagnostics;
 
@@ -38,6 +37,7 @@ namespace clinvest.migraine.Controller
         public GameObject LoginPanel;
         public GameObject RegistrationPanel;
         public GameObject PasswordResetPanel;
+        public GameObject HomePanel;
 
 
         // Start is called before the first frame update
@@ -62,6 +62,7 @@ namespace clinvest.migraine.Controller
             LoginPanel.SetActive(true);
             PasswordResetPanel.SetActive(false);
             RegistrationPanel.SetActive(false);
+            HomePanel.SetActive(true);
         }
 
         // Update is called once per frame
@@ -90,18 +91,25 @@ namespace clinvest.migraine.Controller
             req.password = LoginPanelPassword.text;
 
             UnityEngine.Debug.Log(JsonUtility.ToJson(req));
+            try
+            {
+                // Request the login from the server
+                LoginResponse response = await RequestLogin(req);
+                // if successful, save the userID and authToken, move to next screen
 
-            // Request the login from the server
-            LoginResponse response = await RequestLogin(req);
-            // if successful, save the userID and authToken, move to next screen
+                ApplicationContext.UserName = req.username;
+                ApplicationContext.UserId = response.userId;
+                ApplicationContext.AuthToken = response.authToken;
+                LoginPanel.SetActive(false);
+                HomePanel.SetActive(true);
+            }
+            catch (Exception e)
+            {
+                // if not successful, indicate failure
+                UnityEngine.Debug.Log("Exception in login: " + e.Message);
+            }
 
-            ApplicationContext.UserName = req.username;
-            ApplicationContext.UserId = response.userId;
-            ApplicationContext.AuthToken = response.authToken;
-            LoginPanel.SetActive(true);
-            SceneManager.LoadScene("homescreen");
 
-            // if not successful, indicate failure
         }
 
 
@@ -110,9 +118,8 @@ namespace clinvest.migraine.Controller
 
             string data = JsonUtility.ToJson(request);
             byte[] bytes = Encoding.UTF8.GetBytes(data);
-
             string loginEndpoint = String.Format("{0}/login", serverURL);
-            UnityEngine.Debug.Log(loginEndpoint); 
+            UnityEngine.Debug.Log(loginEndpoint);
 
             HttpWebRequest serverRequest = (HttpWebRequest)WebRequest.Create(loginEndpoint);
             serverRequest.Method = "POST";
