@@ -117,4 +117,20 @@ namespace clinvest.migraine.Model
         public bool success;
         public bool message;
     }
+
+    [Serializable]
+    public class Medication
+    {
+        public long id;
+        public string category;
+        public string name;
+        public string formulary;
+        public string created;
+        public string last_modified;
+    }
+    [Serializable]
+    public class MedicationListResponse
+    {
+        public List<Medication> meds;
+    }
 }
