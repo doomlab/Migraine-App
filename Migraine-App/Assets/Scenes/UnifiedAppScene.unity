@@ -4788,6 +4788,8 @@ GameObject:
   - component: {fileID: 88378812}
   - component: {fileID: 88378811}
   - component: {fileID: 88378814}
+  - component: {fileID: 88378815}
+  - component: {fileID: 88378816}
   m_Layer: 0
   m_Name: Main_Panel
   m_TagString: Untagged
@@ -4923,6 +4925,45 @@ MonoBehaviour:
   Migrane: {fileID: 701975796}
   Pomdrone: {fileID: 2068847843}
   Acute: {fileID: 1231887363}
+--- !u!114 &88378815
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 88378809}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 996ac2ad44a5e7949b9a3df14409c4c0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  LoginPanelUsername: {fileID: 1951544731}
+  LoginPanelPassword: {fileID: 2044687897}
+  RegPanelFirstName: {fileID: 1456462313}
+  RegPanelLastName: {fileID: 123544476}
+  RegPanelBirthMonth: {fileID: 1090747436}
+  RegPanelBirthYear: {fileID: 1615543626}
+  RegPanelSex: {fileID: 1013227433}
+  RegPanelEmail: {fileID: 1977977247}
+  RegPanelPassword: {fileID: 356808881}
+  LoginPanel: {fileID: 909355353}
+  RegistrationPanel: {fileID: 520366841}
+  PasswordResetPanel: {fileID: 750099228}
+  HomePanel: {fileID: 1861732838}
+--- !u!114 &88378816
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 88378809}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: abd4ebbf9f3a93e46af7a2cc8ce56a2e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  AcuteMedicationDropdown: {fileID: 1595313939}
+  medications: []
 --- !u!1 &93479909
 GameObject:
   m_ObjectHideFlags: 0
@@ -6270,7 +6311,7 @@ GameObject:
   - component: {fileID: 123544477}
   - component: {fileID: 123544476}
   m_Layer: 0
-  m_Name: lastname_input
+  m_Name: lastname_input_r
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -8758,9 +8799,9 @@ MonoBehaviour:
   m_lineSpacingMax: 0
   m_paragraphSpacing: 0
   m_charWidthMaxAdj: 0
-  m_enableWordWrapping: 1
+  m_enableWordWrapping: 0
   m_wordWrappingRatios: 0.4
-  m_overflowMode: 0
+  m_overflowMode: 4
   m_firstOverflowCharacterIndex: -1
   m_linkedTextComponent: {fileID: 0}
   m_isLinkedTextComponent: 0
@@ -10265,80 +10306,6 @@ CanvasRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 219539404}
-  m_CullTransparentMesh: 0
---- !u!1 &220381059
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 220381060}
-  - component: {fileID: 220381062}
-  - component: {fileID: 220381061}
-  m_Layer: 0
-  m_Name: Handle
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!224 &220381060
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 220381059}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 666323351}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 1, y: 0.2}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 20, y: 20}
-  m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &220381061
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 220381059}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
-  m_Maskable: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-  m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
-  m_Type: 1
-  m_PreserveAspect: 0
-  m_FillCenter: 1
-  m_FillMethod: 4
-  m_FillAmount: 1
-  m_FillClockwise: 1
-  m_FillOrigin: 0
-  m_UseSpriteMesh: 0
-  m_PixelsPerUnitMultiplier: 1
---- !u!222 &220381062
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 220381059}
   m_CullTransparentMesh: 0
 --- !u!1 &222500934
 GameObject:
@@ -11955,7 +11922,7 @@ GameObject:
   - component: {fileID: 264352413}
   - component: {fileID: 264352412}
   m_Layer: 0
-  m_Name: password_input_r
+  m_Name: password_input_s
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -18262,7 +18229,7 @@ GameObject:
   - component: {fileID: 400037033}
   - component: {fileID: 400037032}
   m_Layer: 0
-  m_Name: lastname_input
+  m_Name: lastname_input_s
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -26741,7 +26708,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 88378815}
         m_MethodName: ResetPasswordPressed
         m_Mode: 1
         m_Arguments:
@@ -29951,7 +29918,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &607005617
 RectTransform:
   m_ObjectHideFlags: 0
@@ -31121,26 +31088,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 624341197}
   m_CullTransparentMesh: 0
---- !u!224 &624740489
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 940435228}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children:
-  - {fileID: 666323351}
-  m_Father: {fileID: 908767623}
-  m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 1, y: 0}
-  m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 20, y: 0}
-  m_Pivot: {x: 1, y: 1}
 --- !u!114 &624740490
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -31180,8 +31127,8 @@ MonoBehaviour:
     m_SelectedTrigger: Selected
     m_DisabledTrigger: Disabled
   m_Interactable: 1
-  m_TargetGraphic: {fileID: 220381061}
-  m_HandleRect: {fileID: 220381060}
+  m_TargetGraphic: {fileID: 0}
+  m_HandleRect: {fileID: 0}
   m_Direction: 2
   m_Value: 0
   m_Size: 0.2
@@ -32801,42 +32748,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 660285440}
   m_CullTransparentMesh: 0
---- !u!1 &666323350
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 666323351}
-  m_Layer: 0
-  m_Name: Sliding Area
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!224 &666323351
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 666323350}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children:
-  - {fileID: 220381060}
-  m_Father: {fileID: 624740489}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: -20, y: -20}
-  m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &668061120
 GameObject:
   m_ObjectHideFlags: 0
@@ -33507,7 +33418,7 @@ GameObject:
   - component: {fileID: 682605875}
   - component: {fileID: 682605874}
   m_Layer: 0
-  m_Name: firstname_input
+  m_Name: firstname_input_s
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -39035,7 +38946,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 88378815}
         m_MethodName: Login
         m_Mode: 1
         m_Arguments:
@@ -46558,7 +46469,6 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1251684068}
-  - {fileID: 624740489}
   m_Father: {fileID: 1595313936}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -46652,7 +46562,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &909355354
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -48658,22 +48568,6 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 28}
   m_Pivot: {x: 0.5, y: 1}
---- !u!1 &940435228
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 624740489}
-  m_Layer: 0
-  m_Name: Recovery GameObject (624740489)
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
 --- !u!1 &940632716
 GameObject:
   m_ObjectHideFlags: 0
@@ -49043,7 +48937,7 @@ GameObject:
   - component: {fileID: 945021746}
   - component: {fileID: 945021745}
   m_Layer: 0
-  m_Name: sex_dropdown
+  m_Name: sex_dropdown_s
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -52577,7 +52471,7 @@ GameObject:
   - component: {fileID: 1013227434}
   - component: {fileID: 1013227433}
   m_Layer: 0
-  m_Name: sex_dropdown
+  m_Name: sex_dropdown_r
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -56978,7 +56872,7 @@ GameObject:
   - component: {fileID: 1090747437}
   - component: {fileID: 1090747436}
   m_Layer: 0
-  m_Name: month_dropdown
+  m_Name: month_dropdown_r
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -58724,7 +58618,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 88378815}
         m_MethodName: RegisterPressed
         m_Mode: 1
         m_Arguments:
@@ -64174,7 +64068,7 @@ GameObject:
   - component: {fileID: 1228973504}
   - component: {fileID: 1228973503}
   m_Layer: 0
-  m_Name: password_new
+  m_Name: password_new_s
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -70198,7 +70092,7 @@ GameObject:
   - component: {fileID: 1351579606}
   - component: {fileID: 1351579605}
   m_Layer: 0
-  m_Name: month_dropdown
+  m_Name: month_dropdown_s
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -73180,7 +73074,7 @@ GameObject:
   - component: {fileID: 1400623959}
   - component: {fileID: 1400623958}
   m_Layer: 0
-  m_Name: year_dropdown
+  m_Name: year_dropdown_s
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -76331,7 +76225,7 @@ GameObject:
   - component: {fileID: 1456462314}
   - component: {fileID: 1456462313}
   m_Layer: 0
-  m_Name: firstname_input
+  m_Name: firstname_input_r
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -79850,7 +79744,7 @@ GameObject:
   - component: {fileID: 1539535731}
   - component: {fileID: 1539535730}
   m_Layer: 0
-  m_Name: email_input_r
+  m_Name: email_input_s
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -83532,7 +83426,7 @@ GameObject:
   - component: {fileID: 1615543626}
   - component: {fileID: 1615543625}
   m_Layer: 0
-  m_Name: year_dropdown
+  m_Name: year_dropdown_r
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -93818,7 +93712,7 @@ GameObject:
   - component: {fileID: 1840631341}
   - component: {fileID: 1840631340}
   m_Layer: 0
-  m_Name: password_confirm
+  m_Name: password_confirm_s
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -101862,7 +101756,7 @@ GameObject:
   - component: {fileID: 2011823642}
   - component: {fileID: 2011823641}
   m_Layer: 0
-  m_Name: password_confirm
+  m_Name: password_confirm_r
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
