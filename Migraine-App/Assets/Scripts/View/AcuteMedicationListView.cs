@@ -98,6 +98,7 @@ namespace clinvest.migraine.View
                 options.Add(option);
             }
             AcuteMedicationDropdown.AddOptions(options);
+            AcuteMedicationDropdown.RefreshShownValue();
         }
 
         // Update is called once per frame
