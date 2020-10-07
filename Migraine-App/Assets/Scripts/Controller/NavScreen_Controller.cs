@@ -35,6 +35,7 @@ namespace clinvest.migraine.Controller
         public GameObject Login;
         public GameObject TOS;
         public GameObject CurrentPanel;
+        public GameObject SetCurrentPanel;
         public GameObject Menstral;
         public GameObject Migrane;
         public GameObject Pomdrone;
@@ -94,7 +95,6 @@ namespace clinvest.migraine.Controller
         public void SettingsButtonPressed()
         {
             NavPanel.SetActive(false);
-            //SandwichButton.gameObject.SetActive(true);
             if (CurrentPanel != SetPanel)
             {
                 SetPanel.SetActive(true);
@@ -115,35 +115,45 @@ namespace clinvest.migraine.Controller
         public void UserSettinsButtonPressed()
         {
             NavPanel.SetActive(false);
-            //SandwichButton.gameObject.SetActive(true);
             if (CurrentPanel != User_Setting)
             {
                 User_Setting.SetActive(true);
-                CurrentPanel.SetActive(false);
-                CurrentPanel = User_Setting;
+                SetCurrentPanel = User_Setting;
             }
         }
         public void TOSButtonPressed()
         {
             NavPanel.SetActive(false);
-            //SandwichButton.gameObject.SetActive(true);
             if (CurrentPanel != TOS)
             {
                 TOS.SetActive(true);
-                CurrentPanel.SetActive(false);
-                CurrentPanel = TOS;
+                SetCurrentPanel = TOS;
             }
+        }
+        public void Privacy_PolicyButtonPressed()
+        {
+            NavPanel.SetActive(false);
+            Privacy_Policy.SetActive(true);
+            SetCurrentPanel = Privacy_Policy;
+        }
+        public void Head_ProfileButtonPressed()
+        {
+            Head_Profile.SetActive(true);
+            SetCurrentPanel = Head_Profile;
+        }
+        public void ConsentButtonPressed()
+        {
+            Consent.SetActive(true);
+            SetCurrentPanel = Consent;
         }
 
         public void EduButtonPressed()
         {
             NavPanel.SetActive(false);
-            //SandwichButton.gameObject.SetActive(true);
             if (CurrentPanel != Education)
             {
                 Education.SetActive(true);
                 CurrentPanel.SetActive(false);
-                //CurrentPanel = Education;
             }
         }
         public void Edu_BackButtonPressed()
@@ -189,12 +199,8 @@ namespace clinvest.migraine.Controller
         }
         public void Settings_Sub_BackPressed()
         {
-            CurrentPanel.SetActive(false);
+            SetCurrentPanel.SetActive(false);
             SetPanel.SetActive(true);
         }
-
-
-
     }
-    
 }
