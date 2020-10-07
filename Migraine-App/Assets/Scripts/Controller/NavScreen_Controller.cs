@@ -115,14 +115,26 @@ namespace clinvest.migraine.Controller
         public void UserSettinsButtonPressed()
         {
             NavPanel.SetActive(false);
-            SandwichButton.gameObject.SetActive(true);
-            if (CurrentPanel != Records)
+            //SandwichButton.gameObject.SetActive(true);
+            if (CurrentPanel != User_Setting)
             {
                 User_Setting.SetActive(true);
                 CurrentPanel.SetActive(false);
                 CurrentPanel = User_Setting;
             }
         }
+        public void TOSButtonPressed()
+        {
+            NavPanel.SetActive(false);
+            //SandwichButton.gameObject.SetActive(true);
+            if (CurrentPanel != TOS)
+            {
+                TOS.SetActive(true);
+                CurrentPanel.SetActive(false);
+                CurrentPanel = TOS;
+            }
+        }
+
         public void EduButtonPressed()
         {
             NavPanel.SetActive(false);
@@ -180,6 +192,8 @@ namespace clinvest.migraine.Controller
             CurrentPanel.SetActive(false);
             SetPanel.SetActive(true);
         }
+
+
 
     }
     
