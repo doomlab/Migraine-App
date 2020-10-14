@@ -1,8 +1,11 @@
-﻿public static class ApplicationContext
+﻿using UnityEngine;
+
+public static class ApplicationContext
 {
     private static string userName;
     private static string userId;
     private static string authToken;
+    private static GameObject activePanel;
 
     public static string UserName 
     {
@@ -37,6 +40,18 @@
         set 
         {
             authToken = value;
+        }
+    }
+
+    public static GameObject ActivePanel
+    {
+        get
+        {
+            return activePanel;
+        }
+        set
+        {
+            activePanel = value;
         }
     }
 }
