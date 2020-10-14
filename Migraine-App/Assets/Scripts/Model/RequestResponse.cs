@@ -133,4 +133,36 @@ namespace clinvest.migraine.Model
     {
         public List<Medication> meds;
     }
+    [Serializable]
+    public class HeadProfileSaveRequest
+    {
+        public string userId;
+        public bool diagnosed;
+        public string diagnosisYear;
+        public string diagnosis;
+        public string startYear;
+        public List<long> medications;
+    }
+    [Serializable]
+    public class HeadProfileSaveResponse
+    {
+        public bool success;
+        public bool message;
+    }
+    [Serializable]
+    public class HeadProfileRequest
+    {
+        public string userId;
+    }
+
+    [Serializable]
+    public class HeadProfileResponse
+    {
+        public string userId;
+        public bool diagnosed;
+        public string diagnosisYear;
+        public string diagnosis;
+        public string startYear;
+        public List<long> medications;
+    }
 }
