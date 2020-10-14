@@ -51,7 +51,8 @@ namespace clinvest.migraine.Model
     [Serializable]
     public class FAMSRequest
     {
-        public string UserID;
+        public string userId;
+        public long studyId;
         public int Q1;
         public int Q2;
         public int Q3;

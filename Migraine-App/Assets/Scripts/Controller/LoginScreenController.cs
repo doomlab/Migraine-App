@@ -183,6 +183,7 @@ namespace clinvest.migraine.Controller
             byte[] bytes = Encoding.UTF8.GetBytes(data);
 
             string loginEndpoint = String.Format("{0}/register", serverURL);
+            UnityEngine.Debug.Log(loginEndpoint);
 
             HttpWebRequest serverRequest = (HttpWebRequest)WebRequest.Create(loginEndpoint);
             serverRequest.Method = "POST";

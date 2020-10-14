@@ -406,6 +406,7 @@ public class FamsServlet extends HttpServlet {
     public void populate(FamsEntry fe, User u)
     {
       fe.setUser(u);
+      fe.setStudy(u.getStudy());
       fe.setQ1(Q1);
       fe.setQ2(Q2);
       fe.setQ3(Q3);

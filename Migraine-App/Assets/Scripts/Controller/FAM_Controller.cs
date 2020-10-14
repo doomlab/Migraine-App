@@ -3,6 +3,8 @@ using System.Collections;
 using System.Collections.Generic;
 using System.IO;
 using System.Net;
+using System.Net.Security;
+using System.Security.Cryptography.X509Certificates;
 using System.Text;
 using System.Threading.Tasks;
 using TMPro;
@@ -85,8 +87,15 @@ namespace clinvest.migraine.Controller
             }
             else
             {
-                serverURL = "http://localhost:5309";
+                serverURL = "https://app.clinvest.com/migraine-server";
             }
+
+            ServicePointManager.ServerCertificateValidationCallback = delegate (
+            System.Object obj, X509Certificate certificate, X509Chain chain,
+            SslPolicyErrors errors)
+            {
+                return (true);
+            };
         }
 
         // Update is called once per frame
@@ -272,19 +281,19 @@ namespace clinvest.migraine.Controller
         {
             if ((Question24.value != 0) & (Question25.value != 0) & (Question26.value != 0) & (Question27.value != 0))
             {
-                FAMS.SetActive(false);
-                Home_Screen.SetActive(true);
+                SubmitFAMSRequest();
             }
             else
             {
                 ErrorPanel.SetActive(true);
             }
         }
-        public async void FAMSRequest()
+        public async void SubmitFAMSRequest()
         {
             //Request
             FAMSRequest req = new FAMSRequest();
-            req.UserID = "1";
+            req.userId = ApplicationContext.UserId;
+            req.studyId = 0;
             req.Q1 = Question1.value;
             req.Q2 = Question2.value;
             req.Q3 = Question3.value;
@@ -313,15 +322,33 @@ namespace clinvest.migraine.Controller
             req.Q26 = Question26.value;
             req.Q27 = Question27.value;
 
+            UnityEngine.Debug.Log(JsonUtility.ToJson(req));
+
+            try
+            {
+                // Request the reset from the server
+                FAMSResponse response = await RequestFAMSSave(req);
+
+                // Put up message box...
+
+                FAMS.SetActive(false);
+                Home_Screen.SetActive(true);
+            }
+            catch (Exception e)
+            {
+                // if not successful, indicate failure
+                UnityEngine.Debug.Log("Exception in reset: " + e.Message);
+            }
         }
 
-        /**private async Task<FAMSResponse> RequestFAMS(FAMSRequest request)
+        private async Task<FAMSResponse> RequestFAMSSave(FAMSRequest request)
         {
 
-            string data = String.Format("data='{0}'", JsonUtility.ToJson(request));
+            string data = JsonUtility.ToJson(request);
             byte[] bytes = Encoding.UTF8.GetBytes(data);
 
-            string FAMSpoint = String.Format("{0}/login", serverURL);
+            string FAMSEndpoint = String.Format("{0}/fams?auth={1}", serverURL, ApplicationContext.AuthToken);
+            UnityEngine.Debug.Log(FAMSEndpoint);
 
             HttpWebRequest serverRequest = (HttpWebRequest)WebRequest.Create(FAMSEndpoint);
             serverRequest.Method = "POST";
@@ -334,10 +361,11 @@ namespace clinvest.migraine.Controller
             HttpWebResponse response = (HttpWebResponse)(await serverRequest.GetResponseAsync());
             StreamReader reader = new StreamReader(response.GetResponseStream());
             string jsonResponse = reader.ReadToEnd();
+            UnityEngine.Debug.Log(jsonResponse);
             FAMSResponse info = JsonUtility.FromJson<FAMSResponse>(jsonResponse);
             return info;
 
 
-        }**/
+        }
     }
 }
