@@ -58,11 +58,6 @@ namespace clinvest.migraine.Controller
             {
                 return (true);
             };
-
-            LoginPanel.SetActive(true);
-            PasswordResetPanel.SetActive(false);
-            RegistrationPanel.SetActive(false);
-            HomePanel.SetActive(true);
         }
 
         // Update is called once per frame
@@ -75,12 +70,14 @@ namespace clinvest.migraine.Controller
         {
             LoginPanel.SetActive(false);
             RegistrationPanel.SetActive(true);
+            ApplicationContext.ActivePanel = RegistrationPanel;
         }
 
         public void ResetPasswordPressed()
         {
             LoginPanel.SetActive(false);
             PasswordResetPanel.SetActive(true);
+            ApplicationContext.ActivePanel = PasswordResetPanel;
         }
 
         public async void Login()
@@ -102,6 +99,7 @@ namespace clinvest.migraine.Controller
                 ApplicationContext.AuthToken = response.authToken;
                 LoginPanel.SetActive(false);
                 HomePanel.SetActive(true);
+                ApplicationContext.ActivePanel = HomePanel;
             }
             catch (Exception e)
             {
