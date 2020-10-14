@@ -4414,11 +4414,22 @@ MonoBehaviour:
     m_PressedTrigger: Pressed
     m_SelectedTrigger: Selected
     m_DisabledTrigger: Disabled
-  m_Interactable: 1
+  m_Interactable: 0
   m_TargetGraphic: {fileID: 67890171}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1640177613}
+        m_MethodName: SubmitHeadProfile
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &67890171
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4945,9 +4956,10 @@ GameObject:
   - component: {fileID: 88378813}
   - component: {fileID: 88378812}
   - component: {fileID: 88378811}
-  - component: {fileID: 88378814}
+  - component: {fileID: 88378817}
   - component: {fileID: 88378815}
   - component: {fileID: 88378816}
+  - component: {fileID: 88378814}
   m_Layer: 0
   m_Name: Main_Panel
   m_TagString: Untagged
@@ -5121,9 +5133,27 @@ MonoBehaviour:
   m_GameObject: {fileID: 88378809}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: abd4ebbf9f3a93e46af7a2cc8ce56a2e, type: 3}
+  m_Script: {fileID: 11500000, guid: 6ca3897fd2fe9ea4da3d25c7a29893b9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  AcuteMedicationDropdown: {fileID: 1595313939}
+  medications: []
+--- !u!114 &88378817
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 88378809}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 16fb5396ccbd0de439e186dc09d4d302, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  LoginPanel: {fileID: 909355353}
+  RegistrationPanel: {fileID: 520366841}
+  PasswordResetPanel: {fileID: 750099228}
+  HomePanel: {fileID: 1861732838}
 --- !u!1 &93479909
 GameObject:
   m_ObjectHideFlags: 0
@@ -10492,7 +10522,18 @@ MonoBehaviour:
       m_Image: {fileID: 0}
   m_OnValueChanged:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1640177613}
+        m_MethodName: SubmitButtonActive
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &215008705
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -16602,7 +16643,18 @@ MonoBehaviour:
       m_Image: {fileID: 0}
   m_OnValueChanged:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1640177613}
+        m_MethodName: SubmitButtonActive
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &361910707
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -56664,7 +56716,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: What age did your migraine begin?
+  m_text: When did your migraine begin?
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -56733,10 +56785,10 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: 0, w: 0}
   m_textInfo:
     textComponent: {fileID: 1051996608}
-    characterCount: 33
+    characterCount: 29
     spriteCount: 0
-    spaceCount: 5
-    wordCount: 6
+    spaceCount: 4
+    wordCount: 5
     linkCount: 0
     lineCount: 1
     pageCount: 1
@@ -75507,7 +75559,18 @@ MonoBehaviour:
       m_Calls: []
   m_OnValueChanged:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1640177613}
+        m_MethodName: SubmitButtonActive
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   m_OnTouchScreenKeyboardStatusChanged:
     m_PersistentCalls:
       m_Calls: []
@@ -81780,7 +81843,18 @@ MonoBehaviour:
       m_Image: {fileID: 0}
   m_OnValueChanged:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1640177613}
+        m_MethodName: SubmitButtonActive
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1525122596
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -87739,13 +87813,14 @@ GameObject:
   - component: {fileID: 1640177612}
   - component: {fileID: 1640177611}
   - component: {fileID: 1640177610}
+  - component: {fileID: 1640177613}
   m_Layer: 0
   m_Name: Head_Profile
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1640177609
 RectTransform:
   m_ObjectHideFlags: 0
@@ -87840,6 +87915,23 @@ Canvas:
   m_SortingLayerID: 0
   m_SortingOrder: 0
   m_TargetDisplay: 0
+--- !u!114 &1640177613
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1640177608}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fd8169a23e89de149a2547b185b41a8f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Diagnosed: {fileID: 215008704}
+  StartYear: {fileID: 361910706}
+  DiagnosedYear: {fileID: 1525122595}
+  Diagnosis: {fileID: 1401133386}
+  SubmitButton: {fileID: 67890170}
 --- !u!1 &1648788191
 GameObject:
   m_ObjectHideFlags: 0
