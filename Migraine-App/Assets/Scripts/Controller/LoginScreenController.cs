@@ -33,6 +33,9 @@ namespace clinvest.migraine.Controller
         public TMP_InputField RegPanelEmail;
         public TMP_InputField RegPanelPassword;
 
+        // Reset Panel Fields
+        public TMP_InputField ResetPanelEmail;
+
         // Panels
         public GameObject LoginPanel;
         public GameObject RegistrationPanel;
@@ -155,14 +158,27 @@ namespace clinvest.migraine.Controller
 
             UnityEngine.Debug.Log(JsonUtility.ToJson(req));
 
-            // Request the registration from the server
+            try
+            {
+                // Request the registration from the server
+                RegistrationResponse response = await RequestRegistration(req);
+                
+                // Put up message box...
 
-            // if not successful, indicate failure
+                LoginPanel.SetActive(true);
+                RegistrationPanel.SetActive(false);
+                ApplicationContext.ActivePanel = LoginPanel;
+            }
+            catch (Exception e)
+            {
+                // if not successful, indicate failure
+                UnityEngine.Debug.Log("Exception in registration: " + e.Message);
+            }
+
         }
 
         private async Task<RegistrationResponse> RequestRegistration(RegistrationRequest request)
         {
-
             string data = JsonUtility.ToJson(request);
             byte[] bytes = Encoding.UTF8.GetBytes(data);
 
@@ -179,6 +195,7 @@ namespace clinvest.migraine.Controller
             HttpWebResponse response = (HttpWebResponse)(await serverRequest.GetResponseAsync());
             StreamReader reader = new StreamReader(response.GetResponseStream());
             string jsonResponse = reader.ReadToEnd();
+            UnityEngine.Debug.Log(jsonResponse);
             RegistrationResponse info = JsonUtility.FromJson<RegistrationResponse>(jsonResponse);
             return info;
 
@@ -188,17 +205,49 @@ namespace clinvest.migraine.Controller
         public async void Reset()
         {
             // Get the form data, build the request.
+            ResetRequest req = new ResetRequest();
+            req.email = ResetPanelEmail.text;
 
+            UnityEngine.Debug.Log(JsonUtility.ToJson(req));
 
-            // Request the login from the server
+            try
+            {
+                // Request the reset from the server
+                ResetResponse response = await RequestReset(req);
 
+                // Put up message box...
 
-            // if not successful, indicate failure
+                LoginPanel.SetActive(true);
+                PasswordResetPanel.SetActive(false);
+                ApplicationContext.ActivePanel = LoginPanel;
+            }
+            catch (Exception e)
+            {
+                // if not successful, indicate failure
+                UnityEngine.Debug.Log("Exception in reset: " + e.Message);
+            }
         }
 
         private async Task<ResetResponse> RequestReset(ResetRequest request)
         {
-            ResetResponse info = null;
+            string data = JsonUtility.ToJson(request);
+            byte[] bytes = Encoding.UTF8.GetBytes(data);
+
+            string resetEndpoint = String.Format("{0}/reset", serverURL);
+
+            HttpWebRequest serverRequest = (HttpWebRequest)WebRequest.Create(resetEndpoint);
+            serverRequest.Method = "POST";
+            serverRequest.ContentType = "application/json";
+            serverRequest.ContentLength = bytes.Length;
+            Stream dataStream = serverRequest.GetRequestStream();
+            dataStream.Write(bytes, 0, bytes.Length);
+            dataStream.Close();
+
+            HttpWebResponse response = (HttpWebResponse)(await serverRequest.GetResponseAsync());
+            StreamReader reader = new StreamReader(response.GetResponseStream());
+            string jsonResponse = reader.ReadToEnd();
+            UnityEngine.Debug.Log(jsonResponse);
+            ResetResponse info = JsonUtility.FromJson<ResetResponse>(jsonResponse);
             return info;
 
         }

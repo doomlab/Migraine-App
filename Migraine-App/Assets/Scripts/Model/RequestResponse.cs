@@ -38,7 +38,7 @@ namespace clinvest.migraine.Model
     [Serializable]
     public class ResetRequest
     {
-        public string username;
+        public string email;
     }
 
     [Serializable]
