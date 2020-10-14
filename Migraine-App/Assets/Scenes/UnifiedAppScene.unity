@@ -11152,6 +11152,7 @@ GameObject:
   - component: {fileID: 229833551}
   - component: {fileID: 229833553}
   - component: {fileID: 229833552}
+  - component: {fileID: 229833554}
   m_Layer: 0
   m_Name: General_Thanks_Panel
   m_TagString: Untagged
@@ -11218,6 +11219,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 229833550}
   m_CullTransparentMesh: 0
+--- !u!114 &229833554
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 229833550}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d299977b5057d9246ad1527f429674bc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ThanksPanel: {fileID: 229833550}
 --- !u!1 &230310305
 GameObject:
   m_ObjectHideFlags: 0
@@ -34846,12 +34860,12 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_MethodName: 
+      - m_Target: {fileID: 229833554}
+        m_MethodName: Dismiss
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: 
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
@@ -54956,7 +54970,7 @@ MonoBehaviour:
   Skip: {fileID: 1431321883}
   Question: {fileID: 1786291083}
   ErrorPanel: {fileID: 1953624574}
-  ErrorButton: {fileID: 283407376}
+  ThanksPanel: {fileID: 229833550}
   InstructionPanel: {fileID: 907875721}
   PageOnePanel: {fileID: 1897800008}
   PageTwoPanel: {fileID: 1991905794}
@@ -75529,14 +75543,14 @@ MonoBehaviour:
   m_VerticalScrollbar: {fileID: 0}
   m_VerticalScrollbarEventHandler: {fileID: 0}
   m_ScrollSensitivity: 1
-  m_ContentType: 6
+  m_ContentType: 0
   m_InputType: 0
   m_AsteriskChar: 42
-  m_KeyboardType: 7
+  m_KeyboardType: 0
   m_LineType: 0
   m_HideMobileInput: 0
   m_HideSoftKeyboard: 0
-  m_CharacterValidation: 7
+  m_CharacterValidation: 0
   m_RegexValue: 
   m_GlobalPointSize: 14
   m_CharacterLimit: 0
@@ -87933,6 +87947,7 @@ MonoBehaviour:
   DiagnosedYear: {fileID: 1525122595}
   Diagnosis: {fileID: 1401133386}
   SubmitButton: {fileID: 67890170}
+  ThanksPanel: {fileID: 229833550}
 --- !u!1 &1648788191
 GameObject:
   m_ObjectHideFlags: 0

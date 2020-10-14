@@ -63,7 +63,7 @@ namespace clinvest.migraine.Controller
 
         //Error 
         public GameObject ErrorPanel;
-        public Button ErrorButton;
+        public GameObject ThanksPanel;
 
         // Panels
         public GameObject InstructionPanel;
@@ -333,6 +333,7 @@ namespace clinvest.migraine.Controller
 
                 FAMS.SetActive(false);
                 Home_Screen.SetActive(true);
+                ThanksPanel.SetActive(true);
             }
             catch (Exception e)
             {

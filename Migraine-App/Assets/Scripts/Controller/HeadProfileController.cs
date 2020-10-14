@@ -28,6 +28,8 @@ namespace clinvest.migraine.Controller
 
         public Button SubmitButton;
 
+        public GameObject ThanksPanel;
+
         // Start is called before the first frame update
         void Start()
         {
@@ -85,6 +87,7 @@ namespace clinvest.migraine.Controller
                 HeadProfileSaveResponse response = await RequestHeadProfileSave(req);
                 // if successful, set the save button inactive
                 SubmitButton.interactable = false;
+                ThanksPanel.SetActive(true);
             }
             catch (Exception e)
             {
