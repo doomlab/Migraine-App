@@ -76,7 +76,7 @@ namespace clinvest.migraine.Model
         public int Q21;
         public int Q22;
         public int Q23;
-        public int Q24; 
+        public int Q24;
         public int Q25;
         public int Q26;
         public int Q27;
@@ -166,4 +166,34 @@ namespace clinvest.migraine.Model
         public string startYear;
         public List<long> medications;
     }
+
+
+    [Serializable]
+    public class ConsentRequest
+    {
+        public string userId;
+    }
+
+    [Serializable]
+    public class ConsentResponse
+    {
+        public string userId;
+        public bool consent;
+    }
+
+    [Serializable]
+    public class ConsentSaveRequest
+    {
+        public string userId;
+        public bool consent;
+    }
+
+    [Serializable]
+    public class ConsentSaveResponse
+    {
+        public bool success;
+        public bool message;
+    }
+
+
 }
