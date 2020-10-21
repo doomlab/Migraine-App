@@ -32494,6 +32494,7 @@ MonoBehaviour:
   PanelSeven: {fileID: 604305300}
   PanelEight: {fileID: 561892508}
   Diary_to_HomeScreen: {fileID: 1861732838}
+  Diary_ExitPanel: {fileID: 607005616}
   currentpanel: 1
   Counter: 0
 --- !u!114 &607005619
@@ -59065,7 +59066,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: When did your migraine begin?
+  m_text: When did your migraines start?
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -59134,7 +59135,7 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: 0, w: 0}
   m_textInfo:
     textComponent: {fileID: 1051996608}
-    characterCount: 29
+    characterCount: 30
     spriteCount: 0
     spaceCount: 4
     wordCount: 5
