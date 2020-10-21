@@ -3742,7 +3742,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 54760582}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 2004570559}
+        m_MethodName: SubmitConsent
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &54760582
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -32237,7 +32248,18 @@ MonoBehaviour:
       m_Image: {fileID: 0}
   m_OnValueChanged:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 2004570559}
+        m_MethodName: SubmitButtonActive
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &631224271
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -105165,8 +105187,9 @@ GameObject:
   - component: {fileID: 2004570557}
   - component: {fileID: 2004570556}
   - component: {fileID: 2004570555}
+  - component: {fileID: 2004570559}
   m_Layer: 0
-  m_Name: Consent
+  m_Name: ConsentP
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -105258,6 +105281,21 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
+--- !u!114 &2004570559
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2004570554}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a9fbf9d5b9609b0479bdd74370235697, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ConsentDropdown: {fileID: 631224270}
+  SubmitButton: {fileID: 54760581}
+  ThanksPanel: {fileID: 229833550}
 --- !u!1 &2004646734
 GameObject:
   m_ObjectHideFlags: 0
@@ -111521,7 +111559,7 @@ MonoBehaviour:
   m_HandleRect: {fileID: 1959552474}
   m_Direction: 2
   m_Value: 1
-  m_Size: 0.13000767
+  m_Size: 0.13000768
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:
