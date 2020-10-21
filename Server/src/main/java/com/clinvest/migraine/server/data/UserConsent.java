@@ -140,7 +140,7 @@ public class UserConsent
     List<UserConsent> userConsent = null;
     try (Session session = HibernateUtils.getSessionFactory().openSession())
     {
-      Query<UserConsent> query = session.createQuery("from UserConsent where user_id = :userId ");
+      Query<UserConsent> query = session.createQuery("from UserConsent u where u.user = :userId order by u.consentDate desc");
       query.setParameter("userId", userId);
 
       userConsent = query.list();
