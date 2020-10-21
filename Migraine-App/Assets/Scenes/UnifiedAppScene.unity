@@ -14805,7 +14805,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 607005618}
-        m_MethodName: Next_6Pressed
+        m_MethodName: Next_7Pressed
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -48668,7 +48668,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 607005618}
-        m_MethodName: Next_7Pressed
+        m_MethodName: Next_8Pressed
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
