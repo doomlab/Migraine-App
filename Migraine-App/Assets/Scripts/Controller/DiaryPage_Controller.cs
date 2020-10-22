@@ -65,8 +65,9 @@ namespace clinvest.migraine.Controller
         public GameObject PanelSeven;
         public GameObject PanelEight;
         public GameObject Diary_to_HomeScreen;
+        public GameObject Diary_ExitPanel;
 
-        public int currentpanel = 0;
+        public int currentpanel = 1;
         public int Counter = 0;
 
         // Start is called before the first frame update
@@ -111,7 +112,7 @@ namespace clinvest.migraine.Controller
             {
                 PanelSeven.SetActive(true);
             }
-            if (currentpanel == 8)
+            if (currentpanel >= 8)
             {
                 PanelEight.SetActive(true);
             }
@@ -119,8 +120,22 @@ namespace clinvest.migraine.Controller
 
         public void SubmitButtonPressed()
             {
-                SubmitPanel.SetActive(false);
-                Diary_to_HomeScreen.SetActive(true);
+            SubmitPanel.SetActive(false);
+            Diary_ExitPanel.SetActive(false);
+            Selection_1.value = 0;
+            Selection_2.value = 0;
+            Selection_3.value = 0;
+            Selection_4.value = 0;
+            Selection_5.value = 0;
+            Selection_6.value = 0;
+            Selection_7.value = 0;
+            Selection_8.value = 0;
+            Selection_9.value = 0;
+            Selection_10.value = 0;
+            Selection_11.value = 0;
+            Selection_12.value = 0;
+            Diary_to_HomeScreen.SetActive(true);
+            currentpanel = 1;
             }
 
         public void ReturnButtonPressed()
@@ -154,7 +169,7 @@ namespace clinvest.migraine.Controller
             {
                 PanelSeven.SetActive(true);
             }
-            if (currentpanel == 8)
+            if (currentpanel >= 8)
             {
                 PanelEight.SetActive(true);
             }
@@ -163,11 +178,7 @@ namespace clinvest.migraine.Controller
         public void SkipButtonPressed()
         {
             ErrorPanel.SetActive(false);
-            if (currentpanel == 7)
-            {
-                Diary_to_HomeScreen.SetActive(true);
-            }
-            else if (currentpanel == 1)
+            if (currentpanel == 1)
             {
                 PanelOne.SetActive(false);
                 PanelTwo.SetActive(true);
@@ -200,7 +211,13 @@ namespace clinvest.migraine.Controller
             else if (currentpanel == 7)
             {
                 PanelSeven.SetActive(false);
-                PanelEight.SetActive(true);
+                SubmitPanel.SetActive(true);
+                currentpanel -= 1;
+            }
+            else if (currentpanel >= 8)
+            {
+                SubmitPanel.SetActive(true);
+                currentpanel -= 1;
             }
             currentpanel += 1;
         }
@@ -212,6 +229,7 @@ namespace clinvest.migraine.Controller
         public void BackButtonPressed()
         {
             Confirm_Panel.SetActive(false);
+            Diary_ExitPanel.SetActive(false);
             Diary_to_HomeScreen.SetActive(true);
         }
         public void Next_1Pressed()
@@ -316,20 +334,23 @@ namespace clinvest.migraine.Controller
                 PanelEight.SetActive(false);
                 ErrorPanel.SetActive(true);
             }
-            else if (Selection_12.value == 2)
+            else
             {
-                PanelEight.SetActive(false);
-                SubmitPanel.SetActive(true);
-            }
-            else if (Selection_12.value == 1)
-            {
-                List<string> Medications = new List<string>();
-                int Med_Type = (Selection_11.value);
-                Medications.Add(Med_Type.ToString());
-                
-                Selection_10.value = 0;
-                Selection_11.value = 0;
-                Selection_12.value = 0;
+                if (Selection_12.value == 2)
+                {
+                    PanelEight.SetActive(false);
+                    SubmitPanel.SetActive(true);
+                }
+                else if (Selection_12.value == 1)
+                {
+                    List<string> Medications = new List<string>();
+                    int Med_Type = (Selection_11.value);
+                    Medications.Add(Med_Type.ToString());
+
+                    Selection_10.value = 0;
+                    Selection_11.value = 0;
+                    Selection_12.value = 0;
+                }
             }
         }
     }
