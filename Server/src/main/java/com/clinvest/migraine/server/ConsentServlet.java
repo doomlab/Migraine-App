@@ -106,7 +106,7 @@ public class ConsentServlet extends HttpServlet {
     UserConsentResponse rep = new UserConsentResponse();
     rep.setUserId(userId);
 
-    List<UserConsent> uc = UserConsent.getByUserId(user.getId());
+    List<UserConsent> uc = UserConsent.getByUser(user);
     if (null != uc && uc.size() > 0)
     {
       rep.setConsent(uc.get(0).getConsent());

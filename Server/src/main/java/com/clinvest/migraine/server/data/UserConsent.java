@@ -134,14 +134,14 @@ public class UserConsent
   }
   
   @SuppressWarnings("unchecked")
-  public static List<UserConsent> getByUserId(UUID userId)
+  public static List<UserConsent> getByUser(User user)
   {
 
     List<UserConsent> userConsent = null;
     try (Session session = HibernateUtils.getSessionFactory().openSession())
     {
-      Query<UserConsent> query = session.createQuery("from UserConsent u where u.user = :userId order by u.consentDate desc");
-      query.setParameter("userId", userId);
+      Query<UserConsent> query = session.createQuery("from UserConsent u where u.user = :user order by u.consentDate desc");
+      query.setParameter("user", user);
 
       userConsent = query.list();
       
