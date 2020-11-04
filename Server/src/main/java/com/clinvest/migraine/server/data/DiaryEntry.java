@@ -2,6 +2,7 @@ package com.clinvest.migraine.server.data;
 
 import java.sql.Timestamp;
 import java.time.LocalDateTime;
+import java.util.List;
 import java.util.Set;
 
 import javax.persistence.Column;
@@ -18,6 +19,7 @@ import javax.persistence.Table;
 
 import org.hibernate.Session;
 import org.hibernate.annotations.Type;
+import org.hibernate.query.Query;
 
 @Entity
 @Table(name = "diary")
@@ -273,6 +275,20 @@ public class DiaryEntry {
 
       session.getTransaction().commit();
     }
+  }
+  
+  @SuppressWarnings("unchecked")
+  public static List<DiaryEntry> getLast30Days(User user)
+  {
+    List<DiaryEntry> list = null;
+    try (Session session = HibernateUtils.getSessionFactory().openSession())
+    {
+      Query<DiaryEntry> query = session.createQuery("FROM DiaryEntry WHERE user = :user ORDER BY entry_timestamp DESC LIMIT 30");
+      query.setParameter("user", user);
+
+      list = query.list();
+    }
+    return list;
   }
 
 }
