@@ -45,7 +45,7 @@ public class StudySimulation
   {
     gson = new GsonBuilder().setLenient().create();
     participants = gson.fromJson(simulationUsers, User[].class);
-    studyStart = dateFormat.parse("2020-03-15");
+    studyStart = dateFormat.parse("2020-09-15");
     studyEnd = new Date(studyStart.getTime() + 60 * DAY);
     random = new Random(System.currentTimeMillis());
   }
