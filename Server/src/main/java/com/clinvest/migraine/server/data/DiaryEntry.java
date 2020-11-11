@@ -283,7 +283,8 @@ public class DiaryEntry {
     List<DiaryEntry> list = null;
     try (Session session = HibernateUtils.getSessionFactory().openSession())
     {
-      Query<DiaryEntry> query = session.createQuery("FROM DiaryEntry WHERE user = :user ORDER BY entry_timestamp DESC LIMIT 30");
+      Query<DiaryEntry> query = session.createQuery("FROM DiaryEntry WHERE user = :user ORDER BY entry_timestamp DESC");
+      query.setMaxResults(30);
       query.setParameter("user", user);
 
       list = query.list();
