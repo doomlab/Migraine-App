@@ -195,5 +195,16 @@ namespace clinvest.migraine.Model
         public bool message;
     }
 
+    [Serializable]
+    public class HeadacheDaysRequest
+    {
+        public string userId;
+    }
 
+    [Serializable]
+    public class HeadacheDaysResponse
+    {
+        public string userId;
+        public List<int> headacheDays;
+    }
 }
