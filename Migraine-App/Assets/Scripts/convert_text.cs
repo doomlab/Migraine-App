@@ -184,7 +184,7 @@ class ReplaceTextForTextMeshPro : EditorWindow
                 Selectable[] selectables = FindObjectsOfType<Selectable>();
                 Debug.Log("Number of Selectables found: " + selectables.Length);
 
-                foreach (Selectable selectable in Selectable.allSelectables) {
+                foreach (Selectable selectable in Selectable.allSelectablesArray) {
                     if (selectable.targetGraphic == text) {
                         Debug.Log("Selectable targetGraphic found: " + selectable.name + " (" + selectable.GetType() + ")");
                     }
