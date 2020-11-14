@@ -207,4 +207,17 @@ namespace clinvest.migraine.Model
         public string userId;
         public List<int> headacheDays;
     }
+
+    [Serializable]
+    public class FAMSAggregateRequest
+    {
+        public string userId;
+    }
+
+    [Serializable]
+    public class FAMSAggregateResponse
+    {
+        public string userId;
+        public List<int> aggregateStatus;
+    }
 }
