@@ -8,6 +8,7 @@ using System.Threading.Tasks;
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
+using clinvest.migraine;
 using clinvest.migraine.Model;
 using UnityEngine.SceneManagement;
 
@@ -47,7 +48,7 @@ namespace clinvest.migraine.Controller
         }
         public void SandwichButtonPressed()
         {
-            if (NavPanel.active == false)
+            if (NavPanel.activeSelf == false)
             {
                 NavPanel.SetActive(true);
                 SandwichButton.gameObject.SetActive(false);

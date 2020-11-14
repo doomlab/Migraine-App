@@ -10,6 +10,7 @@ using System.Threading.Tasks;
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
+using clinvest.migraine;
 using clinvest.migraine.Model;
 using UnityEngine.SceneManagement;
 
