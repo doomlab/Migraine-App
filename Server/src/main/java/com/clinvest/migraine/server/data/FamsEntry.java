@@ -2,6 +2,7 @@ package com.clinvest.migraine.server.data;
 
 import java.sql.Timestamp;
 import java.time.LocalDateTime;
+import java.util.List;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
@@ -16,6 +17,7 @@ import javax.persistence.Table;
 
 import org.hibernate.Session;
 import org.hibernate.annotations.Type;
+import org.hibernate.query.Query;
 
 
 
@@ -440,6 +442,25 @@ public class FamsEntry
 
       session.getTransaction().commit();
     }
+  }
+  
+  @SuppressWarnings("unchecked")
+  public static FamsEntry getLastEntry(User user)
+  {
+    FamsEntry retval = null;
+    try (Session session = HibernateUtils.getSessionFactory().openSession())
+    {
+      Query<FamsEntry> query = session.createQuery("FROM FamsEntry WHERE user = :user ORDER BY created DESC");
+      query.setMaxResults(1);
+      query.setParameter("user", user);
+
+      List<FamsEntry> list = query.list();
+      if (null != list && list.size() > 0)
+      {
+        retval = list.get(0);
+      }
+    }
+    return retval;
   }
 
 }
