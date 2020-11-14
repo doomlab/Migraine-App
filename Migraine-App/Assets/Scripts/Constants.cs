@@ -3,10 +3,10 @@
 
     public class Constants
     {
-        public int GRADIENT_1 = 0xfee5d9;
-        public int GRADIENT_2 = 0xfcae91;
-        public int GRADIENT_3 = 0xfb6a4a;
-        public int GRADIENT_4 = 0xde2d26;
-        public int GRADIENT_5 = 0xa50f15;
+        public static string GRADIENT_1 = "#fee5d9";
+        public static string GRADIENT_2 = "#fcae91";
+        public static string GRADIENT_3 = "#fb6a4a";
+        public static string GRADIENT_4 = "#de2d26";
+        public static string GRADIENT_5 = "#a50f15";
     }
 }
