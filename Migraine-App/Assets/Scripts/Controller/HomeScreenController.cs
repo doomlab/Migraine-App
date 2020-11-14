@@ -55,6 +55,7 @@ namespace clinvest.migraine.Controller
             ColorUtility.TryParseHtmlString(Constants.GRADIENT_5, out ColorHigh);
 
             GetHeadacheDays();
+            GetFamsStatus();
         }
 
         // Update is called once per frame
@@ -149,6 +150,82 @@ namespace clinvest.migraine.Controller
             {
                 return null;
             }
+        }
+
+        public async void GetFamsStatus()
+        {
+            try
+            {
+                // Send the request to the server
+                FAMSAggregateResponse response = await RequestFamsAggregate();
+                // if successful, set the fields
+                if (null != response && null != response.aggregateStatus)
+                {
+                    int index = 1;
+                    foreach (int day in response.aggregateStatus)
+                    {
+                        GameObject indicator = GetChildWithName(HomeScreen, "Status" + index);
+                        Image spr = indicator.GetComponent<Image>();
+                        switch (day)
+                        {
+                            case 0:
+                                break;
+                            case 1:
+                                spr.color = ColorLow;
+                                break;
+                            case 2:
+                                spr.color = ColorLowModerate;
+                                break;
+                            case 3:
+                                spr.color = ColorModerate;
+                                break;
+                            case 4:
+                                spr.color = ColorModerateHigh;
+                                break;
+                            case 5:
+                                spr.color = ColorHigh;
+                                break;
+                            default:
+                                break;
+                        }
+
+                        index++;
+                    }
+                }
+
+
+            }
+            catch (Exception e)
+            {
+                // if not successful, indicate failure
+                UnityEngine.Debug.Log("Exception requesting FAMS aggregate: " + e.Message);
+            }
+        }
+
+        private async Task<FAMSAggregateResponse> RequestFamsAggregate()
+        {
+            string requestEndpoint = String.Format("{0}/headache/get_fams?auth={1}", serverURL, ApplicationContext.AuthToken);
+            UnityEngine.Debug.Log(requestEndpoint);
+
+            HeadProfileRequest request = new HeadProfileRequest();
+            request.userId = ApplicationContext.UserId;
+            string data = JsonUtility.ToJson(request);
+            byte[] bytes = Encoding.UTF8.GetBytes(data);
+
+            HttpWebRequest serverRequest = (HttpWebRequest)WebRequest.Create(requestEndpoint);
+            serverRequest.Method = "POST";
+            serverRequest.ContentType = "application/json";
+            serverRequest.ContentLength = bytes.Length;
+            Stream dataStream = serverRequest.GetRequestStream();
+            dataStream.Write(bytes, 0, bytes.Length);
+            dataStream.Close();
+
+            HttpWebResponse response = (HttpWebResponse)(await serverRequest.GetResponseAsync());
+            StreamReader reader = new StreamReader(response.GetResponseStream());
+            string jsonResponse = reader.ReadToEnd();
+            UnityEngine.Debug.Log(jsonResponse);
+            FAMSAggregateResponse info = JsonUtility.FromJson<FAMSAggregateResponse>(jsonResponse);
+            return info;
         }
     }
 }

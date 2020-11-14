@@ -103777,6 +103777,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 18149bd684592c04aa4bdcb663eb6244, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  HomeScreen: {fileID: 1861732838}
 --- !u!1 &1870358926
 GameObject:
   m_ObjectHideFlags: 0
@@ -108103,11 +108104,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Navigation:
-    m_Mode: 3
+    m_Mode: 4
     m_SelectOnUp: {fileID: 0}
-    m_SelectOnDown: {fileID: 0}
+    m_SelectOnDown: {fileID: 2044687897}
     m_SelectOnLeft: {fileID: 0}
-    m_SelectOnRight: {fileID: 0}
+    m_SelectOnRight: {fileID: 2044687897}
   m_Transition: 1
   m_Colors:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
