@@ -1,57 +1,60 @@
 ﻿using UnityEngine;
 
-public static class ApplicationContext
+namespace clinvest.migraine
 {
-    private static string userName;
-    private static string userId;
-    private static string authToken;
-    private static GameObject activePanel;
-
-    public static string UserName 
+    public static class ApplicationContext
     {
-        get 
-        {
-            return userName;
-        }
-        set 
-        {
-            userName = value;
-        }
-    }
+        private static string userName;
+        private static string userId;
+        private static string authToken;
+        private static GameObject activePanel;
 
-    public static string UserId 
-    {
-        get 
+        public static string UserName
         {
-            return userId;
+            get
+            {
+                return userName;
+            }
+            set
+            {
+                userName = value;
+            }
         }
-        set 
-        {
-            userId = value;
-        }
-    }
 
-    public static string AuthToken 
-    {
-        get 
+        public static string UserId
         {
-            return authToken;
+            get
+            {
+                return userId;
+            }
+            set
+            {
+                userId = value;
+            }
         }
-        set 
-        {
-            authToken = value;
-        }
-    }
 
-    public static GameObject ActivePanel
-    {
-        get
+        public static string AuthToken
         {
-            return activePanel;
+            get
+            {
+                return authToken;
+            }
+            set
+            {
+                authToken = value;
+            }
         }
-        set
+
+        public static GameObject ActivePanel
         {
-            activePanel = value;
+            get
+            {
+                return activePanel;
+            }
+            set
+            {
+                activePanel = value;
+            }
         }
     }
 }
