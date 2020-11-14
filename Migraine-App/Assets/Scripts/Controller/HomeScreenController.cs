@@ -21,6 +21,13 @@ namespace clinvest.migraine.Controller
     public class HomeScreenController : MonoBehaviour
     {
         private static string serverURL;
+        public GameObject HomeScreen;
+
+        private Color ColorLow;
+        private Color ColorLowModerate;
+        private Color ColorModerate;
+        private Color ColorModerateHigh;
+        private Color ColorHigh;
 
         // Start is called before the first frame update
         void Start()
@@ -41,6 +48,12 @@ namespace clinvest.migraine.Controller
                 return (true);
             };
 
+            ColorUtility.TryParseHtmlString(Constants.GRADIENT_1, out ColorLow);
+            ColorUtility.TryParseHtmlString(Constants.GRADIENT_2, out ColorLowModerate);
+            ColorUtility.TryParseHtmlString(Constants.GRADIENT_3, out ColorModerate);
+            ColorUtility.TryParseHtmlString(Constants.GRADIENT_4, out ColorModerateHigh);
+            ColorUtility.TryParseHtmlString(Constants.GRADIENT_5, out ColorHigh);
+
             GetHeadacheDays();
         }
 
@@ -59,6 +72,33 @@ namespace clinvest.migraine.Controller
                 // Send the request to the server
                 HeadacheDaysResponse response = await RequestHeadacheDays();
                 // if successful, set the fields
+                if (null != response && null != response.headacheDays)
+                {
+                    int index = 1;
+                    foreach (int day in response.headacheDays)
+                    {
+                        GameObject indicator = GetChildWithName(HomeScreen, "Day" + index);
+                        Image spr = indicator.GetComponent<Image>();
+                        switch (day)
+                        {
+                            case 0:
+                                break;
+                            case 1:
+                                spr.color = ColorLow;
+                                break;
+                            case 3:
+                                spr.color = ColorModerate;
+                                break;
+                            case 5:
+                                spr.color = ColorHigh;
+                                break;
+                            default:
+                                break;
+                        }
+
+                        index++;
+                    }
+                }
                 
                 
             }
@@ -93,6 +133,20 @@ namespace clinvest.migraine.Controller
             UnityEngine.Debug.Log(jsonResponse);
             HeadacheDaysResponse info = JsonUtility.FromJson<HeadacheDaysResponse>(jsonResponse);
             return info;
+        }
+
+        GameObject GetChildWithName(GameObject obj, string name)
+        {
+            Transform trans = obj.transform;
+            Transform childTrans = trans.Find(name);
+            if (childTrans != null)
+            {
+                return childTrans.gameObject;
+            }
+            else
+            {
+                return null;
+            }
         }
     }
 }
