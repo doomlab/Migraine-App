@@ -117,7 +117,7 @@ public class HeadacheServlet extends HttpServlet {
       {
         dayIndex += 21;
       }
-      // Everything past dayIndex is a 0
+      // Everything past dayIndex is a -1 (no data)
       for (int i = dayIndex + 1; i < NUM_DAYS; i++)
       {
         theDays[i] = 0;
@@ -136,21 +136,25 @@ public class HeadacheServlet extends HttpServlet {
           if (sameDay(cell, cal))
           {
             String level = ent.getSeverity();
-            if ("Mild Pain".equalsIgnoreCase(level))
+            if ("No Pain".equalsIgnoreCase(level))
+            {
+              theDays[dayIndex] = 0;
+            }
+            else if ("Mild Pain".equalsIgnoreCase(level))
             {
               theDays[dayIndex] = 1;
             }
             else if ("Moderate Pain".equalsIgnoreCase(level))
             {
-              theDays[dayIndex] = 2;
+              theDays[dayIndex] = 3;
             }
             else if ("Severe Pain".equalsIgnoreCase(level))
             {
-              theDays[dayIndex] = 3;
+              theDays[dayIndex] = 5;
             }
             else
             {
-              theDays[dayIndex] = 0;
+              theDays[dayIndex] = -1;  // Shouldn't happen...
             }
             found = true;
             break;
@@ -162,7 +166,7 @@ public class HeadacheServlet extends HttpServlet {
         }
         if (!found)
         {
-          theDays[dayIndex] = 0;
+          theDays[dayIndex] = -1;
         }
         dayIndex -= 1;
         cal.add(Calendar.DAY_OF_YEAR, -1);       
