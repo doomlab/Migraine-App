@@ -84,7 +84,9 @@ namespace clinvest.migraine.Controller
                             case 0:
                                 break;
                             case 1:
-                                spr.color = ColorLow;
+                                // Don't like the white here, trying the cream.
+                                // spr.color = ColorLow;
+                                spr.color = ColorLowModerate;
                                 break;
                             case 3:
                                 spr.color = ColorModerate;
