@@ -248,16 +248,18 @@ public class HeadacheServlet extends HttpServlet {
         int y = (int)Math.ceil(((double) (x1 + x2)) / 2);
         list.add(y);
     
-        // frequency_questions <- c("Q2", "Q5")
-        x1 = last.getQ2() == null? 0 : last.getQ2();
-        x2 = last.getQ5() == null? 0 : last.getQ5();
+        // frequency_questions <- c("Q2", "Q5"), both reverse coded (high is bad)
+        x1 = last.getQ2() == null? 6 : 6 - last.getQ2();
+        x2 = last.getQ5() == null? 6 : 6 - last.getQ5();
         y = (int)Math.ceil(((double) (x1 + x2)) / 2);
+        if (y > 5) y = 0; // If this happens, then neither of the questions was answered.
         list.add(y);
         
-        // medicine_questions <- c("Q10", "Q17")
-        x1 = last.getQ10() == null? 0 : last.getQ10();
-        x2 = last.getQ17() == null? 0 : last.getQ17();
+        // medicine_questions <- c("Q10", "Q17") both reverse coded (high is bad)
+        x1 = last.getQ10() == null? 6 : 6 - last.getQ10();
+        x2 = last.getQ17() == null? 6 : 6 - last.getQ17();
         y = (int)Math.ceil(((double) (x1 + x2)) / 2);
+        if (y > 5) y = 0; // If this happens, then neither of the questions was answered.
         list.add(y);
         
         // normal_questions <- c("Q4", "Q16")
@@ -266,16 +268,18 @@ public class HeadacheServlet extends HttpServlet {
         y = (int)Math.ceil(((double) (x1 + x2)) / 2);
         list.add(y);
         
-        // pain_questions <- c("Q8", "Q12")
-        x1 = last.getQ8() == null? 0 : last.getQ8();
-        x2 = last.getQ12() == null? 0 : last.getQ12();
+        // pain_questions <- c("Q8", "Q12") both reverse coded (high is bad)
+        x1 = last.getQ8() == null? 6 : 6 - last.getQ8();
+        x2 = last.getQ12() == null? 6 : 6 - last.getQ12();
         y = (int)Math.ceil(((double) (x1 + x2)) / 2);
+        if (y > 5) y = 0; // If this happens, then neither of the questions was answered.
         list.add(y);
         
-        // productivity_questions <- c("Q6", "Q14")
+        // productivity_questions <- c("Q6", "Q14") Just 14 is reverse coded
         x1 = last.getQ6() == null? 0 : last.getQ6();
-        x2 = last.getQ14() == null? 0 : last.getQ14();
+        x2 = last.getQ14() == null? 6 : 6 - last.getQ14();
         y = (int)Math.ceil(((double) (x1 + x2)) / 2);
+        if (y > 5) y = (int)Math.ceil(((double) (x1)) / 2);; // If this happens, then Q14 wasn't answered.
         list.add(y);
 
         // self_questions <- c("Q7", "Q18")
